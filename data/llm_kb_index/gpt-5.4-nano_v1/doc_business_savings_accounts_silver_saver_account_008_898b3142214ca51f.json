@@ -1,0 +1,24 @@
+{
+  "id": "doc_business_savings_accounts_silver_saver_account_008",
+  "title": "Silver Saver Account: Adding authorized users",
+  "summary": "This document explains how to add and manage authorized users on a Silver Saver Account: you may add up to 3 authorized users, and same-day ACH availability for this tier is No. It outlines steps in online banking user management, including inviting the user to set up access and periodically reviewing/removing/downgrading permissions as roles change.",
+  "faqs": [
+    "How many authorized users can I add to a Silver Saver Account?",
+    "Is same-day ACH available for the Silver Saver Account tier?",
+    "Where do I add an authorized user in online banking?",
+    "What steps are required to invite an authorized user to access the account?",
+    "Do I need to review or change authorized user permissions over time?",
+    "How do I remove or downgrade access when a user\u2019s role changes?"
+  ],
+  "keywords": [
+    "Silver Saver Account",
+    "authorized users",
+    "up to 3 authorized users",
+    "online banking user management",
+    "assign appropriate permissions",
+    "invitation to set up access",
+    "review user permissions periodically",
+    "remove or downgrade access",
+    "same-day ACH availability: No"
+  ]
+}

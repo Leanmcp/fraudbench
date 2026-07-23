@@ -1,0 +1,26 @@
+{
+  "id": "doc_bank_accounts_bank_accounts_(general)_042",
+  "title": "Internal: Human Agent Transfer Reason Codes",
+  "summary": "This document instructs agents how to choose a transfer reason code when using the transfer_to_human_agents tool, selecting the highest applicable priority tier among: fraud_or_security_concern, account_closure_request, deceased_account_holder, legal_or_regulatory_matter, account_ownership_dispute, complex_billing_dispute, abusive_customer_behavior, third_party_inquiry, technical_system_error, and customer_demands_after_unavailable_offer_refusal (Tier 1).",
+  "faqs": [
+    "Which Tier 1 reason code should I pick for a fraud or security concern?",
+    "What Tier 2 code applies if I can\u2019t verify a customer\u2019s claimed promotion from the KB?",
+    "When should I use technical_system_error instead of kb_search_unsuccessful_customer_requests_transfer?",
+    "What reason code should I select for a legal document like a subpoena or court order?",
+    "Which Tier 3 code fits when a customer requests a human without a specific reason?",
+    "If none of the listed reasons apply, what code should I use?"
+  ],
+  "keywords": [
+    "transfer_to_human_agents tool",
+    "Tier 1 reason codes",
+    "fraud_or_security_concern",
+    "account_closure_request",
+    "legal_or_regulatory_matter",
+    "complex_billing_dispute",
+    "unconfirmed_external_communication",
+    "kb_search_unsuccessful_customer_requests_transfer",
+    "specialized_department_required",
+    "customer_frustrated_demands_human",
+    "other (catch-all)"
+  ]
+}

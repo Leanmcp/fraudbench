@@ -1,0 +1,25 @@
+{
+  "id": "doc_credit_cards_credit_cards_(general)_009",
+  "title": "Generating a Credit Card Referral Link (Internal)",
+  "summary": "This internal guide explains how to generate a credit card referral link using the tool `get_referral_link(user_id: str, card_name: str)` (customer runs it themselves with their own user_id and exact card name). It also sets a rolling 7-day weekly limit of 2 referral bonuses (3rd+ is automatically denied) and notes to create referral records with status 'NO_PROGRESS'.",
+  "faqs": [
+    "What pre-checks should we do before giving a customer a referral link tool?",
+    "How does the customer generate their referral link, and what inputs are required?",
+    "What happens when the referral link tool is called successfully (record status)?",
+    "What is the rolling 7-day referral bonus limit, and when are referrals automatically denied?",
+    "Are agents allowed to generate a referral link on the customer\u2019s behalf?",
+    "If a card has no documented referral program or terms don\u2019t match, should we provide a referral link tool?"
+  ],
+  "keywords": [
+    "get_referral_link(user_id: str, card_name: str)",
+    "run the tool themselves",
+    "user_id",
+    "exact card name (e.g., 'Gold Rewards Card')",
+    "referral record status 'NO_PROGRESS'",
+    "Weekly limit: 2 referral bonuses",
+    "rolling 7-day window",
+    "3rd and subsequent referrals automatically denied",
+    "pre-check knowledge base for documented referral program",
+    "agents must not generate link for customer"
+  ]
+}

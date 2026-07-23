@@ -1,0 +1,25 @@
+{
+  "id": "doc_checking_accounts_checking_accounts_(general)_004",
+  "title": "What is an authorization hold?",
+  "summary": "Explains authorization holds: temporary holds on funds not available for use, commonly placed by merchants to verify sufficient funds and secure deposits (lodging, fuel, rentals). Notes holds may not appear immediately in recent transactions, reduces available balance, paycheck deposit holds may be refunded, and release timing depends on merchant processing/settlement.",
+  "faqs": [
+    "What is an authorization hold and how does it affect my available balance?",
+    "Do authorization holds show up right away in my recent transactions?",
+    "Why do merchants place authorization holds (e.g., lodging, fuel, rentals)?",
+    "What happens to an authorization hold when the merchant finalizes the charge or releases/reduces it?",
+    "Does Rho-Bank place holds on paycheck deposits, and how does that affect my balance?",
+    "How long do authorization holds take to be released?"
+  ],
+  "keywords": [
+    "authorization hold",
+    "temporary hold on funds",
+    "available balance reduced",
+    "merchant verification of sufficient funds",
+    "lodging/fuel/rentals deposits",
+    "not shown in recent transactions immediately",
+    "paycheck deposit hold",
+    "hold converts to posted transaction",
+    "hold released or reduced",
+    "merchant processing and settlement timing"
+  ]
+}

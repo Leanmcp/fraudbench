@@ -1,0 +1,25 @@
+{
+  "id": "doc_everyone_pay_everyone_pay_013",
+  "title": "Why is my payment still pending?",
+  "summary": "Explains why a payment may remain \u201cpending,\u201d including that standard transfers complete within 12 hours. Lists other causes: recipient has not taken required action, routine security review, or recipient account temporarily can\u2019t accept funds. Advises checking transaction details, confirming recipient account can receive funds, and contacting support if pending beyond 12 hours.",
+  "faqs": [
+    "How long do standard transfers take before a payment is no longer pending?",
+    "What does it mean if my payment is pending because the recipient hasn\u2019t taken an action?",
+    "Can a payment stay pending due to security or routine review?",
+    "Why would the recipient\u2019s account be temporarily unable to accept funds?",
+    "What should I do if the payment is still pending after the standard timeframe?",
+    "Where can I find the transaction\u2019s current status and any requested actions?"
+  ],
+  "keywords": [
+    "payment status: pending",
+    "standard transfers (complete within 12 hours)",
+    "settlement",
+    "recipient required action",
+    "routine review for security reasons",
+    "recipient account temporarily unable to accept funds",
+    "transaction screen",
+    "contact support from the transaction screen",
+    "transaction details and current status",
+    "requested actions"
+  ]
+}

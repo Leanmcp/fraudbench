@@ -1,0 +1,24 @@
+{
+  "id": "doc_credit_cards_credit_cards_(general)_001",
+  "title": "Internal: Understanding Credit Card Referral Statuses.",
+  "summary": "This document defines credit card referral statuses\u2014COMPLETE, IN_PROGRESS, NO_PROGRESS, APPLIED, REJECTED, and ERROR\u2014and explains what each means and what support agents should do next (grant bonus per terms, monitor, remind, wait, avoid immediate retry, or retry/escalate).",
+  "faqs": [
+    "What does COMPLETE mean in a credit card referral process?",
+    "If a referral is IN_PROGRESS, do I need to take any action?",
+    "What should I do when the referral status is NO_PROGRESS?",
+    "What does APPLIED indicate, and should I intervene manually?",
+    "Why would a referral be marked REJECTED and what should I do next?",
+    "How should I handle an ERROR referral status?"
+  ],
+  "keywords": [
+    "COMPLETE",
+    "IN_PROGRESS",
+    "NO_PROGRESS",
+    "APPLIED",
+    "REJECTED",
+    "ERROR",
+    "referral bonus criteria",
+    "\u201cNo action required; monitor\u201d",
+    "retry later or escalate internally"
+  ]
+}

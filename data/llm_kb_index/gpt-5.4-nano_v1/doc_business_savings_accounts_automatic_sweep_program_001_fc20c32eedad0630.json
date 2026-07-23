@@ -1,0 +1,25 @@
+{
+  "id": "doc_business_savings_accounts_automatic_sweep_program_001",
+  "title": "Automatic Sweep: How Nightly Fund Transfers Work",
+  "summary": "Explains how Automatic Sweep nightly fund transfers run at 11:00 PM: it evaluates your checking balance, transfers excess above your configured target minimum to your linked savings as a consolidated sweep, and (if Reverse sweeps = Yes) can move funds back if checking falls below the target. Also covers posting order and next-cycle adjustments.",
+  "faqs": [
+    "When does the automatic sweep execute?",
+    "How is the nightly sweep transfer amount calculated?",
+    "Where does the excess money go after the sweep?",
+    "If my checking drops below the target minimum, can funds be returned from savings?",
+    "Do transactions that post before or after 11:00 PM affect the current sweep calculation?",
+    "How are after-sweep postings handled (next cycle vs current cycle)?"
+  ],
+  "keywords": [
+    "Automatic Sweep",
+    "Nightly sweep run at 11:00 PM",
+    "Checking balance evaluation",
+    "Configured target minimum",
+    "Available excess funds",
+    "Consolidated sweep to linked savings",
+    "Reverse sweeps = Yes",
+    "Funds returned from savings",
+    "Posting before the sweep run",
+    "Next cycle evaluation"
+  ]
+}

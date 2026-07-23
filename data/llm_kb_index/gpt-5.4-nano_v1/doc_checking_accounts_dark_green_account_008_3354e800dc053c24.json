@@ -1,0 +1,26 @@
+{
+  "id": "doc_checking_accounts_dark_green_account_008",
+  "title": "Why was my Dark Green Account enrollment verification rejected?",
+  "summary": "Explains common causes of rejection for Dark Green Account enrollment verification (missing name/institution, missing term/status/undated or \u201cin progress,\u201d blurred/cropped/unreadable image, password-protected/inaccessible file, or unaccepted document type). Provides steps to obtain an official/system-generated doc with full name, institution, term, and status, resubmit a clear full-frame image/readable PDF (not password-protected) using the same upload flow, and notes verification is required per_semester for the active term.",
+  "faqs": [
+    "Why was my Dark Green Account enrollment verification rejected?",
+    "What exact details must my verification document show (name, institution, term, status)?",
+    "Can I submit a screenshot, or does the document need specific accepted details?",
+    "My upload was rejected as unreadable\u2014what image/PDF quality is required?",
+    "What should I do if my document is password-protected or inaccessible?",
+    "How does the per_semester timing affect which term I need to verify?"
+  ],
+  "keywords": [
+    "Dark Green Account",
+    "enrollment verification",
+    "per_semester",
+    "official or system-generated document",
+    "term and enrollment status",
+    "undated or in progress",
+    "blurred/cropped/unreadable",
+    "password-protected",
+    "readable PDF / full-frame image",
+    "same upload flow",
+    "accepted document type"
+  ]
+}

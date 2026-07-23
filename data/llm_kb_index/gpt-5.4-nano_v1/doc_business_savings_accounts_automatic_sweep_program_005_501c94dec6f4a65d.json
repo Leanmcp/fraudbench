@@ -1,0 +1,24 @@
+{
+  "id": "doc_business_savings_accounts_automatic_sweep_program_005",
+  "title": "Automatic Sweep: Timing and Processing of Nightly Transfers",
+  "summary": "This document describes Automatic Sweep execution: sweeps initiate at 11:00 PM, when the system evaluates your checking balance and releases the transfer. Eligible excess is moved to the designated savings account; posting times vary by institution. The monthly limit is 60 sweep transfers\u2014after 60, additional sweeps pause until the next month.",
+  "faqs": [
+    "When are Automatic Sweep transfers initiated?",
+    "How does the system decide how much money to sweep?",
+    "After the 11:00 PM evaluation, when should the transfer show as processed?",
+    "Where is the eligible excess transferred?",
+    "How many Automatic Sweep transfers are allowed per month?",
+    "What happens if I hit the 60-sweep monthly limit? "
+  ],
+  "keywords": [
+    "Automatic Sweep",
+    "11:00 PM initiation",
+    "Checking balance evaluation",
+    "Designated savings account",
+    "Eligible excess",
+    "Posting times vary by institution",
+    "Up to 60 sweep transfers per month",
+    "Completed sweep counts toward limit",
+    "Pauses after 60 until next month"
+  ]
+}

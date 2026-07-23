@@ -1,0 +1,27 @@
+{
+  "id": "doc_business_savings_accounts_joint_business_holders_+_user_roles_004",
+  "title": "User Roles: What Can Each Role Access and Modify?",
+  "summary": "Defines access and modification capabilities for Admin, Finance, and Auditor roles, including Admin\u2019s $100,000 transaction approval limit. Covers who can create/edit/remove users, configure permissions, modify account settings, and who has 48-month read-only access to audit records.",
+  "faqs": [
+    "What can an Admin approve up to, and what account settings can they modify?",
+    "What actions can Finance users take for payments, payables/receivables, and transaction approvals?",
+    "Can Finance users change global access policies or remove Admin privileges?",
+    "What does an Auditor role allow\u2014specifically including the 48-month read-only window\u2014and what can they not do?",
+    "Who can view and export complete account activity and audit records, and with what restrictions?",
+    "What guidance does the document give for assigning Admin, Finance, and Auditor roles?\""
+  ],
+  "keywords": [
+    "Admin capabilities",
+    "$100,000 approval limit",
+    "Create/edit/remove users",
+    "Assign roles and permissions",
+    "Modify account-level settings",
+    "Finance capabilities",
+    "Initiate payments",
+    "Payables and receivables",
+    "Approvals within assigned authority",
+    "Auditor 48 months read-only access",
+    "View audit logs/exported reports",
+    "Cannot modify global access policies"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "doc_everyone_pay_split-the-bill_003",
+  "title": "Managing group balances",
+  "summary": "Explains how to manage group split balances: view split details to see each member\u2019s owed and paid status, use the activity timeline to verify reminders every 4, and ensure payments are due within 16 days of split creation. Also covers how to follow up as the due date nears or passes, reconcile partial payments, and validate member payment claims.",
+  "faqs": [
+    "How do I check each member\u2019s owed amount and whether it\u2019s been paid?",
+    "How can I confirm reminders were sent on the expected 4-interval schedule?",
+    "When are payments due after a split is created (what is the 16-day window)?",
+    "What should I do as the due date approaches if some members still owe?",
+    "If the due date passes and balances remain, how should I decide whether to continue reminders, adjust shares, or close and recreate the split?",
+    "If a member says they already paid, how do I verify it in the split details and timeline against the 4/16 schedule?"
+  ],
+  "keywords": [
+    "split details",
+    "member owed amount",
+    "paid status",
+    "activity timeline",
+    "automatic reminders every 4",
+    "due within 16",
+    "direct message to outstanding members",
+    "reconcile partial payments",
+    "adjust shares",
+    "close and recreate the split",
+    "validate payment claims"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "doc_buy_now_pay_later_bnpl_management_dashboard_001",
+  "title": "BNPL Management Dashboard: Viewing Your Total Active BNPL Plans and Balances",
+  "summary": "Explains how to use the BNPL Management Dashboard to view totals for active BNPL plans and aggregate outstanding principal (totals shown as [value not available]). Covers what is included (open and billable plans; unrepaid principal) and how totals update after payments and can change due to filters or plan status changes.",
+  "faqs": [
+    "Where can I see the total count of my active BNPL plans on the dashboard?",
+    "Where can I see the aggregate outstanding BNPL principal across all active plans?",
+    "What plans are included in the active plans totals (open/billable only, or others)?",
+    "Is the outstanding principal shown in my account currency, and does it include unrepaid amounts only?",
+    "If my totals don\u2019t match expected plan balances, what should I check (payments posted, filters, active view)?",
+    "Why might the active plan count or outstanding balance change unexpectedly (payment timing or plan status changes)?"
+  ],
+  "keywords": [
+    "BNPL Management Dashboard",
+    "Active BNPL plans total count",
+    "Outstanding BNPL balance",
+    "aggregate outstanding principal",
+    "open and billable plans",
+    "principal not yet repaid",
+    "account currency",
+    "totals update after payment posts",
+    "filters hiding active plans",
+    "plan status changes",
+    "individual plan balances sum check"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "doc_checking_accounts_light_green_account_012",
+  "title": "FAQ: Teen Checking Accounts",
+  "summary": "This FAQ explains teen checking account conversion at eligibility (automatic if \u201cYes is True,\u201d otherwise the change must be initiated), and it lists fees for a returned deposit check ($12.50) and incoming domestic wire transfers ($10.00).",
+  "faqs": [
+    "If my teen ages out, does the checking account convert automatically?",
+    "If the \u201cYes is True\u201d condition is not met, what happens at eligibility?",
+    "Is there a fee if a deposited check bounces?",
+    "How much is the returned deposit fee for an unpaid check return?",
+    "Is there a fee to receive an incoming domestic wire transfer?",
+    "What is the fee amount for incoming domestic wires?"
+  ],
+  "keywords": [
+    "Teen checking accounts",
+    "Automatic conversion at eligibility",
+    "Returned deposit fee $12.50",
+    "Deposited check returned unpaid",
+    "Incoming domestic wire fee $10.00",
+    "Domestic wire transfer"
+  ]
+}

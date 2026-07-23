@@ -1,0 +1,26 @@
+{
+  "id": "doc_savings_accounts_silver_account_002",
+  "title": "Linking Silver Account with a Rho checking account",
+  "summary": "Explains how to link a Rho-Bank Silver Account to a Rho-Bank checking account to earn a linked_checking_apy_bonus on Silver APY, and how maintaining multiple Rho-Bank products can add a 0.025% relationship bonus on top of base Silver APY. It also covers the linking steps, requires same ownership and tax ID, notes authorization workflow and that APY changes appear shortly after linking, and states that keeping both accounts open/in good standing (and not unlinking) is required to maintain bonuses.",
+  "faqs": [
+    "How does linking my Silver Account to a Rho checking account change my Silver APY?",
+    "What is the 0.025% relationship bonus, and when does it stack with base Silver APY?",
+    "How do I link my Silver Account with a Rho-Bank checking account from the Rho-Bank dashboard?",
+    "Do my Silver and checking accounts need to be under the same ownership and tax ID?",
+    "How long does it take for APY adjustments to show after I authorize the link?",
+    "What happens to my linked checking APY bonus and relationship bonus if I unlink the checking account? "
+  ],
+  "keywords": [
+    "Silver Account",
+    "Rho-Bank checking account",
+    "linked_checking_apy_bonus",
+    "additional bonus on Silver APY",
+    "0.025% relationship bonus",
+    "same ownership and tax ID",
+    "Rho-Bank dashboard",
+    "on-screen authorization",
+    "APY adjustments appear shortly after linking",
+    "accounts open and in good standing",
+    "unlinked checking removes bonuses"
+  ]
+}

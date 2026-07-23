@@ -1,0 +1,25 @@
+{
+  "id": "doc_credit_cards_virtual_card_management_004",
+  "title": "Virtual Card Management: Setting Up Team Spending Caps and Limits",
+  "summary": "Explains how to use Virtual Card Management to set per-card spending limits ($55\u2013$30,000) and team-wide spending caps (via Team settings > Spending controls), including choosing reset periods (per transaction, daily, or monthly) and saving changes. Also covers restricting merchant categories and periodically reviewing/adjusting limits.",
+  "faqs": [
+    "How do I set a per-card spending limit for a virtual card, and what range is allowed?",
+    "Where do I configure team-wide spending caps, and what reset periods can I use?",
+    "Can I restrict spending by merchant categories, and how is that applied (card vs. team policy)?",
+    "What steps are involved in saving a limit or cap after selecting the reset period?",
+    "What guidance does the document give for choosing initial limits and later adjusting them?",
+    "Do team spending caps and merchant-category restrictions need to be checked for availability first?"
+  ],
+  "keywords": [
+    "Cards > Virtual",
+    "Set limit",
+    "Per-card spending limit ($55\u2013$30,000)",
+    "Reset period (per transaction/daily/monthly)",
+    "Team settings > Spending controls",
+    "Team-wide caps",
+    "Allowed or blocked merchant categories",
+    "Card or team policy",
+    "Conservative limits near $55",
+    "Adjust up to $30,000"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "doc_business_checking_accounts_beige_010",
+  "title": "Troubleshooting: Beige Fee and Balance Issues",
+  "summary": "This document troubleshoots Beige account monthly maintenance fee ($200) and balance threshold issues. It covers the $500,000 waiver balance threshold, $250,000 minimum balance requirement, domestic out-of-network ATM fee ($0.00), and foreign ATM fee (1% of withdrawal amount with a $2.00 minimum), plus how to verify periods, timestamps, transfers, and dual authorization.",
+  "faqs": [
+    "Why did I get charged the $200 monthly maintenance fee if I expected the waiver?",
+    "Does meeting the $250,000 minimum balance also waive the Beige monthly maintenance fee?",
+    "What could cause my Beige balance to dip below the $250,000 minimum unexpectedly?",
+    "How do I troubleshoot an ATM fee discrepancy for domestic vs. foreign transactions?",
+    "If a foreign ATM fee looks wrong, how should it be recalculated using 1% with a $2.00 minimum?",
+    "What information should I collect before requesting a review of Beige fee or balance issues?"
+  ],
+  "keywords": [
+    "Beige monthly maintenance fee $200",
+    "Fee waiver balance threshold $500,000",
+    "Minimum balance requirement $250,000",
+    "Domestic out-of-network ATM fee $0.00",
+    "Foreign ATM withdrawal fee 1%",
+    "Foreign ATM fee minimum $2.00",
+    "Liquidity rules / balance aggregation",
+    "Auto-fund movements and scheduled sweeps",
+    "API/ERP-triggered transfers",
+    "Dual authorization pending transfers",
+    "Balance measurement vs period cut-off timestamps",
+    "Request a review: statement period, balance history, transfer logs"
+  ]
+}

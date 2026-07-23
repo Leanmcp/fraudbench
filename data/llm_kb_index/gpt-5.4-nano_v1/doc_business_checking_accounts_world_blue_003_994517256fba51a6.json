@@ -1,0 +1,27 @@
+{
+  "id": "doc_business_checking_accounts_world_blue_003",
+  "title": "Navigating Currency Conversions on World Blue",
+  "summary": "This document explains how to convert currencies on World Blue, including a $100 minimum conversion amount and support for 35 currencies. It states quotes include a 1.5% low-margin markup over the prevailing wholesale rate and that the trade ticket shows the effective rate and converted amount before submission.",
+  "faqs": [
+    "What is the minimum amount required to request a currency conversion on World Blue?",
+    "Which currencies are supported for conversions on World Blue?",
+    "How is the conversion quote calculated (markup and wholesale rate)?",
+    "Where can I see the effective rate and converted amount before submitting?",
+    "What steps do I follow to complete a currency conversion (source wallet, target currency, review, submit)?",
+    "What best practices does World Blue recommend to avoid liquidity issues and improve audit reconciliation?"
+  ],
+  "keywords": [
+    "World Blue",
+    "Currency conversions",
+    "Minimum conversion amount $100",
+    "35 supported currencies",
+    "FX markup 1.5%",
+    "Prevailing wholesale rate",
+    "Effective rate on trade ticket",
+    "Converted amount before submit",
+    "Source wallet",
+    "Target currency",
+    "Conversion confirmation details",
+    "Conversion reference for reconciliation"
+  ]
+}

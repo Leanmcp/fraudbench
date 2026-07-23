@@ -1,0 +1,27 @@
+{
+  "id": "doc_everyone_pay_split-the-bill_004",
+  "title": "Splitting restaurant or rent bills",
+  "summary": "Explains how to split restaurant or rent bills using Yes/Yes (and when unequal or percentage-based splitting is enabled), with a hard cap that the total being split must be \u2264 $5,500. Covers choosing fixed vs item/percentage shares, using controlled unequal/percentage settings, and confirming share totals before sending plus monitoring responses afterward.",
+  "faqs": [
+    "What\u2019s the maximum total I can split, and what should I do if it exceeds $5,500?",
+    "Which split method should I use for a restaurant bill versus a rent bill?",
+    "How do I create unequal shares for restaurant items or agreed rent amounts?",
+    "How do I set percentage-based shares for restaurant consumption or lease/room terms?",
+    "What checks should I do before sending the split (sum of shares, documentation, notes)?",
+    "After sending, can I adjust allocations, and what do I need from participants to change anything?"
+  ],
+  "keywords": [
+    "$5,500 limit",
+    "restaurant bills",
+    "rent bills",
+    "Yes",
+    "itemized shares",
+    "percentage-based splits",
+    "unequal splits",
+    "fixed shares",
+    "custom shares",
+    "room size",
+    "lease terms",
+    "notes/documentation"
+  ]
+}

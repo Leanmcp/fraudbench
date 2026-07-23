@@ -1,0 +1,25 @@
+{
+  "id": "doc_everyone_pay_scheduled_payments_007",
+  "title": "Why can't I edit my scheduled payment?",
+  "summary": "Explains that scheduled payments can\u2019t be edited within 13 hours of the scheduled time; during this lock window, you can\u2019t change amount, date, or cadence. If you\u2019re within the window, wait for the occurrence to process and then edit future occurrences, or cancel to prevent future payments.",
+  "faqs": [
+    "Why is my scheduled payment locked and not editable right now?",
+    "What changes are blocked within 13 hours of the scheduled time (amount, date, cadence)?",
+    "If I\u2019m within the 13-hour window, what should I do to edit my payments?",
+    "How do edits apply if I make changes outside the lock window?",
+    "How can I stop future scheduled payments if I can\u2019t edit them?",
+    "After editing, how can I verify the new effective date? "
+  ],
+  "keywords": [
+    "13-hour editing lock window",
+    "scheduled time",
+    "amount",
+    "date",
+    "cadence",
+    "wait for upcoming occurrence to process",
+    "edit schedule for future occurrences",
+    "cancel the schedule",
+    "effective date",
+    "review the schedule summary"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "doc_bank_accounts_bank_accounts_(general)_043",
+  "title": "Internal: Applying Credits to Savings Accounts",
+  "summary": "Explains when and how agents may apply credits to customer savings accounts: only for interest corrections (system error affecting APY boost/tier rate/relationship bonus), fee refunds (incorrectly charged fees), or rare goodwill credits (supervisor approval over $25). Agents must verify identity/ownership, confirm the account is a savings account, calculate the discrepancy/fee amount, then use apply_savings_account_credit_6831(account_id, amount>0, credit_type) and inform the customer of the updated balance; interest corrections also require submit_interest_discrepancy_report_7294.",
+  "faqs": [
+    "In what situations are agents allowed to apply credits to a customer\u2019s savings account?",
+    "How do I handle an interest correction when the APY boost, tier rate, or relationship bonus was missing?",
+    "What kinds of fee refunds qualify for a savings-account credit (e.g., excess withdrawal or monthly maintenance)?",
+    "When is a goodwill credit allowed, and what approval is required over $25?",
+    "What steps must I follow before applying a credit, including account verification and calculation?",
+    "After applying an interest correction credit, do I need to submit any additional report?"
+  ],
+  "keywords": [
+    "apply_savings_account_credit_6831",
+    "interest_correction",
+    "fee_refund",
+    "goodwill_credit",
+    "APY boost",
+    "relationship bonus",
+    "incorrect tier rate",
+    "$25 supervisor approval threshold",
+    "submit_interest_discrepancy_report_7294",
+    "get_all_user_accounts_by_user_id_3847",
+    "get_bank_account_transactions_9173"
+  ]
+}

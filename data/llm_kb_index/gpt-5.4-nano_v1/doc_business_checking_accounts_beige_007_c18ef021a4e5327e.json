@@ -1,0 +1,25 @@
+{
+  "id": "doc_business_checking_accounts_beige_007",
+  "title": "Earning Interest on Enterprise Balances",
+  "summary": "This document explains that enterprise balances earn a 3.0% Annual Percentage Yield (APY), with interest compounded daily. It also describes daily automated liquidity reports to verify interest accruals versus current balances and provides guidance to align operating/reserve balances and adjust sweep rules with your account team.",
+  "faqs": [
+    "What APY do enterprise balances earn?",
+    "How often is interest compounded?",
+    "When are automated liquidity reports generated to validate interest accruals?",
+    "How can I confirm interest postings match my internal balance records?",
+    "What guidance does the document give to optimize idle balances for interest while staying liquid?",
+    "How should sweep rules be adjusted to ensure idle balances accrue interest?"
+  ],
+  "keywords": [
+    "Enterprise balances",
+    "3.0% APY",
+    "Daily compounding",
+    "Automated liquidity reports",
+    "Interest accrual validation",
+    "Statements and reports",
+    "Operating and reserve accounts",
+    "Sweep rules",
+    "Liquidity for payments",
+    "Daily schedule"
+  ]
+}

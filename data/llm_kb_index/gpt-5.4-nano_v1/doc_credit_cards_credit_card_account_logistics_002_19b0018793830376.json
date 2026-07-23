@@ -1,0 +1,26 @@
+{
+  "id": "doc_credit_cards_credit_card_account_logistics_002",
+  "title": "Internal: Processing Credit Card Account Closures",
+  "summary": "Provides the internal procedure to process credit card account closures: verify identity, confirm eligibility (balance $0.00, no pending disputes, account age \u226560 days, no pending replacement cards), then run the close_credit_card_account_7834 tool with credit_card_account_id and user_id. Customers receive a confirmation email and final statement within several business days; unredeemed rewards are redeemable for 45 days, and certain annual fees may be fully refunded if closure is within 37 days of the fee charge.",
+  "faqs": [
+    "What are the eligibility requirements to close a credit card account (balance, disputes, account age, replacement cards)?",
+    "What steps should support agents follow to process a credit card account closure?",
+    "Which tool is used to close the account, and what arguments are required (credit_card_account_id, user_id)?",
+    "What post-closure communications will the customer receive and when?",
+    "How long do unredeemed rewards remain redeemable after a closure request?",
+    "When can an annual fee be fully refunded if a customer closes the account? (37-day window)"
+  ],
+  "keywords": [
+    "close_credit_card_account_7834 tool",
+    "credit_card_account_id",
+    "user_id",
+    "Outstanding balance $0.00",
+    "No pending disputes (pending disputes allowed: No)",
+    "Account age at least 60 days",
+    "No pending replacement cards",
+    "Confirmation email",
+    "Final statement within several business days",
+    "Unredeemed rewards: 45 days",
+    "Annual fee full refund within 37 days"
+  ]
+}

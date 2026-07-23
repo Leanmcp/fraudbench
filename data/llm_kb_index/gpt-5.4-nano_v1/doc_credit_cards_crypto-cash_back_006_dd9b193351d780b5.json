@@ -1,0 +1,25 @@
+{
+  "id": "doc_credit_cards_crypto-cash_back_006",
+  "title": "Crypto-Cash Back: Security and Safety of Crypto Redemptions",
+  "summary": "Covers security and safety practices for Crypto-Cash Back redemptions: purchase protection is No; verify the exact public address/network, include required memo/tag correctly, use saved verified addresses, enable redemption-confirmation notifications, and lock/pause redemptions if you suspect unauthorized access. Also instructs to monitor wallet/app transaction confirmations and keep redemption records for reconciliation/tax reporting.",
+  "faqs": [
+    "Does this Crypto-Cash Back card have purchase protection for crypto redemptions?",
+    "What address/network checks should I do before confirming a crypto redemption?",
+    "If my wallet needs a memo/tag, what happens if it\u2019s missing or incorrect?",
+    "How can I detect unexpected or unauthorized redemption activity?",
+    "What should I do after redeeming\u2014how do I verify confirmation status?",
+    "Should I keep records of redemption details, and why?"
+  ],
+  "keywords": [
+    "Crypto-Cash Back",
+    "purchase protection is No",
+    "address verification best practices",
+    "public address and network",
+    "saved, verified addresses",
+    "memo/tag requirement",
+    "redemption confirmation notifications",
+    "lock card / pause redemptions",
+    "monitor transaction status",
+    "keep records for reconciliation and tax reporting"
+  ]
+}

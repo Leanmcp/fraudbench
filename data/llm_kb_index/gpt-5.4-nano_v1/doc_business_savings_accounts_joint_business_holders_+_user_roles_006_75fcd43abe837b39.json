@@ -1,0 +1,27 @@
+{
+  "id": "doc_business_savings_accounts_joint_business_holders_+_user_roles_006",
+  "title": "User Roles: Removing or Changing User Access",
+  "summary": "This document explains how to change or remove a user\u2019s access in user management by selecting the user, choosing \u201cChange role\u201d or \u201cRemove access,\u201d and entering a brief reason for the audit trail. It also covers the 48-hour security delay with admin notifications (and the option to cancel during the notification window), the 15 role-assignment limit, and required post-change verification steps.",
+  "faqs": [
+    "How do I change a user\u2019s role or remove their access?",
+    "What information must I provide when submitting a role change?",
+    "How long does a role change take to take effect, and will admins be notified?",
+    "Can I cancel a pending role change, and when?",
+    "What role-assignment capacity limit do I need to stay within?",
+    "What verification and record-keeping steps are required after access changes?"
+  ],
+  "keywords": [
+    "User management",
+    "Change role",
+    "Remove access",
+    "48 hours security delay",
+    "Admin notifications",
+    "Cancel pending change",
+    "15 role assignments limit",
+    "Audit trail reason",
+    "Post-change verification",
+    "Permissions review",
+    "Test-view impacted workflows",
+    "Update access inventories"
+  ]
+}

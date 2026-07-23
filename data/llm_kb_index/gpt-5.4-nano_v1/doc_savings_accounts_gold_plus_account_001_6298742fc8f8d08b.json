@@ -1,0 +1,25 @@
+{
+  "id": "doc_savings_accounts_gold_plus_account_001",
+  "title": "Gold Plus Account specifications and requirements",
+  "summary": "This document specifies Gold Plus Account requirements: open with a minimum $10,000, maintain at least a $25,000 minimum balance, and notes interest compounds daily. It also states an automatic sweep threshold of $50,000 (end-of-day available balance) and a monthly withdrawal limit of 25 withdrawals.",
+  "faqs": [
+    "What is the minimum opening deposit for a Gold Plus Account?",
+    "What minimum balance must I maintain to keep account benefits active?",
+    "How often is interest compounding for the Gold Plus Account?",
+    "When does the account trigger an automatic investment sweep, and at what threshold?",
+    "What is the monthly withdrawal limit on the Gold Plus Account?",
+    "How should I plan withdrawals to avoid exceeding the monthly limit? "
+  ],
+  "keywords": [
+    "Gold Plus Account",
+    "minimum opening deposit $10,000",
+    "minimum balance $25,000",
+    "interest compounds daily",
+    "automatic investment sweep threshold $50,000",
+    "end-of-day available balance",
+    "linked investment account sweep settings",
+    "monthly withdrawal limit 25 withdrawals",
+    "cash-flow planning",
+    "keep funds on deposit"
+  ]
+}

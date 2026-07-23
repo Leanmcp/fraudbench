@@ -1,0 +1,22 @@
+{
+  "id": "doc_checking_accounts_green_account_(checking)_004",
+  "title": "How Green Account (checking) prevents overdrafts",
+  "summary": "Explains how the How Green Account (checking) uses real-time authorization checks against your available balance before each transaction. A buffer of up to 5 may be considered; if the transaction would exceed your balance by more than 5, it\u2019s declined (no negative balance). No automatic overdraft transfers are used, so the overdraft protection transfer fee is $0.00.",
+  "faqs": [
+    "How does How Green Account (checking) prevent my balance from going negative?",
+    "What happens if a transaction would exceed my available balance by a small amount?",
+    "Is there a buffer/threshold during authorization? If so, what is it?",
+    "Are there any automatic overdraft transfers for this account?",
+    "Will I pay an overdraft protection transfer fee if a transaction is declined?",
+    "What triggers a declined transaction instead of a negative balance? "
+  ],
+  "keywords": [
+    "How Green Account (checking)",
+    "real-time authorization checks",
+    "available balance",
+    "authorization buffer up to 5",
+    "transaction declined",
+    "no automatic overdraft transfers",
+    "overdraft protection transfer fee $0.00"
+  ]
+}

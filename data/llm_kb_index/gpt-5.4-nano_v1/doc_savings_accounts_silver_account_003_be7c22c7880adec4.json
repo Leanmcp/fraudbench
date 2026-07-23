@@ -1,0 +1,25 @@
+{
+  "id": "doc_savings_accounts_silver_account_003",
+  "title": "Interest-rate tiers explained",
+  "summary": "Explains how interest-rate tiers work: balances below $10,000 earn 2.5% APY, while balances at or above $10,000 earn 4.0% APY. Your daily ending balance is checked each day, and interest accrues and compounds daily.",
+  "faqs": [
+    "How is my APY determined each day?",
+    "What APY do I earn if my balance is below $10,000?",
+    "What APY do I earn if my balance is at least $10,000?",
+    "Is interest compounded daily and based on my daily balance?",
+    "What can I do to stay in the 4.0% tier?",
+    "Can same-day transfers affect which tier I receive?"
+  ],
+  "keywords": [
+    "Balance tier",
+    "Balance range < $10,000",
+    "APY 2.5%",
+    "At or above $10,000",
+    "APY 4.0%",
+    "Daily ending balance check",
+    "Compounded daily",
+    "Interest accrues on daily balance",
+    "Balance alerts",
+    "Avoid large same-day transfers out"
+  ]
+}

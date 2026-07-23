@@ -1,0 +1,26 @@
+{
+  "id": "doc_business_checking_accounts_beige_005",
+  "title": "Security: Dual Authorization and Transaction Controls",
+  "summary": "This document explains dual authorization and transaction controls: dual authorization is required for transactions above $10,000, with initiation/review/approval roles configured so no one person can create and release a high-value transaction. It also covers applying dual authorization to wires and high-value ACH, enabling real-time balance validation (set to Yes) to prevent insufficient-funds releases, and monitoring/testing via approval logs and simulated >$10,000 requests.",
+  "faqs": [
+    "When is dual authorization required (what transaction threshold)?",
+    "How should we configure initiation, review, and approval roles to prevent one-person release?",
+    "Which payment types should have dual authorization applied (e.g., wires or high-value ACH)?",
+    "How does enabling real-time balance information help approvers avoid insufficient funds?",
+    "What logs and periodic tests should we review to confirm approval gates are working?",
+    "How can we validate controls by testing with transactions above the threshold? "
+  ],
+  "keywords": [
+    "Dual authorization",
+    "$10,000 threshold",
+    "Approvers and backup approvers",
+    "Treasury policy",
+    "Initiation/review/approval roles",
+    "Payment types: wires",
+    "High-value ACH",
+    "Real-time balance information = Yes",
+    "Insufficient funds prevention",
+    "Approval logs",
+    "Control testing via simulated requests above $10,000"
+  ]
+}

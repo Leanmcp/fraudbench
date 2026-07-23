@@ -1,0 +1,27 @@
+{
+  "id": "doc_bank_accounts_bank_accounts_(general)_024",
+  "title": "Internal: Activating a Debit Card",
+  "summary": "Provides the Rho-Bank procedure to activate a customer\u2019s debit card, selecting the correct activation tool by card issue_reason (activate_debit_card_8291 for new_account/first_card, 8292 for lost/stolen/fraud, 8293 for expired/damaged/upgrade/bank_reissue). Requires customer verification, card in PENDING status and account OPEN, and uses last 4 digits, expiration date (MM/YY), and 3-digit CVV; PIN must be exactly 4 digits and not sequential/repeating. Notes: 2 incorrect detail attempts lock the card (branch visit); prior cards deactivate on activation (except reissued cards remain active 24 hours).",
+  "faqs": [
+    "Which activation tool do I use for a new vs replacement vs reissued debit card?",
+    "What requirements must be met before I can activate a debit card (pending status, open account, not expired)?",
+    "What information do I need from the customer to activate the card (last 4, expiration date, CVV, PIN rules)?",
+    "What happens if the customer enters incorrect card details twice?",
+    "For replacement cards, what post-activation reminders are required?",
+    "For reissued cards, how long does the old card remain active and what must the customer update? "
+  ],
+  "keywords": [
+    "activate_debit_card_8291",
+    "activate_debit_card_8292",
+    "activate_debit_card_8293",
+    "issue_reason (debit_cards)",
+    "debit_card_orders order reason",
+    "PENDING status",
+    "OPEN checking account",
+    "expiration_date (not expired)",
+    "Last 4 digits + MM/YY expiration + 3-digit CVV",
+    "4-digit PIN (no sequential/repeating)",
+    "2 incorrect details \u2192 card locked; branch visit",
+    "Reissued old card grace period: 24 hours"
+  ]
+}

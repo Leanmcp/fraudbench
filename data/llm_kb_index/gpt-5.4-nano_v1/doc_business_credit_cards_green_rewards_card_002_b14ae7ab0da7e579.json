@@ -1,0 +1,28 @@
+{
+  "id": "doc_business_credit_cards_green_rewards_card_002",
+  "title": "Green Rewards Card: How the Sustainability Tracker Works",
+  "summary": "Explains how the Green Rewards Card Sustainability Tracker categorizes card purchases by merchant category and spend type, maps eligible categories to emissions factors, and applies automatic CO\u2082 offsets. It states the offset rate ($0.06 pounds CO\u2082 per $1 spent), monthly reporting cadence, and how returns/refunds and merchant reclassifications affect what appears in the monthly dashboard.",
+  "faqs": [
+    "How does the Sustainability Tracker categorize my card purchases (merchant category and spend type)?",
+    "How are estimated emissions calculated from eligible merchant categories (emissions factors mapping)?",
+    "How does the tracker calculate offsets\u2014what is the $0.06 per $1 spent CO\u2082 offset rate?",
+    "What is the reporting schedule for sustainability/carbon reports, and what do they aggregate?",
+    "How are returns and refunds handled in the reporting period?",
+    "If a merchant reclassifies a transaction, when will it show up in my next monthly report?",
+    "What can I do to improve data accuracy for recurring vendors and receipt tagging?"
+  ],
+  "keywords": [
+    "Green Rewards Card",
+    "Sustainability Tracker",
+    "Transaction categorization by merchant category and spend type",
+    "Impact mapping to emissions factors",
+    "Automatic offset: $0.06 pounds CO\u2082 per $1 spent",
+    "Environmental dashboard",
+    "Monthly sustainability and carbon reports",
+    "Returns and refunds netted to reporting period",
+    "Merchant reclassifies category updates to next monthly report",
+    "Real-time spend segmentation by category and by cardholder",
+    "Estimated emissions vs offsets applied",
+    "Net impact summaries"
+  ]
+}

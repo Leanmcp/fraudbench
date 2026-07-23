@@ -1,0 +1,23 @@
+{
+  "id": "doc_checking_accounts_blue_account_002",
+  "title": "Blue Account specifications and requirements",
+  "summary": "This document lists Blue Account terms: annual percentage yield (APY) of 0.01% on balances, a monthly maintenance fee waiver requiring a minimum daily balance of $625, and a debit card daily purchase limit of $3,000.",
+  "faqs": [
+    "What is the Blue Account APY on balances?",
+    "How do I waive the Blue Account monthly maintenance fee?",
+    "What minimum daily balance is required for the maintenance fee waiver?",
+    "What is the Blue Account debit card daily purchase limit?",
+    "What should I do if I\u2019m close to the $625 daily balance threshold?",
+    "What should I do to handle purchases that may exceed the $3,000 daily debit limit?"
+  ],
+  "keywords": [
+    "Blue Account",
+    "APY 0.01%",
+    "annual percentage yield",
+    "monthly maintenance fee waiver",
+    "minimum daily balance $625",
+    "debit card daily purchase limit $3,000",
+    "balance threshold alerts",
+    "alternative payment methods"
+  ]
+}

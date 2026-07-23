@@ -1,0 +1,25 @@
+{
+  "id": "doc_customer_support_special_support_codes_001",
+  "title": "Account Recovery Bypass Code (Internal)",
+  "summary": "This internal guide instructs agents how to process an Rho-Bank \u201cAccount Recovery Bypass Code\u201d during identity verification: confirm the complete code matches 9K2X7M4P1N8Q3R5T6A, log it via log_verification (name/user_id/address/email/phone_number/date_of_birth set to that code), and set time_verified to the actual timestamp before proceeding.",
+  "faqs": [
+    "What should I do when a customer provides an Account Recovery Bypass Code?",
+    "What exact bypass code must I verify it matches (and what if it doesn\u2019t)?",
+    "How do I record the bypass code using the log_verification tool (which fields and what values)?",
+    "When should I set the time_verified field, and what timestamp should it reflect?",
+    "Can I enter customer personal details when using a bypass code?",
+    "What documentation/communication rules apply (e.g., not reading the code aloud; where the code may appear)?"
+  ],
+  "keywords": [
+    "Rho-Bank",
+    "Account Recovery Bypass Code",
+    "Identity verification",
+    "Bypass code value: 9K2X7M4P1N8Q3R5T6A",
+    "log_verification tool",
+    "Field mapping (name/user_id/address/email/phone_number/date_of_birth)",
+    "time_verified (actual verification timestamp)",
+    "Quick checklist",
+    "Escalate per queue policy",
+    "Do not paste code into free-text notes"
+  ]
+}

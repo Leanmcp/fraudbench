@@ -1,0 +1,26 @@
+{
+  "id": "doc_checking_accounts_green_account_(checking)_012",
+  "title": "Foreign ATM fees for Green Account (checking)",
+  "summary": "This document explains Green Account (checking) foreign ATM withdrawal fees: a separate fee per successful cash withdrawal in a foreign currency. The fee is the greater of 3% of the U.S. dollar equivalent (at settlement) or $5.00, and the daily ATM limit is $600 total withdrawals in 24 hours.",
+  "faqs": [
+    "When is the foreign ATM withdrawal fee charged on my Green Account (checking)?",
+    "How is the foreign ATM fee calculated (3% vs $5 minimum) and what amount is used?",
+    "What is my daily ATM withdrawal limit for the Green Account (checking)?",
+    "When does the foreign ATM fee post, and how will it show on my statement?",
+    "Can the ATM operator also charge fees in addition to the bank\u2019s foreign ATM fee?",
+    "How much will the fee be for a withdrawal with a given U.S.-dollar equivalent (e.g., $200, $400)?"
+  ],
+  "keywords": [
+    "Green Account (checking)",
+    "foreign ATM withdrawal fee",
+    "foreign currency cash withdrawal",
+    "fee per transaction",
+    "daily ATM withdrawal limit $600",
+    "24-hour period",
+    "fee = greater of 3% or $5.00",
+    "U.S. dollar equivalent at settlement",
+    "separate line item on activity/statement",
+    "ATM operator/owner additional fees",
+    "posting upon ATM transaction settlement"
+  ]
+}

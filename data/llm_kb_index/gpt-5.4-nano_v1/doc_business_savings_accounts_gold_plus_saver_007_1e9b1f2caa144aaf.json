@@ -1,0 +1,27 @@
+{
+  "id": "doc_business_savings_accounts_gold_plus_saver_007",
+  "title": "Gold Plus Saver Account: Same-day ACH transfers",
+  "summary": "This document explains how Gold Plus Saver Account supports same-day ACH transfers, including that the account tier has same-day ACH enabled and that eligible payments submitted within processing windows may settle same day. It covers up to 6 authorized users (roles/approvals), initiation guidelines (recipient/routing verification, submitting early, maintaining collected funds), exceptions/holds (risk checks/unusual patterns and routing to the next window if not qualified), and reconciliation (distinct ledger labels and retaining confirmations with initiator/approver details).",
+  "faqs": [
+    "Is same-day ACH transfers enabled for the Gold Plus Saver Account tier?",
+    "How many authorized users can initiate or approve same-day ACH transfers, and how should roles be set?",
+    "What should I check before submitting a same-day ACH transfer to reduce exceptions?",
+    "What can cause a same-day ACH transaction to be held for review or delayed?",
+    "If a same-day request doesn\u2019t qualify, what happens to the transfer?",
+    "How should I reconcile and record same-day ACH payments for audit purposes?"
+  ],
+  "keywords": [
+    "Gold Plus Saver Account",
+    "Same-day ACH transfers",
+    "Processing windows",
+    "Authorized users (up to 6)",
+    "Initiator/approver roles",
+    "Separation of duties",
+    "Recipient details and bank routing information",
+    "Collected funds",
+    "Risk checks/unusual patterns",
+    "Next available processing window",
+    "Distinct ledger labeling",
+    "Audit trail confirmations"
+  ]
+}

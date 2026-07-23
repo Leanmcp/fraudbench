@@ -1,0 +1,27 @@
+{
+  "id": "doc_credit_cards_credit_card_account_logistics_006",
+  "title": "Internal: CLI Payment History and Approval Criteria",
+  "summary": "This document defines CLI payment history requirements and maximum credit limit increase amounts by card tier. Entry-tier requires 6 consecutive on-time months and allows up to 25% increase per request; Mid- and Premium-tier require 3 consecutive months and allow up to 50% per request.",
+  "faqs": [
+    "How many consecutive on-time payment months are required for an Entry-tier card CLI request?",
+    "How many consecutive on-time payment months are required for Mid-tier and Premium-tier card CLI requests?",
+    "Which tier allows a maximum CLI increase of 25% of the current credit limit per request?",
+    "What is the maximum CLI increase per request for Mid-tier and Premium-tier cards?",
+    "How do I verify a customer\u2019s payment history for a CLI request using get_payment_history_6183?",
+    "If the customer requests more than the maximum allowed for their tier, what should I tell them and how should I proceed?"
+  ],
+  "keywords": [
+    "CLI",
+    "payment history requirements",
+    "Entry-tier cards",
+    "Mid-tier cards",
+    "Premium-tier cards",
+    "6 consecutive months",
+    "3 consecutive months",
+    "get_payment_history_6183",
+    "credit_card_account_id",
+    "maximum increase per request",
+    "25%",
+    "50%"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "doc_credit_cards_credit_cards_(general)_002",
+  "title": "Credit Card Referral Offers and Restrictions",
+  "summary": "This document explains a cross-credit-card weekly referral limit: you may receive at most 2 referral bonuses in any rolling 7-day window. Any third (and later) referral attempts within the same 7 days are automatically denied and cannot be reinstated until the rolling window drops below the cap.",
+  "faqs": [
+    "How many referral bonuses can I receive in a rolling 7-day period?",
+    "What happens if I try to receive a third referral bonus within the same 7-day window?",
+    "Does the weekly referral limit apply across all my credit card types or only one card?",
+    "Is the rolling 7-day window based on calendar weeks or exact timestamps?",
+    "Can an auto-denied referral be reinstated within the same 7-day window?",
+    "If I hit the referral limit, when can I try again to stay under the cap?"
+  ],
+  "keywords": [
+    "rolling 7-day window",
+    "max 2 referral bonuses",
+    "third referral automatically denied",
+    "cross-credit-card limit",
+    "exact timestamps vs calendar weeks",
+    "auto-denied referrals cannot be reinstated",
+    "wait until drops under the cap"
+  ]
+}

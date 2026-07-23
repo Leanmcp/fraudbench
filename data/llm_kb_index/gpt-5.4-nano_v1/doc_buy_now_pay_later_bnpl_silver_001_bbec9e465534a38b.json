@@ -1,0 +1,25 @@
+{
+  "id": "doc_buy_now_pay_later_bnpl_silver_001",
+  "title": "BNPL Silver: How to Enable Buy Now, Pay Later on Your Account",
+  "summary": "Explains how to enable BNPL Silver (Buy Now, Pay Later) in Settings > Payments > BNPL Silver, including the prerequisite product configuration ([value not available] must be true) and a one-time soft credit check during activation when required. Also covers how to verify status (Active, [value not available] remains true) and troubleshooting steps for disabled toggle or activation verification issues (including retry timing and support request with timestamp).",
+  "faqs": [
+    "What prerequisite setting must be true before I can enable BNPL Silver?",
+    "Where do I go in the account to enable BNPL Silver?",
+    "When do I need to complete the one-time soft credit check, and what should I do if I\u2019m prompted?",
+    "How do I verify BNPL Silver is successfully enabled on my account?",
+    "What should I check if the BNPL Silver toggle is disabled?",
+    "What should I do if activation gets stuck at verification?"
+  ],
+  "keywords": [
+    "BNPL Silver",
+    "Settings > Payments > BNPL Silver",
+    "Enable BNPL Silver",
+    "one-time soft credit check",
+    "activation disclosure",
+    "product configuration [value not available] = true/false",
+    "Status: Active",
+    "checkout payment option for eligible transactions",
+    "activation verification",
+    "timestamp of your last attempt"
+  ]
+}

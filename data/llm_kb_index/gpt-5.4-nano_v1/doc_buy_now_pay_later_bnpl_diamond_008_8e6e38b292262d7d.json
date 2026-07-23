@@ -1,0 +1,25 @@
+{
+  "id": "doc_buy_now_pay_later_bnpl_diamond_008",
+  "title": "BNPL Diamond: How to Apply, Get Approved, and Start Using Your Plan",
+  "summary": "This document explains BNPL Diamond eligibility and onboarding: you must be in segment HIGH_SPEND_RETAIL with average monthly spend \u2265 $502500.00 (and for enterprise, annual revenue \u2265 $50125000.00). It covers application steps, required documentation, accepting plan terms, default 12-month activation, and starting use by allocating eligible purchases and tracking installment due dates.",
+  "faqs": [
+    "What are the eligibility requirements for BNPL Diamond (segment and spend thresholds)?",
+    "If I\u2019m an enterprise applicant, what annual revenue proof is required?",
+    "How do I apply for BNPL Diamond and what information/documents must I submit?",
+    "What happens during approval\u2014what is the default plan term length?",
+    "After approval, when will I receive my repayment schedule and first installment due date?",
+    "How do I start using my BNPL Diamond plan for purchases and stay in good standing?"
+  ],
+  "keywords": [
+    "BNPL Diamond",
+    "Eligible segment: HIGH_SPEND_RETAIL",
+    "Average monthly spend threshold: $502500.00",
+    "Enterprise annual revenue threshold: $50125000.00",
+    "Plan terms acceptance during application flow",
+    "Default 12-month term",
+    "Repayment schedule confirmation",
+    "First installment due date",
+    "Allocate eligible purchases during checkout or in account",
+    "Installment schedule and upcoming due dates"
+  ]
+}

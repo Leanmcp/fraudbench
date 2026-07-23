@@ -1,0 +1,24 @@
+{
+  "id": "doc_everyone_pay_scheduled_payments_003",
+  "title": "Editing or canceling a scheduled payment",
+  "summary": "Explains how to edit or cancel a scheduled payment: you can change future amount, next occurrence date, or cadence. Editing is locked within 13 hours of the upcoming occurrence; changes after that apply later. Cancellation stops future occurrences, but a very-near next occurrence may still process.",
+  "faqs": [
+    "What parts of a scheduled payment can I edit (amount, date, or cadence)?",
+    "When does editing become locked for the next scheduled occurrence (13 hours)?",
+    "How do I edit a scheduled payment step-by-step?",
+    "If I cancel a scheduled payment, will the next occurrence still process if it\u2019s very near?",
+    "How can I confirm whether my edit or cancellation took effect on the correct occurrence?"
+  ],
+  "keywords": [
+    "scheduled payment",
+    "edit options",
+    "change amount",
+    "next occurrence date",
+    "cadence",
+    "editing locked",
+    "13 hours",
+    "cancel scheduled payment",
+    "schedule list",
+    "future occurrences"
+  ]
+}

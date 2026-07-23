@@ -1,0 +1,27 @@
+{
+  "id": "doc_business_savings_accounts_diamond_vault_007",
+  "title": "Diamond Vault Account: Adding authorized users",
+  "summary": "This document explains how to add authorized users to a Diamond Vault Account, including role-based access assignment, requiring approvals via the standard corporate governance workflow, and reviewing permissions after provisioning. It also covers ongoing governance: periodic access audits, separating initiation/approval duties, and maintaining an access register with roles/scopes/last review dates. The account tier has no cap on the number of authorized users.",
+  "faqs": [
+    "What is the maximum number of authorized users I can add to a Diamond Vault Account tier?",
+    "How should I assign roles when adding authorized users to limit access appropriately?",
+    "Do I need approvals before granting Diamond Vault Account access, and when should I do the permission review?",
+    "What steps should I take after provisioning to verify the user permissions are correct?",
+    "How should I manage ongoing authorized-user governance (audits, removing users, separation of duties)?",
+    "What information should be included in the access register for Diamond Vault Account users?"
+  ],
+  "keywords": [
+    "Diamond Vault Account",
+    "authorized users",
+    "no cap on user count",
+    "access capacity",
+    "role-based access",
+    "corporate governance workflow approvals",
+    "permissions review after provisioning",
+    "periodic access audits",
+    "separation of initiation and approval duties",
+    "access register",
+    "roles and scopes",
+    "last review dates"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "doc_business_savings_accounts_gold_saver_account_008",
+  "title": "Gold Saver Account: Adding authorized users to your account",
+  "summary": "This document explains how to add, manage, and remove authorized users for a Gold Saver Account. It covers the limit of up to 5 authorized users, the steps to invite users (name/email, permissions, invitation acceptance), permission adjustments and dual review for sensitive actions, and procedures to suspend or remove users with activity audit during offboarding.",
+  "faqs": [
+    "How many authorized users can I add to my Gold Saver Account?",
+    "What steps do I follow to add an authorized user (where do I go and what info is needed)?",
+    "How do I assign and adjust user permissions for roles and segregation of duties?",
+    "How does dual review work for sensitive actions?",
+    "What\u2019s the difference between temporarily suspending a user and removing them from the account?",
+    "When I offboard a user, what should I audit?"
+  ],
+  "keywords": [
+    "Gold Saver Account",
+    "authorized users",
+    "up to 5 authorized users",
+    "account settings",
+    "user management",
+    "permissions",
+    "invitation and access accepted",
+    "dual review",
+    "sensitive actions",
+    "segregation of duties",
+    "temporarily suspend",
+    "remove user",
+    "offboarding checklist",
+    "audit recent activity"
+  ]
+}

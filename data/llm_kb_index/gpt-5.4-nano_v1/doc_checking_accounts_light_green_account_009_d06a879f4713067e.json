@@ -1,0 +1,24 @@
+{
+  "id": "doc_checking_accounts_light_green_account_009",
+  "title": "Monitoring transactions in a Light Green Account",
+  "summary": "Explains how to configure threshold-based transaction alerts in a Light Green Account: set notifications to trigger for any card purchase, ATM withdrawal, or transfer at or above 62, to improve visibility while reducing noise.",
+  "faqs": [
+    "How do I set up threshold-based transaction alerts in a Light Green Account?",
+    "Which transaction types can trigger alerts (card purchases, ATM withdrawals, transfers)?",
+    "What exact threshold amount should I use to trigger notifications?",
+    "Can I adjust the alert threshold based on my spending patterns?",
+    "What should I do after reviewing transactions that triggered alerts?"
+  ],
+  "keywords": [
+    "Light Green Account",
+    "threshold-based alerts",
+    "transaction notifications",
+    "card purchase alerts",
+    "ATM withdrawal alerts",
+    "transfer alerts",
+    "62 threshold",
+    "weekly spending baseline",
+    "teen budgeting discussion",
+    "monitoring triggered transactions"
+  ]
+}

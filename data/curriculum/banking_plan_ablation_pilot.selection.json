@@ -1,0 +1,124 @@
+{
+  "$generated_by": "FAILURE_ANALYSIS/planning_eval/make_pilot_curriculum.py",
+  "criteria": {
+    "n": 10,
+    "min_actions": 3,
+    "min_match_rate": 0.6,
+    "reference_model": "NVIDIA-Nemotron-3-Ultra",
+    "min_solve_rate": 0.1,
+    "max_solve_rate": 0.9
+  },
+  "n_eligible": 14,
+  "n_dropped_at_floor": 31,
+  "mean_reference_solve_rate": 0.46110000000000007,
+  "chosen": [
+    {
+      "task_id": "task_050",
+      "n_gold_agent_actions": 7,
+      "stored_episodes": 32,
+      "any_skill_match_rate": 1.0,
+      "top_skill": "credit-limit-increase (CLI) decision",
+      "top_skill_match_rate": 1.0,
+      "reference_episodes": 11,
+      "reference_solve_rate": 0.545
+    },
+    {
+      "task_id": "task_099",
+      "n_gold_agent_actions": 3,
+      "stored_episodes": 26,
+      "any_skill_match_rate": 1.0,
+      "top_skill": "cross-account referral advising",
+      "top_skill_match_rate": 1.0,
+      "reference_episodes": 11,
+      "reference_solve_rate": 0.545
+    },
+    {
+      "task_id": "task_037",
+      "n_gold_agent_actions": 5,
+      "stored_episodes": 33,
+      "any_skill_match_rate": 1.0,
+      "top_skill": "dispute filing (credit card)",
+      "top_skill_match_rate": 1.0,
+      "reference_episodes": 14,
+      "reference_solve_rate": 0.429
+    },
+    {
+      "task_id": "task_044",
+      "n_gold_agent_actions": 5,
+      "stored_episodes": 46,
+      "any_skill_match_rate": 1.0,
+      "top_skill": "card closure + retention",
+      "top_skill_match_rate": 1.0,
+      "reference_episodes": 19,
+      "reference_solve_rate": 0.421
+    },
+    {
+      "task_id": "task_047",
+      "n_gold_agent_actions": 9,
+      "stored_episodes": 36,
+      "any_skill_match_rate": 1.0,
+      "top_skill": "card closure + retention",
+      "top_skill_match_rate": 1.0,
+      "reference_episodes": 17,
+      "reference_solve_rate": 0.412
+    },
+    {
+      "task_id": "task_073",
+      "n_gold_agent_actions": 8,
+      "stored_episodes": 45,
+      "any_skill_match_rate": 1.0,
+      "top_skill": "ATM-fee dispute / audit \u2192 account credit",
+      "top_skill_match_rate": 1.0,
+      "reference_episodes": 27,
+      "reference_solve_rate": 0.37
+    },
+    {
+      "task_id": "task_026",
+      "n_gold_agent_actions": 6,
+      "stored_episodes": 36,
+      "any_skill_match_rate": 1.0,
+      "top_skill": "cash-back reward correction",
+      "top_skill_match_rate": 1.0,
+      "reference_episodes": 15,
+      "reference_solve_rate": 0.333
+    },
+    {
+      "task_id": "task_052",
+      "n_gold_agent_actions": 7,
+      "stored_episodes": 23,
+      "any_skill_match_rate": 1.0,
+      "top_skill": "credit-limit-increase (CLI) decision",
+      "top_skill_match_rate": 1.0,
+      "reference_episodes": 6,
+      "reference_solve_rate": 0.667
+    },
+    {
+      "task_id": "task_031",
+      "n_gold_agent_actions": 3,
+      "stored_episodes": 26,
+      "any_skill_match_rate": 1.0,
+      "top_skill": "dispute filing (credit card)",
+      "top_skill_match_rate": 1.0,
+      "reference_episodes": 6,
+      "reference_solve_rate": 0.667
+    },
+    {
+      "task_id": "task_028",
+      "n_gold_agent_actions": 8,
+      "stored_episodes": 31,
+      "any_skill_match_rate": 1.0,
+      "top_skill": "cash-back reward correction",
+      "top_skill_match_rate": 1.0,
+      "reference_episodes": 9,
+      "reference_solve_rate": 0.222
+    }
+  ],
+  "skills_represented": [
+    "ATM-fee dispute / audit \u2192 account credit",
+    "card closure + retention",
+    "cash-back reward correction",
+    "credit-limit-increase (CLI) decision",
+    "cross-account referral advising",
+    "dispute filing (credit card)"
+  ]
+}

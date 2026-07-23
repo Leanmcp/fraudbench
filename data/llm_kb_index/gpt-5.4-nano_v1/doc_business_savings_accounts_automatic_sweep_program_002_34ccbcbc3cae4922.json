@@ -1,0 +1,26 @@
+{
+  "id": "doc_business_savings_accounts_automatic_sweep_program_002",
+  "title": "Automatic Sweep: Setting Up Your Sweep Program",
+  "summary": "This document explains how to set up Automatic Sweep by confirming eligibility (business savings account available) and reviewing $0.00 activation fee and $0.00 ongoing monthly service fee. It covers configuring the receiving savings account plus target minimum/minimum sweep amount, activating by submitting configuration and agreeing to terms, and then monitoring and adjusting settings.",
+  "faqs": [
+    "What are the activation fee and ongoing monthly service fee for Automatic Sweep?",
+    "What eligibility requirement must I meet to use Automatic Sweep?",
+    "How do I configure which savings account receives sweep deposits?",
+    "What are the \u201ctarget minimum for checking\u201d and \u201cminimum sweep amount,\u201d and how do they affect sweeps?",
+    "How do I activate the Automatic Sweep program, and how will I know it\u2019s active?",
+    "Can I change my sweep settings after activation?"
+  ],
+  "keywords": [
+    "Automatic Sweep",
+    "activation fee $0.00",
+    "ongoing monthly service fee $0.00",
+    "business savings account",
+    "receiving savings account",
+    "target minimum for checking",
+    "minimum sweep amount",
+    "submit configuration",
+    "agree to the terms",
+    "confirmation once active",
+    "adjust settings from setup area"
+  ]
+}

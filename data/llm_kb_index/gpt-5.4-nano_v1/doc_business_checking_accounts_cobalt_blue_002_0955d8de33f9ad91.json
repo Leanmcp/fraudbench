@@ -1,0 +1,24 @@
+{
+  "id": "doc_business_checking_accounts_cobalt_blue_002",
+  "title": "Cobalt Blue: No Overdraft Fees \u2014 How It Works",
+  "summary": "Explains how Cobalt Blue handles negative balances: overdraft fee is $0.00, and transactions that would take your available balance below zero may be declined or returned. Covers steps to avoid declines, what to do if a payment is declined/returned, and monitoring tips.",
+  "faqs": [
+    "When my balance goes negative, what overdraft fee will I be charged on Cobalt Blue?",
+    "If a transaction would take my available balance below zero, will it be approved automatically?",
+    "What can I do to avoid payment declines on Cobalt Blue?",
+    "If a payment is returned or declined, what steps should I take?",
+    "How can I monitor my balance and pending items to prevent insufficient-funds issues?"
+  ],
+  "keywords": [
+    "Cobalt Blue",
+    "Overdraft fee $0.00",
+    "Available balance below zero",
+    "Transaction declined or returned",
+    "Low-balance alerts",
+    "Pending card authorizations",
+    "Real-time balance and transaction alerts",
+    "Resubmit the payment",
+    "Split a large outgoing payment",
+    "Daily activity review"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "doc_business_savings_accounts_joint_business_holders_+_user_roles_002",
+  "title": "User Roles: Understanding Admin, Finance, and Auditor Access Levels",
+  "summary": "This document explains access levels for Admin, Finance, and Auditor roles, including transaction approval limits ($100,000 for Admin, $50,000 for Finance), what each role can/can\u2019t do (Admin: user provisioning/role configuration; Finance: initiate/manage payments and reconcile cash; Auditor: read-only), and intended use for each.",
+  "faqs": [
+    "What transaction approval limit applies to the Admin role ($100,000) versus Finance ($50,000)?",
+    "Can the Auditor role initiate or approve transactions or edit users and account settings?",
+    "What permissions does the Admin role have for user provisioning and role assignment configuration?",
+    "What can Finance users do regarding payments, balances, statements, and reconciliation?",
+    "What visibility does the Auditor role have into transactions, statements, and activity logs?",
+    "How should I choose between Admin, Finance, and Auditor roles based on required approval authority and operational control?"
+  ],
+  "keywords": [
+    "Admin access",
+    "Finance access",
+    "Auditor access",
+    "Approve transactions up to $100,000",
+    "Approve transactions up to $50,000",
+    "User provisioning",
+    "Role assignments and permissions configuration",
+    "Initiate and manage payments",
+    "Reconcile cash activity",
+    "Read-only visibility into transactions",
+    "Statements and reports",
+    "Activity logs & access changes"
+  ]
+}

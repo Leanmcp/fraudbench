@@ -1,0 +1,22 @@
+{
+  "id": "doc_business_savings_accounts_automatic_sweep_program_006",
+  "title": "Automatic Sweep: Pausing or Disabling Your Sweep Program",
+  "summary": "Explains how to pause or disable an Automatic Sweep program: pausing stops new sweep transfers (review how $0.00 applies while paused), disabling turns off sweeps and removes active configurations, with $0.00 charges ceasing after cancellation is processed. Also covers reverse sweep behavior\u2014Yes when active, but does not occur while paused or disabled.",
+  "faqs": [
+    "How do I pause my Automatic Sweep program, and what happens to new sweep transfers?",
+    "When my sweep program is paused, how does the $0.00 charge apply?",
+    "What happens if I disable my sweep program (active configurations and sweeps)?",
+    "When do $0.00 charges stop after disabling\u2014immediately or after cancellation processing?",
+    "Does reverse sweeping (Reverse sweeps = Yes) occur while the program is paused or disabled?"
+  ],
+  "keywords": [
+    "Automatic Sweep",
+    "Pause your sweep program",
+    "Pause sweeps / no new sweep transfers",
+    "$0.00 applies during paused state",
+    "Disable your sweep program",
+    "Removes active configurations",
+    "$0.00 charges cease after cancellation is processed",
+    "Reverse sweeps Yes / does not occur while paused or disabled"
+  ]
+}

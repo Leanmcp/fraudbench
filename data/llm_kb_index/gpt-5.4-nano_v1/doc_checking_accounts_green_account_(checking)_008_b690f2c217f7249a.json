@@ -1,0 +1,24 @@
+{
+  "id": "doc_checking_accounts_green_account_(checking)_008",
+  "title": "Why was my Green Account (checking) transaction declined?",
+  "summary": "This document lists common causes of a declined Green Account (checking) transaction: amount exceeded available balance, pending card holds reducing available balance, or the merchant submitting a higher final amount than the estimate. It also explains how to confirm via decline notifications/alerts and how to resolve by adding funds or asking the merchant to confirm the authorization amount.",
+  "faqs": [
+    "What are the common reasons my Green Account (checking) transaction was declined?",
+    "How can I confirm why the decline happened\u2014do I need to look for a specific notification?",
+    "How do pending card holds affect my available balance for a transaction?",
+    "What should I do if the merchant submitted a higher final amount than the original estimate?",
+    "How do I resolve a declined transaction\u2014should I add funds or contact the merchant?",
+    "What should I review in my recent activity to check for prior transactions or pending holds?"
+  ],
+  "keywords": [
+    "Green Account (checking) transaction declined",
+    "available balance exceeded",
+    "pending card holds",
+    "authorization amount",
+    "merchant final amount higher than estimate",
+    "decline notification alerts",
+    "review recent activity",
+    "add funds",
+    "ask the merchant to confirm amount"
+  ]
+}

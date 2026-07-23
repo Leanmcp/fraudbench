@@ -1,0 +1,26 @@
+{
+  "id": "doc_business_savings_accounts_silver_plus_saver_007",
+  "title": "Silver Plus Saver Account: Adding authorized users",
+  "summary": "This document explains how to add authorized users to a Silver Plus Saver Account, including the limit of up to 4 authorized users. It provides step-by-step instructions in Account settings (user management/access control, Add user, enter full name and email, assign role permissions, confirm) and best practices for periodic permission reviews, prompt access changes, and maintaining dual controls by separating approval and initiation permissions.",
+  "faqs": [
+    "What is the maximum number of authorized users I can add to my Silver Plus Saver account?",
+    "Where do I go in the app to add an authorized user?",
+    "What information do I need to enter when adding a user (name and email)?",
+    "How do I choose permissions for an authorized user (e.g., view-only vs transacting)?",
+    "What should I do with authorized users\u2019 access when roles change?",
+    "How can I maintain dual controls when assigning permissions?"
+  ],
+  "keywords": [
+    "Silver Plus Saver Account",
+    "authorized users (up to 4)",
+    "Account settings",
+    "user management",
+    "access control",
+    "Add user",
+    "full name and email address",
+    "permission types (view-only, transacting)",
+    "periodic permission reviews",
+    "remove or downgrade access promptly",
+    "dual controls (separate approval and initiation)"
+  ]
+}

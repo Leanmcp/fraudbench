@@ -1,0 +1,23 @@
+{
+  "id": "doc_checking_accounts_green_fee-free_account_004",
+  "title": "Green Fee-Free Account specifications and requirements",
+  "summary": "This document lists the Green Fee-Free Account core specifications: $22.50 monthly maintenance fee waived with a $150 minimum daily balance, $0.00/month paper statements, 0% APY, $15.00 returned-item fee for unpaid checks, and $12.50 per incoming domestic wire. It also sets a $3,000/day debit card purchase limit.",
+  "faqs": [
+    "What is the Green Fee-Free Account monthly maintenance fee and how can it be waived?",
+    "What minimum daily balance is required to avoid the $22.50 maintenance fee?",
+    "How much do paper statements cost per month?",
+    "Does this account earn any APY on balances?",
+    "What fees apply if a deposited check is returned unpaid?",
+    "What is the incoming domestic wire fee and the debit card daily purchase limit? "
+  ],
+  "keywords": [
+    "Green Fee-Free Account",
+    "$22.50 monthly maintenance fee",
+    "$150 minimum daily balance waiver",
+    "$0.00 paper statement fee",
+    "0% APY",
+    "$15.00 returned deposit fee (per unpaid item)",
+    "$12.50 incoming domestic wire fee",
+    "$3,000 per day debit card purchase limit"
+  ]
+}

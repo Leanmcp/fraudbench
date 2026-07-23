@@ -1,0 +1,28 @@
+{
+  "id": "doc_bank_accounts_bank_accounts_(general)_027",
+  "title": "Internal: Resetting or Changing a Debit Card PIN",
+  "summary": "This document explains how to reset or change a debit card PIN, covering verification requirements, eligible card statuses (ACTIVE only), immediate effectiveness, and what to do for locked cards after 3 incorrect PIN entries. It details PIN rules (exactly 4 digits; not sequential; not all same digit; not birth year/month/day) and the procedures using reset_debit_card_pin_6284 or change_debit_card_pin_6285.",
+  "faqs": [
+    "Can a PIN be changed if the debit card is FROZEN, PENDING, or CLOSED?",
+    "What are the PIN security requirements for a new 4-digit PIN?",
+    "What steps should I follow when a customer forgot their current debit card PIN?",
+    "What steps should I follow when a customer wants to change their PIN but knows the current PIN?",
+    "What happens if the customer enters an incorrect current PIN 3 times?",
+    "Do PIN changes take effect immediately, and can customers change PINs at a Rho-Bank ATM?",
+    "keywords:"
+  ],
+  "keywords": [
+    "reset_debit_card_pin_6284",
+    "change_debit_card_pin_6285",
+    "ACTIVE card status",
+    "FROZEN/PENDING/CLOSED",
+    "last 4 digits confirmation",
+    "4-digit PIN",
+    "no sequential PIN (1234/4321)",
+    "not all same digit (1111)",
+    "not birth year or birth month/day",
+    "PIN changes take effect immediately",
+    "incorrect current PIN 3 times temporary lock",
+    "Rho-Bank ATM"
+  ]
+}

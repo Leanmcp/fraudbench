@@ -1,0 +1,26 @@
+{
+  "id": "doc_buy_now_pay_later_bnpl_silver_005",
+  "title": "BNPL Silver: Soft Credit Checks, Providers, and Inquiry Limits",
+  "summary": "BNPL Silver activation and certain transactions may trigger a soft credit check only when a condition (not specified in the document) is true. Soft inquiries are performed through an unspecified provider, with a monthly cap of [value not available] checks; once reached, additional attempts are blocked until the next calendar month.",
+  "faqs": [
+    "When do BNPL Silver soft credit checks occur?",
+    "Which provider processes BNPL Silver soft credit inquiries?",
+    "How many BNPL Silver soft credit checks can I complete per calendar month?",
+    "What happens if I hit the BNPL Silver monthly inquiry limit?",
+    "If a BNPL Silver soft check fails, when can I try again?",
+    "How can I avoid repeated BNPL Silver soft credit inquiries?"
+  ],
+  "keywords": [
+    "BNPL Silver",
+    "soft credit check",
+    "activation",
+    "certain transactions",
+    "soft inquiries",
+    "provider (unspecified)",
+    "per calendar month limit ([value not available])",
+    "monthly cap reached",
+    "blocked until next month",
+    "wait until next calendar month",
+    "match information to account profile"
+  ]
+}

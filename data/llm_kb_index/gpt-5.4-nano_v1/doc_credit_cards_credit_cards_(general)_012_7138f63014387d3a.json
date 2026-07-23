@@ -1,0 +1,26 @@
+{
+  "id": "doc_credit_cards_credit_cards_(general)_012",
+  "title": "Internal: Backend Incident 11/14 - Erroneous Credit Bureau Reporting",
+  "summary": "Protocol for Backend Incident 11/14/2025\u201311/18/2025 (active through 11:59 PM EST) covers erroneous delinquency reports sent to credit bureaus for certain credit card accounts in good standing. Reports can include sudden alerts/notifications and credit score drops of often 80\u2013150 points; identity verification is NOT required and requires immediate escalation using emergency_credit_bureau_incident_transfer_1114() then transfer_to_human_agents.",
+  "faqs": [
+    "Which customers are affected by the 11/14/2025 backend batch error and what erroneous reporting occurred?",
+    "What symptoms should customers report (e.g., score drop range, credit monitoring alerts, delinquency notices)?",
+    "What are the exact incident protocol active dates/times (including the end time and timezone)?",
+    "Is identity verification required before escalating under this protocol?",
+    "What are the required immediate steps to handle this incident (which function to run and when to transfer)?",
+    "How should we communicate urgency/acknowledgement that the incident is Rho-Bank\u2019s fault?"
+  ],
+  "keywords": [
+    "Backend Incident 11/14",
+    "Erroneous credit bureau delinquency reports",
+    "Active 11/14/2025\u201311/18/2025",
+    "11:59 PM EST",
+    "Credit card accounts in good standing",
+    "Credit score drop often 80\u2013150 points",
+    "Credit monitoring alerts",
+    "delinquency notification not incurred",
+    "identity verification NOT required",
+    "emergency_credit_bureau_incident_transfer_1114()",
+    "transfer_to_human_agents"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "doc_bank_accounts_bank_accounts_(general)_047",
+  "title": "Internal: Checking Account Referral Program Terms and Restrictions",
+  "summary": "This document sets general terms for all Rho-Bank checking account referral programs: a rolling cap of 2 referral bonuses in any rolling 9-day window (third+ auto-denied), eligibility rules for new customers, address/age/tenure restrictions, and bonus conditions (new money, 30-day retention, possible 90-day clawback on closure).",
+  "faqs": [
+    "What is the rolling limit for receiving checking account referral bonuses (and what happens if I exceed it)?",
+    "Who is eligible to be referred (new customer rules, 12-month account lookback, address restriction, and age/minor exception)?",
+    "How is referrer tenure calculated and does the current checking account type matter?",
+    "What deposit requirements must the referred person meet for the referral bonus (new money, 30-day hold, and closure clawback timing)?",
+    "Can I stack referral bonuses with other promotions or use more than one referral code on a new account?",
+    "What referral statuses mean (COMPLETE, IN_PROGRESS, NO_PROGRESS, APPLIED, REJECTED, ERROR)?"
+  ],
+  "keywords": [
+    "Rho-Bank checking account referral programs",
+    "Rolling 9-day window",
+    "Max 2 referral bonuses",
+    "Auto-denied third referral",
+    "New Rho-Bank customer (no checking/savings/closed accounts in past 12 months)",
+    "Referrer and referred cannot share an address",
+    "18+ (Light Green Account allows minors with guardian)",
+    "Referrer tenure threshold (earliest checking account open date)",
+    "Qualifying deposit must be new money",
+    "30 days after qualifying period ends",
+    "Clawback if account closed within 90 days",
+    "Stacking restrictions / only one referral code"
+  ]
+}

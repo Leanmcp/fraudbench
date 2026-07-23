@@ -1,0 +1,25 @@
+{
+  "id": "doc_everyone_pay_split-the-bill_008",
+  "title": "How do I remove someone from a split payment?",
+  "summary": "Explains the procedure to remove a participant from a split payment: confirm whether they already paid, check how removal affects your participant count (30 cap), remove them from split details, confirm and review allocations, cancel any outstanding request, and reallocate their share among remaining members. Includes guidance on inviting a replacement and documenting the change with a note.",
+  "faqs": [
+    "What should I check before removing someone from a split payment?",
+    "How do I remove a participant from the split details, and what confirmations are required?",
+    "After I remove a participant, what should I do with their allocation/remaining totals?",
+    "If the removed participant had an outstanding request, how do I handle it?",
+    "Can I invite a replacement after removal, and what limit applies to total participants?",
+    "What communication and documentation tips are recommended after changing the split?"
+  ],
+  "keywords": [
+    "split details",
+    "remove participant",
+    "confirm your choice",
+    "review remaining allocations",
+    "outstanding request (cancel)",
+    "reallocate removed share",
+    "30 participant cap",
+    "invite another participant",
+    "split description note",
+    "communicate the change"
+  ]
+}

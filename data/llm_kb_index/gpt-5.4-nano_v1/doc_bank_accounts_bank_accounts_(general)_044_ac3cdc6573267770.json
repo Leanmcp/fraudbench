@@ -1,0 +1,28 @@
+{
+  "id": "doc_bank_accounts_bank_accounts_(general)_044",
+  "title": "Internal: Submitting Interest Discrepancy Reports",
+  "summary": "This document instructs agents to submit interest discrepancy reports for savings accounts when credited interest is wrong. It covers four trigger cases (missing APY boost, incorrect tier rate, missing relationship bonus, system calculation error), the submit_interest_discrepancy_report_7294 tool parameters (account_id, user_id, expected_apy, actual_apy, amount_difference), and the required workflow (verify identity, fetch accounts, check transactions, compute expected APY from base/tier/linked checking/bonuses, apply_savings_account_credit_6831 first, then submit).",
+  "faqs": [
+    "When should I submit an interest discrepancy report for a savings account?",
+    "Which discrepancy types are covered (missing APY boost, incorrect tier rate, missing relationship bonus, other system errors)?",
+    "What tool and parameters do I use to submit the report?",
+    "How do I calculate expected APY and compare it to the actual applied APY?",
+    "What steps must I do before and after submitting the report (including verifying identity and applying a credit first)?",
+    "Do I need to apply apply_savings_account_credit_6831 before calling submit_interest_discrepancy_report_7294?"
+  ],
+  "keywords": [
+    "submit_interest_discrepancy_report_7294",
+    "account_id",
+    "user_id",
+    "expected_apy",
+    "actual_apy",
+    "amount_difference",
+    "Missing APY Boost",
+    "Incorrect Tier Rate",
+    "Missing Relationship Bonus",
+    "System Calculation Error",
+    "apply_savings_account_credit_6831",
+    "get_all_user_accounts_by_user_id_3847",
+    "get_bank_account_transactions_9173"
+  ]
+}

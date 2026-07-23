@@ -1,0 +1,25 @@
+{
+  "id": "doc_bank_accounts_bank_accounts_(general)_034",
+  "title": "Internal: Recurring Payment Disputes vs. Stop Future Payments",
+  "summary": "This document explains how to handle recurring debit card payment issues via two processes: debit disputes for past recurring charges (set dispute_category to 'recurring_charge_after_cancellation') and the recurring block feature to stop future recurring/subscription charges on the card (set_debit_card_recurring_block_7382). It also states the block takes effect within 24 hours, one-time purchases are unaffected, and subscriptions are not cancelled\u2014customers must contact merchants separately.",
+  "faqs": [
+    "Should I file a dispute for a recurring debit charge that already posted (past charges)?",
+    "What dispute_category should be used for recurring charges after cancellation?",
+    "How do I stop future recurring/subscription charges on the customer\u2019s debit card?",
+    "Does the recurring block stop only one merchant\u2019s recurring payments or all merchants?",
+    "When is the recurring block effective, and are one-time purchases affected?",
+    "If the customer needs both\u2014dispute past charges and prevent future ones\u2014what order should I follow?"
+  ],
+  "keywords": [
+    "recurring debit card charges",
+    "dispute (past charges)",
+    "dispute_category: 'recurring_charge_after_cancellation'",
+    "recurring block (future charges)",
+    "set_debit_card_recurring_block_7382",
+    "card_id",
+    "block_recurring: true/false",
+    "block takes effect within 24 hours",
+    "one-time purchases not affected",
+    "does NOT cancel subscriptions (must contact merchants)"
+  ]
+}

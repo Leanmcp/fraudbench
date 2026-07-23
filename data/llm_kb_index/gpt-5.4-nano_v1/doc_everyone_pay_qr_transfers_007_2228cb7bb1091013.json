@@ -1,0 +1,27 @@
+{
+  "id": "doc_everyone_pay_qr_transfers_007",
+  "title": "Security tips for QR transfers",
+  "summary": "This document provides security tips for QR transfers: use the confirmation screen to verify recipient and amount, share QR codes only with the intended payer, hide/close the QR after completion, and avoid risky screenshots. It also advises safe scanning (trusted sources, check for tampering stickers, use the in-app scanner, keep the app updated) and what to do if something looks off (cancel, verify details with the other party, regenerate a new QR and compare).",
+  "faqs": [
+    "How can I verify the recipient and amount before approving a QR transfer?",
+    "What should I do to protect my QR code from being reused or shared improperly?",
+    "Where should I scan QR codes from, and what scanning habits should I follow?",
+    "How do I check whether a printed QR code may have been tampered with?",
+    "If a QR transfer looks suspicious, what steps should I take before proceeding?",
+    "Should I use the in-app QR scanner or third-party scanner apps?"
+  ],
+  "keywords": [
+    "confirmation screen",
+    "regenerate a new QR",
+    "cancel the payment",
+    "hide or close the QR after completion",
+    "avoid posting QR publicly",
+    "trusted sources for scanning",
+    "check for tampering stickers",
+    "use the in-app scanner",
+    "avoid third-party scanner apps",
+    "keep your app updated",
+    "screenshots of QR codes",
+    "compare details before proceeding"
+  ]
+}

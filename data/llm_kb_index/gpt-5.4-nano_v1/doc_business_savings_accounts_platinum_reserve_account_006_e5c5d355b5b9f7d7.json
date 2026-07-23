@@ -1,0 +1,27 @@
+{
+  "id": "doc_business_savings_accounts_platinum_reserve_account_006",
+  "title": "Platinum Reserve Account: Integration with Enterprise Treasury Tools",
+  "summary": "This document describes Platinum Reserve Account integration options\u2014direct file exchange with structured layouts, API-based near-real-time synchronization, and secure upload workflows for manual updates. It covers implementation support (2 dedicated relationship managers; guided mapping to chart of accounts/liquidity taxonomy), testing/validation steps, and ongoing change management via a runbook and periodic reviews.",
+  "faqs": [
+    "What integration patterns are supported for the Platinum Reserve Account (file exchange, API, or manual upload)?",
+    "How do the assigned 2 relationship managers support technical scoping, timelines, and stakeholder alignment?",
+    "How should we map incoming data fields to our internal chart of accounts and liquidity taxonomy?",
+    "What testing and validation steps are required before promoting integration changes?",
+    "What documentation and cadence are recommended for ongoing change management and escalation paths?",
+    "How do we handle updates when automation isn\u2019t yet in place?"
+  ],
+  "keywords": [
+    "Platinum Reserve Account",
+    "Direct file exchange",
+    "Structured layouts (balances and transactions)",
+    "API-based connections",
+    "Near-real-time synchronization",
+    "Secure upload workflows",
+    "2 dedicated relationship managers",
+    "Data field mapping",
+    "Chart of accounts",
+    "Liquidity taxonomy",
+    "Controlled test cycle",
+    "Documented runbook"
+  ]
+}

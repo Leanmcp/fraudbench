@@ -1,0 +1,25 @@
+{
+  "id": "doc_credit_cards_credit_card_account_logistics_003",
+  "title": "Internal: Credit Card Retention Protocol",
+  "summary": "Internal: Credit Card Retention Protocol describes a 7-step closure workflow: verify no pending disputes (get_user_dispute_history_7291) and no pending replacement cards (get_pending_replacement_orders_5765), confirm account age \u226560 days and outstanding balance $0.00, then check closure-reason history within past year (get_closure_reason_history_8293) to decide whether to skip retention offers. It requires asking/logging a closure reason via log_credit_card_closure_reason_4521 (annual_fee, not_using_card, found_better_card, unhappy_with_rewards, simplifying_finances, negative_experience, other), offering tailored solutions (including annual-fee waiver via apply_credit_card_account_flag_6147 with expiration = one year from today in MM/DD/YYYY) and then making exactly one retention offer by tier (Entry: 500 points or $5 credit; Mid: 2,000 points or $20 credit; Premium+: 5,000 points or $50 credit). If closure proceeds, inform customer they have 45 days to redeem unredeemed rewards and may receive a full refund if the annual fee was charged within 37 days.",
+  "faqs": [
+    "What checks must be completed before I can submit a credit card closure request?",
+    "Why might my closure be blocked due to pending disputes, pending replacement cards, minimum age, or a non-$0.00 balance?",
+    "How does the protocol prevent repeat retention attempts, and what happens if there\u2019s a closure-reason record within the past year?",
+    "What closure reasons does the system log, and what do I have to provide to record my reason?",
+    "If I\u2019m closing due to an annual fee, do I qualify for an annual-fee waiver or a permanent downgrade to a no-annual-fee card?",
+    "What retention offer amount do I get based on my card tier, and what are the 45-day rewards redemption and 37-day annual-fee refund timing rules?"
+  ],
+  "keywords": [
+    "get_user_dispute_history_7291",
+    "get_pending_replacement_orders_5765",
+    "Minimum account age: 60 days",
+    "Outstanding balance must be $0.00",
+    "get_closure_reason_history_8293 (past year)",
+    "log_credit_card_closure_reason_4521",
+    "annual_fee_waived via apply_credit_card_account_flag_6147 (expiration: one year from today, MM/DD/YYYY)",
+    "Retention offers: 500 points/$5 (entry), 2,000 points/$20 (mid), 5,000 points/$50 (premium+)",
+    "45 days to redeem unredeemed rewards",
+    "37 days annual-fee refund if fee charged recently"
+  ]
+}

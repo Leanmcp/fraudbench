@@ -1,0 +1,24 @@
+{
+  "id": "doc_savings_accounts_silver_plus_account_007",
+  "title": "Silver Plus Account: Mobile banking and deposit limits",
+  "summary": "This document covers the Silver Plus Account\u2019s mobile check deposit limit ($5,000 daily total) and rules for outbound transfers via mobile/online banking (maximum $10,000 per day; scheduled transfers combined can\u2019t exceed $10,000). It also notes the app feature \u201cautomatic round-up savings\u201d (available: Yes) for a linked debit card.",
+  "faqs": [
+    "What is the daily limit for mobile check deposits on my Silver Plus Account?",
+    "If I reach the $5,000 mobile deposit limit, can I deposit more checks the same day?",
+    "What is the maximum amount of outbound transfers per day via mobile/online banking?",
+    "If I schedule multiple transfers in one day, what total limit applies?",
+    "Does the Silver Plus app support automatic round-up savings on my linked debit card?"
+  ],
+  "keywords": [
+    "Silver Plus Account",
+    "mobile check deposits",
+    "$5,000 daily total limit",
+    "outbound transfers",
+    "$10,000 per day limit",
+    "scheduled transfers combined total",
+    "mobile app",
+    "online banking",
+    "automatic round-up savings",
+    "linked debit card"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "doc_everyone_pay_user_blocking_004",
+  "title": "Why can't I block this user?",
+  "summary": "Explains why blocking a user may fail: maximum block list limit of $275, duplicate/similar name already on the block list, ineligible profile due to account status/compliance restrictions, username/profile mismatch, or a temporary service issue. Suggests removing entries, verifying the profile, and contacting support with an error screenshot.",
+  "faqs": [
+    "Why does it say I can\u2019t block this user\u2014did I hit a limit?",
+    "Can I block someone if their name is similar or already on my block list?",
+    "What if the profile I\u2019m trying to block isn\u2019t eligible due to account status or compliance restrictions?",
+    "What should I do if the username/profile doesn\u2019t match who I intended to block?",
+    "Why might blocking be temporarily unavailable, and what should I try?",
+    "What information should I provide to support if I still can\u2019t block the user?"
+  ],
+  "keywords": [
+    "maximum number of users you can block ($275)",
+    "block list space",
+    "similar or duplicate name",
+    "account status",
+    "compliance restrictions",
+    "verify the exact profile/username",
+    "temporary service issue",
+    "screenshot of error message",
+    "contact support"
+  ]
+}

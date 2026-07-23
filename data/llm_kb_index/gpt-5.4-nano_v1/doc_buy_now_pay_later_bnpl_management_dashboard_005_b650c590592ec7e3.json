@@ -1,0 +1,24 @@
+{
+  "id": "doc_buy_now_pay_later_bnpl_management_dashboard_005",
+  "title": "BNPL Management Dashboard: How Early-Payment Rewards Work and When They Apply",
+  "summary": "This document explains how the BNPL Management Dashboard determines eligibility for early-payment rewards: early-payment rewards must be enabled, and payments must post at least the stated minimum-day threshold before each installment\u2019s scheduled due date. It also covers how rule timing is applied and gives tips about meeting the posting cutoff and processing time.",
+  "faqs": [
+    "How do I check whether early-payment rewards are enabled in the BNPL Management Dashboard?",
+    "What is the minimum number of days early required for an installment payment to qualify?",
+    "When does a payment qualify for early-payment rewards (which conditions must both be true)?",
+    "What happens if my payment posts fewer than the required days before the due date?",
+    "How do I schedule payments to ensure they post by the cutoff and qualify for rewards?",
+    "If eligibility changes, do I need to re-check anything before the payment posts?"
+  ],
+  "keywords": [
+    "BNPL Management Dashboard",
+    "early-payment rewards enabled",
+    "minimum days early required",
+    "scheduled due date",
+    "payment posts at least N days prior",
+    "posting cutoff",
+    "processing time",
+    "early-but-non-qualifying payment",
+    "eligibility remains true through posting"
+  ]
+}

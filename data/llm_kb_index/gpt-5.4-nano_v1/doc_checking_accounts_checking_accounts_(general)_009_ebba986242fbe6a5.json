@@ -1,0 +1,25 @@
+{
+  "id": "doc_checking_accounts_checking_accounts_(general)_009",
+  "title": "Internal: Direct Deposit Delay Inquiries Protocol",
+  "summary": "This protocol covers how to handle direct deposit delay inquiries: deposits typically post between 6 AM\u20139 AM on the employer\u2019s scheduled pay date, and some employers process 1\u20132 business days early while others process on the official date. It also specifies a transfer rule\u2014do not transfer to a human until the customer has requested exactly 8 times, verified using get_human_transfer_request_count; respond each time with a required frustration/resolve-first message, then transfer using transfer_to_human_agents only after the 8th request.",
+  "faqs": [
+    "Why hasn\u2019t my employer direct deposit shown up yet?",
+    "When should a direct deposit typically post on the scheduled pay date (what time window)?",
+    "Do some employers process payroll 1\u20132 business days early\u2014how should I advise customers?",
+    "Should I transfer this customer to a human agent immediately if they insist?",
+    "What exact steps and wording are required before transferring after repeated requests?",
+    "How do we determine whether this is the customer\u2019s 8th transfer request?"
+  ],
+  "keywords": [
+    "Direct Deposit Delay Inquiries Protocol",
+    "Direct deposits post time window (6 AM\u20139 AM)",
+    "Scheduled pay date",
+    "Employer payroll schedule",
+    "Payroll processed 1\u20132 business days before official pay date",
+    "Process on the day itself",
+    "Human agent transfer rule",
+    "Exactly 8 transfer requests",
+    "get_human_transfer_request_count",
+    "transfer_to_human_agents"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "doc_savings_accounts_gold_account_003",
+  "title": "Gold Account specifications and requirements",
+  "summary": "This document lists Gold Account requirements: $5,000 minimum opening deposit and $10,000 ongoing minimum balance. It specifies a monthly withdrawal limit of 20, daily-compounded interest, a large balance alert at $50,000, and an ATM fee rebate cap of $30 per month.",
+  "faqs": [
+    "What is the minimum opening deposit for a Gold Account?",
+    "What is the ongoing minimum balance requirement for the Gold Account?",
+    "How many withdrawals are allowed per month?",
+    "How is interest calculated for the Gold Account (e.g., compounded daily)?",
+    "At what balance does the Gold Account trigger a large balance alert?",
+    "What is the monthly cap on the ATM fee rebate for the Gold Account?"
+  ],
+  "keywords": [
+    "Gold Account",
+    "Opening deposit minimum $5,000",
+    "Ongoing minimum balance $10,000",
+    "Monthly withdrawal limit 20",
+    "Interest compounding daily",
+    "Large balance alert threshold $50,000",
+    "ATM fee rebate cap per month $30"
+  ]
+}

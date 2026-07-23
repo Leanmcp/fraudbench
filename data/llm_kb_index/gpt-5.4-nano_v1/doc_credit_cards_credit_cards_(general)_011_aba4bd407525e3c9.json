@@ -1,0 +1,26 @@
+{
+  "id": "doc_credit_cards_credit_cards_(general)_011",
+  "title": "Internal: Backend Incident 11/13",
+  "summary": "This document defines an incident-specific transfer protocol for backend reports until 11/15/2025 at 11:59 PM EST when a customer says they paid their credit card statement, the amount was deducted from checking, and the payment is not reflected in the credit card statement balance. Identity verification is not required; agents must follow a three-step transfer tool order (initial_transfer_to_human_agent_1822, then initial_transfer_to_human_agent_0218, then transfer_to_human_agents on the third request) without collecting extra details during the incident window.",
+  "faqs": [
+    "When should I use the 11/13 backend incident transfer protocol (what symptoms must be true)?",
+    "What is the incident window cutoff time for this protocol (including timezone)?",
+    "Is identity verification required for this incident protocol?",
+    "What internal transfer tools must I unlock and call, and in what exact order?",
+    "What should I say to the customer during the first, second, and third transfer requests?",
+    "After the third transfer request, when do I use the regular transfer_to_human_agents tool? "
+  ],
+  "keywords": [
+    "Backend Incident 11/13",
+    "transfer protocol until 11/15/2025 11:59 PM EST",
+    "Paid credit card statement",
+    "Deducted from checking account",
+    "Not reflected in credit card statement balance",
+    "Identity verification NOT required",
+    "initial_transfer_to_human_agent_1822",
+    "initial_transfer_to_human_agent_0218",
+    "regular transfer_to_human_agents (3rd request)",
+    "Do not troubleshoot beyond confirming symptoms",
+    "Do not collect additional details during incident window"
+  ]
+}

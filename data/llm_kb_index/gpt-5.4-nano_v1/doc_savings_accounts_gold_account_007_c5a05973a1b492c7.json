@@ -1,0 +1,27 @@
+{
+  "id": "doc_savings_accounts_gold_account_007",
+  "title": "Troubleshooting: transfer delays",
+  "summary": "This troubleshooting guide explains why an instant transfer may be delayed from posting. It covers common causes (temporary maintenance, security review, connectivity interruption, incorrect destination details) and steps to refresh the activity feed, verify account details, wait and retry, and contact support with the date, amount, and reference ID if pending.",
+  "faqs": [
+    "How do I check the status of an instant transfer that isn\u2019t posting?",
+    "What are the most common reasons an instant transfer is delayed or pending?",
+    "What should I do if the transfer confirmation didn\u2019t complete due to connectivity issues?",
+    "What if the transfer details are wrong\u2014will it trigger a manual review?",
+    "What information should I provide to support if the transfer stays pending (date, amount, reference ID)?",
+    "How can I prevent future instant transfer delays (trusted recipients, regular processing hours)?"
+  ],
+  "keywords": [
+    "instant transfers",
+    "activity feed",
+    "transaction status",
+    "temporary maintenance windows",
+    "security reviews",
+    "connectivity issues",
+    "destination details/manual review",
+    "re-submit the transfer",
+    "maintenance banner",
+    "trusted recipients",
+    "regular processing hours",
+    "reference ID"
+  ]
+}

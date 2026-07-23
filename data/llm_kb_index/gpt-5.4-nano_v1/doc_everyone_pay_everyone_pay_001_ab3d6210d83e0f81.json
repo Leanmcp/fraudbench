@@ -1,0 +1,25 @@
+{
+  "id": "doc_everyone_pay_everyone_pay_001",
+  "title": "Everyone Pay: Getting Started Guide",
+  "summary": "Everyone Pay: Getting Started Guide explains how to access Everyone Pay in the app/web dashboard (Payments), add first contacts (Add Contact; save up to $550), verify contacts before the first transaction (follow prompts; verified indicator), and configure notifications and default funding account in Settings, plus safety tips to confirm recipient details each time.",
+  "faqs": [
+    "How do I open Everyone Pay and view my contacts and recent activity?",
+    "What information can I use to add my first Everyone Pay contacts?",
+    "Is contact verification required before my first transaction, and how do I do it?",
+    "What is the maximum number/amount of contacts I can save ($550)?",
+    "Where do I enable notifications and review my default funding account/payment preferences?",
+    "What safety steps should I follow before sending a payment to a contact?"
+  ],
+  "keywords": [
+    "Everyone Pay",
+    "Payments menu",
+    "Add Contact action",
+    "Save up to $550 contacts",
+    "Contact verification before first transaction (Yes)",
+    "Verified indicator on contact card",
+    "Open contact card and follow prompts",
+    "Notifications",
+    "Settings (default funding account)",
+    "Safety: verify details on confirmation screen"
+  ]
+}

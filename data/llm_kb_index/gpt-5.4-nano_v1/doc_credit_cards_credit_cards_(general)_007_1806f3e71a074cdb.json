@@ -1,0 +1,25 @@
+{
+  "id": "doc_credit_cards_credit_cards_(general)_007",
+  "title": "Credit Card Rewards Points Rounding Policy",
+  "summary": "This document states that all credit card rewards points are rounded down (truncated/floored) to the nearest whole number when calculating points earned. Fractional points are never rounded up; e.g., $126.77 at 1% earns 126 points and $99.99 at 2.5% earns 249 points, across all card types and reward categories.",
+  "faqs": [
+    "How are fractional rewards points handled when calculating points earned on a purchase?",
+    "Does the system round rewards points to the nearest whole number or always round down?",
+    "What happens for a $126.77 purchase on a 1% cash back card\u2014how many points are awarded?",
+    "What happens for a $99.99 purchase on a 2.5% cash back card\u2014how many points are awarded?",
+    "Does this rounding policy apply to all credit card types and all reward categories?",
+    "Are points calculated by truncating fractional points rather than rounding to the nearest integer?"
+  ],
+  "keywords": [
+    "rewards points rounding policy",
+    "rounded down",
+    "truncates (floors) fractional points",
+    "never rounds to nearest integer",
+    "$126.77 at 1% earns 126 points",
+    "$99.99 at 2.5% earns 249 points",
+    "1% cash back example",
+    "2.5% cash back example",
+    "applies across all credit card types",
+    "all reward categories"
+  ]
+}

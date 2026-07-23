@@ -1,0 +1,26 @@
+{
+  "id": "doc_credit_cards_credit_cards_(general)_023",
+  "title": "Having Trouble Making Purchases with Your Card?",
+  "summary": "This document explains why a Rho-Bank credit card purchase may be declined despite available credit and lists common causes: fraud protection flags, merchant entry/terminal issues, card not activated, expired card, international transaction restrictions, and temporary technical issues. It also provides first steps to retry, verify card details/CVV and expiration, confirm activation, and try a different terminal/merchant; then directs customers to contact support at 1-800-RHO-BANK, via the Rho-Bank mobile app chat, or rhobank.com/help.",
+  "faqs": [
+    "Why is my Rho-Bank credit card being declined if I have available credit?",
+    "What are the common reasons a card transaction gets blocked (fraud protection, merchant issues, activation, expiration, international, technical problems)?",
+    "What should I check before contacting customer service (card info, expiration date, CVV, activation, retry, terminal/merchant)?",
+    "How can customer service help if I\u2019ve already tried the basic steps (holds/restrictions, fraud alerts, account review)?",
+    "How do I contact Rho-Bank support about a declined purchase?",
+    "Can international purchases be restricted until I lift the restriction before traveling?"
+  ],
+  "keywords": [
+    "Rho-Bank credit card",
+    "transaction declined",
+    "fraud protection",
+    "merchant issues/payment terminal",
+    "card not activated",
+    "expired card",
+    "international transaction restrictions",
+    "CVV and expiration date",
+    "1-800-RHO-BANK",
+    "Rho-Bank mobile app chat",
+    "rhobank.com/help"
+  ]
+}

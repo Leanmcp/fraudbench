@@ -1,0 +1,20 @@
+{
+  "id": "doc_everyone_pay_user_blocking_006",
+  "title": "Can blocked users still send me payment requests?",
+  "summary": "This document states that when a user is blocked, that blocked user cannot send you payment requests. It also instructs to verify the user is on your block list with the block active; if requests appear from another profile, block it and report suspicious activity.",
+  "faqs": [
+    "If I block someone, can they still send me payment requests?",
+    "How do I confirm the block is active if I still receive payment requests?",
+    "What should I do if the requests seem to come from a different profile?",
+    "Should I block any additional profiles linked to the same person?",
+    "Do I need to report suspicious activity related to payment requests?"
+  ],
+  "keywords": [
+    "blocked users",
+    "payment requests",
+    "block list",
+    "block active",
+    "different profile",
+    "report suspicious activity"
+  ]
+}

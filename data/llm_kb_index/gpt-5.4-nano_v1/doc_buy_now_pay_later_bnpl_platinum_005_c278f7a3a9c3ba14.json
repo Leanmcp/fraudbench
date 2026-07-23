@@ -1,0 +1,26 @@
+{
+  "id": "doc_buy_now_pay_later_bnpl_platinum_005",
+  "title": "BNPL Platinum: Purchase Protection Coverage, Limits, and Eligibility Window",
+  "summary": "BNPL Platinum purchase protection coverage explains how reimbursements are calculated for covered losses, including the reimbursement-rate formula and caps. It also lists the per-item maximum, annual (per account, per calendar year) maximum, the claim eligibility window after purchase, and the need to submit documentation before approaching the annual cap.",
+  "faqs": [
+    "What is the reimbursement rate for BNPL Platinum purchase protection, and how is my payout calculated?",
+    "What are the per-item and annual maximum limits for BNPL Platinum purchase protection claims?",
+    "How many days after my purchase do I have to submit a BNPL Platinum purchase protection claim?",
+    "How does the document handle the annual cap when multiple items are approved in the same calendar year?",
+    "What timing rules apply to which purchases are eligible (purchased within how many days)?",
+    "Do I need to submit documentation promptly to ensure my claim is reviewed before the annual limit is reached?"
+  ],
+  "keywords": [
+    "BNPL Platinum",
+    "purchase protection coverage",
+    "reimbursement rate (value not available)",
+    "covered loss amount",
+    "per-item maximum (value not available)",
+    "annual maximum per account per calendar year (value not available)",
+    "claim submission within [value not available] days",
+    "purchase date eligibility window (purchased within past [value not available] days)",
+    "reimbursed amount = covered loss \u00d7 [value not available]",
+    "capped at lesser of per-item cap and remaining annual limit (value not available)",
+    "annual cap across all approved claims in a calendar year (value not available)"
+  ]
+}

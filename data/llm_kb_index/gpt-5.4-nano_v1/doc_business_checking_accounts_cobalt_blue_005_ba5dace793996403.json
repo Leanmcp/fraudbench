@@ -1,0 +1,26 @@
+{
+  "id": "doc_business_checking_accounts_cobalt_blue_005",
+  "title": "Cobalt Blue: Payments and Transfers Explained",
+  "summary": "Explains Cobalt Blue payment/transfer options: standard ACH (no fee), same-day ACH (fee $0.00, subject to submission/approval cutoffs), outgoing domestic wires ($20.00), and incoming domestic wires (5/month free, additional may be fee). Also covers tracking via activity feed and referral bonus requirements ($7,500 qualifying deposit within 90 days; eligibility when earliest-opened Rho-Bank checking reaches 60 days).",
+  "faqs": [
+    "What fees apply to standard ACH vs same-day ACH transfers?",
+    "Are same-day ACH transfers really charged $0.00, and what cutoffs affect same-day processing?",
+    "What is the fee for outgoing domestic wire transfers, and when should I use wires vs ACH?",
+    "How many incoming domestic wire transfers per month are free, and could additional incoming wires cost fees?",
+    "Where can I check a transfer\u2019s status or confirmations?",
+    "What are the requirements to earn a referral bonus (deposit amount, time window, and account-age eligibility)?"
+  ],
+  "keywords": [
+    "Standard ACH transfers (no fee)",
+    "Same-day ACH transfers ($0.00 fee)",
+    "Submission and approval cutoffs (same-day processing)",
+    "Outgoing domestic wire transfer fee ($20.00)",
+    "Incoming domestic wires (5/month free)",
+    "Domestic wires for confirmed, rapid U.S. delivery",
+    "Activity feed transfer status",
+    "Save beneficiary details (reduce entry errors)",
+    "Referral bonus: $7,500 qualifying deposit",
+    "Referral bonus time window (90 days of account opening)",
+    "Referral bonus eligibility (Rho-Bank checking 60 days old)"
+  ]
+}

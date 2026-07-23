@@ -1,0 +1,25 @@
+{
+  "id": "doc_bank_accounts_bank_accounts_(general)_002",
+  "title": "Internal: Opening Personal Savings Accounts",
+  "summary": "This document provides the step-by-step procedure to open a personal savings account at Rho-Bank, including eligibility checks (identity verified, at least one active checking account, fewer than 5 savings accounts, no collections/negative balances, checking tenure \u226514 days) and required agent tool actions open_bank_account_4821 and transfer_funds_between_bank_accounts_7291. If the customer declines funding now, they have 30 days to fund the account or it will be closed.",
+  "faqs": [
+    "What are the eligibility requirements to open a personal savings account?",
+    "Can I open a new personal savings account if I already have 5 savings accounts?",
+    "How long must my Rho-Bank checking account be open before I\u2019m eligible?",
+    "What happens if my accounts have collections activity or negative balances?",
+    "How do you open the savings account and what does account_class need to look like?",
+    "Do I have to fund the opening deposit immediately, and what\u2019s the 30-day deadline if not?"
+  ],
+  "keywords": [
+    "open_bank_account_4821",
+    "transfer_funds_between_bank_accounts_7291",
+    "account_type: 'savings'",
+    "account_class ends with 'Account' (e.g., 'Silver Plus Account', 'Gold Account')",
+    "Max: 5 personal savings accounts",
+    "Checking tenure requirement: 14 days",
+    "No collections / no negative balances",
+    "30 days to fund or account will be closed",
+    "transfer opening deposit from checking now vs later",
+    "Rho-Bank checking account (active)"
+  ]
+}

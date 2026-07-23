@@ -1,0 +1,27 @@
+{
+  "id": "doc_credit_cards_credit_card_replacements_001",
+  "title": "How to Order a Replacement Credit Card (Internal)",
+  "summary": "Internal procedure for ordering a replacement credit card: verify identity, look up the account, confirm primary/alternate shipping address with unit/suite, collect a single replacement reason (fraud_suspected, lost, stolen, damaged, expired, other), check eligibility, and select standard (7\u201310 business days, $0) or expedited (2\u20133 business days; tier fees: $15 entry, $10 mid, $0 Gold/Platinum/Diamond Elite). It then unlocks and calls tool order_replacement_credit_card_7291 with required fields, cancels the old card automatically, and communicates email notifications and delivery windows.",
+  "faqs": [
+    "What identity verification and account/address checks are required before ordering a replacement credit card?",
+    "What replacement reasons are allowed, and how should the reason be recorded?",
+    "How do standard vs expedited shipping work, including the 7\u201310 vs 2\u20133 business day timelines and expedited fees by tier?",
+    "If the reason is fraud_suspected or stolen, should expedited shipping be recommended and what reminders should be given?",
+    "What tool workflow and inputs are required to place the replacement order (account id, reason, confirmed address, shipping speed, fee acknowledgement, notes)?",
+    "After submitting the order, what happens to the old card and what delivery/notification guidance should be communicated?"
+  ],
+  "keywords": [
+    "order_replacement_credit_card_7291",
+    "replacement reasons: fraud_suspected",
+    "replacement reasons: lost",
+    "replacement reasons: stolen",
+    "replacement reasons: damaged",
+    "replacement reasons: expired",
+    "Standard delivery (7\u201310 business days)",
+    "Expedited shipping (2\u20133 business days)",
+    "Expedited fee tiers: $15 entry-tier",
+    "Expedited fee tiers: $10 mid-tier",
+    "Complimentary expedited (Gold/Platinum/Diamond Elite)",
+    "Expedited_fee_acknowledgement consent captured"
+  ]
+}

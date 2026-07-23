@@ -1,0 +1,26 @@
+{
+  "id": "doc_checking_accounts_dark_green_account_002",
+  "title": "Dark Green Account specifications and requirements",
+  "summary": "This document specifies eligibility and usage requirements for the Dark Green account: primary holder must be at least 17 and you can maintain the account through age 26. It lists fees ($10 monthly maintenance, foreign ATM 2.5% capped at $6, returned deposit $10, incoming domestic wire $7.50) plus debit card/ATM limits ($1,500 daily purchases, $300 daily ATM withdrawals).",
+  "faqs": [
+    "What are the eligibility requirements for the Dark Green account (age limits)?",
+    "What fees apply to the Dark Green account, including monthly maintenance, returned deposits, and domestic wire fees?",
+    "How much do foreign ATM withdrawals cost, and what is the $6.00 per-transaction cap?",
+    "What are the Dark Green debit card daily purchase and daily ATM withdrawal limits?",
+    "Is there a fee for overdraft protection transfers for this account?",
+    "Do third-party ATM operator fees apply even after the foreign ATM fee is capped? "
+  ],
+  "keywords": [
+    "Dark Green account",
+    "primary account holder age 17",
+    "maintain through 26",
+    "Monthly maintenance fee $10.00",
+    "Foreign ATM withdrawal 2.5% (max $6.00)",
+    "Returned deposit fee $10.00",
+    "Incoming domestic wire $7.50",
+    "Debit card daily purchase limit $1,500",
+    "Daily ATM withdrawal limit $300",
+    "Overdraft protection transfer fee 0",
+    "Third-party ATM operator fees"
+  ]
+}

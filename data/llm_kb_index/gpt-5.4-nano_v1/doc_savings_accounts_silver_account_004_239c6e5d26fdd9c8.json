@@ -1,0 +1,25 @@
+{
+  "id": "doc_savings_accounts_silver_account_004",
+  "title": "Why don't I qualify for Silver Account benefits?",
+  "summary": "Explains why customers may not qualify for Silver Account benefits: balance under $1,000 can trigger the monthly maintenance fee and loss of perks, and balance below $10,000 prevents earning the higher APY tier. It advises checking outgoing transfers/withdrawals and pending transactions/holds, then restoring balances and setting balance alerts.",
+  "faqs": [
+    "What balance requirement determines whether I qualify for Silver Account benefits?",
+    "If my Silver Account balance drops below $1,000, what happens to the monthly maintenance fee and perks?",
+    "How can I tell whether my balance drop prevented the higher APY tier?",
+    "What should I review if I see benefits missing (outgoing transfers, withdrawals, pending transactions)?",
+    "How do I regain eligibility for Silver Account benefits?",
+    "How can I get notified before my balance falls below $1,000 or $10,000?"
+  ],
+  "keywords": [
+    "Silver Account benefits",
+    "monthly maintenance fee",
+    "balance requirement $1,000",
+    "higher-rate threshold $10,000",
+    "higher APY tier",
+    "outgoing transfers",
+    "withdrawals",
+    "pending transactions",
+    "holds/pending debits",
+    "balance alerts"
+  ]
+}

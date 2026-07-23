@@ -1,0 +1,22 @@
+{
+  "id": "doc_business_savings_accounts_automatic_sweep_program_004",
+  "title": "Automatic Sweep: Which Accounts Can Use Automatic Sweeps?",
+  "summary": "This document explains that Automatic Sweep deposits are supported only for Bronze as a receiving savings destination. It instructs you to designate a Bronze receiving savings account and notes that other account tiers cannot receive sweep deposits. You can change the receiving account anytime for future sweeps.",
+  "faqs": [
+    "Which receiving savings account types are eligible for Automatic Sweep deposits?",
+    "Can an account other than Bronze receive sweep deposits?",
+    "How do I designate the receiving savings account for Automatic Sweep?",
+    "How do I change the receiving account for Automatic Sweeps?",
+    "When will updated sweep routing take effect after changing the receiving account?"
+  ],
+  "keywords": [
+    "Automatic Sweep",
+    "eligible savings destinations",
+    "Bronze only",
+    "receiving savings account",
+    "sweep deposits eligibility",
+    "updating receiving account",
+    "future sweeps route",
+    "not eligible (other than Bronze)"
+  ]
+}

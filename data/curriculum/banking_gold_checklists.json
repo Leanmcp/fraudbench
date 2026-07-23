@@ -1,0 +1,709 @@
+{
+  "_provenance": {
+    "built_by": "FAILURE_ANALYSIS/planning_eval/build_gold_checklists.py",
+    "built_on": "2026-07-28",
+    "derived_from": "tasks.json evaluation_criteria.actions -- THE GRADED ANSWER",
+    "leakage": "Pinning these plans is teacher-forcing. Legitimate on the training split only. A solve rate reported from a run with these pinned measures the leak, not the policy.",
+    "split": "train only",
+    "keep_unlock": true,
+    "train_curriculum": "/Users/luxian/leanmcp/tau2-bench-leanmcp/data/curriculum/banking_train.jsonl",
+    "eval_split_excluded": [
+      "task_006",
+      "task_007",
+      "task_015",
+      "task_018",
+      "task_020",
+      "task_021",
+      "task_026",
+      "task_033",
+      "task_035",
+      "task_040",
+      "task_046",
+      "task_065",
+      "task_070",
+      "task_076",
+      "task_100",
+      "task_101"
+    ]
+  },
+  "tasks": {
+    "task_004": {
+      "skill": "Task: task_004",
+      "steps": [
+        {
+          "text": "transfer to human agents"
+        }
+      ],
+      "n_gold_actions": 1
+    },
+    "task_005": {
+      "skill": "Task: task_005",
+      "steps": [
+        {
+          "text": "transfer to human agents"
+        },
+        {
+          "text": "log verification"
+        },
+        {
+          "text": "change user email"
+        }
+      ],
+      "n_gold_actions": 3
+    },
+    "task_010": {
+      "skill": "Task: task_010",
+      "steps": [
+        {
+          "text": "log verification"
+        }
+      ],
+      "n_gold_actions": 1
+    },
+    "task_012": {
+      "skill": "Task: task_012",
+      "steps": [
+        {
+          "text": "transfer to human agents"
+        }
+      ],
+      "n_gold_actions": 1
+    },
+    "task_014": {
+      "skill": "Task: task_014",
+      "steps": [
+        {
+          "text": "transfer to human agents"
+        }
+      ],
+      "n_gold_actions": 1
+    },
+    "task_016": {
+      "skill": "Task: task_016",
+      "steps": [
+        {
+          "text": "log verification"
+        }
+      ],
+      "n_gold_actions": 1
+    },
+    "task_017": {
+      "skill": "Task: task_017",
+      "steps": [
+        {
+          "text": "log verification"
+        },
+        {
+          "text": "give discoverable user tool"
+        }
+      ],
+      "n_gold_actions": 2
+    },
+    "task_019": {
+      "skill": "Task: task_019",
+      "steps": [
+        {
+          "text": "log verification"
+        },
+        {
+          "text": "give discoverable user tool"
+        }
+      ],
+      "n_gold_actions": 2
+    },
+    "task_022": {
+      "skill": "Task: task_022",
+      "steps": [
+        {
+          "text": "log verification"
+        },
+        {
+          "text": "give discoverable user tool"
+        }
+      ],
+      "n_gold_actions": 2
+    },
+    "task_023": {
+      "skill": "Task: task_023",
+      "steps": [
+        {
+          "text": "log verification"
+        }
+      ],
+      "n_gold_actions": 1
+    },
+    "task_027": {
+      "skill": "Task: task_027",
+      "steps": [
+        {
+          "text": "log verification"
+        },
+        {
+          "text": "give discoverable user tool"
+        }
+      ],
+      "n_gold_actions": 2
+    },
+    "task_028": {
+      "skill": "Task: task_028",
+      "steps": [
+        {
+          "text": "log verification"
+        },
+        {
+          "text": "give discoverable user tool"
+        },
+        {
+          "text": "unlock and use the update transaction rewards tool (x6)"
+        }
+      ],
+      "n_gold_actions": 9
+    },
+    "task_029": {
+      "skill": "Task: task_029",
+      "steps": [
+        {
+          "text": "log verification"
+        },
+        {
+          "text": "give discoverable user tool"
+        }
+      ],
+      "n_gold_actions": 2
+    },
+    "task_031": {
+      "skill": "Task: task_031",
+      "steps": [
+        {
+          "text": "log verification"
+        },
+        {
+          "text": "give discoverable user tool"
+        },
+        {
+          "text": "unlock and use the file credit card transaction dispute tool"
+        }
+      ],
+      "n_gold_actions": 4
+    },
+    "task_032": {
+      "skill": "Task: task_032",
+      "steps": [
+        {
+          "text": "unlock and use the initial transfer to human agent tool (x3)"
+        },
+        {
+          "text": "transfer to human agents"
+        }
+      ],
+      "n_gold_actions": 5
+    },
+    "task_034": {
+      "skill": "Task: task_034",
+      "steps": [
+        {
+          "text": "transfer to human agents"
+        }
+      ],
+      "n_gold_actions": 1
+    },
+    "task_036": {
+      "skill": "Task: task_036",
+      "steps": [
+        {
+          "text": "log verification"
+        },
+        {
+          "text": "unlock and use the order replacement credit card tool"
+        }
+      ],
+      "n_gold_actions": 3
+    },
+    "task_037": {
+      "skill": "Task: task_037",
+      "steps": [
+        {
+          "text": "log verification"
+        },
+        {
+          "text": "unlock and use the order replacement credit card tool"
+        },
+        {
+          "text": "give discoverable user tool"
+        },
+        {
+          "text": "unlock and use the file credit card transaction dispute tool (x2)"
+        }
+      ],
+      "n_gold_actions": 7
+    },
+    "task_038": {
+      "skill": "Task: task_038",
+      "steps": [
+        {
+          "text": "log verification"
+        },
+        {
+          "text": "give discoverable user tool"
+        },
+        {
+          "text": "unlock and use the order replacement credit card tool"
+        },
+        {
+          "text": "unlock and use the file credit card transaction dispute tool (x3)"
+        }
+      ],
+      "n_gold_actions": 8
+    },
+    "task_043": {
+      "skill": "Task: task_043",
+      "steps": [
+        {
+          "text": "log verification"
+        },
+        {
+          "text": "unlock and use the get user dispute history tool"
+        },
+        {
+          "text": "unlock and use the get pending replacement orders tool"
+        },
+        {
+          "text": "unlock and use the get all user accounts by user id tool"
+        },
+        {
+          "text": "unlock and use the pay credit card from checking tool"
+        },
+        {
+          "text": "unlock and use the get closure reason history tool"
+        },
+        {
+          "text": "unlock and use the log credit card closure reason tool"
+        },
+        {
+          "text": "unlock and use the apply credit card account flag tool"
+        }
+      ],
+      "n_gold_actions": 15
+    },
+    "task_044": {
+      "skill": "Task: task_044",
+      "steps": [
+        {
+          "text": "log verification"
+        },
+        {
+          "text": "unlock and use the get user dispute history tool"
+        },
+        {
+          "text": "unlock and use the get pending replacement orders tool"
+        },
+        {
+          "text": "unlock and use the get closure reason history tool"
+        },
+        {
+          "text": "unlock and use the log credit card closure reason tool"
+        }
+      ],
+      "n_gold_actions": 9
+    },
+    "task_045": {
+      "skill": "Task: task_045",
+      "steps": [
+        {
+          "text": "log verification"
+        },
+        {
+          "text": "unlock and use the get user dispute history tool"
+        },
+        {
+          "text": "unlock and use the get pending replacement orders tool"
+        },
+        {
+          "text": "unlock and use the get all user accounts by user id tool"
+        },
+        {
+          "text": "unlock and use the pay credit card from checking tool"
+        },
+        {
+          "text": "unlock and use the get closure reason history tool"
+        },
+        {
+          "text": "unlock and use the log credit card closure reason tool"
+        },
+        {
+          "text": "unlock and use the apply statement credit tool"
+        }
+      ],
+      "n_gold_actions": 15
+    },
+    "task_047": {
+      "skill": "Task: task_047",
+      "steps": [
+        {
+          "text": "log verification"
+        },
+        {
+          "text": "unlock and use the get user dispute history tool"
+        },
+        {
+          "text": "unlock and use the get pending replacement orders tool"
+        },
+        {
+          "text": "unlock and use the get closure reason history tool"
+        },
+        {
+          "text": "unlock and use the log credit card closure reason tool"
+        },
+        {
+          "text": "get pending replacement orders"
+        },
+        {
+          "text": "get closure reason history"
+        },
+        {
+          "text": "log credit card closure reason"
+        },
+        {
+          "text": "unlock and use the apply statement credit tool"
+        }
+      ],
+      "n_gold_actions": 14
+    },
+    "task_049": {
+      "skill": "Task: task_049",
+      "steps": [
+        {
+          "text": "log verification"
+        },
+        {
+          "text": "unlock and use the get user dispute history tool"
+        },
+        {
+          "text": "unlock and use the get pending replacement orders tool"
+        },
+        {
+          "text": "unlock and use the get closure reason history tool"
+        },
+        {
+          "text": "unlock and use the close credit card account tool"
+        },
+        {
+          "text": "get pending replacement orders (x3)"
+        },
+        {
+          "text": "get closure reason history"
+        },
+        {
+          "text": "unlock and use the log credit card closure reason tool"
+        },
+        {
+          "text": "unlock and use the apply statement credit tool"
+        },
+        {
+          "text": "transfer to human agents"
+        }
+      ],
+      "n_gold_actions": 18
+    },
+    "task_050": {
+      "skill": "Task: task_050",
+      "steps": [
+        {
+          "text": "log verification"
+        },
+        {
+          "text": "unlock and use the submit credit limit increase request tool"
+        },
+        {
+          "text": "unlock and use the get user dispute history tool"
+        },
+        {
+          "text": "unlock and use the get pending replacement orders tool"
+        },
+        {
+          "text": "unlock and use the get credit limit increase history tool"
+        },
+        {
+          "text": "unlock and use the get payment history tool"
+        },
+        {
+          "text": "unlock and use the approve credit limit increase tool"
+        }
+      ],
+      "n_gold_actions": 13
+    },
+    "task_052": {
+      "skill": "Task: task_052",
+      "steps": [
+        {
+          "text": "log verification"
+        },
+        {
+          "text": "unlock and use the submit credit limit increase request tool"
+        },
+        {
+          "text": "unlock and use the get credit limit increase history tool"
+        },
+        {
+          "text": "unlock and use the get user dispute history tool"
+        },
+        {
+          "text": "unlock and use the get pending replacement orders tool"
+        },
+        {
+          "text": "unlock and use the get payment history tool"
+        },
+        {
+          "text": "unlock and use the deny credit limit increase tool"
+        }
+      ],
+      "n_gold_actions": 13
+    },
+    "task_055": {
+      "skill": "Task: task_055",
+      "steps": [
+        {
+          "text": "log verification"
+        },
+        {
+          "text": "unlock and use the get all user accounts by user id tool"
+        },
+        {
+          "text": "unlock and use the open bank account tool (x2)"
+        },
+        {
+          "text": "give discoverable user tool"
+        }
+      ],
+      "n_gold_actions": 7
+    },
+    "task_057": {
+      "skill": "Task: task_057",
+      "steps": [
+        {
+          "text": "log verification"
+        },
+        {
+          "text": "unlock and use the get all user accounts by user id tool"
+        },
+        {
+          "text": "unlock and use the open bank account tool"
+        },
+        {
+          "text": "give discoverable user tool"
+        }
+      ],
+      "n_gold_actions": 6
+    },
+    "task_059": {
+      "skill": "Task: task_059",
+      "steps": [
+        {
+          "text": "log verification"
+        },
+        {
+          "text": "unlock and use the get all user accounts by user id tool"
+        },
+        {
+          "text": "unlock and use the open bank account tool"
+        }
+      ],
+      "n_gold_actions": 5
+    },
+    "task_060": {
+      "skill": "Task: task_060",
+      "steps": [
+        {
+          "text": "log verification"
+        },
+        {
+          "text": "unlock and use the get all user accounts by user id tool"
+        },
+        {
+          "text": "unlock and use the open bank account tool"
+        },
+        {
+          "text": "unlock and use the close bank account tool"
+        }
+      ],
+      "n_gold_actions": 7
+    },
+    "task_063": {
+      "skill": "Task: task_063",
+      "steps": [
+        {
+          "text": "log verification"
+        },
+        {
+          "text": "unlock and use the open bank account tool"
+        }
+      ],
+      "n_gold_actions": 3
+    },
+    "task_064": {
+      "skill": "Task: task_064",
+      "steps": [
+        {
+          "text": "log verification"
+        },
+        {
+          "text": "unlock and use the open bank account tool"
+        }
+      ],
+      "n_gold_actions": 3
+    },
+    "task_073": {
+      "skill": "Task: task_073",
+      "steps": [
+        {
+          "text": "log verification"
+        },
+        {
+          "text": "unlock and use the get all user accounts by user id tool"
+        },
+        {
+          "text": "unlock and use the get bank account transactions tool (x3)"
+        },
+        {
+          "text": "unlock and use the apply checking account credit tool (x3)"
+        }
+      ],
+      "n_gold_actions": 11
+    },
+    "task_075": {
+      "skill": "Task: task_075",
+      "steps": [
+        {
+          "text": "log verification"
+        },
+        {
+          "text": "unlock and use the open bank account tool"
+        }
+      ],
+      "n_gold_actions": 3
+    },
+    "task_089": {
+      "skill": "Task: task_089",
+      "steps": [
+        {
+          "text": "log verification"
+        },
+        {
+          "text": "unlock and use the get all user accounts by user id tool"
+        },
+        {
+          "text": "unlock and use the get debit cards by account id tool"
+        },
+        {
+          "text": "unlock and use the get bank account transactions tool"
+        },
+        {
+          "text": "unlock and use the request temporary debit card limit increase tool"
+        },
+        {
+          "text": "get debit cards by account id"
+        },
+        {
+          "text": "get bank account transactions"
+        },
+        {
+          "text": "get debit cards by account id"
+        },
+        {
+          "text": "get bank account transactions"
+        }
+      ],
+      "n_gold_actions": 13
+    },
+    "task_093": {
+      "skill": "Task: task_093",
+      "steps": [
+        {
+          "text": "log verification"
+        },
+        {
+          "text": "unlock and use the get all user accounts by user id tool"
+        },
+        {
+          "text": "unlock and use the get bank account transactions tool"
+        },
+        {
+          "text": "unlock and use the apply savings account credit tool"
+        },
+        {
+          "text": "unlock and use the submit interest discrepancy report tool"
+        }
+      ],
+      "n_gold_actions": 9
+    },
+    "task_095": {
+      "skill": "Task: task_095",
+      "steps": [
+        {
+          "text": "log verification"
+        },
+        {
+          "text": "unlock and use the get all user accounts by user id tool"
+        },
+        {
+          "text": "unlock and use the get bank account transactions tool"
+        },
+        {
+          "text": "unlock and use the apply savings account credit tool"
+        },
+        {
+          "text": "unlock and use the submit interest discrepancy report tool"
+        }
+      ],
+      "n_gold_actions": 9
+    },
+    "task_096": {
+      "skill": "Task: task_096",
+      "steps": [
+        {
+          "text": "log verification"
+        },
+        {
+          "text": "unlock and use the get all user accounts by user id tool"
+        },
+        {
+          "text": "unlock and use the get bank account transactions tool (x2)"
+        },
+        {
+          "text": "unlock and use the apply savings account credit tool (x2)"
+        },
+        {
+          "text": "unlock and use the submit interest discrepancy report tool (x2)"
+        }
+      ],
+      "n_gold_actions": 12
+    },
+    "task_098": {
+      "skill": "Task: task_098",
+      "steps": [
+        {
+          "text": "log verification"
+        },
+        {
+          "text": "get referrals by user"
+        }
+      ],
+      "n_gold_actions": 2
+    },
+    "task_099": {
+      "skill": "Task: task_099",
+      "steps": [
+        {
+          "text": "log verification"
+        },
+        {
+          "text": "unlock and use the get all user accounts by user id tool"
+        },
+        {
+          "text": "get referrals by user"
+        }
+      ],
+      "n_gold_actions": 4
+    }
+  }
+}

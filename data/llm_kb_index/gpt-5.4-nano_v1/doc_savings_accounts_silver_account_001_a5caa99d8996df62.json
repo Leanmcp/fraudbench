@@ -1,0 +1,25 @@
+{
+  "id": "doc_savings_accounts_silver_account_001",
+  "title": "Silver Account specifications and requirements",
+  "summary": "This document specifies Silver Account requirements: $500 minimum opening deposit, $1,000 ongoing minimum balance per statement cycle, 10 free withdrawals per statement cycle, and daily interest compounding. It also defines a $10,000 balance threshold to qualify for a higher APY tier and notes possible excess withdrawal fees beyond 10.",
+  "faqs": [
+    "What is the minimum deposit required to open a Silver Account?",
+    "What ongoing minimum balance do I need to avoid monthly fees?",
+    "How many free withdrawals are allowed per statement cycle?",
+    "What happens if I make more than 10 withdrawals in a cycle?",
+    "How do I qualify for the higher APY tier?",
+    "How is interest compounded on the Silver Account?"
+  ],
+  "keywords": [
+    "Silver Account",
+    "Minimum opening deposit $500",
+    "Ongoing minimum balance $1,000",
+    "Free withdrawals per statement cycle 10",
+    "Excess withdrawal fee (beyond 10)",
+    "Interest compounded daily",
+    "Higher APY tier balance threshold $10,000",
+    "Monthly fees (avoid by meeting $1,000)",
+    "Balance alerts",
+    "Statement cycle"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "doc_credit_cards_credit_cards_(general)_010",
+  "title": "Internal: Credit Card Purchase Decline Diagnostic Procedure",
+  "summary": "This document instructs support agents on a special protocol for customers reporting credit card purchase declines and repeatedly requesting a human agent. For the 1st\u20133rd transfer requests use `initial_transfer_to_human_agent_0218()`, and for the 4th use `transfer_to_human_agents`, while continuing troubleshooting and tracking request count.",
+  "faqs": [
+    "What should we do when a customer reports purchase declines and asks to speak with a human agent?",
+    "Which transfer tool should be used for the first, second, and third transfer request?",
+    "What tool do we use on the fourth request to transfer to a human agent?",
+    "Do we continue troubleshooting the decline while completing the transfer sequence?",
+    "Should we track how many times the customer requested a transfer during the interaction?",
+    "If the customer\u2019s situation changes during the conversation, how should we respond while keeping the transfer sequence?"
+  ],
+  "keywords": [
+    "credit card purchase decline",
+    "repeated requests to speak with a human agent",
+    "initial_transfer_to_human_agent_0218()",
+    "transfer_to_human_agents",
+    "first three transfer requests",
+    "fourth transfer request",
+    "transfer sequence tracking",
+    "continued troubleshooting"
+  ]
+}

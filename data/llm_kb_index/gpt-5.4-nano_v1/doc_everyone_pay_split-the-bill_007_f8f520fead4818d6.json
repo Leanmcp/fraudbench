@@ -1,0 +1,24 @@
+{
+  "id": "doc_everyone_pay_split-the-bill_007",
+  "title": "Why can't I create a split payment?",
+  "summary": "This document explains why split payments can\u2019t be created: the participant group exceeds 30 and/or the total amount exceeds $5,500. It also lists blockers like missing participant contact info, incomplete description/allocations that don\u2019t reconcile to the total, and attempting to add the same participant more than once.",
+  "faqs": [
+    "Why does the system block me from creating a split payment due to group size?",
+    "What happens if my split payment total is over $5,500?",
+    "What participant details can prevent me from creating a split payment (e.g., contact info)?",
+    "What does it mean when the description or allocations are incomplete or don\u2019t add up to the total?",
+    "Can I create a split payment if I accidentally add the same participant twice?",
+    "How do I fix the issues and try creating the split again?"
+  ],
+  "keywords": [
+    "split payment",
+    "maximum group size 30",
+    "total amount limit $5,500",
+    "required participant contact information",
+    "description/allocations incomplete",
+    "allocations must reconcile to total",
+    "duplicate participant",
+    "reduce participant list",
+    "split into multiple requests"
+  ]
+}

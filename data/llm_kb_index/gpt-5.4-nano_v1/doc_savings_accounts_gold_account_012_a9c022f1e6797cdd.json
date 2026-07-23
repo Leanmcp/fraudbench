@@ -1,0 +1,25 @@
+{
+  "id": "doc_savings_accounts_gold_account_012",
+  "title": "Gold Account: Transferring funds to external banks",
+  "summary": "Explains how to transfer funds from a Gold Account to an external bank: add and verify the external bank in Transfers, select Gold Account as source, choose the destination, enter an amount up to $25,000 per day, submit, then monitor status. External transfers typically complete in 1 business day; Gold has transfer fees and external banks may charge separate fees.",
+  "faqs": [
+    "How do I transfer money from my Gold Account to an external bank?",
+    "What is the maximum daily amount I can transfer out from the Gold Account?",
+    "How long do external Gold Account transfers take to complete?",
+    "Are there transfer fees for Gold Account external transfers?",
+    "Can the external bank charge additional fees separately?",
+    "What can I do to ensure transfers arrive without delays (cutoffs/recipient details)?"
+  ],
+  "keywords": [
+    "Gold Account",
+    "Transfers section",
+    "External bank account verification",
+    "Maximum daily transfer out: $25,000",
+    "External transfers complete in 1 business day",
+    "Transfer fees: Yes",
+    "External institutions may charge separate fees",
+    "Transfer status monitoring",
+    "External bank cutoffs",
+    "Verify recipient details"
+  ]
+}

@@ -1,0 +1,404 @@
+{
+  "$generated_by": "FAILURE_ANALYSIS/planning_eval/make_train_eval_split.py",
+  "criteria": {
+    "reference_model": "Ultra-550B",
+    "min_episodes": 6,
+    "eval_n": 16,
+    "seed": 20260727,
+    "train_rule": "0 < reference solve rate < 1 (tied groups yield no GRPO gradient)",
+    "eval_rule": "stratified across floor/hard/mid/easy, disjoint from train"
+  },
+  "warning": "solve_rate values here are SELECTION statistics measured with noise. They are not a baseline -- comparing a trained checkpoint against them reports regression to the mean as a training effect. Re-measure the base model on the eval split under the checkpoint's own config.",
+  "pool": {
+    "never_solved": 36,
+    "always_solved": 1,
+    "learnable": 56,
+    "too_thin": 4
+  },
+  "train": [
+    {
+      "task_id": "task_001",
+      "episodes": 44,
+      "solved": 34,
+      "solve_rate": 0.773
+    },
+    {
+      "task_id": "task_002",
+      "episodes": 41,
+      "solved": 25,
+      "solve_rate": 0.61
+    },
+    {
+      "task_id": "task_003",
+      "episodes": 46,
+      "solved": 5,
+      "solve_rate": 0.109
+    },
+    {
+      "task_id": "task_004",
+      "episodes": 41,
+      "solved": 5,
+      "solve_rate": 0.122
+    },
+    {
+      "task_id": "task_005",
+      "episodes": 48,
+      "solved": 5,
+      "solve_rate": 0.104
+    },
+    {
+      "task_id": "task_010",
+      "episodes": 42,
+      "solved": 15,
+      "solve_rate": 0.357
+    },
+    {
+      "task_id": "task_012",
+      "episodes": 37,
+      "solved": 27,
+      "solve_rate": 0.73
+    },
+    {
+      "task_id": "task_014",
+      "episodes": 33,
+      "solved": 17,
+      "solve_rate": 0.515
+    },
+    {
+      "task_id": "task_016",
+      "episodes": 36,
+      "solved": 3,
+      "solve_rate": 0.083
+    },
+    {
+      "task_id": "task_017",
+      "episodes": 27,
+      "solved": 11,
+      "solve_rate": 0.407
+    },
+    {
+      "task_id": "task_019",
+      "episodes": 10,
+      "solved": 5,
+      "solve_rate": 0.5
+    },
+    {
+      "task_id": "task_022",
+      "episodes": 19,
+      "solved": 5,
+      "solve_rate": 0.263
+    },
+    {
+      "task_id": "task_023",
+      "episodes": 29,
+      "solved": 19,
+      "solve_rate": 0.655
+    },
+    {
+      "task_id": "task_024",
+      "episodes": 10,
+      "solved": 6,
+      "solve_rate": 0.6
+    },
+    {
+      "task_id": "task_025",
+      "episodes": 21,
+      "solved": 12,
+      "solve_rate": 0.571
+    },
+    {
+      "task_id": "task_027",
+      "episodes": 15,
+      "solved": 9,
+      "solve_rate": 0.6
+    },
+    {
+      "task_id": "task_028",
+      "episodes": 14,
+      "solved": 2,
+      "solve_rate": 0.143
+    },
+    {
+      "task_id": "task_029",
+      "episodes": 9,
+      "solved": 1,
+      "solve_rate": 0.111
+    },
+    {
+      "task_id": "task_031",
+      "episodes": 9,
+      "solved": 6,
+      "solve_rate": 0.667
+    },
+    {
+      "task_id": "task_032",
+      "episodes": 25,
+      "solved": 13,
+      "solve_rate": 0.52
+    },
+    {
+      "task_id": "task_034",
+      "episodes": 25,
+      "solved": 4,
+      "solve_rate": 0.16
+    },
+    {
+      "task_id": "task_036",
+      "episodes": 21,
+      "solved": 13,
+      "solve_rate": 0.619
+    },
+    {
+      "task_id": "task_037",
+      "episodes": 24,
+      "solved": 10,
+      "solve_rate": 0.417
+    },
+    {
+      "task_id": "task_038",
+      "episodes": 23,
+      "solved": 2,
+      "solve_rate": 0.087
+    },
+    {
+      "task_id": "task_043",
+      "episodes": 8,
+      "solved": 2,
+      "solve_rate": 0.25
+    },
+    {
+      "task_id": "task_044",
+      "episodes": 28,
+      "solved": 9,
+      "solve_rate": 0.321
+    },
+    {
+      "task_id": "task_045",
+      "episodes": 14,
+      "solved": 3,
+      "solve_rate": 0.214
+    },
+    {
+      "task_id": "task_047",
+      "episodes": 24,
+      "solved": 8,
+      "solve_rate": 0.333
+    },
+    {
+      "task_id": "task_049",
+      "episodes": 15,
+      "solved": 1,
+      "solve_rate": 0.067
+    },
+    {
+      "task_id": "task_050",
+      "episodes": 20,
+      "solved": 10,
+      "solve_rate": 0.5
+    },
+    {
+      "task_id": "task_052",
+      "episodes": 9,
+      "solved": 5,
+      "solve_rate": 0.556
+    },
+    {
+      "task_id": "task_055",
+      "episodes": 18,
+      "solved": 8,
+      "solve_rate": 0.444
+    },
+    {
+      "task_id": "task_057",
+      "episodes": 25,
+      "solved": 14,
+      "solve_rate": 0.56
+    },
+    {
+      "task_id": "task_059",
+      "episodes": 24,
+      "solved": 12,
+      "solve_rate": 0.5
+    },
+    {
+      "task_id": "task_060",
+      "episodes": 8,
+      "solved": 2,
+      "solve_rate": 0.25
+    },
+    {
+      "task_id": "task_063",
+      "episodes": 25,
+      "solved": 8,
+      "solve_rate": 0.32
+    },
+    {
+      "task_id": "task_064",
+      "episodes": 12,
+      "solved": 2,
+      "solve_rate": 0.167
+    },
+    {
+      "task_id": "task_073",
+      "episodes": 34,
+      "solved": 13,
+      "solve_rate": 0.382
+    },
+    {
+      "task_id": "task_075",
+      "episodes": 7,
+      "solved": 5,
+      "solve_rate": 0.714
+    },
+    {
+      "task_id": "task_089",
+      "episodes": 8,
+      "solved": 6,
+      "solve_rate": 0.75
+    },
+    {
+      "task_id": "task_093",
+      "episodes": 20,
+      "solved": 2,
+      "solve_rate": 0.1
+    },
+    {
+      "task_id": "task_095",
+      "episodes": 20,
+      "solved": 1,
+      "solve_rate": 0.05
+    },
+    {
+      "task_id": "task_096",
+      "episodes": 8,
+      "solved": 5,
+      "solve_rate": 0.625
+    },
+    {
+      "task_id": "task_098",
+      "episodes": 13,
+      "solved": 4,
+      "solve_rate": 0.308
+    },
+    {
+      "task_id": "task_099",
+      "episodes": 14,
+      "solved": 6,
+      "solve_rate": 0.429
+    }
+  ],
+  "eval": [
+    {
+      "task_id": "task_006",
+      "episodes": 34,
+      "solved": 26,
+      "solve_rate": 0.765,
+      "eval_stratum": "easy"
+    },
+    {
+      "task_id": "task_007",
+      "episodes": 34,
+      "solved": 26,
+      "solve_rate": 0.765,
+      "eval_stratum": "easy"
+    },
+    {
+      "task_id": "task_035",
+      "episodes": 21,
+      "solved": 17,
+      "solve_rate": 0.81,
+      "eval_stratum": "easy"
+    },
+    {
+      "task_id": "task_076",
+      "episodes": 7,
+      "solved": 7,
+      "solve_rate": 1.0,
+      "eval_stratum": "easy"
+    },
+    {
+      "task_id": "task_015",
+      "episodes": 32,
+      "solved": 0,
+      "solve_rate": 0.0,
+      "eval_stratum": "floor"
+    },
+    {
+      "task_id": "task_040",
+      "episodes": 21,
+      "solved": 0,
+      "solve_rate": 0.0,
+      "eval_stratum": "floor"
+    },
+    {
+      "task_id": "task_065",
+      "episodes": 6,
+      "solved": 0,
+      "solve_rate": 0.0,
+      "eval_stratum": "floor"
+    },
+    {
+      "task_id": "task_101",
+      "episodes": 8,
+      "solved": 0,
+      "solve_rate": 0.0,
+      "eval_stratum": "floor"
+    },
+    {
+      "task_id": "task_018",
+      "episodes": 15,
+      "solved": 4,
+      "solve_rate": 0.267,
+      "eval_stratum": "hard"
+    },
+    {
+      "task_id": "task_020",
+      "episodes": 15,
+      "solved": 4,
+      "solve_rate": 0.267,
+      "eval_stratum": "hard"
+    },
+    {
+      "task_id": "task_026",
+      "episodes": 20,
+      "solved": 5,
+      "solve_rate": 0.25,
+      "eval_stratum": "hard"
+    },
+    {
+      "task_id": "task_070",
+      "episodes": 8,
+      "solved": 2,
+      "solve_rate": 0.25,
+      "eval_stratum": "hard"
+    },
+    {
+      "task_id": "task_021",
+      "episodes": 10,
+      "solved": 5,
+      "solve_rate": 0.5,
+      "eval_stratum": "mid"
+    },
+    {
+      "task_id": "task_033",
+      "episodes": 21,
+      "solved": 13,
+      "solve_rate": 0.619,
+      "eval_stratum": "mid"
+    },
+    {
+      "task_id": "task_046",
+      "episodes": 18,
+      "solved": 11,
+      "solve_rate": 0.611,
+      "eval_stratum": "mid"
+    },
+    {
+      "task_id": "task_100",
+      "episodes": 20,
+      "solved": 8,
+      "solve_rate": 0.4,
+      "eval_stratum": "mid"
+    }
+  ]
+}

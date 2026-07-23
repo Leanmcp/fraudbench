@@ -1,0 +1,27 @@
+{
+  "id": "doc_business_checking_accounts_sky_blue_006",
+  "title": "Sky Blue: Preparing Investor Reports",
+  "summary": "\u201cSky Blue: Preparing Investor Reports\u201d explains how to build an investor packet using included investor-ready reporting tools and burn-rate analytics (integrated with reporting). It covers selecting a reporting period, including exhibits (cash position, operating inflows/outflows, burn summary, runway overview), adding narrative for variances/one-time items, and workflow steps like locking the dataset before export and storing versioned copies for audit consistency.",
+  "faqs": [
+    "Which investor-ready reporting tools are included in Sky Blue for investor packets?",
+    "How do I choose the reporting period and what exhibits should I include?",
+    "What narrative context should I add for material variances and one-time items?",
+    "What should I do before exporting to avoid late changes to the report?",
+    "What notes should be attached to the packet (e.g., accounting treatments, vendor changes, hiring plans)?",
+    "How should I store exports to ensure audit consistency? "
+  ],
+  "keywords": [
+    "Sky Blue",
+    "Preparing Investor Reports",
+    "investor-ready reporting tools",
+    "burn-rate analytics",
+    "reporting period selection",
+    "cash position exhibit",
+    "operating inflows and outflows",
+    "burn summary",
+    "runway overview",
+    "material variances",
+    "dataset lock before exporting",
+    "versioned copy for audit consistency"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "doc_bank_accounts_bank_accounts_(general)_004",
+  "title": "Internal: Opening Business Savings Accounts",
+  "summary": "This document provides the step-by-step procedure to open a business savings account (account_type='savings') for eligible customers, including identity verification, requiring an OPEN business checking account open \u226530 days with \u2265$2,500 balance, limiting savings accounts to <4, and prohibiting negative balances. It uses open_bank_account_4821 with the customer-selected account_class (e.g., Bronze Saver Account, Silver Saver Account, etc.) and optionally transfers the opening deposit via transfer_funds_between_bank_accounts_7291; if the customer doesn\u2019t fund now, they have 30 days via internal transfer or external deposit or the account will be closed.",
+  "faqs": [
+    "What are the eligibility requirements to open a business savings account?",
+    "How many business savings accounts can a customer have before opening another one?",
+    "Do we need an existing OPEN business checking account, and what are the tenure and balance requirements?",
+    "How do I open the business savings account after the customer selects an account_class?",
+    "Can we transfer the opening deposit immediately, and which tool is used?",
+    "If the customer doesn\u2019t fund right away, what is the 30-day deadline and what happens if they miss it?"
+  ],
+  "keywords": [
+    "business savings account",
+    "account_type='savings'",
+    "account_class (e.g., Bronze Saver Account, Silver Saver Account)",
+    "Eligibility: verified customer identity",
+    "OPEN business checking account status",
+    "30 days open",
+    "$2,500 minimum balance",
+    "max 4 business savings accounts",
+    "No negative balances",
+    "open_bank_account_4821",
+    "transfer_funds_between_bank_accounts_7291",
+    "30 days to fund or account will be closed"
+  ]
+}

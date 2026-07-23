@@ -1,0 +1,26 @@
+{
+  "id": "doc_everyone_pay_qr_transfers_005",
+  "title": "Why isn't my QR code scanning?",
+  "summary": "Explains why a QR code may not scan and how to fix it: the code expires if generated more than 17 (time units not specified), display glare/low brightness, camera focus issues (distance/motion/dirty lens), and QR issues (cropped/distorted/low quality/compressed/edited). Also covers enabling camera permissions and reopening the scanner.",
+  "faqs": [
+    "How do I tell if my QR code has expired?",
+    "What can screen glare or low brightness do to QR scanning?",
+    "My camera won\u2019t focus\u2014how should I adjust distance or clean the lens?",
+    "What if the QR image is cropped, distorted, or low quality\u2014what should I request?",
+    "How do I enable camera access for the app so the scanner works?"
+  ],
+  "keywords": [
+    "QR code expired",
+    "generated more than 17",
+    "screen glare",
+    "low brightness",
+    "camera focus",
+    "dirty lens",
+    "distance/motion",
+    "cropped/distorted/low quality",
+    "camera permissions",
+    "regenerate the QR",
+    "enable camera access",
+    "clearer/unaltered version"
+  ]
+}

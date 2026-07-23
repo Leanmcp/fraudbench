@@ -1,0 +1,27 @@
+{
+  "id": "doc_everyone_pay_everyone_pay_005",
+  "title": "Sending limits \u2014 per day and month",
+  "summary": "This document lists current sending limits for Individual ($1,500 daily, $12,500 monthly) and Business accounts ($15,000 daily, $150,000 monthly). It explains how limits trigger decline messages, when partial payments may be submitted, and where to check remaining limits on the send screen.",
+  "faqs": [
+    "What are the daily and monthly sending limits for Individual vs Business accounts?",
+    "What happens if I try to send an amount that exceeds my daily or monthly limit?",
+    "Can I submit a partial payment if my full payment would exceed my limit?",
+    "Where can I see my remaining daily and monthly sending capacity?",
+    "If I hit my limit, should I wait for limits to refresh or reduce the amount\u2014what does the document recommend?",
+    "Are there any tips for frequent high-value senders to avoid hitting limits? (Individual vs Business)"
+  ],
+  "keywords": [
+    "Individual account",
+    "Business account",
+    "Daily limit $1,500",
+    "Monthly limit $12,500",
+    "Daily limit $15,000",
+    "Monthly limit $150,000",
+    "decline message",
+    "limit has been reached",
+    "partial payments",
+    "limit banner on send screen",
+    "limits refresh",
+    "planning transfers across multiple days"
+  ]
+}

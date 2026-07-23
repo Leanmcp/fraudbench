@@ -1,0 +1,2 @@
+# Install the local benchmark with knowledge retrieval support.
+-e .[knowledge]

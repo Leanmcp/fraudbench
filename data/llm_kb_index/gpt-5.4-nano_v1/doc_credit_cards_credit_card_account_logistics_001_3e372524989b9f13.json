@@ -1,0 +1,26 @@
+{
+  "id": "doc_credit_cards_credit_card_account_logistics_001",
+  "title": "How can I close a credit card account?",
+  "summary": "This document explains how to close a Rho-Bank credit card account: balance must be $0.00, no active/pending disputes, account age at least 60 days, and no pending replacement card orders. It also covers 45 days to redeem unredeemed rewards and a full annual fee refund if closure is within 37 days of annual fee posting.",
+  "faqs": [
+    "What are the eligibility requirements to close my Rho-Bank credit card account?",
+    "How do pending transactions or disputes affect my ability to request closure?",
+    "How long do I have to redeem unredeemed rewards after submitting a closure request?",
+    "When is my annual fee refundable if I close the account?",
+    "Will closing my credit card account affect my credit score, and how?",
+    "What should I do if I have a replacement card ordered but not yet received or activated?"
+  ],
+  "keywords": [
+    "Rho-Bank credit card account closure",
+    "Zero balance ($0.00)",
+    "Pending transaction to post",
+    "No active or pending disputes",
+    "Account age minimum 60 days",
+    "Pending replacement cards (order not received/activated)",
+    "45 days to redeem unredeemed rewards",
+    "Unredeemed rewards forfeited after 45 days",
+    "Annual fee refund within 37 days of annual fee posting",
+    "No annual fee refund after 37-day window",
+    "Credit score impact (credit utilization ratio)"
+  ]
+}

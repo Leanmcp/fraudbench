@@ -1,0 +1,25 @@
+{
+  "id": "doc_savings_accounts_gold_plus_account_003",
+  "title": "Gold Plus: Investment sweep feature explained",
+  "summary": "This document explains the \u201cGold Plus\u201d Investment sweep feature: sweeps are available and occur when your available balance exceeds a $50,000 evaluation threshold, moving only the amount above $50,000 to your linked investment account. If your balance is $50,000 or less, no sweep happens. You can review/manage sweep settings in the app and have periodic sessions to confirm the $50,000 threshold fits your liquidity needs.",
+  "faqs": [
+    "Is the Gold Plus Investment sweep feature available?",
+    "What is the sweep threshold for Gold Plus?",
+    "When will my available balance trigger a sweep to my linked investment account?",
+    "Does a sweep happen if my available balance is $50,000 or less?",
+    "Where can I review and manage my sweep settings in the app?",
+    "Can I confirm or discuss whether the $50,000 threshold still fits my liquidity needs?"
+  ],
+  "keywords": [
+    "Gold Plus",
+    "Investment sweep feature",
+    "Available balance",
+    "Sweep threshold",
+    "$50,000 evaluation",
+    "Linked investment account",
+    "No sweep at or below $50,000",
+    "Review/manage sweep settings in the app",
+    "Periodic sessions",
+    "Allocation and sweep behavior"
+  ]
+}

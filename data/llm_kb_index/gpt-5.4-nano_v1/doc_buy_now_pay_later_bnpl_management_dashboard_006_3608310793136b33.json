@@ -1,0 +1,24 @@
+{
+  "id": "doc_buy_now_pay_later_bnpl_management_dashboard_006",
+  "title": "BNPL Management Dashboard: Understanding Reward Types, Rates, and Maximum Amounts",
+  "summary": "Explains how the BNPL Management Dashboard shows reward type, reward rate, and the \u201cMaximum per plan\u201d cap, and how rewards are calculated using a qualifying amount and rate. Includes a step-by-step calculation sequence and what to verify on the dashboard.",
+  "faqs": [
+    "How does the dashboard define the reward type used to compute BNPL rewards?",
+    "What is the reward rate shown on the BNPL Management Dashboard and what amount does it apply to?",
+    "What is the \u201cMaximum per plan\u201d cap and what happens when that cap is reached?",
+    "What is the calculation sequence for BNPL rewards (qualifying amount \u2192 preliminary reward \u2192 cap applied)?",
+    "What should I verify on the dashboard before planning additional early payments?",
+    "Where can I check remaining headroom versus the maximum reward cap for a plan?"
+  ],
+  "keywords": [
+    "BNPL Management Dashboard",
+    "Reward type",
+    "Reward rate",
+    "Maximum per plan",
+    "Qualifying amount",
+    "Preliminary reward",
+    "Cap applied",
+    "Cumulative reward per plan",
+    "Early payments headroom"
+  ]
+}

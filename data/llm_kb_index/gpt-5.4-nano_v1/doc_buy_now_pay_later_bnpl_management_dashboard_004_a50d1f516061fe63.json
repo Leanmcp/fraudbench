@@ -1,0 +1,26 @@
+{
+  "id": "doc_buy_now_pay_later_bnpl_management_dashboard_004",
+  "title": "BNPL Management Dashboard: Including or Excluding Closed BNPL Plans",
+  "summary": "This document explains how to control BNPL Management Dashboard visibility of closed (fully repaid) BNPL plans using an inclusion setting: when the setting is true, closed plans appear in the list and visualizations; when false, only active plans are shown. It also lists reasons to include/exclude closed plans and guidance to toggle based on retrospective analysis vs day-to-day operations, with closed plans clearly labeled.",
+  "faqs": [
+    "How do I include or exclude closed (fully repaid) BNPL plans in the dashboard list and visualizations?",
+    "What happens when the inclusion setting is true versus false?",
+    "Why would I want to include closed BNPL plans for analysis or reporting?",
+    "Why should I exclude closed BNPL plans during day-to-day operations?",
+    "What practical steps should I follow when toggling the inclusion setting?",
+    "When closed plans are included, how are they supposed to be labeled to avoid confusion?"
+  ],
+  "keywords": [
+    "BNPL Management Dashboard",
+    "Include closed plans toggle",
+    "Closed or fully repaid plans",
+    "Active plans only",
+    "List visibility",
+    "Related visualizations",
+    "Retrospective analysis",
+    "Day-to-day operations",
+    "Historical repayment patterns",
+    "Audit or internal reporting",
+    "Clearly labeled as closed"
+  ]
+}

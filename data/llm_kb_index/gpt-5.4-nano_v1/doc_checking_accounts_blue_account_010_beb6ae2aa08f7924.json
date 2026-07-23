@@ -1,0 +1,27 @@
+{
+  "id": "doc_checking_accounts_blue_account_010",
+  "title": "FAQ: Blue Account",
+  "summary": "This document lists Blue Account FAQs including paper statement cost ($2.50/month), APY (0.01%), low-balance alerts (e.g., $62 threshold), external transfer timing (2 business days), returned check fee ($15.00), incoming domestic wire fee ($12.50). It also covers the referral program ($35 per successful referral, $30 welcome bonus), eligibility (deposit at least $500 within 60 days; 30-day minimum banking relationship), and a cap of 5 referral bonuses per calendar year.",
+  "faqs": [
+    "What does a paper statement cost on the Blue Account?",
+    "What APY does the Blue Account earn?",
+    "How do low-balance alerts work (what threshold can I set)?",
+    "How long do external bank transfers take?",
+    "What fee applies if a deposited check is returned unpaid?",
+    "How does the Blue Account referral bonus work, including the $500/60-day requirement and the 5-per-year limit?"
+  ],
+  "keywords": [
+    "Blue Account",
+    "Paper statements $2.50 per month",
+    "0.01% APY",
+    "Low-balance alerts threshold (example: $62)",
+    "External bank transfers: 2 business days",
+    "Returned deposit fee: $15.00",
+    "Incoming domestic wire fee: $12.50",
+    "Referral program: $35 per successful referral",
+    "Referred-person welcome bonus: $30",
+    "Referral eligibility: $500 deposit within 60 days",
+    "Minimum 30-day banking relationship",
+    "Referral limit: up to 5 per calendar year"
+  ]
+}

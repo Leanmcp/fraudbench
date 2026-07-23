@@ -1,0 +1,27 @@
+{
+  "id": "doc_business_checking_accounts_sky_blue_004",
+  "title": "Sky Blue: Burn-Rate Analytics and Runway Projections",
+  "summary": "This document explains how Sky Blue includes burn-rate analytics at no extra cost and how to use the analytics dashboard to review monthly spend, inflows, and net burn. It also covers the runway projections tool forecasting up to 18 months, how to refine projections with categorization/filters and reconcile transactions, and how to export visuals for stakeholder sharing.",
+  "faqs": [
+    "Is burn-rate analytics included at no extra cost in Sky Blue?",
+    "Where do I find the analytics section and what metrics can I review (spend, inflows, net burn)?",
+    "How do I use the runway projections tool, and what is the maximum forecast horizon (up to 18 months)?",
+    "How can I refine runway projections for one-time or planned changes (e.g., adjusting categorization and filters)?",
+    "What best practices should I follow to keep burn and runway accurate (e.g., frequency of reconciliation and annotating changes)?",
+    "Can I export analytics/runway visuals for board or planning sessions?"
+  ],
+  "keywords": [
+    "Sky Blue",
+    "burn-rate analytics",
+    "no extra cost",
+    "monthly spend",
+    "inflows",
+    "net burn",
+    "runway tool",
+    "18 months forecast",
+    "categorize transactions",
+    "one-time or planned changes",
+    "reconcile transactions",
+    "export visuals"
+  ]
+}

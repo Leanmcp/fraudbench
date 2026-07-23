@@ -1,0 +1,26 @@
+{
+  "id": "doc_buy_now_pay_later_bnpl_gold_004",
+  "title": "BNPL Gold: Using Auto-Debit and Setting Your Payment Date",
+  "summary": "BNPL Gold explains how to check auto-debit status, what auto-debit covers (attempts to collect the minimum payment amount, calculated as [value not available] of your outstanding balance or the billed minimum, if higher), and when it runs ([value not available] of each month). It also covers how to turn auto-debit on/off, how manual payments affect auto-debit collections, and best practices for ensuring sufficient funds and adjusting the scheduled day before the next cycle.",
+  "faqs": [
+    "How can I check whether BNPL Gold auto-debit is enabled?",
+    "If auto-debit is on, what amount will it attempt to collect (and how is it calculated)?",
+    "What day of the month does BNPL Gold auto-debit try to collect payment?",
+    "Can I turn auto-debit on or off before the next scheduled attempt?",
+    "If I make a manual payment before the scheduled date, will auto-debit still collect?",
+    "How do I change the scheduled auto-debit timing for my BNPL Gold payments? "
+  ],
+  "keywords": [
+    "BNPL Gold",
+    "auto-debit status (currently enabled)",
+    "minimum payment amount",
+    "outstanding balance",
+    "billed minimum (if higher)",
+    "scheduled auto-debit day of each month",
+    "payment settings",
+    "turn auto-debit on or off",
+    "manual payment before scheduled date",
+    "sufficient funds on or before scheduled day",
+    "adjust the scheduled day before next cycle"
+  ]
+}

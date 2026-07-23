@@ -1,0 +1,27 @@
+{
+  "id": "doc_checking_accounts_light_green_account_008",
+  "title": "What happens when the primary account holder turns 25",
+  "summary": "This document explains the transition when the primary account holder approaches age 24 (in preparation for turning 25): the system prompts you around age 24 to prepare for the next account type. If \u201cYes\u201d is True, the account automatically moves to an eligible adult checking option at 24 with no action; if \u201cYes\u201d is False, you must choose a new account type and complete a simple upgrade process at 24. It also instructs customers to review adult account options now and keep contact information current to receive transition notices.",
+  "faqs": [
+    "What happens to my account when the primary account holder turns 25/approaches 24?",
+    "Will my account automatically move to an adult checking option, or do I need to take action?",
+    "What do I do if the \u201cYes\u201d condition is False at the transition?",
+    "Do I need to choose a new account type during the transition?",
+    "What should I do now before the transition notices are sent?",
+    "How can I make sure I don\u2019t miss my transition notices? "
+  ],
+  "keywords": [
+    "approach 24 prompt",
+    "transition at 24",
+    "primary account holder",
+    "eligible adult checking option",
+    "Yes is True",
+    "no action required",
+    "Yes is False",
+    "choose a new account type",
+    "simple upgrade process",
+    "review adult account options",
+    "ensure contact information is current",
+    "transition notices"
+  ]
+}

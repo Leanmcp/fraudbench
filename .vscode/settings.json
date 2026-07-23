@@ -1,0 +1,13 @@
+{
+  // Allow setting breakpoints in any file (incl. library/tau2 paths), not just
+  // "my code". Needed for breakpoints in src/tau2/** and site-packages to bind.
+  "debug.allowBreakpointsEverywhere": true,
+
+  // Use the project venv as the default interpreter so the Run & Debug configs and
+  // the integrated terminal both resolve tau2 + eval_protocol correctly.
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+
+  // Keep breakpoints you set; show them inline. (Persistence is automatic per
+  // workspace — set a breakpoint once and it survives across debug sessions.)
+  "debug.showBreakpointsInOverviewRuler": true
+}

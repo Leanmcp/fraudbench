@@ -1,0 +1,25 @@
+{
+  "id": "doc_everyone_pay_split-the-bill_002",
+  "title": "Setting up a group payment",
+  "summary": "This document explains how to set up a group payment: prepare up to 30 participants, collect contact details, choose a split method (equal shares, unequal shares via Yes, or percentage-based via Yes), enter/verify shares that reconcile to the total, attach a clear description, confirm details, and send to start tracking responses and payments.",
+  "faqs": [
+    "How many participants can I include in a group payment?",
+    "What contact information do I need for each group member?",
+    "What split methods are available (equal, unequal, percentage-based) and how do I select them?",
+    "How do I add participants and build the share breakdown?",
+    "How do I verify that the entered shares/percentages reconcile to the total before sending?",
+    "What should I confirm and attach before sending the group payment for tracking?"
+  ],
+  "keywords": [
+    "group payment",
+    "participants up to 30",
+    "contact details",
+    "equal shares",
+    "unequal shares (controlled by Yes)",
+    "percentage-based (controlled by Yes)",
+    "custom amounts per person",
+    "percentages add up to the total",
+    "attach a clear description",
+    "send to start tracking responses and payments"
+  ]
+}

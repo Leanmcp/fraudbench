@@ -1,0 +1,25 @@
+{
+  "id": "doc_checking_accounts_green_account_(checking)_002",
+  "title": "Green Account (checking) specifications and requirements",
+  "summary": "This document outlines Green Account (checking) ongoing requirements and fees: $22.50 monthly maintenance unless you keep a $1,350 daily balance, plus $2.50/month for paper statements. It also lists 0.11% APY, $3.00 non-network ATM fees, 3-business-day external transfers, $15 domestic wire receiving fees, $17.50 returned check deposit fees, and $4,000/day debit purchase caps.",
+  "faqs": [
+    "How can I avoid the $22.50 monthly maintenance fee on the Green Account (checking)?",
+    "What additional monthly cost applies if I choose paper statements?",
+    "What is the Green Account\u2019s APY and how are withdrawals handled at non-network ATMs?",
+    "How long do transfers to external banks take, and what fees apply to incoming domestic wires?",
+    "What fee do I pay if a deposited check is returned unpaid?",
+    "What is the daily limit for debit card purchases? "
+  ],
+  "keywords": [
+    "Green Account (checking)",
+    "$22.50 monthly maintenance fee",
+    "Daily balance requirement: $1,350",
+    "Paper statements add $2.50/month",
+    "0.11% APY",
+    "Non-network ATM fee: $3.00/transaction",
+    "External transfers complete in 3 business days",
+    "Incoming domestic wire fee: $15.00",
+    "Returned deposit fee: $17.50",
+    "Debit card purchases capped at $4,000/day"
+  ]
+}

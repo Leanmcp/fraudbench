@@ -1,0 +1,25 @@
+{
+  "id": "doc_credit_cards_virtual_card_management_002",
+  "title": "Virtual Card Management: How to Instantly Issue a Virtual Card",
+  "summary": "This document explains how to instantly issue a Virtual card by navigating to Cards > Virtual > Create new card, completing required fields, and confirming. With instant issuance enabled (Yes), card details appear in about 5 seconds; it also covers what to verify (card number, expiry, security code) and common fixes (refresh list, re-check setting, re-submit).",
+  "faqs": [
+    "How do I instantly issue a virtual card?",
+    "Where do I go in the dashboard to create a new virtual card?",
+    "How long should instant virtual card issuance take?",
+    "What card details must be visible before I leave the screen?",
+    "What should I do if the card details don\u2019t appear after 5 seconds?",
+    "How do I confirm instant issuance is enabled and what if it isn\u2019t?"
+  ],
+  "keywords": [
+    "Cards > Virtual",
+    "Create new card",
+    "Instant issuance enabled (Yes)",
+    "Instant issuance time: ~5 seconds",
+    "Card number",
+    "Expiry",
+    "Security code",
+    "Refresh the card list",
+    "Re-submit the request",
+    "Required fields and confirm"
+  ]
+}

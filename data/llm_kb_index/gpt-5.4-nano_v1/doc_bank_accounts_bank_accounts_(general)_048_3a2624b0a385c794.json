@@ -1,0 +1,30 @@
+{
+  "id": "doc_bank_accounts_bank_accounts_(general)_048",
+  "title": "FAQ: Checking Account Referrals",
+  "summary": "This FAQ covers Rho-Bank checking account referral rules: max 2 referral bonuses per rolling 9-day window; referred must be a new customer (no Rho-Bank accounts in past 12 months) and cannot share the same registered address; qualifying deposits are new money (external transfer, direct deposit, mobile check deposit, or branch cash/check). It also explains status meanings (COMPLETE/IN_PROGRESS/NO_PROGRESS/APPLIED/REJECTED/ERROR), common rejection reasons, rejection re-try timing, business referral eligibility (different primary owner), referral bonus clawback if the account closes within 90 days, promo stacking restrictions, and the qualifying-deposit timing (typically 60\u2013120 days plus 30+ days to keep the funds).",
+  "faqs": [
+    "How many referral bonuses can I receive in a rolling 9-day window?",
+    "Who is eligible to be referred (former customers, same address restrictions)?",
+    "What counts as a qualifying deposit for a checking account referral?",
+    "What does each referral status (COMPLETE, IN_PROGRESS, REJECTED, etc.) mean?",
+    "Why might my referral be rejected, and when can I refer again?",
+    "If the referred person closes the account early, will my referral bonus be reversed?",
+    "Can I combine a referral bonus with other new account promotions?",
+    "How long does the referred person have to make and keep the qualifying deposit?",
+    "Can I refer for a business checking account, and what owner restrictions apply?"
+  ],
+  "keywords": [
+    "rolling 9-day window",
+    "maximum 2 referral bonuses",
+    "new Rho-Bank customer eligibility",
+    "no existing or closed accounts in past 12 months",
+    "same registered address not allowed",
+    "qualifying deposit = new money only",
+    "external bank transfer / direct deposit / mobile check deposit / branch cash-check",
+    "account closed within 90 days = clawback",
+    "referral statuses: COMPLETE, IN_PROGRESS, NO_PROGRESS, APPLIED, REJECTED, ERROR",
+    "referral bonus cannot be combined with other promotions",
+    "qualifying deposit window typically 60\u2013120 days + 30 additional days",
+    "business referrals require different primary owner (SSN of primary authorized signer)"
+  ]
+}

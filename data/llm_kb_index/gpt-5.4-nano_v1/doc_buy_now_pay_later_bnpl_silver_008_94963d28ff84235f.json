@@ -1,0 +1,24 @@
+{
+  "id": "doc_buy_now_pay_later_bnpl_silver_008",
+  "title": "BNPL Silver: Getting Started, Eligibility, and Common Questions",
+  "summary": "BNPL Silver setup requires a specific account configuration flag ([value not available] must be true) and may trigger a soft credit check if it is true. The document covers eligibility thresholds per transaction ([value not available] to [value not available]), selectable terms up to [value not available] months, and payment cadence ([value not available]).",
+  "faqs": [
+    "How can I tell if BNPL Silver is available in my account?",
+    "What happens during BNPL Silver setup, including the soft credit check requirement?",
+    "How many soft credit checks am I allowed per calendar month for BNPL Silver?",
+    "What transaction amounts qualify for BNPL Silver eligibility?",
+    "What maximum term length can I select, and how are installment payments scheduled?"
+  ],
+  "keywords": [
+    "BNPL Silver",
+    "account settings activation",
+    "soft credit check",
+    "soft checks per calendar month",
+    "eligibility per transaction",
+    "minimum and maximum qualifying amount",
+    "terms up to [value not available] months",
+    "payment schedule/cadence [value not available]",
+    "BNPL Silver option in settings",
+    "transaction limits in account currency"
+  ]
+}

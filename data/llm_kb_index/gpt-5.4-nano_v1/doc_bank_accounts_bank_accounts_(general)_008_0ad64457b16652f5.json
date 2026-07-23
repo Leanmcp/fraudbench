@@ -1,0 +1,27 @@
+{
+  "id": "doc_bank_accounts_bank_accounts_(general)_008",
+  "title": "Internal: Closing Business Savings Accounts",
+  "summary": "This document explains pre-closure checks and the closure procedure for Closing Business Savings Accounts (Bronze Saver, Silver Saver, Gold Saver, Platinum Reserve). It specifies early-closure fees ($75/$125/$250/$500) tied to timeframes, required notice periods (10/14/21/30 days), and approval needs, plus that any early fee is deducted from the account balance only.",
+  "faqs": [
+    "What must be verified before closing a business savings account (account status, pending transactions, linked checking, and balance vs early-closure fee)?",
+    "What early-closure fee and timeframe applies to the Bronze Saver account (and what notice period is required)?",
+    "What early-closure fee and timeframe applies to the Silver Saver and Gold Saver accounts (and their notice periods)?",
+    "What early-closure fee and timeframe applies to the Platinum Reserve account (and what notice period is required)?",
+    "When is supervisor review or manager approval required during the closure process?",
+    "What are the step-by-step instructions and system action to close the account (including use of close_bank_account_7392)?"
+  ],
+  "keywords": [
+    "Bronze Saver Account",
+    "Early closure fee $75",
+    "Within 90 days",
+    "10 days notice period",
+    "Silver Saver Account",
+    "Early closure fee $125",
+    "Within 120 days",
+    "14 days notice period",
+    "Gold Saver Account $250",
+    "Within 180 days (notice 21 days; supervisor review)",
+    "Platinum Reserve Account $500 (within 270 days; manager approval; notice 30 days)",
+    "close_bank_account_7392"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "doc_everyone_pay_sending_limits_002",
+  "title": "Sending limits \u2014 per day and month",
+  "summary": "This document explains sending limits for new vs. verified accounts: New accounts have $750/day and $7,500/month; verified accounts have $3,500/day and $35,000/month. A send must fit within both remaining daily and monthly caps, and hitting either cap blocks further sends for the remainder of that day/month.",
+  "faqs": [
+    "What are the per-day and per-month sending caps for new accounts?",
+    "What are the per-day and per-month sending caps for verified accounts?",
+    "If I have remaining monthly capacity, can I still send after I hit the daily cap?",
+    "If I have remaining daily capacity, can I still send after I hit the monthly cap?",
+    "How do the daily and monthly caps interact when making a payment/sending?",
+    "What tips does the document give to avoid hitting the daily or monthly sending caps?"
+  ],
+  "keywords": [
+    "New accounts",
+    "Verified accounts",
+    "Daily cap $750",
+    "Monthly cap $7,500",
+    "Daily cap $3,500",
+    "Monthly cap $35,000",
+    "Remaining daily cap",
+    "Remaining monthly cap",
+    "Hit daily cap stops sends rest of day",
+    "Hit monthly cap stops sends rest of month"
+  ]
+}

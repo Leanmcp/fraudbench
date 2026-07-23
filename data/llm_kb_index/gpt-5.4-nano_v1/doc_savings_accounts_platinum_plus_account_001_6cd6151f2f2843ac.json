@@ -1,0 +1,21 @@
+{
+  "id": "doc_savings_accounts_platinum_plus_account_001",
+  "title": "Platinum Plus Account specifications and requirements",
+  "summary": "This document lists Platinum Plus account requirements: a $50,000 initial deposit to open, a $100,000 minimum balance to maintain, and daily interest compounding. It also states the monthly withdrawal limit is -1 (no cap on the number of withdrawals).",
+  "faqs": [
+    "How much is the initial deposit required to open a Platinum Plus account?",
+    "What minimum balance must I maintain on my Platinum Plus account?",
+    "Is there a monthly cap on the number of withdrawals?",
+    "When is interest on the Platinum Plus account compounded?",
+    "What happens if my balance or activity changes?"
+  ],
+  "keywords": [
+    "Platinum Plus Account",
+    "Initial deposit $50,000",
+    "Minimum balance $100,000",
+    "Monthly withdrawal limit: -1",
+    "No cap on number of withdrawals",
+    "Interest compounded daily",
+    "Standard account terms apply"
+  ]
+}

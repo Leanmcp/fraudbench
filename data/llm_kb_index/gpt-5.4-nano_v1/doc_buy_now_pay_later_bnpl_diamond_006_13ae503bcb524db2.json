@@ -1,0 +1,26 @@
+{
+  "id": "doc_buy_now_pay_later_bnpl_diamond_006",
+  "title": "BNPL Diamond: Integrating with Accounting Tools and Supported Platforms",
+  "summary": "BNPL Diamond offers API integration for eligible customers with direct connections to QUICKBOOKS, XERO, SAP, and NETSUITE. It provides setup steps (authorize API access and map accounts for principal, repayments, and adjustments) and syncs plan creation/schedules, repayment entries/adjustments, and reconciled statuses; it also covers troubleshooting when API is NONE or permissions/authentication/posting errors occur.",
+  "faqs": [
+    "Which accounting platforms are supported for BNPL Diamond API integration?",
+    "What are the exact setup steps to enable and authorize the BNPL Diamond API connection?",
+    "Which account mappings are required so postings go to the correct ledgers?",
+    "What data does BNPL Diamond sync into accounting tools (plans, repayments, adjustments, reconciled statuses)?",
+    "What should I do if my platform isn\u2019t listed or the API connection is NONE?",
+    "What troubleshooting steps apply if I see authentication errors or posting errors due to permissions?"
+  ],
+  "keywords": [
+    "BNPL Diamond",
+    "API integration",
+    "QUICKBOOKS_XERO_SAP_NETSUITE",
+    "Direct connections",
+    "Authorize access",
+    "Map accounts (plan principal, repayments, adjustments)",
+    "Sync: plan creation and schedule details",
+    "Periodic repayment entries and adjustments",
+    "Reconciled statuses",
+    "Troubleshooting: API is NONE",
+    "Verify user permissions"
+  ]
+}

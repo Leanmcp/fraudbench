@@ -1,0 +1,25 @@
+{
+  "id": "doc_business_savings_accounts_platinum_reserve_account_008",
+  "title": "Platinum Reserve Account: Mobile banking and deposit limits",
+  "summary": "This document explains Platinum Reserve Account limits and mobile banking best practices: a $25,000 daily mobile check deposit limit and a $100,000 maximum daily outgoing transfer amount. It also provides procedures for staying within thresholds, handling rejections, and resubmitting adjusted deposits/transfers.",
+  "faqs": [
+    "What is my daily mobile check deposit limit for the Platinum Reserve Account?",
+    "What is the maximum daily outgoing transfer amount I can make?",
+    "How can I avoid deposit holds or transfer rejections due to limit usage?",
+    "If my deposit or transfer is rejected, what should I check and do next?",
+    "When splitting payments across days, what documentation/memos should I keep?",
+    "How should I plan approvals or scheduling for disbursements above the daily transfer threshold?"
+  ],
+  "keywords": [
+    "Platinum Reserve Account",
+    "mobile check deposit limit ($25,000/day)",
+    "outgoing transfer limit ($100,000/day)",
+    "daily capacity",
+    "rejected deposit/transfer",
+    "resubmit after adjusting amount or timing",
+    "descriptive memos",
+    "split transactions",
+    "internal approval gates",
+    "audit trails"
+  ]
+}

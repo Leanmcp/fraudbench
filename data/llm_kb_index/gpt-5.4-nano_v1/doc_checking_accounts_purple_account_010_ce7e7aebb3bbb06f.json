@@ -1,0 +1,24 @@
+{
+  "id": "doc_checking_accounts_purple_account_010",
+  "title": "Why was my ATM fee not rebated?",
+  "summary": "Explains why an ATM fee was not rebated: you hit the $30 monthly rebate cap (additional ATM operator fees that month aren\u2019t rebated); the charge wasn\u2019t coded as an ATM operator fee; the transaction posted outside the eligible rebate window; or the withdrawal was at an ineligible location/terminal type. It also instructs you to review your statement vs. the $30 cap, verify the fee label and keep the receipt, and contact support with date, location, and a receipt copy showing the surcharge.",
+  "faqs": [
+    "Why didn\u2019t I get an ATM fee rebate for this transaction?",
+    "Did I reach the $30 monthly rebate cap, and could that prevent rebating additional fees?",
+    "What if the surcharge wasn\u2019t labeled/coded as an ATM operator fee by the merchant or network?",
+    "What does \u201coutside the eligible rebate window\u201d mean for my ATM transaction?",
+    "Which ATM locations or terminal types are not eligible for rebates?",
+    "What information should I provide to support if I still think a rebate is due? "
+  ],
+  "keywords": [
+    "$30 monthly rebate cap",
+    "ATM operator fee",
+    "rebated/not rebated",
+    "eligible rebate window",
+    "merchant/network coding",
+    "ineligible location or terminal type",
+    "statement review",
+    "receipt showing the surcharge",
+    "contact support with date and location"
+  ]
+}

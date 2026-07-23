@@ -1,0 +1,27 @@
+{
+  "id": "doc_business_credit_cards_virtual_card_management_006",
+  "title": "Virtual Card Management: Tracking Virtual Card Purchases by Department",
+  "summary": "Explains how to manage Virtual Card spending by department: create/confirm team group structure (up to 30 groups), apply custom card nicknames (including department codes/project IDs), enable real-time spending alerts routed to departmental approvers, and run/export departmental reports filtered by team group and nickname for budget reconciliation/variance analysis.",
+  "faqs": [
+    "How do I set up or confirm my department structure for virtual cards?",
+    "What naming (nickname) should I use on virtual cards to track transactions by vendor/project/campaign?",
+    "Can I monitor virtual card purchases in real time, and can alerts be sent to the right approvers?",
+    "How do I generate a departmental report filtered by team group and card nickname?",
+    "How many department groups can I maintain in this setup?",
+    "How do I export departmental summaries for budget reconciliation and variance analysis?"
+  ],
+  "keywords": [
+    "Virtual Card management",
+    "team groups",
+    "up to 30 groups",
+    "custom card nicknames",
+    "department codes",
+    "project IDs",
+    "real-time spending alerts",
+    "departmental approvers",
+    "departmental reports",
+    "export departmental summaries",
+    "budget reconciliation",
+    "variance analysis"
+  ]
+}

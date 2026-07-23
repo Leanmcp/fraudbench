@@ -1,0 +1,27 @@
+{
+  "id": "doc_business_checking_accounts_world_blue_001",
+  "title": "Getting Started with World Blue International Checking",
+  "summary": "This document covers getting started with World Blue International Checking, including the $10,000 minimum balance requirement, $50.00 monthly maintenance fee, support for up to 35 currencies, and payment sending/receiving in $140 supported regions. It outlines initial setup steps (funding, adding currency wallets, setting a primary operating currency, configuring payee profiles, assigning user access/permissions) and first-week best practices, plus referral eligibility for Rho-Bank holders (90 days active; referred business opens an account and deposits $25,000 within 90 days).",
+  "faqs": [
+    "What is the minimum balance and monthly maintenance fee for World Blue International Checking?",
+    "How many currencies are supported, and how do I choose which ones to set up first?",
+    "What regions/capabilities are supported for sending and receiving payments?",
+    "What initial setup steps are required (funding, currency wallets, primary operating currency, payee profiles, user access)?",
+    "What should I do in the first week to avoid service interruptions and confirm transactions?",
+    "Am I eligible to refer other businesses to World Blue, and what are the referral qualification requirements?"
+  ],
+  "keywords": [
+    "World Blue International Checking",
+    "Minimum balance requirement: $10,000",
+    "Monthly maintenance fee: $50.00",
+    "Supported currencies: 35",
+    "Supported regions for payments: $140",
+    "Primary operating currency",
+    "Currency wallets",
+    "Payee profiles",
+    "User access and role-based permissions",
+    "First-week best practices",
+    "Rho-Bank checking status for 90 days",
+    "Referral deposit requirement: $25,000 within 90 days"
+  ]
+}

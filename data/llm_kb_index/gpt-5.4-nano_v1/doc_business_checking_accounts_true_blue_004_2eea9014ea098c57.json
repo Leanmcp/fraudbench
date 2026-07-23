@@ -1,0 +1,26 @@
+{
+  "id": "doc_business_checking_accounts_true_blue_004",
+  "title": "True Blue Account: Treasury Services Integration",
+  "summary": "Covers True Blue Account treasury services integration: the monthly link fee is $0.00 and Cash Management Dashboard access is included at no additional cost. Explains enabling via an administrative profile request, assigning authorized company signers, completing credential exchange, and then verifying permissions and reconciling the first file exchange.",
+  "faqs": [
+    "What is the monthly fee to link my True Blue Account to treasury services?",
+    "Do I get access to the Cash Management Dashboard with this integration, and is there an additional cost?",
+    "How do I enable the treasury link from my administrative profile?",
+    "What approvals are required before the integration can be finalized?",
+    "What should I verify before activating the link and after the first file exchange?",
+    "If the link doesn\u2019t appear after approval, what troubleshooting steps are recommended?"
+  ],
+  "keywords": [
+    "True Blue Account",
+    "Treasury services integration",
+    "Monthly link fee $0.00",
+    "Cash Management Dashboard access included",
+    "Administrative profile request",
+    "Authorized company signers",
+    "Credential exchange",
+    "Integration approvals",
+    "Verify account permissions",
+    "Reconcile first file exchange",
+    "Dashboard access enabled"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "doc_credit_cards_crypto-cash_back_003",
+  "title": "Crypto-Cash Back: Supported Cryptocurrencies and Wallets",
+  "summary": "This document explains Crypto-Cash Back redemptions, confirming crypto redemptions are available and up to 12 cryptocurrencies can be redeemed from a curated, changeable list. It covers direct wallet integration vs manual public wallet address entry, plus guidance to confirm network support and use new addresses after a small test transfer.",
+  "faqs": [
+    "How many cryptocurrencies are supported for Crypto-Cash Back redemptions?",
+    "Can I redeem crypto through direct wallet integration, or do I need to enter an address manually?",
+    "How do I select a cryptocurrency during redemption?",
+    "If direct integration isn\u2019t available, what wallet information do I need to provide and verify?",
+    "What best practices should I follow to ensure my wallet matches the selected cryptocurrency\u2019s network?",
+    "Should I use new wallet addresses, and how should I validate them before sending funds?"
+  ],
+  "keywords": [
+    "Crypto-Cash Back",
+    "crypto redemptions: Yes",
+    "up to 12 cryptocurrencies",
+    "curated list (changes over time)",
+    "direct wallet integration supported",
+    "manual wallet address entry",
+    "compatible public wallet address",
+    "select it at checkout during redemption",
+    "verify wallet/network support",
+    "small test transfer"
+  ]
+}

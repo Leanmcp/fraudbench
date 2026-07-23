@@ -1,0 +1,26 @@
+{
+  "id": "doc_buy_now_pay_later_bnpl_diamond_001",
+  "title": "BNPL Diamond: Eligibility Segments and Minimum Spend Requirements Explained",
+  "summary": "Explains BNPL Diamond eligibility for customers in the HIGH_SPEND_RETAIL segment and sets a minimum average monthly spend requirement of at least $502500.00 over the evaluation period. Average is calculated from settled transactions, with reversals/refunds/chargebacks reducing the average.",
+  "faqs": [
+    "Am I eligible for BNPL Diamond if my account is in the HIGH_SPEND_RETAIL segment?",
+    "What is the minimum average monthly spend required for BNPL Diamond ($502500.00)?",
+    "How is my average monthly spend calculated during the evaluation period?",
+    "Do refunds, reversals, or chargebacks affect the spend average?",
+    "What happens if my average monthly spend falls below $502500.00 during the evaluation period?",
+    "What checklist should I confirm before proceeding with BNPL Diamond eligibility?"
+  ],
+  "keywords": [
+    "BNPL Diamond",
+    "Eligibility segments",
+    "HIGH_SPEND_RETAIL",
+    "Minimum average monthly spend",
+    "$502500.00",
+    "Evaluation period",
+    "Settled transactions",
+    "Reversals",
+    "Refunds",
+    "Chargebacks",
+    "Average monthly spend calculation"
+  ]
+}

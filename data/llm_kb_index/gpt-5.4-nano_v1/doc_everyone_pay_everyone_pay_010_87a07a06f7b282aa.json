@@ -1,0 +1,25 @@
+{
+  "id": "doc_everyone_pay_everyone_pay_010",
+  "title": "Common security questions for Everyone Pay",
+  "summary": "This document covers Everyone Pay security practices: contact verification before the first transaction, steps to reduce wrong-person payments (saved contacts, review the final confirmation screen, and use verified indicators), how Rho risk checks/monitoring may pause transactions for review, and what to do if fraud is suspected (cancel pending eligible payments, report from transaction details with info, and optionally block the user).",
+  "faqs": [
+    "Do I need to verify contacts before sending a payment?",
+    "How can I reduce the risk of sending to the wrong person in Everyone Pay?",
+    "How does Rho handle suspicious or unusual activity?",
+    "What should I do if I suspect fraud on a payment?",
+    "Can I cancel a payment if I suspect fraud?",
+    "Should I block a user if I suspect fraud?"
+  ],
+  "keywords": [
+    "Everyone Pay",
+    "contact verification before first transaction",
+    "verified indicator on contact profile",
+    "final confirmation screen",
+    "risk checks and monitoring",
+    "transactions may be paused for review",
+    "cancel pending payment",
+    "eligible for cancellation",
+    "report from transaction details",
+    "block the user"
+  ]
+}

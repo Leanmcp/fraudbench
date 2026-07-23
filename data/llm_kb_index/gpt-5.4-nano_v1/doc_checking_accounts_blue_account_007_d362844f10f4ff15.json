@@ -1,0 +1,24 @@
+{
+  "id": "doc_checking_accounts_blue_account_007",
+  "title": "Blue Account: Managing your balance with low-balance alerts",
+  "summary": "This document explains how to enable Blue Account low-balance alerts and set the threshold to $62, so you\u2019re notified when your available balance reaches or falls below $62. It also gives tips on acting before transactions post and steps to take after an alert triggers (review pending/posted items, then add funds or adjust transactions to get above $62).",
+  "faqs": [
+    "How do I enable low-balance alerts on my Blue Account?",
+    "What alert threshold should I set to receive early warnings?",
+    "When does a low-balance alert trigger?",
+    "After I receive an alert, what should I review to find what lowered my balance?",
+    "What actions can I take to bring my balance back above the $62 threshold?",
+    "How can I use low-balance alerts with my budgeting so I can act before transactions post?"
+  ],
+  "keywords": [
+    "Blue Account",
+    "low-balance alerts",
+    "alert threshold",
+    "$62",
+    "available balance",
+    "pending items",
+    "posted items",
+    "transactions post",
+    "budgeting approach"
+  ]
+}

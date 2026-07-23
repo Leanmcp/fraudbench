@@ -1,0 +1,25 @@
+{
+  "id": "doc_business_savings_accounts_gold_plus_saver_002",
+  "title": "Gold Plus Saver Account: Investment sweep integration",
+  "summary": "The document explains that the Gold Plus Saver Account tier supports automatic investment sweeps: excess end-of-day available balances above a $50,000 threshold are swept to a linked investment account. Sweep activity may pause if balances move near the threshold, and sweep activity appears as transfers in transaction history with suggested reconciliation labeling.",
+  "faqs": [
+    "Is automatic investment sweep available for the Gold Plus Saver Account tier?",
+    "What is the balance threshold used to trigger an investment sweep?",
+    "How does end-of-day available balance determine what gets swept?",
+    "Can I turn the sweep feature on or off, and where do I do it?",
+    "How can I track and reconcile sweep activity in transaction history?",
+    "What should I do if my balance moves near the $50,000 threshold?"
+  ],
+  "keywords": [
+    "Gold Plus Saver Account",
+    "Automatic investment sweeps: Yes",
+    "Excess balances sweep",
+    "Balance threshold: $50,000",
+    "End-of-day available balance",
+    "Linked investment account",
+    "Toggle sweep on/off in account controls",
+    "Transaction history as transfers",
+    "Reconciliation labeling entries",
+    "Monthly close review"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "doc_everyone_pay_split-the-bill_001",
+  "title": "Split-the-Bill: Complete Guide",
+  "summary": "This guide covers Split-the-Bill rules and workflow: group size capped at 30 participants, total split amount capped at $5,500, payment due within 16 days from creation, and automatic reminders every 4. It explains creation/sending steps, tracking paid vs outstanding, and what to do when the due date passes (extend, resend, or resolve), plus edge cases like splitting into multiple groups when reaching 30.",
+  "faqs": [
+    "What are the maximum limits for Split-the-Bill (participants and total amount)?",
+    "How do I create and send a Split-the-Bill request to participants?",
+    "When are payments due after the split is created (the 16-day window)?",
+    "How often do automatic reminders send (every 4), and can I nudge members manually?",
+    "How can I track which participants have paid vs who is outstanding?",
+    "If the due date passes, what actions does the guide recommend (extend, resend, resolve)?"
+  ],
+  "keywords": [
+    "Split-the-Bill",
+    "maximum 30 participants per group",
+    "maximum $5,500 total amount",
+    "payment due date within 16",
+    "automatic reminders every 4",
+    "invite participants cap of 30",
+    "split details activity view",
+    "extend / resend / resolve after due date",
+    "outstanding balances review"
+  ]
+}

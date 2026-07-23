@@ -1,0 +1,26 @@
+{
+  "id": "doc_credit_cards_credit_cards_(general)_013",
+  "title": "How to Find Your Rho-Bank Credit Card Numbers Online",
+  "summary": "Explains how to find Rho\u2011Bank credit card numbers online: use the tool get_card_last_4_digits(credit_card_account_id: str) to retrieve last 4 digits, or sign in to the Rho\u2011Bank mobile app/website to Reveal/View card number after identity confirmation. Includes security tips (trusted devices, no screenshots, sign out).",
+  "faqs": [
+    "How can I retrieve the last 4 digits of my Rho\u2011Bank credit card using the discovered tool?",
+    "Where do I find my credit card account ID in the Rho\u2011Bank app or website?",
+    "How do I reveal my full Rho\u2011Bank credit card number in the mobile app?",
+    "How do I reveal my full Rho\u2011Bank credit card number on the Rho\u2011Bank website?",
+    "What identity confirmation step is required when viewing card details?",
+    "What security precautions should I follow when viewing or copying my card number?"
+  ],
+  "keywords": [
+    "get_card_last_4_digits(credit_card_account_id: str)",
+    "credit_card_account_id",
+    "last four digits",
+    "Rho\u2011Bank mobile app",
+    "View card details",
+    "Reveal card number",
+    "identity confirmation",
+    "Rho\u2011Bank website",
+    "trusted devices and secure networks",
+    "do not share screenshots",
+    "sign out"
+  ]
+}

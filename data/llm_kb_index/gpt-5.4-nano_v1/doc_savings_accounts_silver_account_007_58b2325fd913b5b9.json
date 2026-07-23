@@ -1,0 +1,25 @@
+{
+  "id": "doc_savings_accounts_silver_account_007",
+  "title": "Silver Account: Mobile banking and deposit limits",
+  "summary": "This document covers Silver Account limits for mobile check deposits and outgoing transfers via mobile/online: $2,500 per calendar day for mobile check deposits, and $5,000 per day total outgoing transfers. It explains how excess deposits/transfers are declined and can be resubmitted on the next calendar day, plus how to monitor limits via in-app notifications and request a review from support (approval not guaranteed, may require extra verification).",
+  "faqs": [
+    "What is my Silver Account mobile check deposit limit per day?",
+    "What happens if I reach the $2,500 mobile check deposit daily limit?",
+    "What is the daily outgoing transfer limit from my Silver Account using mobile or online channels?",
+    "Will transfers above the $5,000 daily limit be declined, and can I resubmit later?",
+    "How can I monitor how much of my daily limits remain?",
+    "Can I request higher limits for my Silver Account, and is approval guaranteed?"
+  ],
+  "keywords": [
+    "Silver Account",
+    "mobile check deposit limit ($2,500 per calendar day)",
+    "outgoing transfers cap ($5,000 per day)",
+    "calendar day limits",
+    "declined when exceeding limit",
+    "next day resubmission",
+    "in-app notifications",
+    "request a limits review",
+    "approval not guaranteed",
+    "additional verification"
+  ]
+}

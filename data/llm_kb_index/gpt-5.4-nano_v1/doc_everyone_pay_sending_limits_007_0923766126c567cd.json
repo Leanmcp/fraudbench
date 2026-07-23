@@ -1,0 +1,26 @@
+{
+  "id": "doc_everyone_pay_sending_limits_007",
+  "title": "What's the difference between daily and monthly limits?",
+  "summary": "This document compares daily vs monthly sending limits: daily applies per day ($750 new accounts, $3,500 verified) and monthly applies per month ($7,500 new, $35,000 verified). Both limits are enforced simultaneously; payments can be declined if they exceed remaining daily or remaining monthly capacity.",
+  "faqs": [
+    "What are the daily sending limits for new vs verified accounts?",
+    "What are the monthly sending limits for new vs verified accounts?",
+    "Do daily and monthly limits both apply at the same time?",
+    "If I have remaining daily capacity, can a payment still be declined due to monthly capacity?",
+    "How do daily and monthly caps affect large one-time payments?",
+    "What should I check before sending a sizable disbursement?"
+  ],
+  "keywords": [
+    "Daily limit",
+    "Monthly limit",
+    "New accounts daily: $750",
+    "Verified accounts daily: $3,500",
+    "New accounts monthly: $7,500",
+    "Verified accounts monthly: $35,000",
+    "Limits enforced at the same time",
+    "Declined if exceeds remaining monthly capacity",
+    "Daily cap binding constraint",
+    "Split across multiple days",
+    "Request an adjustment"
+  ]
+}

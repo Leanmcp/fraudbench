@@ -1,0 +1,25 @@
+{
+  "id": "doc_buy_now_pay_later_bnpl_bronze_004",
+  "title": "BNPL Bronze: Interest-Free Payments and Upfront Charge Percentage",
+  "summary": "This document explains BNPL Bronze interest and checkout charges: it states an annual interest rate applied to BNPL Bronze balances (value not available) and notes that an interest rate shown as zero means no interest accrues. It also describes an upfront charge collected immediately at checkout as [value not available]% of the purchase amount, with the remainder scheduled over subsequent installments without interest based on [value not available].",
+  "faqs": [
+    "What annual interest rate applies to BNPL Bronze balances?",
+    "If the interest rate shown is zero, do I accrue interest on my BNPL Bronze installment balance?",
+    "What is the upfront charge percentage at checkout for BNPL Bronze?",
+    "How is the upfront charge calculated from my purchase amount?",
+    "Does BNPL Bronze charge interest on the remaining scheduled installments if I pay on time?",
+    "How much of my total purchase do I need available at checkout for the upfront charge? "
+  ],
+  "keywords": [
+    "BNPL Bronze",
+    "annual interest rate applied to balances (value not available)",
+    "interest rate shown as zero",
+    "upfront charge percentage",
+    "upfront charge collected immediately at checkout",
+    "Purchase amount \u00d7 [value not available]",
+    "remaining purchase amount scheduled over subsequent installments",
+    "no interest based on [value not available]",
+    "ensure sufficient funds for upfront amount",
+    "cost of financing not increased by interest when you pay on time"
+  ]
+}

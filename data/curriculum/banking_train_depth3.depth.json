@@ -1,0 +1,403 @@
+{
+ "$generated_by": "FAILURE_ANALYSIS/planning_eval/filter_train_by_depth.py",
+ "source_curriculum": "data/curriculum/banking_train.jsonl",
+ "min_distinct_agent_actions": 3,
+ "rule": "distinct assistant-requestor gold actions, plumbing (unlock_/give_discoverable) excluded",
+ "why": "tasks below the threshold tie inside their GRPO group and contribute no gradient; see this script's docstring for the train-20260728-174837 evidence",
+ "kept": [
+  {
+   "id": "task_005",
+   "n": 3,
+   "actions": [
+    "transfer_to_human_agents",
+    "log_verification",
+    "change_user_email"
+   ]
+  },
+  {
+   "id": "task_037",
+   "n": 3,
+   "actions": [
+    "log_verification",
+    "order_replacement_credit_card_7291",
+    "file_credit_card_transaction_dispute_4829"
+   ]
+  },
+  {
+   "id": "task_038",
+   "n": 3,
+   "actions": [
+    "log_verification",
+    "order_replacement_credit_card_7291",
+    "file_credit_card_transaction_dispute_4829"
+   ]
+  },
+  {
+   "id": "task_043",
+   "n": 8,
+   "actions": [
+    "log_verification",
+    "get_user_dispute_history_7291",
+    "get_pending_replacement_orders_5765",
+    "get_all_user_accounts_by_user_id_3847",
+    "pay_credit_card_from_checking_9182",
+    "get_closure_reason_history_8293",
+    "log_credit_card_closure_reason_4521",
+    "apply_credit_card_account_flag_6147"
+   ]
+  },
+  {
+   "id": "task_044",
+   "n": 5,
+   "actions": [
+    "log_verification",
+    "get_user_dispute_history_7291",
+    "get_pending_replacement_orders_5765",
+    "get_closure_reason_history_8293",
+    "log_credit_card_closure_reason_4521"
+   ]
+  },
+  {
+   "id": "task_045",
+   "n": 8,
+   "actions": [
+    "log_verification",
+    "get_user_dispute_history_7291",
+    "get_pending_replacement_orders_5765",
+    "get_all_user_accounts_by_user_id_3847",
+    "pay_credit_card_from_checking_9182",
+    "get_closure_reason_history_8293",
+    "log_credit_card_closure_reason_4521",
+    "apply_statement_credit_8472"
+   ]
+  },
+  {
+   "id": "task_047",
+   "n": 6,
+   "actions": [
+    "log_verification",
+    "get_user_dispute_history_7291",
+    "get_pending_replacement_orders_5765",
+    "get_closure_reason_history_8293",
+    "log_credit_card_closure_reason_4521",
+    "apply_statement_credit_8472"
+   ]
+  },
+  {
+   "id": "task_049",
+   "n": 8,
+   "actions": [
+    "log_verification",
+    "get_user_dispute_history_7291",
+    "get_pending_replacement_orders_5765",
+    "get_closure_reason_history_8293",
+    "close_credit_card_account_7834",
+    "log_credit_card_closure_reason_4521",
+    "apply_statement_credit_8472",
+    "transfer_to_human_agents"
+   ]
+  },
+  {
+   "id": "task_050",
+   "n": 7,
+   "actions": [
+    "log_verification",
+    "submit_credit_limit_increase_request_7392",
+    "get_user_dispute_history_7291",
+    "get_pending_replacement_orders_5765",
+    "get_credit_limit_increase_history_4829",
+    "get_payment_history_6183",
+    "approve_credit_limit_increase_5847"
+   ]
+  },
+  {
+   "id": "task_052",
+   "n": 7,
+   "actions": [
+    "log_verification",
+    "submit_credit_limit_increase_request_7392",
+    "get_credit_limit_increase_history_4829",
+    "get_user_dispute_history_7291",
+    "get_pending_replacement_orders_5765",
+    "get_payment_history_6183",
+    "deny_credit_limit_increase_5848"
+   ]
+  },
+  {
+   "id": "task_055",
+   "n": 3,
+   "actions": [
+    "log_verification",
+    "get_all_user_accounts_by_user_id_3847",
+    "open_bank_account_4821"
+   ]
+  },
+  {
+   "id": "task_057",
+   "n": 3,
+   "actions": [
+    "log_verification",
+    "get_all_user_accounts_by_user_id_3847",
+    "open_bank_account_4821"
+   ]
+  },
+  {
+   "id": "task_059",
+   "n": 3,
+   "actions": [
+    "log_verification",
+    "get_all_user_accounts_by_user_id_3847",
+    "open_bank_account_4821"
+   ]
+  },
+  {
+   "id": "task_060",
+   "n": 4,
+   "actions": [
+    "log_verification",
+    "get_all_user_accounts_by_user_id_3847",
+    "open_bank_account_4821",
+    "close_bank_account_7392"
+   ]
+  },
+  {
+   "id": "task_073",
+   "n": 4,
+   "actions": [
+    "log_verification",
+    "get_all_user_accounts_by_user_id_3847",
+    "get_bank_account_transactions_9173",
+    "apply_checking_account_credit_5829"
+   ]
+  },
+  {
+   "id": "task_089",
+   "n": 5,
+   "actions": [
+    "log_verification",
+    "get_all_user_accounts_by_user_id_3847",
+    "get_debit_cards_by_account_id_7823",
+    "get_bank_account_transactions_9173",
+    "request_temporary_debit_card_limit_increase_8374"
+   ]
+  },
+  {
+   "id": "task_093",
+   "n": 5,
+   "actions": [
+    "log_verification",
+    "get_all_user_accounts_by_user_id_3847",
+    "get_bank_account_transactions_9173",
+    "apply_savings_account_credit_6831",
+    "submit_interest_discrepancy_report_7294"
+   ]
+  },
+  {
+   "id": "task_095",
+   "n": 5,
+   "actions": [
+    "log_verification",
+    "get_all_user_accounts_by_user_id_3847",
+    "get_bank_account_transactions_9173",
+    "apply_savings_account_credit_6831",
+    "submit_interest_discrepancy_report_7294"
+   ]
+  },
+  {
+   "id": "task_096",
+   "n": 5,
+   "actions": [
+    "log_verification",
+    "get_all_user_accounts_by_user_id_3847",
+    "get_bank_account_transactions_9173",
+    "apply_savings_account_credit_6831",
+    "submit_interest_discrepancy_report_7294"
+   ]
+  },
+  {
+   "id": "task_099",
+   "n": 3,
+   "actions": [
+    "log_verification",
+    "get_all_user_accounts_by_user_id_3847",
+    "get_referrals_by_user"
+   ]
+  }
+ ],
+ "dropped": [
+  {
+   "id": "task_001",
+   "n": 0,
+   "actions": []
+  },
+  {
+   "id": "task_002",
+   "n": 0,
+   "actions": []
+  },
+  {
+   "id": "task_003",
+   "n": 0,
+   "actions": []
+  },
+  {
+   "id": "task_004",
+   "n": 1,
+   "actions": [
+    "transfer_to_human_agents"
+   ]
+  },
+  {
+   "id": "task_010",
+   "n": 1,
+   "actions": [
+    "log_verification"
+   ]
+  },
+  {
+   "id": "task_012",
+   "n": 1,
+   "actions": [
+    "transfer_to_human_agents"
+   ]
+  },
+  {
+   "id": "task_014",
+   "n": 1,
+   "actions": [
+    "transfer_to_human_agents"
+   ]
+  },
+  {
+   "id": "task_016",
+   "n": 1,
+   "actions": [
+    "log_verification"
+   ]
+  },
+  {
+   "id": "task_017",
+   "n": 1,
+   "actions": [
+    "log_verification"
+   ]
+  },
+  {
+   "id": "task_019",
+   "n": 1,
+   "actions": [
+    "log_verification"
+   ]
+  },
+  {
+   "id": "task_022",
+   "n": 1,
+   "actions": [
+    "log_verification"
+   ]
+  },
+  {
+   "id": "task_023",
+   "n": 1,
+   "actions": [
+    "log_verification"
+   ]
+  },
+  {
+   "id": "task_024",
+   "n": 0,
+   "actions": []
+  },
+  {
+   "id": "task_025",
+   "n": 0,
+   "actions": []
+  },
+  {
+   "id": "task_027",
+   "n": 1,
+   "actions": [
+    "log_verification"
+   ]
+  },
+  {
+   "id": "task_028",
+   "n": 2,
+   "actions": [
+    "log_verification",
+    "update_transaction_rewards_3847"
+   ]
+  },
+  {
+   "id": "task_029",
+   "n": 1,
+   "actions": [
+    "log_verification"
+   ]
+  },
+  {
+   "id": "task_031",
+   "n": 2,
+   "actions": [
+    "log_verification",
+    "file_credit_card_transaction_dispute_4829"
+   ]
+  },
+  {
+   "id": "task_032",
+   "n": 2,
+   "actions": [
+    "initial_transfer_to_human_agent_0218",
+    "transfer_to_human_agents"
+   ]
+  },
+  {
+   "id": "task_034",
+   "n": 1,
+   "actions": [
+    "transfer_to_human_agents"
+   ]
+  },
+  {
+   "id": "task_036",
+   "n": 2,
+   "actions": [
+    "log_verification",
+    "order_replacement_credit_card_7291"
+   ]
+  },
+  {
+   "id": "task_063",
+   "n": 2,
+   "actions": [
+    "log_verification",
+    "open_bank_account_4821"
+   ]
+  },
+  {
+   "id": "task_064",
+   "n": 2,
+   "actions": [
+    "log_verification",
+    "open_bank_account_4821"
+   ]
+  },
+  {
+   "id": "task_075",
+   "n": 2,
+   "actions": [
+    "log_verification",
+    "open_bank_account_4821"
+   ]
+  },
+  {
+   "id": "task_098",
+   "n": 2,
+   "actions": [
+    "log_verification",
+    "get_referrals_by_user"
+   ]
+  }
+ ],
+ "not_found_in_tasks_json": []
+}

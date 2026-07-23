@@ -1,0 +1,26 @@
+{
+  "id": "doc_business_credit_cards_virtual_card_management_003",
+  "title": "Virtual Card Management: Revoking and Canceling Virtual Cards",
+  "summary": "This document explains when to use **Revoke** vs **Cancel** for bank **Virtual Cards**. It provides step-by-step procedures: revoke immediately disables purchases and makes the card unusable within **3 seconds**, while cancel permanently closes the card and blocks authorization within **3 seconds**, followed by refresh/verification and audit recordkeeping.",
+  "faqs": [
+    "When should I choose Revoke vs Cancel for a virtual card?",
+    "How do I revoke a virtual card so it becomes unusable within 3 seconds?",
+    "How do I cancel a virtual card so authorization is blocked within 3 seconds?",
+    "After revoking or canceling, what should I do to verify the updated card status?",
+    "Do I need to document the reason for revocation/cancellation for audit tracking?",
+    "If I revoked a card temporarily, can I create and distribute a replacement card later? "
+  ],
+  "keywords": [
+    "Virtual Cards",
+    "Revoke",
+    "Cancel",
+    "Temporarily urgent risk scenarios",
+    "Permanently closes the card",
+    "Card becomes unusable within 3 seconds",
+    "Authorization blocked within 3 seconds",
+    "Refresh the card list",
+    "Audit tracking / internal records",
+    "Create a replacement card",
+    "Distribute new details"
+  ]
+}

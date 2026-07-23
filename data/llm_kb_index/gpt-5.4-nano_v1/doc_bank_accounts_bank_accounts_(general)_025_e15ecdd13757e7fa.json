@@ -1,0 +1,25 @@
+{
+  "id": "doc_bank_accounts_bank_accounts_(general)_025",
+  "title": "Internal: Closing/Cancelling a Debit Card",
+  "summary": "This document explains how to close, cancel, or deactivate a debit card, including eligibility checks (ACTIVE/PENDING status, no pending transactions, no pending refunds, min 14-day card age based on date_issued) and immediate closure for lost/stolen/fraud_suspected. It details required verification steps, the reason selection flow, and closing via close_debit_card_4721(card_id, reason), plus post-closure impacts (no reactivation, update recurring payments, refund credits to linked checking).",
+  "faqs": [
+    "How do I close or deactivate my debit card, and what reasons are allowed?",
+    "What eligibility requirements must be met before a card can be closed (pending transactions, pending refunds, card age, and status)?",
+    "If my card is lost, stolen, or fraud suspected, will I be able to close it immediately even if it\u2019s less than 14 days old?",
+    "If there are pending transactions or pending refunds, what do I need to do before closure can proceed?",
+    "What happens after the card is permanently deactivated\u2014can it be reactivated, and what about recurring payments and refunds?",
+    "If I\u2019m closing the linked checking account, is there anything I must do with associated debit cards first? "
+  ],
+  "keywords": [
+    "close_debit_card_4721",
+    "card_id",
+    "reason (lost, stolen, fraud_suspected, damaged, no_longer_needed, account_closing)",
+    "ACTIVE/PENDING card status",
+    "Minimum card age 14 days (date_issued)",
+    "Pending transactions must settle",
+    "Pending refunds block closure (3\u20135 business days)",
+    "Refunds credited to linked checking account",
+    "No cooling-off period for lost/stolen",
+    "Closed cards cannot be reopened"
+  ]
+}

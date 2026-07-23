@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Compare runs · Result Visualizer</title>
+<style>
+  :root {
+    --bg:#0f1117; --panel:#171a23; --panel2:#1d212c; --border:#2a2f3a;
+    --fg:#d7dbe4; --dim:#828a9c; --accent:#6ea8fe;
+    --user:#c98bff; --assistant:#5fb6ff; --tool:#e8b450; --system:#7fd6c2;
+    --green:#56d364; --red:#f4707a; --yellow:#e3b341;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    background:var(--bg); color:var(--fg); height:100vh; display:flex; flex-direction:column; }
+  header { padding:10px 16px; background:var(--panel); border-bottom:1px solid var(--border);
+    display:flex; align-items:baseline; gap:12px; }
+  header h1 { font-size:15px; margin:0; }
+  header a { color:var(--accent); text-decoration:none; font-size:13px; }
+  .pick { padding:10px 16px; border-bottom:1px solid var(--border); background:var(--panel); }
+  .sec { font-size:11px; text-transform:uppercase; letter-spacing:1px; color:var(--dim); margin-bottom:6px; }
+  .pickrow { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+  select.runsel { background:var(--panel2); color:var(--fg); border:1px solid var(--border);
+    border-radius:6px; padding:5px 9px; font-size:13px; min-width:320px; max-width:60vw; }
+  .runs { display:flex; gap:8px; flex-wrap:wrap; }
+  .chip { padding:5px 11px; border:1px solid var(--accent); border-radius:18px;
+    background:#27314a; font-size:13px; display:flex; gap:7px; align-items:center; }
+  .chip .dom { color:var(--dim); font-size:11px; }
+  .chip .x { cursor:pointer; color:var(--dim); font-weight:700; margin-left:2px;
+    padding:0 2px; border-radius:4px; }
+  .chip .x:hover { color:var(--red); }
+  .body { flex:1; display:flex; min-height:0; }
+  #tasks { width:360px; min-width:280px; max-width:48vw; border-right:1px solid var(--border);
+    overflow:auto; background:var(--panel); resize:horizontal; }
+  #tasks .sec { padding:10px 12px 6px; position:sticky; left:0; }
+  table.tt { border-collapse:collapse; width:100%; font-size:12.5px; }
+  table.tt th, table.tt td { padding:6px 7px; border-bottom:1px solid var(--border); white-space:nowrap; }
+  table.tt thead th { position:sticky; top:0; z-index:2; background:var(--panel2); color:var(--dim);
+    font-weight:600; font-size:11px; text-align:center; }
+  table.tt th.tcol, table.tt td.tcol { text-align:left; }
+  table.tt td { text-align:center; font-variant-numeric:tabular-nums; font-weight:700; }
+  table.tt td.tcol { font-weight:600; color:var(--fg); }
+  table.tt tbody tr { cursor:pointer; }
+  table.tt tbody tr:hover td { background:#222735; }
+  table.tt tbody tr.active td { background:#27314a; }
+  table.tt tbody tr.diff td.tcol { box-shadow:inset 3px 0 0 var(--yellow); }
+  .reward { font-variant-numeric:tabular-nums; font-weight:700; }
+  .r-pass { color:var(--green); } .r-fail { color:var(--red); } .r-mid { color:var(--yellow); }
+  .r-na { color:var(--dim); }
+  .cols { flex:1; display:flex; overflow-x:auto; min-width:0; }
+  .colwrap { flex:0 0 460px; border-right:1px solid var(--border); display:flex; flex-direction:column; min-width:0; }
+  .colhead { padding:8px 12px; background:var(--panel2); border-bottom:1px solid var(--border);
+    position:sticky; top:0; }
+  .colhead .m { font-weight:700; }
+  .colhead .meta { color:var(--dim); font-size:12px; }
+  .colmsgs { overflow:auto; padding:8px 10px 50px; flex:1; }
+  .msg { border:1px solid var(--border); border-radius:8px; margin:8px 0; overflow:hidden; }
+  .msg .bar { padding:5px 10px; font-size:12px; display:flex; gap:8px; align-items:center;
+    background:var(--panel); border-bottom:1px solid var(--border); }
+  .role { font-weight:700; text-transform:uppercase; letter-spacing:.5px; }
+  .role.assistant { color:var(--assistant); } .role.user { color:var(--user); }
+  .role.tool { color:var(--tool); } .role.system { color:var(--system); }
+  .msg .mbody { padding:8px 12px; white-space:pre-wrap; word-break:break-word; font-size:13px; }
+  .reasoning { color:var(--dim); font-style:italic; border-left:2px solid var(--border);
+    padding-left:9px; margin-bottom:7px; white-space:pre-wrap; }
+  .tcall { color:var(--green); font-family:ui-monospace,Menlo,monospace; font-size:12px;
+    background:#10231a; border:1px solid #1d3b28; border-radius:6px; padding:5px 8px; margin-top:5px;
+    white-space:pre-wrap; word-break:break-word; }
+  /* collapsible tool-result / reasoning blocks — collapsed by default to cut noise */
+  details.coll { border:1px solid #3a3320; border-radius:6px; background:#1a1710;
+    margin:5px 0; overflow:hidden; }
+  details.coll > summary { cursor:pointer; list-style:none; user-select:none; padding:5px 9px;
+    font-size:11.5px; color:var(--tool); display:flex; gap:7px; align-items:center;
+    white-space:nowrap; overflow:hidden; }
+  details.coll > summary::-webkit-details-marker { display:none; }
+  details.coll > summary::before { content:'▸'; color:var(--dim); flex:none; }
+  details.coll[open] > summary::before { content:'▾'; }
+  details.coll > summary .l { font-weight:700; text-transform:uppercase; letter-spacing:.4px; flex:none; }
+  details.coll > summary .p { color:var(--dim); font-weight:400; text-transform:none;
+    overflow:hidden; text-overflow:ellipsis; font-family:ui-monospace,Menlo,monospace; font-size:11px; }
+  details.coll > summary .n { margin-left:auto; flex:none; color:var(--dim); font-size:10.5px; }
+  details.coll > .c { padding:7px 10px; border-top:1px solid #3a3320;
+    white-space:pre-wrap; word-break:break-word; }
+  details.coll.reason { border-color:#39305a; }
+  details.coll.reason > summary { color:var(--user); }
+  details.coll.reason > .c { border-top-color:#39305a; color:var(--dim); background:#1a1726; }
+  .muted { color:var(--dim); } .badge { font-size:11px; color:var(--dim); }
+  .empty { color:var(--dim); padding:30px 16px; text-align:center; }
+  button { background:var(--panel2); color:var(--fg); border:1px solid var(--border);
+    border-radius:6px; padding:4px 10px; cursor:pointer; font-size:13px; }
+  button.on { background:#27314a; border-color:var(--accent); }
+</style>
+</head>
+<body>
+<header>
+  <h1>Compare runs</h1>
+  <span class="sub" style="color:var(--dim);font-size:12px">pick runs, then a task, to view side by side</span>
+  <button id="reasonBtn" class="on" style="margin-left:auto">reasoning</button>
+  <a href="/">‹ back to browser</a>
+</header>
+
+<div class="pick">
+  <div class="sec">Runs to compare <span class="muted" id="hint">(add 2 or more — same domain shares task ids)</span></div>
+  <div class="pickrow">
+    <select class="runsel" id="runPicker"></select>
+    <button id="addRun">+ Add run</button>
+    <button id="clearRuns">clear</button>
+  </div>
+  <div class="runs" id="runs" style="margin-top:8px"></div>
+</div>
+
+<div class="body">
+  <div id="tasks"><div class="empty">Select runs above.</div></div>
+  <div class="cols" id="cols"><div class="empty" style="margin-top:60px">Pick a task on the left.</div></div>
+</div>
+
+<script>
+const $ = (s,r=document)=>r.querySelector(s);
+const el=(t,c,h)=>{const e=document.createElement(t); if(c)e.className=c; if(h!=null)e.innerHTML=h; return e;};
+const esc=s=>(s==null?'':String(s)).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+const j=async u=>(await fetch(u)).json();
+function rewardClass(r){ if(r==null)return 'r-na'; if(r>=0.999)return 'r-pass'; if(r<=0.001)return 'r-fail'; return 'r-mid'; }
+function rewardTxt(r){ return r==null?'—':Number(r).toFixed(2); }
+
+let RUNS=[];                 // /api/results
+let SELECTED=[];            // selected run indices
+const RESULT_CACHE={};      // ri -> {model, sims:{task_id->{reward,s}}}
+let SHOW_REASONING=true;
+let ACTIVE_TASK=null;
+
+async function init(){
+  RUNS = await j('/api/results');
+  const sel=$('#runPicker'); sel.innerHTML='';
+  RUNS.forEach(r=>{
+    const o=el('option');
+    o.value=r.i;
+    o.textContent=`${r.model}  —  ${r.domain||''} · ${r.run.replace('run_','')}`;
+    sel.appendChild(o);
+  });
+  renderSelected();
+}
+
+// chips below the picker show only the runs currently chosen, each removable.
+function renderSelected(){
+  const box=$('#runs'); box.innerHTML='';
+  if(!SELECTED.length){
+    box.appendChild(el('span','muted','No runs selected — pick one above and click “Add run”.'));
+    return;
+  }
+  SELECTED.forEach(ri=>{
+    const r=RUNS[ri];
+    const c=el('div','chip');
+    c.innerHTML=`<span>${esc(r.model)}</span><span class="dom">${esc(r.domain||'')}·${esc(r.run.replace('run_',''))}</span><span class="x" title="remove">✕</span>`;
+    c.querySelector('.x').onclick=()=>removeRun(ri);
+    box.appendChild(c);
+  });
+}
+
+async function addRun(){
+  const ri=+$('#runPicker').value;
+  if(Number.isNaN(ri) || SELECTED.includes(ri)) return;   // skip dups
+  SELECTED.push(ri);
+  if(!RESULT_CACHE[ri]) await loadResult(ri);
+  renderSelected();
+  buildTaskList();
+}
+
+function removeRun(ri){
+  const k=SELECTED.indexOf(ri);
+  if(k<0) return;
+  SELECTED.splice(k,1);
+  renderSelected();
+  buildTaskList();
+}
+
+function clearRuns(){
+  SELECTED=[];
+  renderSelected();
+  buildTaskList();
+}
+
+async function loadResult(ri){
+  const d=await j('/api/result?r='+ri);
+  const sims={};
+  d.sims.forEach(s=>{ if(!(s.task_id in sims)) sims[s.task_id]={reward:s.reward, s:s.s}; });
+  RESULT_CACHE[ri]={ model:d.config.agent_llm? d.config.agent_llm.split('/').pop():('run'+ri),
+                     label:RUNS[ri].model, domain:d.config.domain, sims };
+}
+
+const shortName=s=>{ s=String(s||''); return s.length>13?s.slice(0,12)+'…':s; };
+
+function buildTaskList(){
+  const box=$('#tasks');
+  if(SELECTED.length===0){ box.innerHTML='<div class="empty">Select runs above.</div>'; return; }
+  // union of task ids across selected runs
+  const ids=new Set();
+  SELECTED.forEach(ri=>Object.keys(RESULT_CACHE[ri].sims).forEach(t=>ids.add(t)));
+  const list=[...ids].sort((a,b)=>String(a).localeCompare(String(b),undefined,{numeric:true}));
+  box.innerHTML='';
+  box.appendChild(el('div','sec',`Tasks (${list.length}) — click a row · yellow = runs disagree`));
+  const tbl=el('table','tt');
+  const head='<thead><tr><th class="tcol">task</th>'+
+    SELECTED.map(ri=>`<th title="${esc(RESULT_CACHE[ri].label)}">${esc(shortName(RESULT_CACHE[ri].label))}</th>`).join('')+
+    '</tr></thead>';
+  const rows=list.map(tid=>{
+    const cells=SELECTED.map(ri=>{
+      const v=RESULT_CACHE[ri].sims[tid]?.reward;
+      const cls=v===undefined?'r-na':rewardClass(v);
+      return `<td class="${cls}">${v===undefined?'·':rewardTxt(v)}</td>`;
+    }).join('');
+    const present=SELECTED.map(ri=>RESULT_CACHE[ri].sims[tid]?.reward).filter(r=>r!==undefined);
+    const distinct=new Set(present.map(r=>r==null?'na':r>=0.999?'p':r<=0.001?'f':'m'));
+    const active=tid===ACTIVE_TASK?' active':'';
+    return `<tr data-tid="${esc(tid)}" class="${distinct.size>1?'diff':''}${active}"><td class="tcol">${esc(tid)}</td>${cells}</tr>`;
+  }).join('');
+  tbl.innerHTML=head+'<tbody>'+rows+'</tbody>';
+  tbl.querySelectorAll('tbody tr').forEach(tr=>tr.onclick=()=>openTask(tr.dataset.tid,tr));
+  box.appendChild(tbl);
+}
+
+function roleBar(m){
+  const u=m.usage||{}; const bits=[`<span class="role ${m.role}">${esc(m.role)}</span>`];
+  if(m.turn_idx!=null) bits.push(`<span class="badge">turn ${m.turn_idx}</span>`);
+  if(u.prompt_tokens!=null) bits.push(`<span class="badge">tok ${u.prompt_tokens}/${u.completion_tokens}</span>`);
+  return bits.join('');
+}
+// Collapsible block (collapsed by default) for noisy reasoning / tool-result payloads.
+function collBlock(label, text, extraCls){
+  const d=el('details',`coll ${extraCls||''}`);
+  const t=String(text);
+  const preview=t.replace(/\s+/g,' ').trim().slice(0,120);
+  d.appendChild(el('summary',null,
+    `<span class="l">${esc(label)}</span><span class="p">${esc(preview)}</span><span class="n">${t.length.toLocaleString()} chars</span>`));
+  d.appendChild(el('div','c',esc(t)));
+  return d;
+}
+function renderMsg(m){
+  const box=el('div','msg'); box.appendChild(el('div','bar',roleBar(m)));
+  const b=el('div','mbody');
+  if(m.reasoning&&SHOW_REASONING) b.appendChild(collBlock('💭 thinking', m.reasoning, 'reason'));
+  if(m.content){
+    if(m.role==='tool') b.appendChild(collBlock('result', m.content));
+    else b.appendChild(el('div',null,esc(m.content)));
+  }
+  else if(!(m.tool_calls&&m.tool_calls.length)) b.appendChild(el('div','muted','(no content)'));
+  (m.tool_calls||[]).forEach(tc=>{
+    const a=typeof tc.args==='string'?tc.args:JSON.stringify(tc.args);
+    b.appendChild(el('div','tcall',`→ ${esc(tc.name)}(${esc(a)})`));
+  });
+  box.appendChild(b); return box;
+}
+
+function openTask(tid,row){
+  ACTIVE_TASK=tid;
+  document.querySelectorAll('#tasks tbody tr').forEach(x=>x.classList.remove('active'));
+  if(row) row.classList.add('active');
+  const cols=$('#cols'); cols.innerHTML='';
+  // Build every column synchronously first (so all selected runs are always visible),
+  // then fill each one independently — a failure in one can't block the others.
+  SELECTED.forEach(ri=>{
+    const wrap=el('div','colwrap');
+    const head=el('div','colhead');
+    head.innerHTML=`<div class="m">${esc(RESULT_CACHE[ri].label)}</div>
+      <div class="meta">${esc(RESULT_CACHE[ri].domain||'')} · ${esc(RUNS[ri].run)}</div>`;
+    const body=el('div','colmsgs');
+    wrap.append(head,body); cols.appendChild(wrap);
+    if(!RESULT_CACHE[ri].sims[tid]){ body.appendChild(el('div','empty','task not in this run')); return; }
+    body.appendChild(el('div','empty','loading…'));
+    j(`/api/sim?r=${ri}&task_id=${encodeURIComponent(tid)}`).then(d=>{
+      if(!d || d.error || !Array.isArray(d.messages)){
+        body.innerHTML=''; body.appendChild(el('div','empty',(d&&d.error)||'no data')); return;
+      }
+      head.querySelector('.m').innerHTML=
+        `${esc(RESULT_CACHE[ri].label)} <span class="reward ${rewardClass(d.reward)}">${rewardTxt(d.reward)}</span>`;
+      head.querySelector('.meta').innerHTML+=` · ${d.messages.length} msgs · ${esc(d.termination||'')}`;
+      body.innerHTML=''; d.messages.forEach(m=>body.appendChild(renderMsg(m)));
+    }).catch(e=>{ body.innerHTML=''; body.appendChild(el('div','empty','error: '+e)); });
+  });
+}
+
+$('#reasonBtn').onclick=()=>{ SHOW_REASONING=!SHOW_REASONING;
+  $('#reasonBtn').classList.toggle('on');
+  if(ACTIVE_TASK) openTask(ACTIVE_TASK, document.querySelector('#tasks tbody tr.active')); };
+
+$('#addRun').onclick=addRun;
+$('#clearRuns').onclick=clearRuns;
+
+init();
+</script>
+</body>
+</html>

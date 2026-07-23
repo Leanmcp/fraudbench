@@ -1,0 +1,25 @@
+{
+  "id": "doc_credit_cards_credit_card_account_logistics_005",
+  "title": "CLI Eligibility Requirements by Card Tier",
+  "summary": "This guide lists CLI eligibility requirements by card tier\u2014Entry-tier (min account age $120 days, $120-day cooldown, utilization below 70%), Mid-tier (90 days/90 days/below 80%), Premium-tier (60 days/60 days/below 90%). All three criteria must be met at request time; cooldown applies only after approved requests and denied requests don\u2019t trigger cooldown.",
+  "faqs": [
+    "What are the minimum account age requirements to request a CLI for Entry-tier, Mid-tier, and Premium-tier?",
+    "How many days is the cooldown between CLI requests by card tier, and does it apply after denied requests?",
+    "Does my credit utilization qualify if it equals the threshold (e.g., 70% / 80% / 90%)?",
+    "When does the minimum account age/cooldown requirement \u201cstart\u201d for eligibility (e.g., on the exact day)?",
+    "What quick checklist should I verify before submitting a CLI request for my tier?"
+  ],
+  "keywords": [
+    "CLI eligibility requirements",
+    "Entry-tier",
+    "Mid-tier",
+    "Premium-tier",
+    "Minimum account age (120/90/60 days)",
+    "Cooldown between requests (120/90/60 days)",
+    "Cooldown only after approved request",
+    "Denied requests do not trigger cooldown",
+    "Credit utilization threshold (70%/80%/90%)",
+    "Utilization must be below threshold",
+    "Count cooldown from date of last CLI submission"
+  ]
+}

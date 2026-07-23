@@ -1,0 +1,27 @@
+{
+  "id": "doc_bank_accounts_bank_accounts_(general)_033",
+  "title": "Internal: ATM Dispute Special Procedures",
+  "summary": "This document details special dispute procedures for ATM transactions, split by Rho-Bank owned ATMs vs third-party ATMs. It specifies cash discrepancy, deposit not credited (get_atm_deposit_images_8473; up to 45 days), and retained card (retrieve from branch within 3 business days), plus third-party chargeback submission (up to 90 days), provisional credit within 10 business days, and affidavit rules for disputes over $200 (10 business days; possible denial; false affidavit is a federal offense).",
+  "faqs": [
+    "What are the steps for an ATM cash discrepancy at a Rho-Bank branded ATM, and when is provisional credit issued?",
+    "How do we handle an ATM \u201cdeposit not credited\u201d dispute, including the tool used and the 45-day timeline?",
+    "If an ATM retained the card at a Rho-Bank ATM, what is the process and what options does the customer have within 3 business days?",
+    "For third-party ATM disputes (Allpoint, bank partners, independent ATMs), do we submit a chargeback, what is the investigation timeline, and how fast must provisional credit be provided?",
+    "When is an Electronic Fund Transfer Error Resolution Affidavit required (e.g., disputes over $200), how is it sent, what is the 10-business-day deadline, and what happens if it\u2019s not returned?",
+    "If the journal shows the correct cash amount at a Rho-Bank ATM, can the claim be validated and what options remain for the customer? "
+  ],
+  "keywords": [
+    "Cash discrepancy",
+    "provisional credit (no waiting period for Rho-Bank ATM; within 10 business days for third-party)",
+    "Rho-Bank ATM journal records",
+    "get_atm_deposit_images_8473",
+    "deposit not credited (up to 45 days)",
+    "card retained (retrieve from branch within 3 business days)",
+    "Third-party ATM chargeback submission to owner/network",
+    "investigation timeline up to 90 days",
+    "ATM affidavit requirement (Electronic Fund Transfer Error Resolution Affidavit)",
+    "$200 threshold",
+    "10 business days to sign/return affidavit",
+    "false affidavit is a federal offense"
+  ]
+}

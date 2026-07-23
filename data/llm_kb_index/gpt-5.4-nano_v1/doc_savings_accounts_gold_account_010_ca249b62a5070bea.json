@@ -1,0 +1,23 @@
+{
+  "id": "doc_savings_accounts_gold_account_010",
+  "title": "Gold Account: How is interest calculated and when is it paid?",
+  "summary": "For a Gold Account, the document states the APY is 5.5% and interest compounds daily, so each day\u2019s interest accrues based on your current balance and prior accrued interest. Interest is credited monthly and appears as a separate line item on your statement after each monthly cycle closes.",
+  "faqs": [
+    "What is the Gold Account APY?",
+    "How is interest calculated (daily compounding vs. other methods)?",
+    "When is interest credited to my Gold Account?",
+    "Where can I find the interest credit on my statement?",
+    "If my balance changes, how does that affect the interest I earn?",
+    "When does the total accrued interest post after the monthly cycle?\""
+  ],
+  "keywords": [
+    "Gold Account",
+    "APY 5.5%",
+    "Daily compounding",
+    "Daily accrual",
+    "Interest credited monthly",
+    "Separate line item on statement",
+    "Monthly cycle close",
+    "Accrued interest posts to account"
+  ]
+}

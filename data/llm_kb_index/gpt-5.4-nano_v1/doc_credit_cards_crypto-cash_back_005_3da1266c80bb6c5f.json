@@ -1,0 +1,25 @@
+{
+  "id": "doc_credit_cards_crypto-cash_back_005",
+  "title": "Crypto-Cash Back: Understanding Crypto Reward Conversion Rates",
+  "summary": "This document explains Crypto-Cash Back rewards and how they convert to crypto: earn 2.0% on eligible purchases, then pay a 1.25% conversion fee when redeeming to crypto. It provides the net payout formula (net = available rewards \u00d7 (1 \u2212 1.25%)) and notes the fiat amount is exchanged at the real-time market rate into the selected cryptocurrency.",
+  "faqs": [
+    "What is the crypto-cash back earn rate on eligible purchases?",
+    "If I redeem rewards to crypto, what conversion fee applies?",
+    "How do I calculate my net crypto payout after the 1.25% fee?",
+    "At what rate is the fiat amount exchanged for my selected cryptocurrency?",
+    "Do rewards accrue based on crypto market performance, or only the redemption is affected?",
+    "Should I redeem my rewards in smaller amounts to manage price volatility? "
+  ],
+  "keywords": [
+    "Crypto-Cash Back",
+    "2.0% eligible purchases",
+    "1.25% conversion fee",
+    "Net rewards formula: (1 \u2212 1.25%)",
+    "real-time market rate",
+    "fiat amount exchange",
+    "selected cryptocurrency",
+    "price volatility",
+    "rewards accrue regardless of crypto market conditions",
+    "redeem in smaller tranches"
+  ]
+}

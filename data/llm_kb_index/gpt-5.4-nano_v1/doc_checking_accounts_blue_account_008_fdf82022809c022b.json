@@ -1,0 +1,24 @@
+{
+  "id": "doc_checking_accounts_blue_account_008",
+  "title": "Why am I being charged an overdraft fee on my Blue Account?",
+  "summary": "Explains that the Blue Account overdraft fee is $0.00, and if an overdraft-fee label appears, you should verify the transaction details to confirm the fee type. Notes overdraft-fee postings (if non-zero) are limited to 3 per day and instructs how to review activity/statement and request investigation for misclassification.",
+  "faqs": [
+    "My Blue Account shows an overdraft fee\u2014what should the overdraft fee amount be?",
+    "If I see an overdraft-fee charge, how can I confirm whether it\u2019s truly an overdraft fee?",
+    "How many overdraft fees can post in a single day if a non-zero fee ever posts in error?",
+    "Where can I check how the fee is categorized on my account?",
+    "What should I do if a fee appears to be misclassified as an overdraft fee?"
+  ],
+  "keywords": [
+    "Blue Account",
+    "overdraft fee",
+    "$0.00",
+    "transaction details",
+    "activity view",
+    "description verification",
+    "monthly statement",
+    "misclassified overdraft fee",
+    "overdraft fees per day",
+    "3 overdraft fees in a single day"
+  ]
+}

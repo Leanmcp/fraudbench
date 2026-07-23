@@ -1,0 +1,24 @@
+{
+  "id": "doc_business_checking_accounts_beige_009",
+  "title": "Wire Transfers and Payment Processing on Beige",
+  "summary": "This document covers domestic wire transfers (fee $0.00; dual authorization required for amounts above $10,000), incoming domestic wires (50 included per month), and mobile check deposits (daily limit $100,000). It also covers out-of-network ATM fee rebates up to 50 per month and operational steps (payment templates, approval queues, reconciliation).",
+  "faqs": [
+    "Is there a fee for domestic wire transfers, and is it always $0.00?",
+    "When do I need dual authorization for a domestic wire, based on the $10,000 threshold?",
+    "What are the monthly included number of incoming domestic wires (50 per month), and how should I use it?",
+    "What is the daily mobile check deposit limit ($100,000) and how should I plan submissions?",
+    "How many out-of-network ATM fee rebates are available per month (up to 50), and do I need to submit receipts?",
+    "What operational steps does this guide recommend for recurring payments, approvals, and reconciliation?"
+  ],
+  "keywords": [
+    "Domestic wire transfers",
+    "Domestic wire transfer fee $0.00",
+    "Dual authorization threshold > $10,000",
+    "Incoming domestic wires included: 50/month",
+    "Mobile deposits limit: $100,000 daily",
+    "Out-of-network ATM fee rebates up to 50/month",
+    "Payment templates for recurring beneficiaries",
+    "Approval queues",
+    "Reconcile against confirmations and bank statements"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "doc_bank_accounts_bank_accounts_(general)_030",
+  "title": "Internal: Lost/Stolen Card - Cross-Product Security Protocol",
+  "summary": "This document instructs agents on the cross-product security protocol when a customer reports a lost/stolen Rho-Bank debit card: complete the standard debit card freeze/close, check credit cards on file, and proactively offer a replacement credit card with a new card number if the customer also had a credit card in the stolen wallet. It specifies using get_credit_card_accounts_by_user and, if the customer declines, noting the offer in the account.",
+  "faqs": [
+    "What steps must I take when a customer reports a lost or stolen Rho-Bank debit card?",
+    "After freezing the debit card, how do I check whether the customer has Rho-Bank credit cards on file?",
+    "If the customer has a Rho-Bank credit card, should I offer protection, and what exactly should I offer?",
+    "How do I proceed if the customer says their credit card was in the lost/stolen wallet?",
+    "If the customer declines the replacement credit card, what should I record?",
+    "What script wording does the document provide for offering a replacement credit card?"
+  ],
+  "keywords": [
+    "lost/stolen debit card",
+    "cross-product security protocol",
+    "debit card freeze/close procedure",
+    "get_credit_card_accounts_by_user",
+    "Rho-Bank credit cards on file",
+    "replacement credit card",
+    "new card number",
+    "wallet theft involves multiple cards",
+    "fraud losses",
+    "note in the account offer was made",
+    "agent script example"
+  ]
+}

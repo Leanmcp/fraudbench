@@ -1,0 +1,25 @@
+{
+  "id": "doc_credit_cards_credit_cards_(general)_004",
+  "title": "Applying Resolved Cash Back Dispute Corrections (Internal)",
+  "summary": "This internal procedure explains how to apply resolved cash back dispute corrections by updating transaction rewards. It covers identifying affected transaction_id values from cash_back_disputes, unlocking the update tool (update_transaction_rewards_3847), recalculating correct rewards using card type/category/promotions (not expected_rewards), invoking the tool with transaction_id and 'X points', then verifying credit_card_transaction_history and saving audit notes.",
+  "faqs": [
+    "After a cash back dispute is resolved, which transactions do I need to correct and how do I find them?",
+    "What tool do I need to unlock to update rewards for resolved disputes?",
+    "How should I recalculate the correct rewards\u2014can I use expected_rewards from the dispute record?",
+    "What inputs does update_transaction_rewards_3847 require (transaction_id and the rewards format)?",
+    "How do I confirm the rewards update was applied successfully?",
+    "Where should I document my rewards calculation notes for auditability?"
+  ],
+  "keywords": [
+    "cash_back_disputes database",
+    "transaction_id",
+    "unlock_discoverable_agent_tool",
+    "update_transaction_rewards_3847",
+    "new_rewards_earned format 'X points'",
+    "Do not use expected_rewards",
+    "card type and transaction category",
+    "bonus category/promotion at time of purchase",
+    "credit_card_transaction_history",
+    "internal case record audit notes"
+  ]
+}

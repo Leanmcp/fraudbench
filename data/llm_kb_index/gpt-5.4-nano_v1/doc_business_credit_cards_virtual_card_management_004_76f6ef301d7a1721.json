@@ -1,0 +1,25 @@
+{
+  "id": "doc_business_credit_cards_virtual_card_management_004",
+  "title": "Virtual Card Management: Setting Spending Limits Per Card",
+  "summary": "Explains how to set and edit per-card spending limits for virtual cards in the card Details panel. Limits can be set from $55 to $150,000, with selectable reset periods (per transaction, daily, or monthly); changes take effect immediately, and includes category-based troubleshooting for declines.",
+  "faqs": [
+    "What is the allowed range for a per-card spending limit?",
+    "How do I set or edit a per-card spending limit for a virtual card?",
+    "When I change the limit, when does the new limit start working?",
+    "What reset period options are available for per-card limits?",
+    "How do merchant category restrictions work if they\u2019re enabled?",
+    "If a virtual card transaction is declined, what should I check related to limit settings or categories?"
+  ],
+  "keywords": [
+    "Virtual Card Management",
+    "Per-card spending limits ($55\u2013$150,000)",
+    "Details panel",
+    "Spending Limit",
+    "Reset period (per transaction/daily/monthly)",
+    "Click Save / takes effect immediately",
+    "Merchant category restrictions (Yes)",
+    "Merchant category list",
+    "Transaction declined troubleshooting",
+    "Limit cycle remaining balance"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "doc_everyone_pay_everyone_pay_015",
+  "title": "FAQ: Everyone Pay",
+  "summary": "This FAQ for \u201cEveryone Pay\u201d lists sending limits (daily $1,500, monthly $12,500), the $0.75 fee for instant transfers, a 17-minute window to cancel eligible payments, and a cap of up to $550 saved contacts. It also advises on standard delivery, recipient verification, and what to check if a payment fails or is declined.",
+  "faqs": [
+    "What are my individual sending limits for Everyone Pay?",
+    "How much does an instant transfer cost?",
+    "How long do I have to cancel an eligible Everyone Pay payment after submission?",
+    "How many contacts can I save in the Everyone Pay address book?",
+    "If my payment fails or is declined, what should I check next?"
+  ],
+  "keywords": [
+    "Everyone Pay",
+    "daily limit $1,500",
+    "monthly limit $12,500",
+    "instant transfer fee $0.75",
+    "cancel eligible payment within 17 minutes",
+    "address book saved contacts up to $550",
+    "standard delivery (avoid instant fees)",
+    "verify recipients before sending",
+    "payment fails or is declined (review remaining capacity)"
+  ]
+}

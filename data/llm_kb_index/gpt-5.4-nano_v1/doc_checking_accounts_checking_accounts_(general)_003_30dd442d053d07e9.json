@@ -1,0 +1,27 @@
+{
+  "id": "doc_checking_accounts_checking_accounts_(general)_003",
+  "title": "FAQ: Common Error Codes",
+  "summary": "This document is a troubleshooting reference for \u201cCommon Error Codes,\u201d listing bank/transfer/auth errors (101, 202, 403, 409, 429, 903) with specific suggested resolutions, plus debit card decline codes 05, 14, 54, and 56 including status/field checks (e.g., fraud_alert_active, velocity_blocked, expiration_date) and the \u201c48 hours\u201d wait for error 903. It also includes escalation steps and the 1-800-RHO-ACCT guidance for restricted accounts, and a \u201c30 minutes\u201d auto-lift for velocity blocks.",
+  "faqs": [
+    "What should I do if I see Error 101 (Invalid account or routing details)?",
+    "How do I resolve Error 202 (Insufficient funds) and what retry steps are suggested?",
+    "What actions are recommended for Error 403 (Authentication failed), including password reset and security holds?",
+    "Why do I get Error 903 (Account closure request blocked) and how long should I wait before trying again?",
+    "What does debit card decline Code 05 mean, and how do I handle card status (FROZEN/CLOSED/PENDING/ACTIVE), fraud alerts, velocity blocks, and restricted accounts?",
+    "What should I do for debit card decline Codes 14, 54, and 56 (invalid card number, expired card, or no card record)?"
+  ],
+  "keywords": [
+    "Error 101",
+    "Error 202",
+    "Error 403",
+    "Error 409",
+    "Error 429",
+    "Error 903 (48 hours)",
+    "Debit Card Decline Code 05 (Do Not Honor)",
+    "fraud_alert_active",
+    "velocity_blocked (30 minutes auto-lift)",
+    "Debit Card Decline Code 14 (Invalid Card Number)",
+    "Debit Card Decline Code 54 (Expired Card)",
+    "Debit Card Decline Code 56 (No Card Record)"
+  ]
+}

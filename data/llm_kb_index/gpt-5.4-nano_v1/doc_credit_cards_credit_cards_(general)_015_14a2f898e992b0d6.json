@@ -1,0 +1,30 @@
+{
+  "id": "doc_credit_cards_credit_cards_(general)_015",
+  "title": "Provisional Credit Eligibility Guidelines (Internal)",
+  "summary": "This internal guide sets eligibility for provisional credit during credit card transaction disputes. It requires: account open \u226560 days; dispute reason in {'unauthorized_fraudulent_charge','duplicate_charge','goods_services_not_received' with purchase >30 days}; amount $25+ and within tier max ($2,500 Bronze/Eco/Business Bronze/Crypto; $5,000 Silver/Green/Zoom; $10,000 Gold; $15,000 Platinum; $25,000 Diamond); no more than 2 disputes in past 12 months; and merchant contact for non-fraud disputes.",
+  "faqs": [
+    "When is a customer eligible for provisional credit during a dispute?",
+    "What dispute reason categories qualify for provisional credit?",
+    "How do I handle 'goods_services_not_received' based on purchase age (30 days)?",
+    "What transaction amount and card-tier maximum limits apply to provisional credit?",
+    "How many disputes in the last 12 months disqualify a customer?",
+    "What makes a dispute NOT eligible for provisional credit (e.g., account age, reason codes, merchant contact)?"
+  ],
+  "keywords": [
+    "provisional credit",
+    "credit card transaction dispute",
+    "unauthorized_fraudulent_charge",
+    "duplicate_charge",
+    "goods_services_not_received (purchase >30 days)",
+    "$25.00 minimum dispute amount",
+    "Maximum Provisional Credit Limits",
+    "Entry Tier Bronze Rewards Card (max $2500)",
+    "Mid Tier Silver/Green/Silver Zoom (max $5000)",
+    "Premium Tier Gold Rewards (max $10000)",
+    "Elite Tier Platinum Rewards (max $15000)",
+    "Invitation Tier Diamond Elite (max $25000)",
+    "60 days account standing",
+    "2 disputes in past 12 months",
+    "merchant contact required for non-fraud disputes"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "doc_checking_accounts_green_account_(checking)_007",
+  "title": "Green Account (checking): Troubleshooting: declined transactions",
+  "summary": "This document explains how to troubleshoot declined transactions on a Green Account (checking) by checking available balance vs. requested amount, pending authorizations, and decline notification details (\u201cYes\u201d). It also covers merchant overcharge/recurring charge date issues and advises adding funds, retrying, and contacting the merchant with decline notice records if needed.",
+  "faqs": [
+    "Why was my Green Account (checking) transaction declined?",
+    "How do I check whether my available balance covers the full amount requested?",
+    "Could a pending authorization be reducing my available balance and causing the decline?",
+    "What should I verify with the merchant if a decline keeps happening after I add funds?",
+    "How do recurring/subscription charges affect declines (e.g., on the charge date)?",
+    "Should I save the decline notification details/records, and where does the document suggest using them?"
+  ],
+  "keywords": [
+    "Green Account (checking)",
+    "declined transactions",
+    "available balance",
+    "pending authorizations",
+    "decline notification details",
+    "merchant attempted higher amount",
+    "subscription/recurring charges",
+    "charge date",
+    "add funds and retry",
+    "contact the merchant",
+    "keep records of decline notice"
+  ]
+}

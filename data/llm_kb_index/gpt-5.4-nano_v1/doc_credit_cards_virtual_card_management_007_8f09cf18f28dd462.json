@@ -1,0 +1,26 @@
+{
+  "id": "doc_credit_cards_virtual_card_management_007",
+  "title": "Virtual Card Management: Best Practices for Virtual Card Security",
+  "summary": "This document provides best practices for virtual card security: enable real-time transaction alerts, restrict merchant categories, use one-time cards for untrusted/short-term vendors, and revoke immediately\u2014disabling the card within 3 seconds upon suspected compromise. It also covers routine hygiene (card rotation, no cross-user sharing, secured storage with access controls/audit logs) and a rapid response playbook (revoke, review alerts/transactions, recreate via one-time card, tighten merchant category settings).",
+  "faqs": [
+    "How do real-time transaction alerts help with virtual card security?",
+    "What should I do first if I suspect a virtual card compromise?",
+    "How quickly will an immediate virtual card revocation disable the card?",
+    "When should I use one-time virtual cards?",
+    "What routine hygiene steps should we follow (rotation, sharing, storage controls)?",
+    "What actions does the rapid response playbook recommend after revocation?"
+  ],
+  "keywords": [
+    "real-time transaction alerts",
+    "restrict merchant categories",
+    "one-time cards",
+    "immediate revocation",
+    "3 seconds disable time",
+    "rotate cards during vendor offboarding",
+    "separate cards per user (avoid sharing)",
+    "secured systems with access controls",
+    "audit logs",
+    "recreate access with one-time card",
+    "tighten merchant category settings before reissuing"
+  ]
+}

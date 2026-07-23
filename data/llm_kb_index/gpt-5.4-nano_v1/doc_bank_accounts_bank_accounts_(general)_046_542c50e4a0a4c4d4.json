@@ -1,0 +1,27 @@
+{
+  "id": "doc_bank_accounts_bank_accounts_(general)_046",
+  "title": "Linked Checking Account APY Boost: Selection Policy",
+  "summary": "This document explains the \u201cMultiple Checking Account APY Boost Selection Policy\u201d for Rho-Bank: if a customer has multiple linked checking accounts, the savings account receives only the single highest applicable checking APY boost (boosts do not stack). It also lists agent steps to verify the correct highest-boost selection and mentions boosts stack only with other bonus types (e.g., credit card APY bonuses where only the highest applies).",
+  "faqs": [
+    "If I have multiple Rho-Bank checking accounts linked, do the checking APY boosts stack on my savings account?",
+    "How does the system choose which checking account APY boost to apply to my savings account?",
+    "In the example with Gold Savings: Green checking (+0.75%) and Purple checking (+0.1%), which boost is applied?",
+    "Do checking account APY boosts stack with credit card APY bonuses or relationship/tier bonuses?",
+    "What should agents do when investigating an interest discrepancy for customers with multiple checking accounts?",
+    "If the system applied the wrong checking account boost, how should the correction be handled?"
+  ],
+  "keywords": [
+    "Multiple Checking Account APY Boost Selection Policy",
+    "checking account APY boosts",
+    "savings account APY boost",
+    "does NOT stack",
+    "highest applicable boost",
+    "Rho-Bank checking accounts",
+    "example: Green Account +0.75%",
+    "example: Purple Account +0.1%",
+    "Credit card APY bonuses (only highest)",
+    "relationship bonuses",
+    "account tier bonuses",
+    "Agent responsibility steps"
+  ]
+}

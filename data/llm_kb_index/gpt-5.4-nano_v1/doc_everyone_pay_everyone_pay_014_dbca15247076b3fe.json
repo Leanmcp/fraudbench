@@ -1,0 +1,25 @@
+{
+  "id": "doc_everyone_pay_everyone_pay_014",
+  "title": "Why can't I cancel my payment?",
+  "summary": "This document explains why a payment can\u2019t be canceled: the 17-minute cancellation window has passed, the recipient already claimed the funds, the transfer used an instant option and posted immediately, or a system action already finalized the payment. It also instructs to request a return, file a dispute from transaction details, and double-check recipient details; it advises canceling as soon as possible within 17 minutes.",
+  "faqs": [
+    "Why is my payment cancellation option unavailable after a certain time?",
+    "What happens if the recipient has already claimed the funds?",
+    "If I used an instant option, can I still cancel the payment?",
+    "What if a system action already finalized the payment\u2014can it be canceled?",
+    "What should I do instead if the payment can\u2019t be canceled (return vs dispute)?",
+    "How do I file a dispute if the payment is unauthorized or incorrect?"
+  ],
+  "keywords": [
+    "17-minute cancellation window",
+    "recipient claimed the funds",
+    "instant option",
+    "posted immediately",
+    "system action finalized the payment",
+    "request a return",
+    "file a dispute",
+    "transaction details",
+    "review recipient details",
+    "unauthorized or incorrect payment"
+  ]
+}

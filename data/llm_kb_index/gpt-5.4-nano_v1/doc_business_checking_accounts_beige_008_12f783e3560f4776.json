@@ -1,0 +1,27 @@
+{
+  "id": "doc_business_checking_accounts_beige_008",
+  "title": "API Rate Limits and Technical Specifications",
+  "summary": "This document specifies an integration quota of $100,000 API calls per month and recommends monitoring consumption. It covers real-time behavior (Balance updates: Yes), and provides technical guidance: cache reference data, request deltas, use exponential backoff + idempotency for retries, and proactively throttle while instrumenting success/error/retry metrics.",
+  "faqs": [
+    "What is my monthly API call allocation limit for this integration?",
+    "Does the API support real-time balance updates, and how should I sync to reduce calls?",
+    "How should I design polling/sync to respect the monthly call allocation (e.g., deltas vs full data)?",
+    "What retry strategy should I use (e.g., backoff and idempotency) to avoid duplicate transactions and wasted calls?",
+    "How can I monitor usage and technical health to prevent hitting the call limit?",
+    "What observability metrics should I instrument in my integration (successes, errors, retries)?"
+  ],
+  "keywords": [
+    "Monthly call allocation",
+    "$100,000 API calls per month",
+    "Real-time behavior",
+    "Balance updates: Yes",
+    "Event-driven or on-change sync",
+    "Cache reference data",
+    "Request deltas",
+    "Exponential backoff",
+    "Idempotency for retried calls",
+    "Throttle proactively",
+    "Counters for successful calls",
+    "Error responses and retries"
+  ]
+}

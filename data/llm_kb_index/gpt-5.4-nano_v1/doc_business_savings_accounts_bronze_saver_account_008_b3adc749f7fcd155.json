@@ -1,0 +1,23 @@
+{
+  "id": "doc_business_savings_accounts_bronze_saver_account_008",
+  "title": "Bronze Saver Account: Withdrawal limits explained",
+  "summary": "Bronze Saver Account allows up to 12 free withdrawals per month. After that, each additional withdrawal is charged a $3.00 excess withdrawal fee. The document lists common withdrawal types (ACH to external banks, outgoing wires, internal transfers, and cash withdrawals) and provides tips to stay within the limit.",
+  "faqs": [
+    "How many free withdrawals can I make from my Bronze Saver Account each month?",
+    "What fee do I pay if I exceed 12 withdrawals in a month?",
+    "Which activities count as a \u201cwithdrawal\u201d for this limit (ACH, wire, internal transfers, cash)?",
+    "Do internal transfers from my savings to other accounts count toward the 12-withdrawal limit?",
+    "How can I avoid excess withdrawal fees near the end of my statement cycle?"
+  ],
+  "keywords": [
+    "Bronze Saver Account",
+    "12 free withdrawals per month",
+    "Excess withdrawal fee",
+    "$3.00 per withdrawal over limit",
+    "ACH transfers to external banks",
+    "Outgoing wire transfers",
+    "Internal transfers from savings",
+    "Cash withdrawals initiated against account",
+    "Statement cycle"
+  ]
+}

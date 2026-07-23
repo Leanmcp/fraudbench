@@ -1,0 +1,23 @@
+{
+  "id": "doc_business_checking_accounts_lime_green_006",
+  "title": "Lime Green Account: Mobile Deposits and Daily Limits",
+  "summary": "This document explains Lime Green Account mobile check deposits, including the $15,000 per-day mobile check deposit limit and the $100,000 total daily transaction capacity. It covers how to endorse and submit deposits, image/duplicate/rejection troubleshooting, and sequencing multiple payments to stay under daily ceilings.",
+  "faqs": [
+    "What is the maximum amount I can deposit using mobile checks per day?",
+    "What is my total daily transaction capacity, and how does it affect multiple transactions?",
+    "How do I submit a mobile check deposit (endorsement and image steps)?",
+    "What should I do if I get an image quality error during a mobile deposit?",
+    "Why might I see a duplicate deposit warning, and how can I resolve it?",
+    "If a mobile deposit is rejected, what are the next steps to correct and resubmit?"
+  ],
+  "keywords": [
+    "Lime Green Account",
+    "Mobile check deposit (per day) $15,000",
+    "Total daily transaction capacity $100,000",
+    "Endorsement: \u201cmobile deposit only\u201d",
+    "Keep physical check until successfully posted",
+    "Image quality errors (all four corners)",
+    "Duplicate deposit warnings",
+    "Resubmit after correcting rejection message"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "doc_checking_accounts_green_account_(checking)_010",
+  "title": "FAQ: Green Account (checking)",
+  "summary": "FAQ for the Green Account (checking): paper statements cost $2.50/month; the account earns 0.11% APY; non-network ATM withdrawals cost $3.00 each; external bank transfers generally complete in 3 business days; returned deposits cost $17.50; incoming domestic wires cost $15.00. It also lists debit card decline codes 55 (Incorrect PIN), 75 (PIN tries exceeded\u2014requires Fraud Risk Scoring PIN Lock Investigation Protocol before unlocking), and 83 (Unable to verify PIN\u2014retry, then signature/different terminal, or wait 10\u201315 minutes).",
+  "faqs": [
+    "How much do paper statements cost for the Green Account (checking)?",
+    "What APY does the Green Account (checking) earn on my balance?",
+    "What is the fee for withdrawing cash from a non-network ATM?",
+    "How long do transfers to another bank take?",
+    "What fee applies if a check deposit is returned unpaid?",
+    "My debit card was declined with code 55/75/83\u2014what should I do? (including PIN lock protocol and retry guidance)"
+  ],
+  "keywords": [
+    "Green Account (checking)",
+    "Paper statements $2.50 per month",
+    "0.11% APY",
+    "Non-network ATM withdrawal fee $3.00",
+    "External transfers 3 business days",
+    "Returned deposit fee $17.50",
+    "Incoming domestic wire $15.00",
+    "Debit card decline code 55 Incorrect PIN",
+    "Debit card decline code 75 PIN tries exceeded",
+    "Debit card decline code 83 Unable to verify PIN",
+    "Internal: PIN Lock Investigation Protocol - Fraud Risk Scoring",
+    "Wait 10\u201315 minutes and retry (Code 83 guidance)"
+  ]
+}

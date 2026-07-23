@@ -1,0 +1,28 @@
+{
+  "id": "doc_credit_cards_credit_card_account_logistics_008",
+  "title": "Internal: Downgrading a Credit Card to a No-Annual-Fee Card",
+  "summary": "This document explains when and how to downgrade a credit card to a no-annual-fee option to address annual fee concerns. It covers eligible downgrade scenarios (<2 years, or explicit request), allowed target cards (Bronze Rewards Card / Business Bronze Rewards Card), downgrade steps, required tool downgrade_credit_card_3847 arguments, what is preserved (history, credit line, account number), rewards/benefit changes, immediate effect, card delivery timing (several business days), and potential prorated annual fee refund if paid recently.",
+  "faqs": [
+    "When should we offer a downgrade to a no-annual-fee card due to annual fee concerns?",
+    "Which no-annual-fee cards can a customer downgrade to (Bronze vs Business Bronze)?",
+    "Can we downgrade a personal card to a business card (or vice versa)?",
+    "What happens to the customer\u2019s account history, credit line, account number, and unredeemed rewards points after a downgrade?",
+    "What are the steps and tool (downgrade_credit_card_3847) arguments required to process the downgrade?",
+    "When does the downgrade take effect, how long until the new card arrives, and is there a prorated annual fee refund?"
+  ],
+  "keywords": [
+    "Downgrade protocol",
+    "annual fee concerns",
+    "less than 2 years",
+    "annual fee waiver not eligible",
+    "Bronze Rewards Card (no annual fee)",
+    "Business Bronze Rewards Card (no annual fee)",
+    "same category downgrade (personal\u2192personal, business\u2192business)",
+    "downgrade_credit_card_3847",
+    "credit_card_account_id",
+    "target_card_type (Bronze Rewards Card / Business Bronze Rewards Card)",
+    "preserve account history and credit line",
+    "downgrade takes effect immediately; card arrives within several business days",
+    "prorated refund if annual fee paid recently"
+  ]
+}

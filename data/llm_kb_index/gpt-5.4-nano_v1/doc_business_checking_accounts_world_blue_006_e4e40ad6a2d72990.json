@@ -1,0 +1,27 @@
+{
+  "id": "doc_business_checking_accounts_world_blue_006",
+  "title": "Configuring Team Permissions on World Blue",
+  "summary": "This document explains how to configure team permissions on World Blue by planning a role structure across up to 4 tiers, creating tiers with defined allowed actions (viewing balances, preparing payments, approving disbursements, administering settings), and setting approval flows for sensitive actions.",
+  "faqs": [
+    "How do I plan the permission structure for World Blue team roles?",
+    "What are the steps to create permission tiers and assign capabilities on World Blue?",
+    "Which actions can each tier be allowed to perform (e.g., balances, payment creation, approval, user management)?",
+    "How should approval flows be set up for sensitive actions on World Blue?",
+    "How do I enforce least privilege when assigning users to tiers?",
+    "How do I govern and audit permission changes using regular reviews and activity logs?"
+  ],
+  "keywords": [
+    "World Blue",
+    "permission structure",
+    "up to 4 tiers",
+    "capabilities",
+    "allowed actions",
+    "viewing balances",
+    "preparing payments",
+    "approving disbursements",
+    "administering settings",
+    "approval flows",
+    "least privilege",
+    "activity logs"
+  ]
+}

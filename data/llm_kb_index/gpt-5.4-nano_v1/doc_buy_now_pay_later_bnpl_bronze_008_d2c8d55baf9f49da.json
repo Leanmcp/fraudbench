@@ -1,0 +1,26 @@
+{
+  "id": "doc_buy_now_pay_later_bnpl_bronze_008",
+  "title": "BNPL Bronze: Product Details, Terms, and Key Limits in USD",
+  "summary": "This document lists BNPL Bronze product terms and limits in USD, including credit limit, minimum purchase amount, installment count, total term (days) and installment interval (days), interest rate (annualized), and late fee rules. It also specifies merchant fee percentage and the maximum number of active plans per customer.",
+  "faqs": [
+    "What are the BNPL Bronze credit limit, minimum purchase amount, and number of installments?",
+    "How are installment due dates calculated for BNPL Bronze (total term days and installment interval days)?",
+    "What is the BNPL Bronze interest rate (annualized) and how are late fees assessed per missed installment?",
+    "What is the maximum late fees allowed per BNPL Bronze plan?",
+    "What merchant fee percentage applies to BNPL Bronze transaction volume?",
+    "How many active BNPL Bronze plans can a customer have at once?"
+  ],
+  "keywords": [
+    "BNPL Bronze",
+    "product code (value not available)",
+    "credit limit (value not available)",
+    "minimum purchase amount (value not available)",
+    "total term (days) (value not available)",
+    "installment interval (days) (value not available)",
+    "interest rate (annualized) (value not available)",
+    "late fee per missed installment (value not available)",
+    "max late fees per plan (value not available)",
+    "merchant fee percentage (value not available)",
+    "max active plans per customer (value not available)"
+  ]
+}

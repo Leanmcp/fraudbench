@@ -1,0 +1,27 @@
+{
+  "id": "doc_credit_cards_credit_card_account_logistics_007",
+  "title": "Internal: Processing CLI Approvals and Denials",
+  "summary": "This document provides the required step-by-step workflow (in exact order) for processing CLI credit limit increase requests: verify the requested increase amount is within the customer\u2019s card-tier maximum (Step 0), submit via submit_credit_limit_increase_request_7392, then check account age, cooldown (get_credit_limit_increase_history_4829), disputes (get_user_dispute_history_7291), pending replacements (get_pending_replacement_orders_5765), good standing/past-due, and credit utilization; approve with approve_credit_limit_increase_5847 or deny with deny_credit_limit_increase_5848 using specific denial_reason values, then communicate next steps.",
+  "faqs": [
+    "What are the mandatory steps and required order for processing a CLI (credit limit increase) request?",
+    "Before submitting, how do I confirm the requested increase amount is within the customer\u2019s card-tier maximum limit?",
+    "Which eligibility checks must be performed (account age, cooldown, disputes, pending replacement cards, past-due balance, credit utilization) before approving or denying?",
+    "Which tools do I use to check cooldown, disputes, and pending replacement cards, and do they need to be unlocked first?",
+    "If I must deny, what denial_reason values are allowed for deny_credit_limit_increase_5848, and how should I explain timing to the customer?",
+    "For an approval, what information must I provide to approve_credit_limit_increase_5847, including the new_credit_limit? "
+  ],
+  "keywords": [
+    "submit_credit_limit_increase_request_7392",
+    "approve_credit_limit_increase_5847",
+    "deny_credit_limit_increase_5848",
+    "get_credit_limit_increase_history_4829",
+    "get_user_dispute_history_7291",
+    "get_pending_replacement_orders_5765",
+    "Step 0 max allowed for card tier",
+    "cooldown period",
+    "pending replacement card",
+    "past-due balance (good standing)",
+    "credit utilization below tier threshold",
+    "denial_reason values: insufficient_account_age, cooldown_period_active, pending_disputes, pending_replacement_card, past_due_balance, high_utilization, insufficient_payment_history, requested_amount_exceeds_limit, other"
+  ]
+}

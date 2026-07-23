@@ -1,0 +1,27 @@
+{
+  "id": "doc_business_credit_cards_virtual_card_management_008",
+  "title": "Virtual Card Management: Single-Use vs Multi-Use Virtual Cards",
+  "summary": "This document explains when to use Virtual Card single-use vs multi-use cards. Single-use cards are available for one-time purchases/trials and invalidate after one authorization; multi-use cards rotate the number on a monthly schedule for recurring purchases/subscriptions, and it provides setup tips for maintaining a pool and documenting refresh cadence.",
+  "faqs": [
+    "When should I use a single-use virtual card instead of a multi-use card?",
+    "What does a single-use virtual card do after authorization?",
+    "How do multi-use virtual cards improve security, and how often do they rotate?",
+    "When are multi-use virtual cards best (e.g., subscriptions vs one-time purchases)?",
+    "What setup tips does the document recommend for ad-hoc single-use team needs?",
+    "What should I document to avoid interruptions when using multi-use cards? "
+  ],
+  "keywords": [
+    "Virtual Cards",
+    "Single-use virtual cards",
+    "Multi-use virtual cards",
+    "One-time purchases",
+    "Trials",
+    "Invalidates after one authorization",
+    "Recurring purchases",
+    "Subscriptions",
+    "Monthly number rotation",
+    "Refresh cadence",
+    "Small pool of single-use cards",
+    "Vendor billing terms"
+  ]
+}

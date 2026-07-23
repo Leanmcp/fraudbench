@@ -1,0 +1,26 @@
+{
+  "id": "doc_everyone_pay_qr_transfers_003",
+  "title": "Scanning and sending payments",
+  "summary": "Explains how to scan a payment QR code in the app and send the payment: open the QR scanner, point camera to the code, adjust distance/glare, and verify the recipient and amount. Includes the $1,250 maximum limit and approval step via the confirmation screen.",
+  "faqs": [
+    "How do I scan the payment QR code in the app?",
+    "What should I check after scanning before I send?",
+    "What is the maximum payment amount allowed for QR payments?",
+    "What do I do if the QR code won\u2019t resolve quickly or won\u2019t scan?",
+    "How can I improve scan quality if it\u2019s unresponsive or outdated?",
+    "What steps do I take on the confirmation screen to approve the payment?"
+  ],
+  "keywords": [
+    "QR scanner",
+    "point your camera at the code",
+    "reduce glare",
+    "code fills most of the frame",
+    "recipient and amount review",
+    "$1,250 maximum payment amount",
+    "confirmation screen",
+    "approve to proceed",
+    "increase on-screen brightness",
+    "clean the camera lens",
+    "refresh the QR"
+  ]
+}

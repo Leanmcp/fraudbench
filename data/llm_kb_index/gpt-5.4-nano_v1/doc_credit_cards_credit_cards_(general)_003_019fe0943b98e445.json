@@ -1,0 +1,23 @@
+{
+  "id": "doc_credit_cards_credit_cards_(general)_003",
+  "title": "Submitting a Cash Back Dispute (Internal)",
+  "summary": "Explains when and how to submit a Cash Back Dispute for any credit card transaction where the customer believes the cash back received differs from the cash back they should have received. Instructs customers to submit via tool `submit_cash_back_dispute_0589(user_id: str, transaction_id: str)` using their own user_id and the specific transaction_id (no sensitive card details).",
+  "faqs": [
+    "When should I submit a Cash Back dispute for a credit card transaction?",
+    "What information do I need to submit the dispute (user_id and transaction_id)?",
+    "How do I submit the dispute using the provided tool?",
+    "Should I verify my transaction_id before submitting?",
+    "Will you ask for supporting context (e.g., expected promotion/category) after submission?",
+    "Do I need to provide sensitive card details to file a Cash Back dispute?"
+  ],
+  "keywords": [
+    "Cash Back Dispute",
+    "submit_cash_back_dispute_0589",
+    "user_id",
+    "transaction_id",
+    "credit card transactions",
+    "cash back discrepancy",
+    "supporting context (category/promotion expectations)",
+    "avoid sensitive card details"
+  ]
+}

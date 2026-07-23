@@ -1,0 +1,24 @@
+{
+  "id": "doc_everyone_pay_qr_transfers_006",
+  "title": "Why did my QR transfer fail?",
+  "summary": "This document explains why a QR transfer may fail, focusing on limits ($1,250 per transaction and $3,000 daily cap) and common causes (closing the payment screen early, connectivity interruptions, invalid/damaged QR data). It provides resolution steps including reducing amount, waiting for reset, keeping the app open, and requesting a regenerated QR.",
+  "faqs": [
+    "Why won\u2019t my QR transfer go through\u2014could I be over the $1,250 per-transaction limit?",
+    "Is my QR payment failing because I exceeded the $3,000 daily limit?",
+    "Could closing the payment screen before completion cause the QR transfer to fail?",
+    "How do connectivity issues affect QR transfer submission?",
+    "What should I do if the QR code data is invalid, damaged, or won\u2019t scan properly?",
+    "How can I resolve it if the other party\u2019s QR looks corrupted or unresponsive?"
+  ],
+  "keywords": [
+    "QR transfer",
+    "Per-transaction limit $1,250",
+    "Daily limit $3,000",
+    "Daily cap reset",
+    "Close payment screen before completion",
+    "Connectivity issues",
+    "Invalid or damaged QR data",
+    "Keep the app open until success message",
+    "Regenerate a fresh QR"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "doc_business_checking_accounts_beige_004",
+  "title": "Beige: Configuring Auto-Fund Sweeps",
+  "summary": "Explains how Beige auto-fund sweeps work: set a $50,000 trigger threshold, select eligible connected source/target accounts (max 30 external sources/targets), design rules (top-up to a target vs move only variance), and choose evaluation timing (e.g., end of day). Includes safeguards like dry-run previews and post-enable reconciliation to confirm movements match the rule logic.",
+  "faqs": [
+    "How do I set the auto-fund sweep trigger threshold in Beige?",
+    "How many eligible external source/target accounts can I use for sweep rules?",
+    "What sweep rule options are available: top up to a target amount or move only the variance?",
+    "How do I choose when the sweep evaluates (e.g., end of day)?",
+    "Is there a way to preview sweep transfers before executing them?",
+    "After enabling sweeps, what should I verify to ensure balances reconcile correctly?"
+  ],
+  "keywords": [
+    "Beige",
+    "Auto-Fund Sweeps",
+    "Sweep objective",
+    "Trigger threshold $50,000",
+    "Eligible connected accounts",
+    "Max 30 eligible external sources/targets",
+    "Top up to a target amount",
+    "Move only the variance from the threshold",
+    "Evaluation timing (end of day)",
+    "Dry-run mode",
+    "Reconcile next day\u2019s opening balances",
+    "Safeguards vs overdrafts/duplicate funding"
+  ]
+}

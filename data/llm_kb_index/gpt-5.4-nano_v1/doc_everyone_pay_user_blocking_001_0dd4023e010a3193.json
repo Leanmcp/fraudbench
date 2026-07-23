@@ -1,0 +1,25 @@
+{
+  "id": "doc_everyone_pay_user_blocking_001",
+  "title": "User Blocking: Complete Guide",
+  "summary": "This document explains how \u201cblocking\u201d works: blocked users cannot send payment requests, and they are notified they have been blocked. It sets a maximum block list size of $275 users and requires a 12-hour wait after unblocking before re-blocking the same user.",
+  "faqs": [
+    "What happens when I block someone (payment requests and notifications)?",
+    "How many users can I block\u2014what is the $275 limit?",
+    "How do I block a user from their profile?",
+    "How do I unblock a user from my block list?",
+    "If I unblock someone, how long do I have to wait before blocking them again (12 hours)?",
+    "If I can\u2019t block a user, what troubleshooting steps should I follow?"
+  ],
+  "keywords": [
+    "User Blocking",
+    "Blocked users can\u2019t send payment requests",
+    "Blocked user notification sent",
+    "Maximum blocked users: $275",
+    "Re-block cooldown: 12 hours",
+    "Block list",
+    "Unblock option",
+    "Open the user profile",
+    "Confirm block/unblock",
+    "Troubleshooting: reached $275 / wait 12 hours / verify correct profile"
+  ]
+}

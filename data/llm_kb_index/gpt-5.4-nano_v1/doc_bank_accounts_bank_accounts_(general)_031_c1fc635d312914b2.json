@@ -1,0 +1,27 @@
+{
+  "id": "doc_bank_accounts_bank_accounts_(general)_031",
+  "title": "Internal: Filing a Debit Card Transaction Dispute",
+  "summary": "This document instructs agents on filing a debit card transaction dispute under Regulation E, including customer liability based on discovery timing ($50 if within 2 business days, $500 within 60 days, unlimited after 60 days/no recovery). It covers required pre-filing checks, dispute category rules (including fraud vs non-fraud), earliest transaction selection for duplicates, open-dispute limits by checking tier (Entry 2, Mid 3, Premium 4, Elite 5), ATM process branching, and the tool file_debit_card_transaction_dispute_6281 parameters and card_action mapping (e.g., card_present_fraud/card_not_present_fraud \u2192 close_and_reissue).",
+  "faqs": [
+    "What is my maximum liability if I report an unauthorized debit card transaction within 2 business days, within 60 days, or after 60 days?",
+    "What information and eligibility requirements must an agent collect before filing a debit card transaction dispute?",
+    "How should an agent choose the disputed transaction when there are duplicate charges\u2014should they dispute the earliest one?",
+    "How do I classify a dispute: unauthorized transaction vs card-present fraud vs card-not-present fraud?",
+    "What are the open-dispute limits by checking account tier (Entry/Mid/Premium/Elite) when filing disputes?",
+    "For fraud-related disputes over $500, do we need a police report, and how does the written statement affect provisional credit? (Uses provisional_credit_eligible.)"
+  ],
+  "keywords": [
+    "Regulation E",
+    "debit card transaction dispute",
+    "Maximum liability $50 (within 2 business days)",
+    "Maximum liability $500 (within 60 days)",
+    "Unlimited liability after 60 days",
+    "Entry Tier max 2 open disputes",
+    "Mid Tier max 3 open disputes",
+    "Premium Tier max 4 open disputes",
+    "Elite Tier max 5 open disputes",
+    "file_debit_card_transaction_dispute_6281",
+    "dispute_category (card_present_fraud / card_not_present_fraud)",
+    "card_action mapping (freeze_pending_investigation, keep_active, close_and_reissue)"
+  ]
+}

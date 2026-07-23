@@ -1,0 +1,28 @@
+{
+  "id": "doc_credit_cards_credit_cards_(general)_014",
+  "title": "Filing a Credit Card Transaction Dispute (Internal)",
+  "summary": "Provides the internal procedure to file a formal credit card transaction dispute by calling tool file_credit_card_transaction_dispute_4829. Requires specific inputs including transaction_id, card_action (keep_active/cancel_and_reissue), card last 4, customer contact info, contacted_merchant, dates (MM/DD/YYYY), dispute_reason, resolution_requested (and partial_refund_amount if partial), plus eligible_for_provisional_credit (true/false).",
+  "faqs": [
+    "What information do I need to provide to file a credit card transaction dispute?",
+    "How do I choose the card_action value: keep_active vs cancel_and_reissue?",
+    "Which dispute_reason options are available for this dispute tool?",
+    "If I request a partial refund, what extra field is required and how is it provided?",
+    "What are the required date formats for purchase_date and issue_noticed_date?",
+    "How does eligible_for_provisional_credit get set for the dispute request?"
+  ],
+  "keywords": [
+    "file_credit_card_transaction_dispute_4829",
+    "call_discoverable_agent_tool",
+    "transaction_id",
+    "card_action: keep_active",
+    "card_action: cancel_and_reissue",
+    "card_last_4_digits",
+    "contacted_merchant (true/false)",
+    "purchase_date (MM/DD/YYYY)",
+    "issue_noticed_date (MM/DD/YYYY)",
+    "dispute_reason",
+    "resolution_requested (full_refund/partial_refund/reversal_of_charge)",
+    "partial_refund_amount",
+    "eligible_for_provisional_credit"
+  ]
+}

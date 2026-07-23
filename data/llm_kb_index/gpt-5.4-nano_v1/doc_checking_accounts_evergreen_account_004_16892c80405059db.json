@@ -1,0 +1,25 @@
+{
+  "id": "doc_checking_accounts_evergreen_account_004",
+  "title": "Tracking your environmental impact",
+  "summary": "This document explains how often you receive monthly environmental impact reports for Evergreen Account transactions posted in the period, and what they include: total posted Evergreen spend, estimated CO2 offset ($1.25 grams per USD), and estimated trees (1 tree per $1,000). It provides formulas, unit conversions, reconciliation steps, and timing rules (pending excluded; settlement posting dates; refunds/chargebacks as negative adjustments; later corrections show next month).",
+  "faqs": [
+    "How often will I receive my environmental impact report?",
+    "What measures are included in the monthly report for my Evergreen Account?",
+    "How do I calculate the CO2 offset from my posted Evergreen spend?",
+    "How do I estimate the number of trees planted from my posted spend?",
+    "Why might my purchase date not match the amount used in a given monthly report?",
+    "How do refunds/chargebacks or corrections affect the reported spend, CO2 offset, and tree count?"
+  ],
+  "keywords": [
+    "Monthly environmental impact report",
+    "Evergreen Account posted spend",
+    "CO2 offset ($1.25 grams per dollar)",
+    "CO2 offset formula (grams = spend \u00d7 1.25)",
+    "Trees planted (1 tree per $1,000 spent)",
+    "Trees estimate (floor(spend \u00f7 1,000))",
+    "Pending vs. posted transactions",
+    "Posting dates vs. purchase dates",
+    "Refunds/chargebacks as negative adjustments",
+    "Reversals/corrections reflected in next report"
+  ]
+}

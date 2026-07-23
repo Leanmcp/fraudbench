@@ -1,0 +1,26 @@
+{
+  "id": "doc_business_credit_cards_silver_zoom_card_005",
+  "title": "Silver Zoom Card: Adding Fleet Drivers to Your Account",
+  "summary": "Explains how to add fleet drivers to a Silver Zoom Card account, including checking the total requested employee cards is within the account cap of 60, adding driver details in the account management portal, assigning role permissions, and monitoring activation/receipt. Also covers best practices like maintaining an active roster and deactivating cards when access is no longer needed.",
+  "faqs": [
+    "What do I need to confirm before adding fleet drivers to my Silver Zoom Card account?",
+    "How do I add a driver card in the account management portal?",
+    "What information do I enter to request an additional driver card?",
+    "Do I need to assign role permissions when adding a driver?",
+    "How can I check whether a newly added driver card has activated?",
+    "What best practices should I follow to stay within the 60-card limit and manage access?"
+  ],
+  "keywords": [
+    "Silver Zoom Card",
+    "fleet drivers",
+    "account management portal",
+    "user or card management section",
+    "account cap of 60",
+    "enter driver name and contact details",
+    "role permissions",
+    "activation status",
+    "deactivate cards",
+    "active roster",
+    "dispatch and fueling roles"
+  ]
+}

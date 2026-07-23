@@ -1,0 +1,22 @@
+{
+  "id": "doc_checking_accounts_green_account_(checking)_009",
+  "title": "Why can't I overdraft my Green Account (checking)?",
+  "summary": "This document explains that Green Account (checking) overdrafts are not supported: transactions are declined if they would create a negative balance. It also states there are no overdraft protection transfers from other accounts, with a $0.00 fee for such transfers, and advises adding funds to retry after a decline.",
+  "faqs": [
+    "Why is my Green Account (checking) payment being declined?",
+    "Does my Green Account (checking) support overdrafts?",
+    "Is there overdraft protection via transfers from another account?",
+    "What is the fee for overdraft protection transfers?",
+    "If my transaction is declined, what should I do next?",
+    "How can I avoid future overdraft-related declines? "
+  ],
+  "keywords": [
+    "Green Account (checking)",
+    "Overdrafts are not supported",
+    "Transactions declined if negative balance",
+    "No overdraft protection transfers",
+    "Overdraft transfer fee: $0.00",
+    "Keep sufficient funds available",
+    "Add funds and retry transaction"
+  ]
+}

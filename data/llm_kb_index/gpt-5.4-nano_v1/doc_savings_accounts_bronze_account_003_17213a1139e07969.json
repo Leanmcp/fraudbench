@@ -1,0 +1,20 @@
+{
+  "id": "doc_savings_accounts_bronze_account_003",
+  "title": "Bronze Account specifications and requirements",
+  "summary": "This document lists the Bronze account minimums ($0 minimum balance and $0 minimum opening deposit) and explains that interest compounds daily\u2014calculated from your daily balance and added according to the account\u2019s crediting schedule.",
+  "faqs": [
+    "What is the Bronze account minimum balance requirement?",
+    "What is the minimum opening deposit for a Bronze account?",
+    "Is it possible to maintain a Bronze account with a $0 balance?",
+    "How often is interest compounded for the Bronze account?",
+    "How is interest calculated and credited for the Bronze account? (daily balance and crediting schedule)"
+  ],
+  "keywords": [
+    "Bronze Account",
+    "minimum balance $0",
+    "minimum opening deposit $0",
+    "interest compounding frequency daily",
+    "daily balance interest calculation",
+    "crediting schedule"
+  ]
+}

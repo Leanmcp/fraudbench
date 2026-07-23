@@ -1,0 +1,26 @@
+{
+  "id": "doc_business_savings_accounts_bronze_saver_account_006",
+  "title": "Transferring funds to external banks: Bronze Saver",
+  "summary": "This document explains transferring funds to external banks from the Bronze Saver account via ACH and domestic wire. Standard ACH takes 3 business days (no same-day ACH) with a $5,000/day outgoing limit; domestic outgoing wires cost $25 and can deliver faster than ACH.",
+  "faqs": [
+    "How long do standard ACH transfers take to an external bank from Bronze Saver?",
+    "Is same-day ACH available for outgoing transfers?",
+    "What is the maximum amount I can transfer out per day via ACH?",
+    "If my ACH transfer exceeds $5,000, what should I do?",
+    "What fee applies to outgoing domestic wire transfers from Bronze Saver?",
+    "What best practices help avoid delays, returns, or rejections when transferring out? "
+  ],
+  "keywords": [
+    "Bronze Saver",
+    "Standard ACH transfers",
+    "3 business days",
+    "Same-day ACH availability: No",
+    "ACH transfer limit $5,000/day",
+    "Multiple transfers across different days",
+    "Outgoing domestic wire transfers",
+    "Wire fee $25",
+    "Time-sensitive payments",
+    "Initiate transfers earlier in the business day",
+    "Verify recipient details carefully"
+  ]
+}

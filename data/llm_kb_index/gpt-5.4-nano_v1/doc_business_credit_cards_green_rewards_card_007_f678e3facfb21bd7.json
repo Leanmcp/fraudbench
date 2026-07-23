@@ -1,0 +1,27 @@
+{
+  "id": "doc_business_credit_cards_green_rewards_card_007",
+  "title": "Green Rewards Card: Viewing Your Monthly Environmental Impact Dashboard",
+  "summary": "Explains how to access the Green Rewards Card Environmental Impact dashboard, select a monthly reporting view, and interpret emissions overview, offsets applied (running total computed using $0.06), tree progress (eligible spend toward $3,000), and net impact (emissions minus offsets). Includes available filters/views, export options (summary for stakeholders and detailed export for analysis/reconciliation), and troubleshooting steps when purchases don\u2019t appear.",
+  "faqs": [
+    "How do I open the Environmental Impact section and choose the correct monthly reporting view?",
+    "What does the dashboard show for emissions, offsets, tree progress, and net impact?",
+    "How can I filter the dashboard by merchant category or cardholder, and compare to previous periods?",
+    "What export options are available (summary vs detailed) and what are they for?",
+    "My purchase isn\u2019t reflected\u2014what troubleshooting steps should I try first?",
+    "What if the purchase appears under the wrong impact category\u2014how do I verify merchant category alignment and settings?"
+  ],
+  "keywords": [
+    "Green Rewards Card",
+    "Environmental Impact section",
+    "Emissions overview (estimated emissions by category)",
+    "Offsets applied (running total using $0.06)",
+    "Tree progress (advances with eligible spend toward $3,000)",
+    "Net impact (emissions minus offsets)",
+    "Filter by merchant category",
+    "Toggle views (compare to previous periods on same monthly cycle)",
+    "Export summary (stakeholder updates)",
+    "Export detail (internal analysis and reconciliation)",
+    "Troubleshooting\u2014wait for transaction to clear",
+    "Confirm merchant category aligns with sustainability mapping"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "doc_everyone_pay_user_blocking_003",
+  "title": "Common security questions for Everyone Pay",
+  "summary": "This document explains Everyone Pay security block behavior: blocks prevent blocked users from sending payment requests, and blocked users are notified they have been blocked. It also provides troubleshooting steps if you still see activity from a blocked user, including verifying profile match and contacting support with screenshots.",
+  "faqs": [
+    "Do blocks prevent blocked users from sending payment requests on Everyone Pay?",
+    "Are blocked users notified that they have been blocked?",
+    "I\u2019m still receiving activity from a blocked user\u2014what should I do?",
+    "How can I verify the blocked user is actually the correct profile?",
+    "What should I include when contacting support about persistent activity from a blocked profile?"
+  ],
+  "keywords": [
+    "Everyone Pay",
+    "blocking",
+    "payment requests",
+    "blocked users",
+    "notified of block",
+    "block list",
+    "profile matches exactly",
+    "contact support",
+    "screenshots",
+    "activity persists"
+  ]
+}

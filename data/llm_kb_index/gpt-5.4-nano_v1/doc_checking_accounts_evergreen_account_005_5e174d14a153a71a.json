@@ -1,0 +1,25 @@
+{
+  "id": "doc_checking_accounts_evergreen_account_005",
+  "title": "How Rho calculates carbon offsets",
+  "summary": "This document explains how Rho calculates carbon offsets: for each eligible purchase, it multiplies the posted dollar amount by $1.25 to determine grams of CO\u2082 offset, and refunds reduce accrued offsets at the same $1.25 rate. Only eligible purchase transactions accrue offsets; EveryonePay transfers do not accrue offsets (even if $3,000). Offsets are aggregated over the statement period and rounded to whole grams for environmental reporting, and the $1.25 calculation rate is shown in impact details.",
+  "faqs": [
+    "How does Rho convert my purchase dollars into CO\u2082 grams of offsets?",
+    "What happens to my accrued offsets if I receive a refund?",
+    "Which transactions are eligible to accrue carbon offsets?",
+    "Do EveryonePay transfers accrue carbon offsets, including amounts up to $3,000?",
+    "How are offsets aggregated and rounded for environmental reporting?",
+    "Where can I see the $1.25 carbon offset calculation rate used by Rho?"
+  ],
+  "keywords": [
+    "$1.25 calculation rate",
+    "grams of CO\u2082 offset",
+    "eligible purchase transactions",
+    "purchase refunds",
+    "EveryonePay transfers",
+    "$3,000 (threshold mention)",
+    "statement period aggregation",
+    "rounded to whole grams",
+    "impact details transparency",
+    "environmental reporting"
+  ]
+}

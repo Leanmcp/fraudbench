@@ -1,0 +1,23 @@
+{
+  "id": "doc_checking_accounts_bluest_account_010",
+  "title": "Bluest Account: Out-of-network ATM fees",
+  "summary": "This document explains Rho-Bank\u2019s \u201cout-of-network ATM\u201d fee for the Bluest Account: $2.00 per cash withdrawal at an ATM not in Rho-Bank\u2019s network. It notes the fee posts as a separate line item, and any ATM operator surcharge is in addition to Rho-Bank\u2019s fee.",
+  "faqs": [
+    "When will I be charged an out-of-network ATM fee on my Bluest Account?",
+    "How much is the out-of-network ATM fee, and is it charged per withdrawal?",
+    "Does the $2.00 fee include any surcharge charged by the ATM operator?",
+    "How will the fee show up on my account activity (description/line item)?",
+    "What can I do to minimize out-of-network ATM charges?",
+    "What\u2019s the difference in fees between one out-of-network withdrawal vs two separate withdrawals?"
+  ],
+  "keywords": [
+    "Bluest Account",
+    "out-of-network ATM fee",
+    "$2.00 per withdrawal",
+    "Rho-Bank network ATMs",
+    "ATM operator surcharge",
+    "separate line item posting",
+    "account activity description includes \u201cATM\u201d/\u201cOut-of-network ATM\u201d",
+    "consolidate withdrawals"
+  ]
+}

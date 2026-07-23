@@ -1,0 +1,1282 @@
+{
+  "$schema_version": "1.0",
+  "$generated": "2026-07-26",
+  "$provenance": "Derived verbatim from PROMPT_LIBRARY/banking_knowledge/workflow_skillsets.md (11 '**Skillset: X**' blocks) and cross-checked against the actual tool registry in src/tau2/domains/banking_knowledge/tools.py. No new policy content -- same leakage-risk argument as PENDING_ACTION_REMINDER_WORKFLOW_TRIGGERS' own provenance note (eval_tau2_tinker.py:131-134).",
+  "$purpose": "Single source of truth for (a) the workflow tool's return payload and (b) the follow-rate scorer. See FAILURE_ANALYSIS/analysis/workflow_tool_and_checklist_tool_scoping.md sections 6 and 7.2.",
+  "$schema_notes": {
+    "skill_key": "MUST match PENDING_ACTION_REMINDER_WORKFLOW_NAMES in TAU2_WITH_TINKER/eval_tau2_tinker.py:114-126 exactly, so a name the harness surfaces maps back to the step content the agent read in its system prompt.",
+    "triggers": "Migrated verbatim from PENDING_ACTION_REMINDER_WORKFLOW_TRIGGERS. List of keyword-groups; matched if the customer's own words contain every keyword in ANY one group.",
+    "per_entity": "Non-null when the whole step list must be re-run independently per entity (per card, per account). The scorer must expand steps per entity before computing follow-rate.",
+    "step.tool": "Anchor tool name, or null when the step has no observable tool anchor (a question to the customer, or an internal derivation). null steps are EXCLUDED from the mechanical follow-rate denominator and reported separately -- never silently counted as misses.",
+    "step.call_via": "'direct' = the tool appears in the trajectory as its own tool_call name. 'discoverable' = it appears as call_discoverable_agent_tool with the real name inside arguments.agent_tool_name. THE SCORER MUST RESOLVE THIS SECOND LEVEL. Verified: gold actions in tasks.json use call_discoverable_agent_tool 428 times with the real name in arguments. unlock_discoverable_agent_tool calls are plumbing and are NOT step anchors.",
+    "step.required": "false when the step is legitimately optional (customer declines, branch not taken).",
+    "step.conditional_on": "Free-text condition under which this step applies. When present, non-execution may be CORRECT and the scorer must not count it as a miss without evaluating the condition.",
+    "step.blocked_by": "Step ids that must complete before this one. Mirrors the Task tools' addBlockedBy. Used for dependency_violations (scoping doc 7.2) -- stronger evidence than order inferred from list position.",
+    "group.early_exit": "true  = checks run in order and STOP at the first failure; later checks going unexecuted is CORRECT behavior and must not be scored as a miss. false = every item must be checked regardless; stopping early IS a violation. This distinction is load-bearing: 'card closure + retention' step 1 is early_exit true, 'credit-limit-increase (CLI) decision' step 2 is explicitly early_exit false ('checking only until you find one failure and stopping early breaks the audit record'). A scorer that ignores this punishes correct behavior in one skillset and misses a real violation in the other.",
+    "forbidden_tools": "Negative anchors. Tools the skillset explicitly warns against, or hallucinated names observed in real failed runs. Calling one is a measurable, countable failure.",
+    "partially_unscorable": "true when the prose does not decompose into tool-anchored steps and the encoding here is deliberately coarse. Report these skillsets' follow-rate with an explicit caveat rather than implying precision."
+  },
+  "$known_discrepancies": [
+    {
+      "id": "get_current_dispute_count",
+      "severity": "RESOLVED 2026-07-27 -- skillset corrected, KB left untouched (owner's decision)",
+      "resolution": "workflow_skillsets.md step 3 now instructs the agent to CALL get_current_dispute_count, matching doc_credit_cards_015's own checklist, and additionally documents the call-path trap that caused the original misdiagnosis (it is a standard tool; passing it to call_discoverable_agent_tool errors because that wrapper only resolves discoverable tools). The KB document was deliberately NOT changed. Consequence for scoring: the tool is no longer a forbidden anchor -- it is a required step anchor for the dispute-filing skillset, and it must be re-called before EACH filing in a multi-dispute session, so its expected call count is per-dispute rather than per-episode.",
+      "skillset": "dispute filing (credit card)",
+      "finding": "workflow_skillsets.md step 3 states this tool 'does not exist in this environment's registry (confirmed -- invoking it returns an \"Unknown agent tool\" error)' and instructs the agent NOT to call it, deriving the count manually from get_user_dispute_history_7291 instead. That is contradicted by the code: get_current_dispute_count is defined at tools.py:1575 inside KnowledgeTools with @is_tool(ToolType.READ), i.e. it is a STANDARD, directly-callable tool exposed to the agent.",
+      "how_the_error_arose": "call_discoverable_agent_tool only resolves discoverable tools. Calling a standard tool through it errors. The current code has a dedicated branch returning 'is not a discoverable tool. It is a standard tool already available to you directly', but the two observed failed sessions evidently predate that branch and saw the generic 'Unknown agent tool' message -- from which the skillset author concluded the tool does not exist.",
+      "timeline": "Tool added 2026-07-19 (commit e2f68d67, which ALSO updated doc_credit_cards_015 to REQUIRE calling it). The 'does not exist' instruction was added to workflow_skillsets.md 2026-07-22 (commit 68205856) -- three days AFTER the tool was added. So the instruction was wrong when written, not merely stale.",
+      "consequence_if_unfixed": "The skillset actively steers the agent away from the purpose-built tool toward manual derivation, and doc_credit_cards_015 simultaneously requires the tool. The agent receives contradictory instructions on the same check.",
+      "note_on_prior_state": "Between 2026-07-22 and 2026-07-27 the skillset text actively disabled a fix that TAU2_WITH_TINKER/SKILL_TRAINING_PLAN.md:99 records as 'Fix deployed, NOT verified'. Any eval run in that window was executed against contradictory instructions -- the KB requiring the call, the skillset forbidding it. Runs from that window should not be treated as clean measurements of dispute-count behavior."
+    },
+    {
+      "id": "skill_name_mismatch_referral",
+      "severity": "low, but breaks the name->prose mapping",
+      "finding": "eval_tau2_tinker.py:123 lists the skill as 'cross-account referral advising', but the header in workflow_skillsets.md:364 is '**Skillset: referral advising**'. The harness surfaces a name the agent cannot find in its own system prompt.",
+      "action": "This file keys on the eval-script name (the one the harness actually surfaces) and records the prose header under prose_header. Aligning the two is a one-line fix in whichever file the owner prefers."
+    },
+    {
+      "id": "pin_unlock_tool",
+      "severity": "informational",
+      "finding": "The PIN-lock skillset repeatedly says 'unlock' but no unlock tool exists in the registry. The available PIN tools are reset_debit_card_pin_6284 and change_debit_card_pin_6285."
+    }
+  ],
+  "skillsets": {
+    "dispute filing (credit card)": {
+      "prose_header": "dispute filing (credit card)",
+      "source_lines": "workflow_skillsets.md:18-53",
+      "triggers": [
+        [
+          "dispute"
+        ],
+        [
+          "unauthorized charge"
+        ],
+        [
+          "unauthorized transaction"
+        ],
+        [
+          "duplicate charge"
+        ],
+        [
+          "fraudulent charge"
+        ],
+        [
+          "didn't make this charge"
+        ],
+        [
+          "did not make this charge"
+        ],
+        [
+          "provisional credit"
+        ]
+      ],
+      "per_entity": null,
+      "partially_unscorable": false,
+      "forbidden_tools": [],
+      "forbidden_tools_note": "get_current_dispute_count was listed here until 2026-07-27, matching the then-current skillset text. The skillset has been corrected and the tool is now REQUIRED -- see step 4 below and $known_discrepancies.get_current_dispute_count.",
+      "groups": [
+        {
+          "group_id": "eligibility",
+          "step_ids": [
+            3,
+            4
+          ],
+          "early_exit": false,
+          "note": "'all of the following must hold, never inferred or guessed while a check is skipped'"
+        }
+      ],
+      "steps": [
+        {
+          "id": 1,
+          "text": "Verify identity if not already verified this session",
+          "tool": "log_verification",
+          "call_via": "direct",
+          "required": true,
+          "blocked_by": []
+        },
+        {
+          "id": 2,
+          "text": "Retrieve dispute history for this account BEFORE filing anything",
+          "tool": "get_user_dispute_history_7291",
+          "call_via": "discoverable",
+          "required": true,
+          "blocked_by": [
+            1
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Check the 12-month dispute count. Call get_current_dispute_count DIRECTLY BY NAME -- it is a standard tool, and passing it to call_discoverable_agent_tool errors because that wrapper only resolves discoverable tools. Re-call it before EACH filing in a multi-dispute session: every filed dispute is written to the record immediately, so an earlier count is stale",
+          "tool": "get_current_dispute_count",
+          "call_via": "direct",
+          "required": true,
+          "blocked_by": [
+            2
+          ],
+          "per_dispute": true,
+          "note": "Expected call count is PER DISPUTE, not per episode. A scorer that checks only for presence will pass a multi-dispute episode that called it once -- which is the exact failure doc_credit_cards_015's checklist exists to prevent. Count calls against the number of disputes filed."
+        },
+        {
+          "id": 4,
+          "text": "Determine eligible_for_provisional_credit -- account age >=60d; dispute_reason in the allowed set; amount >=$25 and <= tier max; count from step 3 is under 3; merchant contacted first for any non-fraud reason",
+          "tool": null,
+          "call_via": null,
+          "required": true,
+          "blocked_by": [
+            3
+          ]
+        },
+        {
+          "id": 5,
+          "text": "File the dispute, setting card_action to cancel_and_reissue only if the card is actually being replaced, otherwise keep_active",
+          "tool": "file_credit_card_transaction_dispute_4829",
+          "call_via": "discoverable",
+          "required": true,
+          "blocked_by": [
+            3,
+            4
+          ]
+        }
+      ],
+      "watch_for": "A second request in the same session (a CLI request, a card replacement) that depends on or conflicts with this one -- resolve the dependency before filing either."
+    },
+    "card closure + retention": {
+      "prose_header": "card closure + retention",
+      "source_lines": "workflow_skillsets.md:55-121",
+      "triggers": [
+        [
+          "close my card"
+        ],
+        [
+          "close this card"
+        ],
+        [
+          "close the card"
+        ],
+        [
+          "cancel my card"
+        ],
+        [
+          "cancel this card"
+        ],
+        [
+          "cancel the card"
+        ],
+        [
+          "downgrade my card"
+        ],
+        [
+          "downgrade this card"
+        ],
+        [
+          "close my",
+          "card"
+        ],
+        [
+          "cancel my",
+          "card"
+        ],
+        [
+          "downgrade my",
+          "card"
+        ],
+        [
+          "close out",
+          "card"
+        ]
+      ],
+      "triggers_provenance": "NARROWED 2026-07-27, in sync with eval_tau2_tinker.py. Was [[close, card], [cancel, card], [downgrade, card]], which fired on 62% of banking tasks against ~35% proposed by the draft labels. Forensics showed the surplus was semantic, not mechanical (94% of firings already clean) -- 'close' is ambiguous between 'close to my limit', 'the closing date', and an actual closure request. Possessive anchoring ('close my') removes the first two. Negation remains unreachable by any keyword scheme.",
+      "per_entity": "credit_card_account",
+      "per_entity_note": "'If a session touches more than one card, run this ENTIRE tree separately for each card, one card fully through its own Step 6 before moving to the next.' running steps 1-5 for every card but only placing the actual Step 6 closure call for the first one. The scorer MUST expand per card and check that EACH card reached step 6.",
+      "partially_unscorable": false,
+      "forbidden_tools": [
+        {
+          "tool": "log_credit_card_closure_reason_4521",
+          "reason": "Only when step 2 found a closure-reason record within the past 12 months -- in that branch calling it again is an explicit violation.",
+          "conditional": true
+        }
+      ],
+      "groups": [
+        {
+          "group_id": "eligibility_gate",
+          "step_ids": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "early_exit": true,
+          "note": "'check these four one at a time, in the order listed. The moment any one of them fails, stop the eligibility gate right there ... do not also check the remaining items.' Later checks going unexecuted after an earlier failure is CORRECT -- gathering that information anyway is explicitly called out as unnecessary extra work, not thoroughness."
+        }
+      ],
+      "steps": [
+        {
+          "id": 1,
+          "text": "Eligibility gate 1/4: pending or active dispute on this account? -> stop, tell the customer to resolve it first",
+          "tool": "get_user_dispute_history_7291",
+          "call_via": "discoverable",
+          "required": true,
+          "blocked_by": []
+        },
+        {
+          "id": 2,
+          "text": "Eligibility gate 2/4: pending replacement card not yet received/activated? -> stop",
+          "tool": "get_pending_replacement_orders_5765",
+          "call_via": "discoverable",
+          "required": true,
+          "blocked_by": [
+            1
+          ],
+          "conditional_on": "gate 1 passed (early_exit group)"
+        },
+        {
+          "id": 3,
+          "text": "Eligibility gate 3/4: account open less than 60 days? -> stop",
+          "tool": null,
+          "call_via": null,
+          "required": true,
+          "blocked_by": [
+            2
+          ],
+          "conditional_on": "gates 1-2 passed (early_exit group)"
+        },
+        {
+          "id": 4,
+          "text": "Eligibility gate 4/4: outstanding balance? -> stop, must be paid off first",
+          "tool": null,
+          "call_via": null,
+          "required": true,
+          "blocked_by": [
+            3
+          ],
+          "conditional_on": "gates 1-3 passed (early_exit group)"
+        },
+        {
+          "id": 5,
+          "text": "Abuse-prevention check for THIS specific card account. If it returns a closure-reason record within the past 12 months -> skip steps 6, 7, 8 entirely and go straight to step 9",
+          "tool": "get_closure_reason_history_8293",
+          "call_via": "discoverable",
+          "required": true,
+          "blocked_by": [
+            4
+          ]
+        },
+        {
+          "id": 6,
+          "text": "Log the reason: ask why the customer wants to close, then log it with exactly credit_card_account_id, user_id, closure_reason -- no extra fields",
+          "tool": "log_credit_card_closure_reason_4521",
+          "call_via": "discoverable",
+          "required": false,
+          "blocked_by": [
+            5
+          ],
+          "conditional_on": "step 5 found NO closure-reason record in the past 12 months"
+        },
+        {
+          "id": 7,
+          "text": "Address the stated reason, branching on what they said (annual_fee + tenure >=2y -> 1-year fee waiver flag; annual_fee + tenure <2y -> permanent no-fee downgrade; not_using_card / found_better_card / unhappy_with_rewards / negative_experience each have their own branch)",
+          "tool": "apply_credit_card_account_flag_6147",
+          "call_via": "discoverable",
+          "required": false,
+          "blocked_by": [
+            6
+          ],
+          "conditional_on": "reached step 6, AND the branch taken is annual_fee with tenure >=2 years (other branches have no tool anchor)"
+        },
+        {
+          "id": 8,
+          "text": "ONE retention offer, tiered by card (entry 500pts/$5; mid 2000pts/$20; premium+ 5000pts/$50). Offer once -- do not repeat or escalate if declined",
+          "tool": null,
+          "call_via": null,
+          "required": false,
+          "blocked_by": [
+            7
+          ],
+          "conditional_on": "the customer still wants to close after step 7 addressed their concern"
+        },
+        {
+          "id": 9,
+          "text": "Resolve: if the customer accepts the retention offer, apply it and keep the account OPEN (do not also close it). Otherwise place the actual closure call. Mention the 45-day reward-redemption window and, if the annual fee posted recently, the 37-day fee-refund window",
+          "tool": "close_credit_card_account_7834",
+          "call_via": "discoverable",
+          "required": true,
+          "blocked_by": [
+            5
+          ],
+          "conditional_on": "the customer still wants to close; if they accept retention, this step resolves WITHOUT the closure call and that is correct",
+          "note": "This is the step the skips for all but the first card. Check it per entity."
+        }
+      ]
+    },
+    "credit-limit-increase (CLI) decision": {
+      "prose_header": "credit-limit-increase (CLI) decision",
+      "source_lines": "workflow_skillsets.md:123-156",
+      "triggers": [
+        [
+          "credit limit increase"
+        ],
+        [
+          "increase my credit limit"
+        ],
+        [
+          "increase my limit"
+        ],
+        [
+          "raise my limit"
+        ],
+        [
+          "raise my credit limit"
+        ],
+        [
+          "higher credit limit"
+        ]
+      ],
+      "per_entity": null,
+      "partially_unscorable": false,
+      "forbidden_tools": [],
+      "groups": [
+        {
+          "group_id": "all_checks",
+          "step_ids": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "early_exit": false,
+          "note": "'Check ALL of these before deciding (checking only until you find one failure and stopping early breaks the audit record -- check every item regardless).' Source doc _007 states its steps MUST be followed in the exact order listed. Early exit here IS a violation -- the exact opposite of card-closure's gate. all 5 gates were checked."
+        }
+      ],
+      "steps": [
+        {
+          "id": 1,
+          "text": "Before submitting anything: check the requested increase is within the tier's maximum. If not, tell the customer the max and ask them to adjust -- do not submit an over-limit request at all",
+          "tool": null,
+          "call_via": null,
+          "required": true,
+          "blocked_by": []
+        },
+        {
+          "id": 2,
+          "text": "Submit FIRST, decide second -- create the formal record BEFORE eligibility is checked (eligibility checks are internal, never exposed to the customer, so there is no reason to defer submission)",
+          "tool": "submit_credit_limit_increase_request_7392",
+          "call_via": "discoverable",
+          "required": true,
+          "blocked_by": [
+            1
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Check: account age meets the tier minimum",
+          "tool": null,
+          "call_via": null,
+          "required": true,
+          "blocked_by": [
+            2
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Check cooldown: an APPROVED request within the tier's cooldown window blocks a new one; a prior DENIAL does not trigger a cooldown",
+          "tool": "get_credit_limit_increase_history_4829",
+          "call_via": "discoverable",
+          "required": true,
+          "blocked_by": [
+            2
+          ]
+        },
+        {
+          "id": 5,
+          "text": "Check no pending disputes -- do not assume none exist just because none were mentioned in conversation",
+          "tool": "get_user_dispute_history_7291",
+          "call_via": "discoverable",
+          "required": true,
+          "blocked_by": [
+            2
+          ]
+        },
+        {
+          "id": 6,
+          "text": "Check no pending replacement card -- same 'don't assume' rule",
+          "tool": "get_pending_replacement_orders_5765",
+          "call_via": "discoverable",
+          "required": true,
+          "blocked_by": [
+            2
+          ]
+        },
+        {
+          "id": 7,
+          "text": "Check account in good standing, no past-due balance",
+          "tool": null,
+          "call_via": null,
+          "required": true,
+          "blocked_by": [
+            2
+          ]
+        },
+        {
+          "id": 8,
+          "text": "Check current utilization below the tier's threshold",
+          "tool": null,
+          "call_via": null,
+          "required": true,
+          "blocked_by": [
+            2
+          ]
+        },
+        {
+          "id": 9,
+          "text": "Decide: all pass AND amount within limits -> approve. ANY single failure -> deny with the specific denial_reason enum that matches. Do not approve because the request seems reasonable or the customer asked nicely; every one of these is a hard gate",
+          "tool": "approve_credit_limit_increase_5847|deny_credit_limit_increase_5848",
+          "call_via": "discoverable",
+          "tool_is_xor": true,
+          "required": true,
+          "blocked_by": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "id": 10,
+          "text": "Tell the customer the decision -- for denials, state the specific reason and when they may become eligible",
+          "tool": null,
+          "call_via": null,
+          "required": true,
+          "blocked_by": [
+            9
+          ]
+        }
+      ]
+    },
+    "lost wallet / multi-card replacement": {
+      "prose_header": "lost wallet / multi-card replacement",
+      "source_lines": "workflow_skillsets.md:158-205",
+      "triggers": [
+        [
+          "lost my wallet"
+        ],
+        [
+          "lost wallet"
+        ],
+        [
+          "stolen wallet"
+        ],
+        [
+          "wallet was stolen"
+        ],
+        [
+          "lost my purse"
+        ],
+        [
+          "stolen purse"
+        ],
+        [
+          "all my cards"
+        ]
+      ],
+      "per_entity": "debit_card",
+      "per_entity_note": "Part A (steps 1-4) runs per debit card the customer reports as lost/stolen, independently, 'do not stop after the first'. Part B (steps 5-7) runs ONCE, after Part A is done for EVERY debit card.",
+      "partially_unscorable": false,
+      "forbidden_tools": [],
+      "groups": [
+        {
+          "group_id": "part_a",
+          "step_ids": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "early_exit": false,
+          "per_entity": true
+        },
+        {
+          "group_id": "part_b",
+          "step_ids": [
+            5,
+            6,
+            7
+          ],
+          "early_exit": false,
+          "per_entity": false,
+          "note": "'mandatory every time; this step is easy to miss: it is easy to skip because the customer only ever asked about the debit card.'"
+        }
+      ],
+      "steps": [
+        {
+          "id": 1,
+          "text": "Freeze it FIRST, always -- even if the customer says they want it closed outright. Freezing is the mandatory immediate action regardless of the eventual outcome; never skip straight to closing. Requires: customer verified, confirmed owner, card currently ACTIVE",
+          "tool": "freeze_debit_card_3892",
+          "call_via": "discoverable",
+          "required": true,
+          "blocked_by": []
+        },
+        {
+          "id": 2,
+          "text": "KNOWN TRAP, confirmed in a real failed run: close_debit_card_4721 only accepts ACTIVE or PENDING status. Since step 1 froze the card, it must be unfrozen back to ACTIVE before closing -- closing a still-frozen card errors",
+          "tool": "unfreeze_debit_card_3893",
+          "call_via": "discoverable",
+          "required": false,
+          "blocked_by": [
+            1
+          ],
+          "conditional_on": "the card is being closed (step 3). Not required if the customer only wants it frozen."
+        },
+        {
+          "id": 3,
+          "text": "Then decide closure: check eligibility (owner verified; card ACTIVE/PENDING; no pending transactions; no pending refunds; card >=14 days old -- THIS AGE REQUIREMENT IS WAIVED when the reason is lost/stolen/fraud_suspected, which this scenario always is). If eligible, ask the closure reason and close",
+          "tool": "close_debit_card_4721",
+          "call_via": "discoverable",
+          "required": false,
+          "blocked_by": [
+            1,
+            2
+          ],
+          "conditional_on": "the customer wants the card closed rather than only frozen"
+        },
+        {
+          "id": 4,
+          "text": "Ask whether to order a replacement. If yes, order using the ACCOUNT'S OWN TIER rules -- do not guess delivery_fee/design_fee: each tier has its own shipping-fee table (entry/mid/premium/elite) and design-fee table (CLASSIC/PREMIUM/CUSTOM), and entry-tier additionally has a 48-hour post-closure waiting period. Check the customer's replacement count in the past 12 months (issue_reason in lost/stolen/fraud/damaged) against the tier cap first -- new_account/first_card/expired/upgrade/bank_reissue do NOT count toward that cap",
+          "tool": "order_debit_card_5739",
+          "call_via": "discoverable",
+          "required": false,
+          "blocked_by": [
+            3
+          ],
+          "conditional_on": "the customer wants a replacement"
+        },
+        {
+          "id": 5,
+          "text": "PART B, UNCONDITIONALLY: after Part A is done for every debit card, retrieve the customer's credit card accounts -- whether or not the customer mentioned owning a credit card. This session has not covered this skillset until this call has happened, even if every debit-card step above was handled perfectly",
+          "tool": "get_credit_card_accounts_by_user",
+          "call_via": "direct",
+          "required": true,
+          "blocked_by": [
+            1
+          ],
+          "note": "blocked_by is [1] rather than [4] because Part A steps 2-4 are conditional; the binding requirement is that Part A has been worked for every card. The scorer should check this fired AFTER the last Part A call across all entities."
+        },
+        {
+          "id": 6,
+          "text": "If the customer has one or more credit cards: proactively ask whether that card was also in the lost wallet, and offer to order a replacement with a new card number as a security precaution -- do not wait for them to raise it",
+          "tool": "order_replacement_credit_card_7291",
+          "call_via": "discoverable",
+          "required": false,
+          "blocked_by": [
+            5
+          ],
+          "conditional_on": "the customer has >=1 credit card AND accepts the offer. The ASKING is required; the ordering is conditional on acceptance."
+        },
+        {
+          "id": 7,
+          "text": "If they decline the credit-card replacement offer, note in the account that the offer was made rather than dropping it silently",
+          "tool": null,
+          "call_via": null,
+          "required": false,
+          "blocked_by": [
+            6
+          ],
+          "conditional_on": "the customer declined the offer in step 6"
+        }
+      ]
+    },
+    "debit-card dispute filing + precheck": {
+      "prose_header": "debit-card dispute filing + precheck",
+      "source_lines": "workflow_skillsets.md:207-258",
+      "triggers": [
+        [
+          "debit card dispute"
+        ],
+        [
+          "dispute my debit"
+        ],
+        [
+          "dispute a debit"
+        ],
+        [
+          "dispute this debit"
+        ],
+        [
+          "dispute the debit"
+        ],
+        [
+          "dispute",
+          "my debit card"
+        ],
+        [
+          "atm transaction"
+        ],
+        [
+          "unauthorized debit"
+        ]
+      ],
+      "triggers_provenance": "NARROWED 2026-07-27, in sync with eval_tau2_tinker.py. The old [dispute, debit card] group contributed 35 scattered and 64 far-apart firings -- 'dispute' about a credit card in one turn, 'debit card' mentioned unrelatedly elsewhere.",
+      "per_entity": "transaction",
+      "per_entity_note": "Step 5 (determine category / pin_compromised / card_action / provisional eligibility) is explicitly 'per transaction, not once per customer'. But the card ACTION is performed ONCE per card using the single most severe value across all disputes on that card.",
+      "partially_unscorable": false,
+      "forbidden_tools": [],
+      "groups": [
+        {
+          "group_id": "pre_filing_gate",
+          "step_ids": [
+            2
+          ],
+          "early_exit": false,
+          "note": "'all must hold'"
+        }
+      ],
+      "steps": [
+        {
+          "id": 1,
+          "text": "Disclose liability UP FRONT, before filing: within 2 business days of the STATEMENT -> max $50; within 60 days of statement -> $500; after 60 days -> unlimited. The statement date, not the transaction date, is the anchor -- a transaction inside the current, not-yet-issued statement cycle is always within the shortest window",
+          "tool": null,
+          "call_via": null,
+          "required": true,
+          "blocked_by": []
+        },
+        {
+          "id": 2,
+          "text": "Pre-filing gate, all must hold: customer verified; transaction >=$1.00 and <=60 days old; open-dispute count for THIS CHECKING ACCOUNT under the tier cap (entry 2 / mid 3 / premium 4 / elite 5 -- PER ACCOUNT, not per customer); card linked to an OPEN checking account",
+          "tool": "get_debit_dispute_status_7483",
+          "call_via": "discoverable",
+          "required": true,
+          "blocked_by": [
+            1
+          ],
+          "note": "Anchor is the open-dispute-count check; the other conditions in this gate have no separate tool."
+        },
+        {
+          "id": 3,
+          "text": "For an ATM dispute specifically, FIRST determine whether it was a Rho-Bank ATM or a third-party ATM -- the two follow different processes; do not default to one without checking which applies",
+          "tool": "get_bank_account_transactions_9173",
+          "call_via": "discoverable",
+          "required": false,
+          "blocked_by": [
+            1
+          ],
+          "conditional_on": "the dispute concerns an ATM transaction"
+        },
+        {
+          "id": 4,
+          "text": "Per transaction, determine dispute_category (card_present_fraud / card_not_present_fraud when fraud is suspected; plain unauthorized_transaction ONLY when fraud is NOT suspected), pin_compromised (yes_shared / yes_observed / no / unknown -- describing THAT transaction's circumstances, not a blanket customer-level state), card_action from the category mapping, and provisional_credit_eligible. voluntary PIN sharing (yes_shared) removes provisional eligibility even if every other condition is met",
+          "tool": null,
+          "call_via": null,
+          "required": true,
+          "blocked_by": [
+            2
+          ]
+        },
+        {
+          "id": 5,
+          "text": "If the same charge appears as multiple duplicates, dispute the EARLIEST (first) occurrence, not the most recent or all of them",
+          "tool": null,
+          "call_via": null,
+          "required": false,
+          "blocked_by": [
+            4
+          ],
+          "conditional_on": "duplicate charges are present"
+        },
+        {
+          "id": 6,
+          "text": "For a fraud dispute over $500, ask whether the customer has filed a police report; if not, recommend they do so (a recommendation, not a precondition for filing)",
+          "tool": null,
+          "call_via": null,
+          "required": false,
+          "blocked_by": [
+            4
+          ],
+          "conditional_on": "fraud dispute with amount > $500"
+        },
+        {
+          "id": 7,
+          "text": "File the dispute",
+          "tool": "file_debit_card_transaction_dispute_6281",
+          "call_via": "discoverable",
+          "required": true,
+          "blocked_by": [
+            4
+          ]
+        },
+        {
+          "id": 8,
+          "text": "Then ACTUALLY PERFORM the card action determined in step 4 -- filing records the INTENT, it does not perform the freeze/close itself. Use the single most severe action across all disputes on that card (close_and_reissue > freeze_pending_investigation > keep_active), called ONCE",
+          "tool": "close_debit_card_4721|freeze_debit_card_3892",
+          "call_via": "discoverable",
+          "tool_is_xor": true,
+          "required": false,
+          "blocked_by": [
+            7
+          ],
+          "conditional_on": "the most severe mapped card_action is not keep_active"
+        }
+      ]
+    },
+    "ATM-fee dispute / audit → account credit": {
+      "prose_header": "ATM-fee dispute / audit → account credit",
+      "source_lines": "workflow_skillsets.md:260-270",
+      "triggers": [
+        [
+          "atm fee"
+        ],
+        [
+          "atm fees"
+        ],
+        [
+          "fee audit"
+        ]
+      ],
+      "per_entity": null,
+      "partially_unscorable": false,
+      "forbidden_tools": [],
+      "groups": [],
+      "steps": [
+        {
+          "id": 1,
+          "text": "Enumerate from the WITHDRAWAL records, not the fee records -- an event with no fee row is still an event that needs auditing, and starting from fee rows makes such events invisible",
+          "tool": "get_bank_account_transactions_9173",
+          "call_via": "discoverable",
+          "required": true,
+          "blocked_by": []
+        },
+        {
+          "id": 2,
+          "text": "For each withdrawal, compute the fee that SHOULD have applied and compare to what was actually charged",
+          "tool": null,
+          "call_via": null,
+          "required": true,
+          "blocked_by": [
+            1
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Net BOTH directions -- overcharges minus undercharges -- never sum only the overcharges",
+          "tool": null,
+          "call_via": null,
+          "required": true,
+          "blocked_by": [
+            2
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Apply the net credit",
+          "tool": "apply_checking_account_credit_5829|apply_savings_account_credit_6831",
+          "call_via": "discoverable",
+          "tool_is_xor": true,
+          "required": true,
+          "blocked_by": [
+            3
+          ],
+          "conditional_on": "the net is a credit owed to the customer"
+        }
+      ],
+      "watch_for": "A fee description that contradicts its own paired withdrawal description (e.g. a 'non-network' fee paired with an in-network withdrawal) -- that contradiction means the FEE is wrong, not the description."
+    },
+    "cash-back reward correction": {
+      "prose_header": "cash-back reward correction",
+      "source_lines": "workflow_skillsets.md:272-290",
+      "triggers": [
+        [
+          "cash back"
+        ],
+        [
+          "cashback"
+        ],
+        [
+          "points",
+          "wrong"
+        ],
+        [
+          "points",
+          "incorrect"
+        ],
+        [
+          "reward amount"
+        ],
+        [
+          "rewards amount"
+        ]
+      ],
+      "per_entity": "dispute",
+      "per_entity_note": "'in a multi-dispute session, keep each dispute's own transaction ID paired with its own correction; do not let two near-identical transactions/disputes get their corrections swapped.' Recording a confident-sounding but mismatched pairing is a real, repeated failure shape here.",
+      "partially_unscorable": false,
+      "forbidden_tools": [
+        {
+          "tool": "submit_cash_back_dispute_0589",
+          "reason": "This is a USER tool. The customer submits it themselves; the agent must hand it over via give_discoverable_user_tool, never file on their behalf."
+        }
+      ],
+      "groups": [],
+      "steps": [
+        {
+          "id": 1,
+          "text": "Confirm the customer has the CORRECT transaction_id for the purchase in question before they submit, then hand them the submission tool -- the customer makes this call themselves, the agent does not file it on their behalf",
+          "tool": "give_discoverable_user_tool",
+          "call_via": "direct",
+          "required": true,
+          "blocked_by": []
+        },
+        {
+          "id": 2,
+          "text": "Once a dispute resolves, look up the resolved dispute records to find which transaction_id values need correcting, keeping each dispute's own transaction ID paired with its own correction",
+          "tool": null,
+          "call_via": null,
+          "required": true,
+          "blocked_by": [
+            1
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Update the rewards with the exact transaction_id and a FRESHLY RECALCULATED new_rewards_earned (formatted as 'X points') -- recompute from the card's actual rate/category/promotions, NEVER copy an expected_rewards field from the dispute record itself",
+          "tool": "update_transaction_rewards_3847",
+          "call_via": "discoverable",
+          "required": true,
+          "blocked_by": [
+            2
+          ]
+        }
+      ]
+    },
+    "security hold / PIN-lock, multi-card session": {
+      "prose_header": "security hold / PIN-lock, multi-card session",
+      "source_lines": "workflow_skillsets.md:292-362",
+      "triggers": [
+        [
+          "pin locked"
+        ],
+        [
+          "pin is locked"
+        ],
+        [
+          "pin got locked"
+        ],
+        [
+          "pin lock"
+        ],
+        [
+          "pin compromised"
+        ],
+        [
+          "security hold"
+        ],
+        [
+          "locked out of my pin"
+        ]
+      ],
+      "per_entity": "debit_card",
+      "per_entity_note": "'Another card on the same account also has pin_locked = TRUE -> finish investigating and scoring EVERY locked card independently before any unlock decision on any of them -- do not resolve the card the customer led with and stop.'",
+      "partially_unscorable": true,
+      "unscorable_reason": "Steps 1-4 are a 16-sub-flag, 5-category scoring table plus a 5-band threshold table plus a flag-removal recalculation rule plus a hard override. None of that decomposes into tool-anchored steps -- it is internal computation over data already retrieved. This file models it COARSELY: one anchored step for 'retrieve the declined-transaction history and card data needed to score', and null-anchored steps for the scoring, thresholding, and override logic. Report this skillset's follow-rate with an explicit caveat. every card went straight to freeze+replace) -- which this coarse encoding CAN still detect, because it shows up as steps 1 and 5 never firing.",
+      "forbidden_tools": [
+        {
+          "tool": "unlock_debit_card_pin",
+          "reason": "Does not exist. The real PIN tools are reset_debit_card_pin_6284 and change_debit_card_pin_6285."
+        },
+        {
+          "tool": "call_discoverable_agent_tool(agent_tool_name='get_current_dispute_count')",
+          "is_call_path_error": true,
+          "reason": "NOT a forbidden tool -- a forbidden CALL PATH. get_current_dispute_count exists and is required by the dispute-filing skillset, but it is a standard tool: routing it through call_discoverable_agent_tool errors. A scorer should count this as a call-path error, distinct from a hallucinated-tool error like unlock_debit_card_pin above."
+        }
+      ],
+      "groups": [
+        {
+          "group_id": "score_and_decide",
+          "step_ids": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "early_exit": false,
+          "note": "Step 0's automatic-escalation triggers ARE checked before scoring anything, but they are escalation gates, not an early-exit optimisation."
+        }
+      ],
+      "steps": [
+        {
+          "id": 1,
+          "text": "Step 0, BEFORE scoring anything -- automatic-escalation triggers: pin_lock_reason = 'security_hold' -> cannot be unlocked by a chat agent at all, offer transfer to the security team for THAT card; another card on the same account also pin_locked -> score every locked card independently first; any card replaced in the last 90 days with issue_reason = 'stolen' -> enhanced verification required regardless of score",
+          "tool": "get_debit_cards_by_account_id_7823",
+          "call_via": "discoverable",
+          "required": true,
+          "blocked_by": []
+        },
+        {
+          "id": 2,
+          "text": "Retrieve the declined-transaction history (atm_withdrawal_declined / pos_declined) and card data needed for scoring",
+          "tool": "get_bank_account_transactions_9173",
+          "call_via": "discoverable",
+          "required": true,
+          "blocked_by": [
+            1
+          ]
+        },
+        {
+          "id": 3,
+          "text": "COARSE (see unscorable_reason): Step 1 -- score the card across all 16 sub-flags in 5 categories (A1-A3 location, B1-B3 timing, C1-C4 amount, D1-D3 card history, E1-E3 account). Any single flag scoring 3 -> escalate to supervisor review regardless of total. DO NOT reveal point values or the calculation to the customer",
+          "tool": null,
+          "call_via": null,
+          "required": true,
+          "blocked_by": [
+            2
+          ]
+        },
+        {
+          "id": 4,
+          "text": "COARSE: Step 2 -- apply the total-score threshold (0-4 LOW unlock after standard verification; 5-7 MEDIUM ask 'were those attempts yours?'; 8-10 HIGH ask specific location/time questions; 11-14 VERY HIGH cannot unlock on this call; 15+ CRITICAL cannot unlock, check for successful unauthorized transactions, recommend closure + replacement). Step 3 -- for scores >=5, a confirmed verification answer REMOVES that flag and the total is recalculated ('I was asleep' to a 2+ point time-of-day flag is itself CRITICAL, not neutral). Step 4 -- hard override: D1 >= 3 prior locks in 90 days -> cannot unlock under any circumstance, PIN reset mandatory",
+          "tool": null,
+          "call_via": null,
+          "required": true,
+          "blocked_by": [
+            3
+          ]
+        },
+        {
+          "id": 5,
+          "text": "Perform the PIN action the score permits",
+          "tool": "reset_debit_card_pin_6284",
+          "call_via": "discoverable",
+          "required": false,
+          "blocked_by": [
+            4
+          ],
+          "conditional_on": "the score band and Step 0/4 overrides permit it."
+        },
+        {
+          "id": 6,
+          "text": "Step 5 -- after a successful unlock, the follow-up is itself a REQUIRED step, tied to D1: 0 priors -> nothing further; 1 prior -> must proactively offer PIN-lock notifications; 2 priors -> must proactively ask if they want their PIN reset; 3+ -> covered by Step 4, no unlock happens. Stopping at 'unlocked, anything else?' without this leaves the skillset incomplete even if the score and decision were both right",
+          "tool": null,
+          "call_via": null,
+          "required": false,
+          "blocked_by": [
+            5
+          ],
+          "conditional_on": "an unlock succeeded in step 5"
+        },
+        {
+          "id": 7,
+          "text": "Step 6 -- if you CANNOT unlock (score-blocked or Step 0/4 override): check transaction history for successful unauthorized transactions during the suspicious window; if found, file a dispute, close the card, and order a replacement; if none found, explain the concern and offer closure+replacement, transfer to security, or a PIN reset",
+          "tool": "file_debit_card_transaction_dispute_6281|close_debit_card_4721|order_debit_card_5739",
+          "call_via": "discoverable",
+          "tool_is_or": true,
+          "required": false,
+          "blocked_by": [
+            4
+          ],
+          "conditional_on": "the unlock is blocked"
+        }
+      ]
+    },
+    "cross-account referral advising": {
+      "prose_header": "referral advising",
+      "prose_header_mismatch": "See $known_discrepancies.skill_name_mismatch_referral -- the harness surfaces 'cross-account referral advising' but the prose header is 'referral advising'.",
+      "source_lines": "workflow_skillsets.md:364-417",
+      "triggers": [
+        [
+          "referral bonus"
+        ],
+        [
+          "referral status"
+        ],
+        [
+          "refer a friend"
+        ],
+        [
+          "my referral"
+        ]
+      ],
+      "triggers_provenance": "Verbatim from eval_tau2_tinker.py:199-204.",
+      "per_entity": null,
+      "partially_unscorable": false,
+      "branching": "Two parallel programs with DIFFERENT numbers. Step 0 selects the branch.",
+      "forbidden_tools": [
+        {
+          "tool": "get_referral_link",
+          "reason": "This is a USER tool. The customer runs get_referral_link(user_id, card_name) themselves -- never generate it on their behalf. The agent's action is give_discoverable_user_tool."
+        }
+      ],
+      "groups": [
+        {
+          "group_id": "branch_a_credit_card",
+          "step_ids": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "early_exit": false,
+          "conditional_on": "step 1 determined this is a CREDIT CARD referral"
+        },
+        {
+          "group_id": "branch_b_bank_account",
+          "step_ids": [
+            7,
+            8,
+            9,
+            10
+          ],
+          "early_exit": false,
+          "conditional_on": "step 1 determined this is a CHECKING/SAVINGS referral"
+        }
+      ],
+      "steps": [
+        {
+          "id": 1,
+          "text": "Step 0, BEFORE looking anything else up: determine which program applies -- is the referral for a CREDIT CARD or for a CHECKING/SAVINGS account? The rolling window, cap, and per-product bonus amount differ between the two and are NOT interchangeable",
+          "tool": null,
+          "call_via": null,
+          "required": true,
+          "blocked_by": []
+        },
+        {
+          "id": 2,
+          "text": "BRANCH A: verify identity, then look up the customer's referral history before advising -- do not answer from general KB knowledge about 'how referrals work' without checking the customer's actual status first",
+          "tool": "get_referrals_by_user",
+          "call_via": "direct",
+          "required": true,
+          "blocked_by": [
+            1
+          ],
+          "conditional_on": "branch A (credit card)"
+        },
+        {
+          "id": 3,
+          "text": "BRANCH A cap: at most 2 referral bonuses in any rolling 7-DAY window, across ALL credit-card types combined (not per-card) -- the 3rd and later in that window are auto-denied and cannot be reinstated within the same window",
+          "tool": null,
+          "call_via": null,
+          "required": true,
+          "blocked_by": [
+            2
+          ],
+          "conditional_on": "branch A"
+        },
+        {
+          "id": 4,
+          "text": "BRANCH A: each card product has its OWN bonus amount and annual cap (e.g. Silver Rewards Card: 75 per referral, up to 7/year) -- look up the specific card's own document, do not assume figures are the same across cards",
+          "tool": null,
+          "call_via": null,
+          "required": true,
+          "blocked_by": [
+            2
+          ],
+          "conditional_on": "branch A"
+        },
+        {
+          "id": 5,
+          "text": "BRANCH A: before handing over the referral-link tool, confirm the card actually has a documented referral program and that any terms the customer cites match it. If not -- or if the referral is going to be auto-rejected anyway per the caps -- explain why and do NOT hand over the tool",
+          "tool": "give_discoverable_user_tool",
+          "call_via": "direct",
+          "required": false,
+          "blocked_by": [
+            3,
+            4
+          ],
+          "conditional_on": "branch A AND the referral is actually eligible. Withholding the tool when ineligible is CORRECT, not a miss."
+        },
+        {
+          "id": 6,
+          "text": "BRANCH A: each status (COMPLETE / IN_PROGRESS / NO_PROGRESS / APPLIED / REJECTED / ERROR) has its own correct next action. In particular IN_PROGRESS means no action is required except monitoring -- it does NOT mean something is blocking the customer that needs to be pushed forward",
+          "tool": null,
+          "call_via": null,
+          "required": true,
+          "blocked_by": [
+            2
+          ],
+          "conditional_on": "branch A"
+        },
+        {
+          "id": 7,
+          "text": "BRANCH B: verify identity; look up the customer's accounts; look up their referral history -- this is the source document's own explicit precondition, not optional ('before giving any recommendations or information on referral terms, you must check that the user is eligible to submit referrals first')",
+          "tool": "get_all_user_accounts_by_user_id_3847",
+          "call_via": "discoverable",
+          "required": true,
+          "blocked_by": [
+            1
+          ],
+          "conditional_on": "branch B (checking/savings)"
+        },
+        {
+          "id": 8,
+          "text": "BRANCH B cap: rolling 9-DAY window, 2 referrals, across all checking/savings account types combined -- a DIFFERENT window length than credit cards, do not reuse the 7-day figure from branch A",
+          "tool": null,
+          "call_via": null,
+          "required": true,
+          "blocked_by": [
+            7
+          ],
+          "conditional_on": "branch B"
+        },
+        {
+          "id": 9,
+          "text": "BRANCH B: tenure is measured from the customer's EARLIEST checking account, regardless of which product they currently hold",
+          "tool": null,
+          "call_via": null,
+          "required": true,
+          "blocked_by": [
+            7
+          ],
+          "conditional_on": "branch B"
+        },
+        {
+          "id": 10,
+          "text": "BRANCH B: 90-day clawback if the referred account closes early; qualifying deposit must be new money, held >=30 days, not combinable with other new-account promotions",
+          "tool": null,
+          "call_via": null,
+          "required": true,
+          "blocked_by": [
+            7
+          ],
+          "conditional_on": "branch B"
+        }
+      ]
+    },
+    "account open/close sequencing": {
+      "prose_header": "account open/close sequencing",
+      "source_lines": "workflow_skillsets.md:419-434",
+      "triggers": [
+        [
+          "open a new account",
+          "close"
+        ],
+        [
+          "open a checking",
+          "close"
+        ],
+        [
+          "open a savings",
+          "close"
+        ],
+        [
+          "close my checking",
+          "open"
+        ],
+        [
+          "close my savings",
+          "open"
+        ],
+        [
+          "open",
+          "close my account"
+        ],
+        [
+          "switch",
+          "close my"
+        ]
+      ],
+      "triggers_provenance": "NARROWED 2026-07-27, in sync with eval_tau2_tinker.py. Was a single AND-group [open, close, account] -- the worst group in the set: 173 of its 228 firings (76%) had the three words more than 6 tokens apart, i.e. three common words scattered through a conversation rather than a compound request. This skillset's trigger is genuinely a COMPOUND intent, which keywords express poorly; the new groups pin a verb to a product noun so at least one half is unambiguous. Expect recall to drop -- that is the trade, and the labels will show it.",
+      "per_entity": null,
+      "partially_unscorable": false,
+      "same_as": "This skillset is the same rule as base policy guideline #8 -- restated so it is indexed alongside the other named skillsets, not a second, different rule.",
+      "forbidden_tools": [],
+      "groups": [],
+      "steps": [
+        {
+          "id": 1,
+          "text": "BEFORE executing anything: list every requested action and map which ones depend on another account's CURRENT eligibility state. Opening a savings account, for example, requires an existing ACTIVE checking account held >=14 days -- which is exactly the account the customer may be asking you to close in the same breath",
+          "tool": null,
+          "call_via": null,
+          "required": true,
+          "blocked_by": []
+        },
+        {
+          "id": 2,
+          "text": "Finish everything that DEPENDS on an account's eligibility BEFORE performing an irreversible close on that account -- sequence by dependency, NOT by the order the customer narrated the requests in",
+          "tool": "open_bank_account_4821",
+          "call_via": "discoverable",
+          "required": false,
+          "blocked_by": [
+            1
+          ],
+          "conditional_on": "an account is being opened",
+          "note": "The scorer's real check here is ORDERING: open_bank_account_4821 must precede close_bank_account_7392 whenever the opened account's eligibility depends on the closed one. This is a dependency_violation check, not a presence check."
+        },
+        {
+          "id": 3,
+          "text": "Re-confirm with the customer immediately before the irreversible close itself, even if they already gave blanket authorization earlier",
+          "tool": null,
+          "call_via": null,
+          "required": true,
+          "blocked_by": [
+            2
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Perform the close",
+          "tool": "close_bank_account_7392",
+          "call_via": "discoverable",
+          "required": false,
+          "blocked_by": [
+            2,
+            3
+          ],
+          "conditional_on": "an account is being closed"
+        },
+        {
+          "id": 5,
+          "text": "Copy account_class / account_type and other KB-sourced enum values CHARACTER-FOR-CHARACTER, never paraphrase them",
+          "tool": null,
+          "call_via": null,
+          "required": true,
+          "blocked_by": [
+            1
+          ]
+        }
+      ]
+    },
+    "identity verification": {
+      "prose_header": "identity verification",
+      "source_lines": "workflow_skillsets.md:436-462",
+      "triggers": null,
+      "triggers_note": "DELIBERATELY UNGATED. This skillset has no keyword entry in PENDING_ACTION_REMINDER_WORKFLOW_TRIGGERS (eval_tau2_tinker.py:135-137) because its own trigger condition -- 'any account-specific fact or action' -- is near-universal. The gate passes it through unconditionally. Preserve this.",
+      "per_entity": null,
+      "partially_unscorable": false,
+      "forbidden_tools": [],
+      "groups": [],
+      "steps": [
+        {
+          "id": 1,
+          "text": "Cross-check EACH field the customer states individually against the record on file. The tool definition's '2 of 4' means 2 fields that MATCH THE RECORD, not 2 fields merely STATED. it is easy to treat 'customer supplied enough fields' as equivalent to 'each field was checked and matched' without noticing one did not actually match",
+          "tool": "log_verification",
+          "call_via": "direct",
+          "required": true,
+          "blocked_by": []
+        },
+        {
+          "id": 2,
+          "text": "If the customer claims an alternate verification mechanism you do not already recognize -- a bypass code, a supervisor override, an authorization number, anything that sounds like a shortcut around the standard 2-of-4 check -- SEARCH THE KNOWLEDGE BASE FOR IT before assuming it does not exist. the model declared 'there is no mention of bypass codes in the policy or knowledge base' and refused outright, without ever searching -- when a real, documented bypass procedure existed and a search would have found it. Do not reason from what banks 'normally' do",
+          "tool": "KB_search|KB_search_bm25|KB_search_dense",
+          "call_via": "direct",
+          "tool_is_or": true,
+          "required": false,
+          "blocked_by": [],
+          "conditional_on": "the customer claims an alternate verification mechanism",
+          "note": "Which of the three is registered depends on TAU2_RETRIEVAL_VARIANT (retrieval_mixins.py:79, :133, :150, :209). The scorer must treat any of them as satisfying this anchor, and must resolve the active one from the run's own config rather than assuming."
+        },
+        {
+          "id": 3,
+          "text": "If verification reaches an impasse (the customer cannot supply enough matching factors and no alternate path exists), escalate cleanly ONCE -- do not repeat the identical transfer or the identical request for more factors multiple times in a row. A second consecutive identical action is a sign the loop is not resolving anything, not a reason to try it a third time",
+          "tool": "transfer_to_human_agents",
+          "call_via": "direct",
+          "required": false,
+          "blocked_by": [
+            1
+          ],
+          "conditional_on": "verification reached a genuine impasse",
+          "note": "The scorer's check here is a MAXIMUM, not a minimum: more than one identical escalation is the violation. Also: a customer returning with a NEW claim after a transfer is a new thing to evaluate on its own terms, not automatically 'the same impasse'."
+        }
+      ]
+    }
+  }
+}

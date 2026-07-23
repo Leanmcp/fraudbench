@@ -1,0 +1,24 @@
+{
+  "id": "doc_checking_accounts_checking_accounts_(general)_007",
+  "title": "I didn't receive my direct deposit",
+  "summary": "This document provides troubleshooting for a missing direct deposit: check your bank account, confirm with the direct deposit payer, and ask the bank whether the deposit was rejected. It also notes a possible temporary hold of \u201cYes\u201d if part of the deposit is unavailable, and lists next steps including verifying account/routing numbers and requesting the deposit trace information for resubmission after rejection.",
+  "faqs": [
+    "What should I check first if my direct deposit isn\u2019t showing in my bank account?",
+    "How do I confirm whether the direct deposit payer actually sent the payment?",
+    "What should I ask the bank to determine if my deposit was rejected?",
+    "If only part of my deposit is available, what temporary hold could apply?",
+    "If the deposit is missing, what account details do I need to confirm with the payer?",
+    "How can I get trace information and what do I do if the bank confirms rejection?"
+  ],
+  "keywords": [
+    "direct deposit",
+    "temporary hold of Yes",
+    "partial availability",
+    "account and routing numbers",
+    "trace information for the deposit",
+    "deposit rejected",
+    "resubmission request",
+    "payer confirmation",
+    "bank confirmation"
+  ]
+}

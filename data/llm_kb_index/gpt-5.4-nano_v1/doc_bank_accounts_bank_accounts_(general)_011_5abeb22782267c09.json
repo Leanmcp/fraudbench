@@ -1,0 +1,25 @@
+{
+  "id": "doc_bank_accounts_bank_accounts_(general)_011",
+  "title": "Depositing a Check Into Your Account",
+  "summary": "Explains how to deposit a check into a Rho-Bank checking or savings account via Mobile Check Deposit. Uses the deposit_check_3847(account_id, check_amount) tool to start the flow; customers photo the front/back in the app. Standard deposits are typically available in 1\u20132 business days; funds depend on account type/amount, with possible extended review.",
+  "faqs": [
+    "How do I start a mobile check deposit and specify the destination account and amount?",
+    "What photos do I need for the check (front/back) and what are the quality requirements?",
+    "What endorsement and eligibility requirements must the check meet before depositing?",
+    "When will my deposited funds be available (standard timing and extended review)?",
+    "What should I do if I get an image quality, endorsement missing, amount mismatch, or duplicate deposit error?",
+    "How long should I keep the paper check after submitting the mobile deposit? "
+  ],
+  "keywords": [
+    "Mobile Check Deposit",
+    "deposit_check_3847(account_id, check_amount)",
+    "checking or savings account",
+    "1\u20132 business days",
+    "extended review",
+    "Front/back check photos (four corners visible)",
+    "restrictive endorsement (\u201cFor mobile deposit only\u201d)",
+    "Image quality error",
+    "duplicate deposit detected",
+    "Unsupported or ineligible checks"
+  ]
+}

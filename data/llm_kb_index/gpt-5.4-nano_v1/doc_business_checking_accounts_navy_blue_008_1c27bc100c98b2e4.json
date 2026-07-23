@@ -1,0 +1,28 @@
+{
+  "id": "doc_business_checking_accounts_navy_blue_008",
+  "title": "Why am I being charged a fee on my Navy Blue Account?",
+  "summary": "Explains why you may see fees on a Navy Blue Account, listing charges for domestic wire transfers ($15.00), same-day ACH ($5.00), out-of-network U.S. ATM withdrawals ($2.50), and foreign ATM withdrawals (3% with a $5.00 minimum, with examples for $80 and $200). It also notes $0.00 monthly maintenance and $0.00 paper statement fees, how to confirm the fee via transaction details, and steps to avoid future fees (use standard ACH, Rho ATMs, e-statements, and fewer/larger foreign withdrawals).",
+  "faqs": [
+    "What fee would apply if I initiated a domestic wire transfer on my Navy Blue Account?",
+    "Why was I charged $5.00 for an ACH transfer\u2014does it depend on same-day speed?",
+    "Why was I charged $2.50 when I used an ATM in the U.S.\u2014how do I know if it was out-of-network?",
+    "How are foreign ATM withdrawal fees calculated (3% and the $5.00 minimum), and what are the example amounts?",
+    "Which common Navy Blue fees should not appear on my account (monthly maintenance, paper statements, standard ACH)?",
+    "How can I confirm the fee source from my transaction details if the charge seems incorrect?"
+  ],
+  "keywords": [
+    "Navy Blue Account",
+    "Domestic wire transfer fee",
+    "$15.00 per transfer",
+    "Same-day ACH fee",
+    "$5.00 per transfer",
+    "Out-of-network ATM (U.S.)",
+    "$2.50 per transaction",
+    "Foreign ATM withdrawal fee",
+    "3% of withdrawal (minimum $5.00)",
+    "$0.00 monthly maintenance fee",
+    "Paper statement fee $0.00",
+    "Use Rho ATMs",
+    "e-statements"
+  ]
+}

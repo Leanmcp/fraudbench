@@ -1,0 +1,27 @@
+{
+  "id": "doc_bank_accounts_bank_accounts_(general)_023",
+  "title": "Internal: Ordering a Debit Card for a Bank Account",
+  "summary": "Explains how to order a debit card for a specific OPEN checking account (personal or business), including eligibility rules (verified customer, account_type='checking', open \u22653 business days, \u2265$25 balance, age \u226518, \u22641 active debit card, no PENDING order, valid US domestic address). Covers STANDARD (free, 7\u201310 business days), EXPEDITED ($15, 3\u20135 business days), RUSH ($35, 1\u20132 business days) delivery, and design options CLASSIC (default), PREMIUM ($10 one-time), CUSTOM ($25 one-time, subject to approval), plus steps and the order procedure using order_debit_card_5739.",
+  "faqs": [
+    "Can I order a debit card for my savings account or only checking accounts?",
+    "What requirements must my checking account meet to be eligible for a debit card?",
+    "How long does each delivery option take (STANDARD/EXPEDITED/RUSH) and what are the fees?",
+    "What are the one-time fees and restrictions for PREMIUM and CUSTOM card designs?",
+    "Will the delivery/design fees be deducted from my checking account, and what happens if there aren\u2019t enough funds?",
+    "How do activation, existing card behavior, and shipment tracking work after ordering?"
+  ],
+  "keywords": [
+    "order_debit_card_5739",
+    "debit card eligibility",
+    "account_type 'checking'",
+    "account status OPEN",
+    "open for at least 3 business days",
+    "minimum balance $25",
+    "no more than 1 active debit card",
+    "PENDING debit card order check",
+    "valid US domestic address (no international shipping)",
+    "STANDARD delivery 7-10 business days (free)",
+    "EXPEDITED $15 3-5 business days",
+    "RUSH $35 1-2 business days"
+  ]
+}

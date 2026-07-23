@@ -1,0 +1,25 @@
+{
+  "id": "doc_checking_accounts_purple_account_007",
+  "title": "Emergency card replacement while traveling",
+  "summary": "This document explains emergency replacement for a lost or stolen abroad debit card: after reporting, a replacement can typically reach you within 2 days (subject to courier availability/location). It also covers blocking the card, monitoring delivery updates, updating recurring payments, and obtaining a bank-issued cashier\u2019s check for a $8 fee. It further lists debit card decline code guidance for physical/card-data issues (Code 82: chip/CVV mismatch; Code 87: declined due to cash back not permitted, with advice to retry without cash back and use Rho-Bank ATMs for free cash).",
+  "faqs": [
+    "If my card is lost or stolen while traveling abroad, how fast can an emergency replacement arrive and what affects timing?",
+    "What steps should I take to request an emergency replacement, including what address and updates I need to provide?",
+    "If I need money before the replacement arrives, can you provide a cashier\u2019s check and what is the fee?",
+    "After I report my card, will it be blocked, and do I need to update recurring payments?",
+    "What does debit decline code 82 mean (negative CAM/CVV results) and what should I do if my card seems damaged vs undamaged?",
+    "What does decline code 87 mean (purchase amount only, no cash back), and how can I complete a purchase or get cash?"
+  ],
+  "keywords": [
+    "Emergency card replacement",
+    "Lost or stolen while abroad",
+    "2 days (courier availability and exact location)",
+    "Cashier\u2019s check fee $8",
+    "Debit card decline codes",
+    "CODE 82 - Negative CAM/CVV Results",
+    "CODE 87 - Purchase Amount Only, No Cash Back",
+    "Card blocked after report",
+    "Update recurring payments",
+    "Rho-Bank ATM free cash withdrawals"
+  ]
+}

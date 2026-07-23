@@ -1,0 +1,21 @@
+{
+  "id": "doc_business_savings_accounts_automatic_sweep_program_008",
+  "title": "Automatic Sweep: Minimum Balance Requirements and Limits",
+  "summary": "This document specifies Automatic Sweep rules for checking: maintain a $500 target minimum balance, and only trigger a sweep when end-of-day excess is at least $50. It allows up to 60 sweep transfers per month, pausing for the rest of the month afterward, and when triggered it transfers only the portion above $500.",
+  "faqs": [
+    "What target minimum balance must I maintain for Automatic Sweep in checking?",
+    "What minimum end-of-day excess amount triggers a sweep transfer?",
+    "How many sweep transfers per month are allowed before sweeps pause?",
+    "If my end-of-day excess is below $50, will any sweep transfer occur?",
+    "When my excess is at least $50, what amount does the program actually move? (Only the portion above $500)"
+  ],
+  "keywords": [
+    "Automatic Sweep",
+    "checking target minimum balance $500",
+    "minimum sweep trigger $50",
+    "end-of-day excess below 50",
+    "only portion above $500",
+    "maximum sweep transfers 60 per month",
+    "sweep activity pauses remainder of month"
+  ]
+}

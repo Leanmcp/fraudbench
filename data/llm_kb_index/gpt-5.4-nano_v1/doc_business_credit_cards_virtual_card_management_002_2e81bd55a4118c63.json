@@ -1,0 +1,27 @@
+{
+  "id": "doc_business_credit_cards_virtual_card_management_002",
+  "title": "Virtual Card Management: How to Issue a Virtual Card in Seconds",
+  "summary": "Explains how to issue a virtual card by going to Virtual Cards \u2192 Issue New Card, selecting the managing Team/user, adding a nickname and intended use, choosing Single-use for one-time payments (or multi-use otherwise), and clicking Issue. Provisioning takes ~5 seconds and the card is immediately visible/usable; includes post-issuance checks for owner/team assignment and Active status within 5 seconds.",
+  "faqs": [
+    "How do I issue a new virtual card in the Virtual Cards section?",
+    "What should I select for Single-use vs multi-use when sharing card details?",
+    "How long does virtual card provisioning take, and when will the card appear in the list?",
+    "What post-issuance checks should I perform (owner/team assignment, Active status) to confirm usability?",
+    "When can I copy the card for checkout after I click Issue?",
+    "Where do I confirm the card is immediately usable within the expected timeframe?"
+  ],
+  "keywords": [
+    "Virtual Cards",
+    "Issue New Card",
+    "Team or user selection",
+    "Nickname",
+    "Intended use (vendor/subscription/event)",
+    "Single-use",
+    "Multi-use",
+    "Provisioning completes in ~5 seconds",
+    "Card becomes immediately visible",
+    "Active status within 5 seconds",
+    "Copy for checkout",
+    "Issue button"
+  ]
+}

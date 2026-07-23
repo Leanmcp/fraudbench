@@ -1,0 +1,27 @@
+{
+  "id": "doc_business_savings_accounts_diamond_vault_005",
+  "title": "Diamond Vault Account: Mobile banking and deposit limits",
+  "summary": "This document explains Diamond Vault Account daily limits for mobile banking: mobile check deposit is capped at $100,000 per day, and maximum outbound transfers are capped at $500,000 per day. It also describes how the limits apply and provides tips to avoid deposit/transfer rejections by tracking remaining daily capacity and properly endorsing/capturing check images.",
+  "faqs": [
+    "What is the daily limit for mobile check deposits on a Diamond Vault Account?",
+    "What is the daily limit for outbound transfers on a Diamond Vault Account?",
+    "Do the deposit and transfer limits apply per day, and do they combine across multiple transactions?",
+    "What should I do if my mobile check deposit exceeds the $100,000 daily limit?",
+    "How can I reduce the chance of mobile deposit rejection (endorsement and image capture)?",
+    "What should I do with physical checks after submitting a mobile deposit?"
+  ],
+  "keywords": [
+    "Diamond Vault Account",
+    "mobile check deposit",
+    "$100,000 per day",
+    "outbound transfers",
+    "$500,000 per day",
+    "per-day limits",
+    "staging deposits across business days",
+    "schedule multiple transfers",
+    "endorse checks",
+    "capture images in good lighting",
+    "track remaining daily capacity",
+    "retain physical checks securely"
+  ]
+}

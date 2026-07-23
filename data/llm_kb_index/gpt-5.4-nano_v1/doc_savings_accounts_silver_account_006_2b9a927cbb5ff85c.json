@@ -1,0 +1,28 @@
+{
+  "id": "doc_savings_accounts_silver_account_006",
+  "title": "Silver Account: How is interest calculated and when is it paid?",
+  "summary": "This document explains Silver Account interest: the APY is tier-based (2.5% or 4.0%), interest accrues daily on your daily balance and is compounded daily using a daily periodic rate derived from your APY. Accrued interest is credited monthly; if your balance changes tiers, the APY applied each day matches that day\u2019s tier, and the cycle\u2019s interest is the sum of daily accruals. It also lists credit card bonus APYs for specific Rho-Bank credit cards (e.g., EcoCard +2.2%, Gold Rewards Card +0.5%, Crypto-Cash Back Card +0.5%).",
+  "faqs": [
+    "What APY rates (2.5% or 4.0%) apply to the Silver Account, and how do I know which tier I\u2019m in?",
+    "How is interest calculated\u2014daily balance, daily compounding, and the daily periodic rate from the APY?",
+    "When is accrued interest credited to my Silver Account?",
+    "If my balance moves between tiers during a cycle, how is interest computed for each tier?",
+    "Do credit cards provide bonus APY on the Silver Account, and what are the bonus amounts for each card (Bronze/Silver/Gold/Eco/Green/Crypto-Cash Back)?"
+  ],
+  "keywords": [
+    "Silver Account",
+    "APY 2.5%",
+    "APY 4.0%",
+    "daily balance",
+    "compounded daily",
+    "daily periodic rate",
+    "accrued interest credited monthly",
+    "balance moves between tiers during a cycle",
+    "Bronze Rewards Card +0%",
+    "Silver Rewards Card +0.1%",
+    "Gold Rewards Card +0.5%",
+    "EcoCard +2.2%",
+    "Green Rewards Card +0%",
+    "Crypto-Cash Back Card +0.5%"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "doc_checking_accounts_checking_accounts_(general)_006",
+  "title": "Why does my account have a lower balance than I expected or have a negative balance?",
+  "summary": "Explains causes of lower or negative balances in Rho-Bank accounts, including overdraft protections, authorization holds, pending card transactions/checks, and scheduled payments/transfers earmarking funds. Also covers resolution steps and debit-card decline codes: CODE 51 (Insufficient Funds), with a 1\u20133 business day hold-release note and common hold sources ($75\u2013$150 gas; hotels/car rentals/tip buffer; pending status review), and CODE 52 (No Checking Account), including waiting 10\u201315 minutes for possible sync issues.",
+  "faqs": [
+    "Why does my balance show lower than expected or go negative temporarily?",
+    "How do authorization holds affect my available balance and when will they release?",
+    "What should I check in my account activity (pending vs posted) to find the cause?",
+    "My debit card was declined\u2014what does decline code 51 (Insufficient Funds) mean?",
+    "What should I do if I get decline code 52 (No Checking Account) on a debit card?",
+    "If a balance/decline issue seems wrong, what info should I provide to support?"
+  ],
+  "keywords": [
+    "overdraft protections (temporary coverage)",
+    "authorization holds",
+    "pending card transactions",
+    "pending checks",
+    "scheduled payments or transfers earmarked funds",
+    "CODE 51 - Insufficient Funds",
+    "CODE 52 - No Checking Account",
+    "gas station pre-auth ($75-$150)",
+    "holds release in 1-3 business days",
+    "overdraft_pos_enabled (account lookup)",
+    "wait 10-15 minutes and retry",
+    "Regulation E opt-in for POS/ATM overdraft"
+  ]
+}

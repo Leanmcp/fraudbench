@@ -1,0 +1,27 @@
+{
+  "id": "doc_business_savings_accounts_platinum_reserve_account_009",
+  "title": "Platinum Reserve Account: Managing authorized users",
+  "summary": "This document explains how to manage authorized users for a Platinum Reserve Account, including defining initiator/approver/viewer roles using segregation-of-duties, adding/removing users via administrative settings, and keeping permissions scoped. It sets a maximum of 10 authorized users and covers periodic access reviews, high-privilege attestations, and using activity logs to verify approvals and sensitive actions.",
+  "faqs": [
+    "How do I assign initiator, approver, and viewer roles for a Platinum Reserve Account (segregation of duties)?",
+    "Where do I add authorized users, and how are roles assigned during onboarding?",
+    "What is the maximum number of authorized users allowed on a Platinum Reserve Account?",
+    "When and how should I remove an authorized user when responsibilities change or they leave?",
+    "How do I prevent privilege creep when roles or permissions change?",
+    "What oversight steps (access reviews, attestations, activity logs) are required for authorized user management?"
+  ],
+  "keywords": [
+    "Platinum Reserve Account",
+    "Authorized users",
+    "Segregation-of-duties (initiators/approvers/viewers)",
+    "Administrative settings",
+    "Role assignments during onboarding",
+    "Remove access promptly",
+    "Privilege creep",
+    "Maximum authorized users: 10",
+    "Periodic access reviews",
+    "Attestations for high-privilege roles",
+    "Activity logs",
+    "Approvals and sensitive actions"
+  ]
+}

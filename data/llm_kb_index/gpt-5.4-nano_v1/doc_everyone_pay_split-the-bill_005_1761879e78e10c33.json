@@ -1,0 +1,27 @@
+{
+  "id": "doc_everyone_pay_split-the-bill_005",
+  "title": "Troubleshooting: uncollected payments",
+  "summary": "This troubleshooting guide explains uncollected payments due within 16 days of creation. It covers what to do before vs. after the 16-day deadline (confirm 4-day reminder cadence, send manual reminders, verify contact details and split inclusion; after deadline, review split details, extend by recreating/reissuing, and clearly communicate next steps) and how to reduce future friction with concise split descriptions and early notices referencing reminders every 4 days.",
+  "faqs": [
+    "When are payments due after the payment/split is created (what is the 16-day deadline)?",
+    "If the 16-day deadline hasn\u2019t passed, how do I troubleshoot why a member\u2019s payment is still uncollected?",
+    "How can I confirm that automatic reminders are aligned with the 4-day reminder schedule?",
+    "If the 16-day deadline has passed, what steps should I take to handle remaining outstanding members?",
+    "How do I extend an arrangement\u2014should I recreate the split or reissue requests?",
+    "What should I include (description and early notice) to reduce friction and help participants recognize the charge and follow-up timing?"
+  ],
+  "keywords": [
+    "uncollected payments",
+    "16 of creation (deadline)",
+    "4-day reminder cadence",
+    "automatic reminders",
+    "manual reminder",
+    "split details",
+    "extend by recreating the split",
+    "reissuing requests",
+    "outstanding members",
+    "participant contact details",
+    "concise split description",
+    "early notice before the 16 cutoff"
+  ]
+}

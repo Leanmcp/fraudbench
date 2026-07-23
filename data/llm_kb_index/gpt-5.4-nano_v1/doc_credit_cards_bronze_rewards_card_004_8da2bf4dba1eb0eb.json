@@ -1,0 +1,25 @@
+{
+  "id": "doc_credit_cards_bronze_rewards_card_004",
+  "title": "Bronze Rewards Card: Monthly Reporting Tools and Transaction Tracking",
+  "summary": "This document explains how to use the Bronze Rewards Card monthly transaction reporting tools: view month-to-date spending by merchant/category, drill into transactions (date, merchant descriptor, posted amount), add notes/tags, and export monthly activity to CSV or PDF. It also covers accessing reports (online account \u2192 Reports/Statements \u2192 select month \u2192 apply filters \u2192 download), best-practice reconciliation and tagging, and troubleshooting for unfamiliar or missing transactions (check merchant descriptor/posted date; pending items appear only after posting).",
+  "faqs": [
+    "How do I access monthly transaction reports for my Bronze Rewards Card?",
+    "What monthly reporting tools are included (spending summaries, transaction drill-down, notes/tags, export options)?",
+    "How do I filter transactions by date range, merchant, or amount before downloading?",
+    "Can I export my monthly activity, and in which formats (CSV or PDF)?",
+    "What should I do if a transaction looks unfamiliar when preparing to dispute?",
+    "Why might a transaction be missing from my report (pending activity vs posted transactions)?"
+  ],
+  "keywords": [
+    "Bronze Rewards Card",
+    "Monthly transaction reporting tools",
+    "Reports or Statements section",
+    "Month-to-date summary (spending by merchant and category)",
+    "Transaction drill-down (posted amount, merchant descriptor, posted date)",
+    "Add notes or tags to transactions",
+    "Export to CSV",
+    "Export to PDF",
+    "Apply filters (date range, merchant, amount)",
+    "Pending activity appears only after posting"
+  ]
+}

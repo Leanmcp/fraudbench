@@ -1,0 +1,26 @@
+{
+  "id": "doc_business_savings_accounts_emerald_saver_007",
+  "title": "Emerald Saver Account: Adding authorized users",
+  "summary": "This document explains how to add authorized users to an Emerald Saver Account: you can add up to 3 users total, assign roles/permissions for viewing, transferring, and approvals, then confirm/save to send an invitation for secure access. It also states same-day ACH transfers are not available for this tier (enabled: No).",
+  "faqs": [
+    "How many authorized users can I add to my Emerald Saver account?",
+    "What roles and permissions can I set for each authorized user (viewing, transferring, approvals)?",
+    "What are the steps to add an authorized user from my business profile?",
+    "Do Emerald Saver account authorized users support same-day ACH transfers?",
+    "When I add a user, what happens after I confirm and save?",
+    "What are best practices for keeping authorized-user access secure within the 3-user limit?"
+  ],
+  "keywords": [
+    "Emerald Saver Account",
+    "authorized users",
+    "up to 3 authorized users",
+    "roles and permissions",
+    "viewing permissions",
+    "transferring permissions",
+    "approvals permissions",
+    "add authorized user option",
+    "invitation to set up secure access",
+    "Same-day ACH availability: No",
+    "business profile"
+  ]
+}

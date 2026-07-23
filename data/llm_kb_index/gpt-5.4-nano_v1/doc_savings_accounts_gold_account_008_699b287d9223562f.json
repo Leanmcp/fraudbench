@@ -1,0 +1,27 @@
+{
+  "id": "doc_savings_accounts_gold_account_008",
+  "title": "Why was I charged a transfer fee on my Gold Account?",
+  "summary": "This document explains the expected transfer-fee policy for a Gold Account tier where transfer fees are \u201cYes,\u201d and provides reasons you may still see additional charges from third parties or external networks. It also lists steps to verify the fee originator via your activity feed/confirmation and what to share with support (transaction date, amount, reference ID).",
+  "faqs": [
+    "Is a transfer fee expected on my Gold Account?",
+    "What are the possible reasons I was charged a transfer fee (third-party network, non-standard transfer type, or re-routing/correction)?",
+    "How can I identify who imposed the fee?",
+    "How do I verify whether the fee status was correct at the time I submitted the transfer?",
+    "If the fee seems inconsistent, what information should I send to support?",
+    "What can I do before submitting transfers to prevent unexpected third-party fees?"
+  ],
+  "keywords": [
+    "Gold Account",
+    "transfer fees: Yes",
+    "third-party or external network fee",
+    "transfer type outside standard coverage",
+    "external institution re-routed or corrected transfer",
+    "activity feed",
+    "transfer confirmation",
+    "transaction date",
+    "amount",
+    "reference ID",
+    "prevent future issues",
+    "screenshots or confirmations"
+  ]
+}

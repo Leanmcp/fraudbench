@@ -1,0 +1,27 @@
+{
+  "id": "doc_business_checking_accounts_beige_002",
+  "title": "Connecting Your ERP for Beige Account: API Integration Guide",
+  "summary": "This API Integration Guide explains how to connect an ERP to a \u201cBeige Account,\u201d including required prerequisites (18 supported platforms or a custom plan), credential setup, connector/module configuration, account/entity selection, and chart of accounts/vendor master mapping. It specifies real-time balance behavior, a synchronization cadence constraint of $100,000, read-only and limited end-to-end testing steps, monthly call consumption monitoring, and ongoing maintenance (credential rotation, error-log monitoring, and version control).",
+  "faqs": [
+    "Which ERP platforms are supported for connecting a Beige Account, and what should we do if ours isn\u2019t in the list?",
+    "What service credentials should we provision, and how should they be permissioned for least-privilege access?",
+    "What are the exact steps to configure the banking connector/custom integration module and authorize access for syncing?",
+    "How should we map the ERP chart of accounts and vendor master data to bank account identifiers for reconciliation?",
+    "Does the integration update balances in real time, and how should downstream posting/reconciliation handle it?",
+    "What testing, monthly call limit monitoring, and maintenance steps (credential rotation, error logs, version control) does the guide require?"
+  ],
+  "keywords": [
+    "Beige Account",
+    "API Integration Guide",
+    "18 supported ERP platforms",
+    "least-privilege service credentials",
+    "banking connector / custom integration module",
+    "chart of accounts mapping",
+    "vendor master data",
+    "real-time balance updates",
+    "$100,000 synchronization/cadence limit",
+    "read-only tests for balances/transactions/payee data",
+    "monthly call consumption limit",
+    "credential rotation and version control"
+  ]
+}

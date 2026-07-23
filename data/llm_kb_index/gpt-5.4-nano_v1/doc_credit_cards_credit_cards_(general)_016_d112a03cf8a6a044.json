@@ -1,0 +1,27 @@
+{
+  "id": "doc_credit_cards_credit_cards_(general)_016",
+  "title": "Checking User Dispute History (Internal)",
+  "summary": "Use the get_user_dispute_history_7291 tool to retrieve a specific user\u2019s credit card dispute history by required input user_id. It returns a list of disputes with dispute_id, dispute_date, status, last_updated_at, and transaction details (transaction_id/date, merchant_name, amount/currency, card_last4) plus reason_code/outcome/notes when available.",
+  "faqs": [
+    "How do I pull a consolidated list of all credit card disputes for a given user?",
+    "What input do I need to retrieve dispute history\u2014what\u2019s the required parameter?",
+    "How can I check a user\u2019s dispute status and timeline (dispute_date vs. last_updated_at)?",
+    "What transaction-level details are included with each dispute record?",
+    "What should I do if the tool returns an empty result set?",
+    "How should I handle permission/access errors or invalid user_id when querying dispute history?"
+  ],
+  "keywords": [
+    "get_user_dispute_history_7291",
+    "user_id",
+    "credit card disputes",
+    "dispute_id",
+    "dispute_date",
+    "status (open/under_review/closed)",
+    "last_updated_at",
+    "transaction_id",
+    "merchant_name",
+    "amount/currency",
+    "card_last4",
+    "reason_code/outcome/notes"
+  ]
+}

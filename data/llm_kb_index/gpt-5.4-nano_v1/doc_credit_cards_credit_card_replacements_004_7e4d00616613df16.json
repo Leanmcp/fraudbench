@@ -1,0 +1,22 @@
+{
+  "id": "doc_credit_cards_credit_card_replacements_004",
+  "title": "Why was your credit card replacement request rejected",
+  "summary": "Explains why a credit card replacement request is rejected: (1) an existing replacement request is still pending/processing, or (2) the customer exceeded the 60-day replacement limit by card tier (Entry: 2, Mid: 3, Premium+: 4). Advises contacting support for manual review if a legitimate need exists beyond limits.",
+  "faqs": [
+    "Why was my credit card replacement request rejected?",
+    "Can I submit another replacement request if one is still being processed?",
+    "What are the 60-day replacement limits for Entry-, Mid-, and Premium-tier cards?",
+    "How many replacements per 60-day period are allowed for my card tier?",
+    "If I need an extra replacement beyond the limit, what should I do?"
+  ],
+  "keywords": [
+    "pending replacement request",
+    "replacement limit",
+    "60-day period",
+    "Entry-tier up to 2 replacements",
+    "Mid-tier up to 3 replacements",
+    "Premium-tier and above up to 4 replacements",
+    "manual review",
+    "contact customer support"
+  ]
+}

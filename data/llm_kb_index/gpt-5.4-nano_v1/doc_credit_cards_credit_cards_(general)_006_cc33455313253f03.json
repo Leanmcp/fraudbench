@@ -1,0 +1,27 @@
+{
+  "id": "doc_credit_cards_credit_cards_(general)_006",
+  "title": "Internal: Credit Card Rewards - Points vs Cash Back Representation",
+  "summary": "Explains how rewards are represented in the transaction database: all card rewards are stored as \u201cpoints\u201d due to an incomplete legacy backend migration. For cash back cards (e.g., Bronze/Silver/Gold/Platinum/Diamond Elite, Crypto-Cash Back, Business Bronze/Silver/Gold/Platinum, Green Rewards, Silver Zoom), 1 point = $0.01 redeemed as statement credit or a Rho-Bank checking account credit; only the EcoCard earns sustainability points (5 pts per $1 on green purchases, 1 pt per $1 otherwise), redeeming at $0.01 per point.",
+  "faqs": [
+    "Why do my cash back rewards show up as \u201cpoints\u201d in the transaction database?",
+    "How do I convert points to cash back for the Bronze/Silver/Gold/Platinum/Diamond Elite and business rewards cards?",
+    "What redemption methods use 1 point = $0.01 for cash back cards (statement credit vs Rho-Bank checking credit)?",
+    "Which credit card is the only true points-based card, and how are its sustainability points earned?",
+    "How many sustainability points does the EcoCard earn per dollar on green purchases vs other purchases?",
+    "Do EcoCard sustainability points redeem at the same $0.01 per point rate?"
+  ],
+  "keywords": [
+    "Rewards representation",
+    "legacy backend migration",
+    "transaction database stores rewards as 'points'",
+    "1 point = $0.01",
+    "statement credit redemption",
+    "Rho-Bank checking account credit",
+    "cash back cards: Bronze Rewards Card",
+    "Crypto-Cash Back",
+    "Business Gold Rewards Card",
+    "Green Rewards Card",
+    "EcoCard sustainability points",
+    "5 points per dollar (green purchases)"
+  ]
+}

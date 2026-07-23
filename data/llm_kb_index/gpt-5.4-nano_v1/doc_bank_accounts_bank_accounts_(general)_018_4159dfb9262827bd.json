@@ -1,0 +1,23 @@
+{
+  "id": "doc_bank_accounts_bank_accounts_(general)_018",
+  "title": "Internal: Retrieving Bank Account Transaction History",
+  "summary": "This document explains how agents retrieve bank account transaction history for checking or savings using the get_bank_account_transactions_9173(account_id) tool, which returns all transactions in reverse chronological order. It also lists transaction fields (transaction_id, account_id, date MM/DD/YYYY, description, amount in USD, type, and status posted/pending).",
+  "faqs": [
+    "How do I retrieve a customer\u2019s bank account transaction history for a checking or savings account?",
+    "Which tool should I use (get_bank_account_transactions_9173) and what input does it require (account_id)?",
+    "Are transactions returned newest-first or oldest-first, and in what order?",
+    "What fields are included in each transaction record (transaction_id, date format, description, amount, type, status)?",
+    "What are the allowed transaction types I might see (e.g., atm_withdrawal, monthly_fee, overdraft_fee, fee_rebate)?",
+    "How do I interpret transaction amounts and statuses (positive/negative amounts; posted vs pending)?"
+  ],
+  "keywords": [
+    "get_bank_account_transactions_9173",
+    "account_id",
+    "reverse chronological order (most recent first)",
+    "Transaction fields: transaction_id, account_id, date",
+    "MM/DD/YYYY date format",
+    "amount (USD; positive=credits, negative=debits)",
+    "transaction type list",
+    "status: posted or pending"
+  ]
+}

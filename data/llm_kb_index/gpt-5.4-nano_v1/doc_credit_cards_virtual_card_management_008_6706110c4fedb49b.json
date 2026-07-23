@@ -1,0 +1,27 @@
+{
+  "id": "doc_credit_cards_virtual_card_management_008",
+  "title": "Virtual Card Management: Tracking Virtual Card Transactions and Spending",
+  "summary": "This document explains how to manage virtual cards by using real-time spending alerts, assigning card nicknames (e.g., \u201cTeam\u2014Vendor\u2014Purpose\u201d) for transaction grouping in reports/searches, using recurring-use cards for subscriptions, and running a monthly reconciliation workflow (filter by nickname, review alert history for anomalies, compare recurring charges to expected schedules/amounts, then export and attach supporting documentation).",
+  "faqs": [
+    "How do I enable and use real-time spending alerts to monitor virtual card approvals/declines?",
+    "What card-nickname naming convention should I use to organize transactions for reporting and searching?",
+    "How can I monitor recurring subscription spend using recurring-use virtual cards?",
+    "What is the monthly reconciliation workflow for virtual card transactions?",
+    "When reviewing monthly activity, how do I check alert history and recurring charges against expected schedules/amounts?",
+    "How do I export filtered transaction views and attach supporting documentation after reconciliation?"
+  ],
+  "keywords": [
+    "real-time spending alerts",
+    "approvals and declines",
+    "card nicknames",
+    "\u201cTeam\u2014Vendor\u2014Purpose\u201d naming convention",
+    "recurring-use cards",
+    "subscription charges",
+    "monthly reconciliation workflow",
+    "filter transactions by card nickname",
+    "alert history anomalies",
+    "compare current charges",
+    "expected schedules and amounts",
+    "export filtered view"
+  ]
+}

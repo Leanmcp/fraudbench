@@ -1,0 +1,26 @@
+{
+  "id": "doc_checking_accounts_light_green_account_005",
+  "title": "Spending limits and safety features for minors",
+  "summary": "This document details minors\u2019 debit card spending limits and safety controls: $300/day cap on card purchases, $150/day ATM cash withdrawals, and $250/day EveryonePay person-to-person transfers. It also lists alerting at \u226562 and debit card decline codes 57/58/61/62/65 with required resolution steps (e.g., MCC/online/international blocks, terminal flagged, limit calculations, 24-hour temp increases, region locks, and midnight resets).",
+  "faqs": [
+    "Why was my minor\u2019s card purchase declined, and what does decline code 57 mean?",
+    "Why did an ATM withdrawal fail (e.g., decline code 61), and how do I calculate remaining daily withdrawal limit?",
+    "Why did an Everywhere/terminal-specific payment get declined (decline code 58), and can the customer fix it?",
+    "What are the daily limits for purchases ($300), ATM withdrawals ($150), and EveryonePay transfers ($250) for minors?",
+    "What triggers parent/guardian notifications (transactions at or above 62), and can the alert threshold be adjusted?",
+    "What do decline codes 62 (restricted card/region lock) and 65 (activity count exceeded) indicate, and what should the agent do next?"
+  ],
+  "keywords": [
+    "Daily spending limit $300 per day",
+    "ATM cash access limit $150 per day",
+    "EveryonePay transfer limit $250 per day",
+    "Parent/guardian alert threshold 62",
+    "Debit Card Decline Code 57 (MCC/international/online restrictions)",
+    "Do not remove MCC blocks over the phone",
+    "Debit Card Decline Code 58 (terminal flagged)",
+    "Debit Card Decline Code 61 (exceeds daily purchase/ATM limit)",
+    "Temporary limit increase lasts 24 hours",
+    "Debit Card Decline Code 62 (geographic restrictions; new card setup hold up to 24 hours)",
+    "Debit Card Decline Code 65 (transaction count exceeded; reset at midnight)"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "doc_checking_accounts_evergreen_account_003",
+  "title": "How the tree-planting program works",
+  "summary": "Explains Evergreen Account tree-planting mechanics: only qualifying posted purchases count toward the cumulative planting threshold; non-purchase transactions do not. Trees are scheduled whenever eligible spend reaches each $750 multiple after transactions settle, with leftover spend carrying forward and confirmations appearing in the environmental impact view.",
+  "faqs": [
+    "What transactions count toward the tree-planting threshold?",
+    "Do non-purchase transactions count toward planting?",
+    "How does the $750 threshold work for scheduling trees?",
+    "When are trees queued\u2014immediately or after transactions settle?",
+    "Where can I see confirmation that a tree has been scheduled?",
+    "How do I track my progress toward the next $750 increment? "
+  ],
+  "keywords": [
+    "Evergreen Account",
+    "qualifying posted purchases",
+    "non-purchase transactions",
+    "cumulative eligible spend",
+    "$750 multiple threshold",
+    "leftover eligible spend carries forward",
+    "transactions settle",
+    "environmental impact view confirmations",
+    "tree scheduled for planting",
+    "progress tracker shows remaining to $750"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "doc_savings_accounts_bronze_account_008",
+  "title": "Bronze Account: Mobile banking and deposit limits",
+  "summary": "This document covers Bronze Account limits for mobile banking: a $1,000 daily mobile check deposit limit and a $2,500 maximum total mobile transfer-out amount per day. If you hit the limits, you can continue the next day when they reset; the app alerts you when requests exceed those thresholds.",
+  "faqs": [
+    "What is the daily mobile check deposit limit for a Bronze Account?",
+    "If I hit the mobile deposit limit, when can I deposit again?",
+    "What is the maximum total amount I can transfer out per day in the mobile app?",
+    "How can I check whether my mobile deposit or transfer request exceeds the limit?",
+    "What should I do if my deposit or transfer amount is more than the daily limits?",
+    "When should I submit mobile deposits or transfers to help with review and posting?"
+  ],
+  "keywords": [
+    "Bronze Account",
+    "Mobile check deposit",
+    "Daily mobile check deposit limit: $1,000",
+    "Transfers in the mobile app",
+    "Maximum daily transfer out limit: $2,500",
+    "Daily limit resets next day",
+    "App alerts for exceeding limits",
+    "Submit early for review and posting",
+    "Plan deposits/transfers over multiple days"
+  ]
+}

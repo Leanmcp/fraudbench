@@ -1,0 +1,992 @@
+{
+  "rules": {
+    "PASS": 0.999,
+    "PARTIAL_HARD": 0.25,
+    "override_model": "gpt-oss-20b",
+    "override_chain_gate": 4,
+    "infra_excluded": true,
+    "within_tier_order": "chain_len asc, best_progress desc"
+  },
+  "tiers": {
+    "easy": [
+      "task_006",
+      "task_007",
+      "task_012",
+      "task_025",
+      "task_035"
+    ],
+    "medium": [
+      "task_001",
+      "task_002",
+      "task_003",
+      "task_004",
+      "task_014",
+      "task_010",
+      "task_015",
+      "task_016",
+      "task_023",
+      "task_005",
+      "task_036",
+      "task_017",
+      "task_100",
+      "task_032",
+      "task_033",
+      "task_099",
+      "task_034",
+      "task_093",
+      "task_095",
+      "task_044",
+      "task_051",
+      "task_087"
+    ],
+    "hard": [
+      "task_098",
+      "task_075",
+      "task_076",
+      "task_046",
+      "task_058",
+      "task_064",
+      "task_101",
+      "task_021",
+      "task_063",
+      "task_070",
+      "task_019",
+      "task_027",
+      "task_059",
+      "task_065",
+      "task_071",
+      "task_060",
+      "task_069",
+      "task_057",
+      "task_068",
+      "task_056",
+      "task_029",
+      "task_037",
+      "task_055",
+      "task_072",
+      "task_094",
+      "task_061",
+      "task_038",
+      "task_066",
+      "task_067",
+      "task_085",
+      "task_083",
+      "task_073",
+      "task_026",
+      "task_022",
+      "task_084",
+      "task_096",
+      "task_089",
+      "task_062",
+      "task_050",
+      "task_052",
+      "task_074",
+      "task_040",
+      "task_082",
+      "task_043",
+      "task_047",
+      "task_028",
+      "task_045",
+      "task_053",
+      "task_039",
+      "task_090",
+      "task_088",
+      "task_054",
+      "task_086",
+      "task_097",
+      "task_049",
+      "task_092",
+      "task_078",
+      "task_077",
+      "task_048",
+      "task_079",
+      "task_041",
+      "task_091",
+      "task_080",
+      "task_081"
+    ],
+    "super_hard": [
+      "task_008",
+      "task_024",
+      "task_102",
+      "task_031",
+      "task_020",
+      "task_018"
+    ]
+  },
+  "per_task": {
+    "task_002": {
+      "tier": "medium",
+      "chain_len": 1,
+      "attempted": 5,
+      "solved": 2,
+      "solve_frac": 0.4,
+      "best_progress": 1.0,
+      "oss_solved": false
+    },
+    "task_001": {
+      "tier": "medium",
+      "chain_len": 1,
+      "attempted": 6,
+      "solved": 3,
+      "solve_frac": 0.5,
+      "best_progress": 1.0,
+      "oss_solved": false
+    },
+    "task_004": {
+      "tier": "medium",
+      "chain_len": 1,
+      "attempted": 6,
+      "solved": 1,
+      "solve_frac": 0.167,
+      "best_progress": 1.0,
+      "oss_solved": false
+    },
+    "task_012": {
+      "tier": "easy",
+      "chain_len": 1,
+      "attempted": 3,
+      "solved": 2,
+      "solve_frac": 0.667,
+      "best_progress": 1.0,
+      "oss_solved": false
+    },
+    "task_007": {
+      "tier": "easy",
+      "chain_len": 1,
+      "attempted": 4,
+      "solved": 4,
+      "solve_frac": 1.0,
+      "best_progress": 1.0,
+      "oss_solved": true
+    },
+    "task_006": {
+      "tier": "easy",
+      "chain_len": 1,
+      "attempted": 6,
+      "solved": 5,
+      "solve_frac": 0.833,
+      "best_progress": 1.0,
+      "oss_solved": true
+    },
+    "task_003": {
+      "tier": "medium",
+      "chain_len": 1,
+      "attempted": 5,
+      "solved": 2,
+      "solve_frac": 0.4,
+      "best_progress": 1.0,
+      "oss_solved": false
+    },
+    "task_015": {
+      "tier": "medium",
+      "chain_len": 2,
+      "attempted": 6,
+      "solved": 1,
+      "solve_frac": 0.167,
+      "best_progress": 1.0,
+      "oss_solved": false
+    },
+    "task_005": {
+      "tier": "medium",
+      "chain_len": 3,
+      "attempted": 5,
+      "solved": 1,
+      "solve_frac": 0.2,
+      "best_progress": 1.0,
+      "oss_solved": false
+    },
+    "task_016": {
+      "tier": "medium",
+      "chain_len": 2,
+      "attempted": 6,
+      "solved": 2,
+      "solve_frac": 0.333,
+      "best_progress": 1.0,
+      "oss_solved": false
+    },
+    "task_014": {
+      "tier": "medium",
+      "chain_len": 1,
+      "attempted": 6,
+      "solved": 1,
+      "solve_frac": 0.167,
+      "best_progress": 1.0,
+      "oss_solved": false
+    },
+    "task_021": {
+      "tier": "hard",
+      "chain_len": 4,
+      "attempted": 4,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.5,
+      "oss_solved": false
+    },
+    "task_019": {
+      "tier": "hard",
+      "chain_len": 6,
+      "attempted": 4,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.667,
+      "oss_solved": false
+    },
+    "task_024": {
+      "tier": "super_hard",
+      "chain_len": 1,
+      "attempted": 5,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.0,
+      "oss_solved": false
+    },
+    "task_025": {
+      "tier": "easy",
+      "chain_len": 1,
+      "attempted": 4,
+      "solved": 1,
+      "solve_frac": 0.25,
+      "best_progress": 1.0,
+      "oss_solved": true
+    },
+    "task_020": {
+      "tier": "super_hard",
+      "chain_len": 6,
+      "attempted": 3,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.167,
+      "oss_solved": false
+    },
+    "task_026": {
+      "tier": "hard",
+      "chain_len": 11,
+      "attempted": 5,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.364,
+      "oss_solved": false
+    },
+    "task_022": {
+      "tier": "hard",
+      "chain_len": 12,
+      "attempted": 3,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.75,
+      "oss_solved": false
+    },
+    "task_032": {
+      "tier": "medium",
+      "chain_len": 5,
+      "attempted": 3,
+      "solved": 1,
+      "solve_frac": 0.333,
+      "best_progress": 1.0,
+      "oss_solved": false
+    },
+    "task_018": {
+      "tier": "super_hard",
+      "chain_len": 8,
+      "attempted": 3,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.125,
+      "oss_solved": false
+    },
+    "task_023": {
+      "tier": "medium",
+      "chain_len": 2,
+      "attempted": 4,
+      "solved": 1,
+      "solve_frac": 0.25,
+      "best_progress": 1.0,
+      "oss_solved": false
+    },
+    "task_034": {
+      "tier": "medium",
+      "chain_len": 9,
+      "attempted": 4,
+      "solved": 2,
+      "solve_frac": 0.5,
+      "best_progress": 1.0,
+      "oss_solved": true
+    },
+    "task_017": {
+      "tier": "medium",
+      "chain_len": 4,
+      "attempted": 4,
+      "solved": 1,
+      "solve_frac": 0.25,
+      "best_progress": 1.0,
+      "oss_solved": false
+    },
+    "task_036": {
+      "tier": "medium",
+      "chain_len": 3,
+      "attempted": 4,
+      "solved": 1,
+      "solve_frac": 0.25,
+      "best_progress": 1.0,
+      "oss_solved": false
+    },
+    "task_008": {
+      "tier": "super_hard",
+      "chain_len": 1,
+      "attempted": 5,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.0,
+      "oss_solved": false
+    },
+    "task_031": {
+      "tier": "super_hard",
+      "chain_len": 5,
+      "attempted": 4,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.2,
+      "oss_solved": false
+    },
+    "task_037": {
+      "tier": "hard",
+      "chain_len": 8,
+      "attempted": 3,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.75,
+      "oss_solved": false
+    },
+    "task_027": {
+      "tier": "hard",
+      "chain_len": 6,
+      "attempted": 4,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.667,
+      "oss_solved": false
+    },
+    "task_010": {
+      "tier": "medium",
+      "chain_len": 2,
+      "attempted": 5,
+      "solved": 1,
+      "solve_frac": 0.2,
+      "best_progress": 1.0,
+      "oss_solved": false
+    },
+    "task_044": {
+      "tier": "medium",
+      "chain_len": 10,
+      "attempted": 4,
+      "solved": 1,
+      "solve_frac": 0.25,
+      "best_progress": 1.0,
+      "oss_solved": false
+    },
+    "task_028": {
+      "tier": "hard",
+      "chain_len": 15,
+      "attempted": 4,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.4,
+      "oss_solved": false
+    },
+    "task_033": {
+      "tier": "medium",
+      "chain_len": 5,
+      "attempted": 5,
+      "solved": 2,
+      "solve_frac": 0.4,
+      "best_progress": 1.0,
+      "oss_solved": false
+    },
+    "task_040": {
+      "tier": "hard",
+      "chain_len": 15,
+      "attempted": 3,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.733,
+      "oss_solved": false
+    },
+    "task_047": {
+      "tier": "hard",
+      "chain_len": 15,
+      "attempted": 4,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.667,
+      "oss_solved": false
+    },
+    "task_039": {
+      "tier": "hard",
+      "chain_len": 16,
+      "attempted": 3,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.688,
+      "oss_solved": false
+    },
+    "task_049": {
+      "tier": "hard",
+      "chain_len": 19,
+      "attempted": 4,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.421,
+      "oss_solved": false
+    },
+    "task_041": {
+      "tier": "hard",
+      "chain_len": 25,
+      "attempted": 4,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.6,
+      "oss_solved": false
+    },
+    "task_050": {
+      "tier": "hard",
+      "chain_len": 13,
+      "attempted": 4,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.692,
+      "oss_solved": false
+    },
+    "task_053": {
+      "tier": "hard",
+      "chain_len": 16,
+      "attempted": 3,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.812,
+      "oss_solved": false
+    },
+    "task_045": {
+      "tier": "hard",
+      "chain_len": 15,
+      "attempted": 4,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.4,
+      "oss_solved": false
+    },
+    "task_043": {
+      "tier": "hard",
+      "chain_len": 15,
+      "attempted": 4,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.667,
+      "oss_solved": false
+    },
+    "task_048": {
+      "tier": "hard",
+      "chain_len": 24,
+      "attempted": 4,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.542,
+      "oss_solved": false
+    },
+    "task_054": {
+      "tier": "hard",
+      "chain_len": 17,
+      "attempted": 3,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.294,
+      "oss_solved": false
+    },
+    "task_038": {
+      "tier": "hard",
+      "chain_len": 9,
+      "attempted": 3,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.556,
+      "oss_solved": false
+    },
+    "task_035": {
+      "tier": "easy",
+      "chain_len": 3,
+      "attempted": 4,
+      "solved": 4,
+      "solve_frac": 1.0,
+      "best_progress": 1.0,
+      "oss_solved": true
+    },
+    "task_029": {
+      "tier": "hard",
+      "chain_len": 8,
+      "attempted": 3,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.75,
+      "oss_solved": false
+    },
+    "task_058": {
+      "tier": "hard",
+      "chain_len": 4,
+      "attempted": 4,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.75,
+      "oss_solved": false
+    },
+    "task_052": {
+      "tier": "hard",
+      "chain_len": 13,
+      "attempted": 4,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.692,
+      "oss_solved": false
+    },
+    "task_060": {
+      "tier": "hard",
+      "chain_len": 7,
+      "attempted": 3,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.857,
+      "oss_solved": false
+    },
+    "task_055": {
+      "tier": "hard",
+      "chain_len": 8,
+      "attempted": 3,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.625,
+      "oss_solved": false
+    },
+    "task_061": {
+      "tier": "hard",
+      "chain_len": 9,
+      "attempted": 3,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.667,
+      "oss_solved": false
+    },
+    "task_059": {
+      "tier": "hard",
+      "chain_len": 6,
+      "attempted": 3,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.667,
+      "oss_solved": false
+    },
+    "task_046": {
+      "tier": "hard",
+      "chain_len": 3,
+      "attempted": 5,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.333,
+      "oss_solved": false
+    },
+    "task_062": {
+      "tier": "hard",
+      "chain_len": 13,
+      "attempted": 4,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.769,
+      "oss_solved": false
+    },
+    "task_066": {
+      "tier": "hard",
+      "chain_len": 9,
+      "attempted": 3,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.556,
+      "oss_solved": false
+    },
+    "task_067": {
+      "tier": "hard",
+      "chain_len": 9,
+      "attempted": 3,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.556,
+      "oss_solved": false
+    },
+    "task_064": {
+      "tier": "hard",
+      "chain_len": 4,
+      "attempted": 3,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.75,
+      "oss_solved": false
+    },
+    "task_070": {
+      "tier": "hard",
+      "chain_len": 5,
+      "attempted": 3,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.6,
+      "oss_solved": false
+    },
+    "task_063": {
+      "tier": "hard",
+      "chain_len": 4,
+      "attempted": 2,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.5,
+      "oss_solved": false
+    },
+    "task_071": {
+      "tier": "hard",
+      "chain_len": 6,
+      "attempted": 4,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.667,
+      "oss_solved": false
+    },
+    "task_069": {
+      "tier": "hard",
+      "chain_len": 7,
+      "attempted": 2,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.714,
+      "oss_solved": false
+    },
+    "task_075": {
+      "tier": "hard",
+      "chain_len": 3,
+      "attempted": 4,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.667,
+      "oss_solved": false
+    },
+    "task_051": {
+      "tier": "medium",
+      "chain_len": 20,
+      "attempted": 5,
+      "solved": 1,
+      "solve_frac": 0.2,
+      "best_progress": 1.0,
+      "oss_solved": false
+    },
+    "task_076": {
+      "tier": "hard",
+      "chain_len": 3,
+      "attempted": 4,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.667,
+      "oss_solved": false
+    },
+    "task_073": {
+      "tier": "hard",
+      "chain_len": 11,
+      "attempted": 4,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.636,
+      "oss_solved": false
+    },
+    "task_072": {
+      "tier": "hard",
+      "chain_len": 9,
+      "attempted": 4,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.778,
+      "oss_solved": false
+    },
+    "task_079": {
+      "tier": "hard",
+      "chain_len": 24,
+      "attempted": 5,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.417,
+      "oss_solved": false
+    },
+    "task_077": {
+      "tier": "hard",
+      "chain_len": 23,
+      "attempted": 4,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.696,
+      "oss_solved": false
+    },
+    "task_083": {
+      "tier": "hard",
+      "chain_len": 10,
+      "attempted": 5,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.6,
+      "oss_solved": false
+    },
+    "task_074": {
+      "tier": "hard",
+      "chain_len": 13,
+      "attempted": 3,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.615,
+      "oss_solved": false
+    },
+    "task_084": {
+      "tier": "hard",
+      "chain_len": 12,
+      "attempted": 4,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.75,
+      "oss_solved": false
+    },
+    "task_086": {
+      "tier": "hard",
+      "chain_len": 18,
+      "attempted": 4,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.722,
+      "oss_solved": false
+    },
+    "task_078": {
+      "tier": "hard",
+      "chain_len": 21,
+      "attempted": 4,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.476,
+      "oss_solved": false
+    },
+    "task_080": {
+      "tier": "hard",
+      "chain_len": 30,
+      "attempted": 4,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.9,
+      "oss_solved": false
+    },
+    "task_089": {
+      "tier": "hard",
+      "chain_len": 13,
+      "attempted": 5,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.923,
+      "oss_solved": false
+    },
+    "task_082": {
+      "tier": "hard",
+      "chain_len": 15,
+      "attempted": 5,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.733,
+      "oss_solved": false
+    },
+    "task_087": {
+      "tier": "medium",
+      "chain_len": 20,
+      "attempted": 5,
+      "solved": 1,
+      "solve_frac": 0.2,
+      "best_progress": 1.0,
+      "oss_solved": false
+    },
+    "task_090": {
+      "tier": "hard",
+      "chain_len": 16,
+      "attempted": 5,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.625,
+      "oss_solved": false
+    },
+    "task_091": {
+      "tier": "hard",
+      "chain_len": 25,
+      "attempted": 3,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.6,
+      "oss_solved": false
+    },
+    "task_094": {
+      "tier": "hard",
+      "chain_len": 9,
+      "attempted": 5,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.778,
+      "oss_solved": false
+    },
+    "task_056": {
+      "tier": "hard",
+      "chain_len": 8,
+      "attempted": 4,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.875,
+      "oss_solved": false
+    },
+    "task_088": {
+      "tier": "hard",
+      "chain_len": 17,
+      "attempted": 5,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.706,
+      "oss_solved": false
+    },
+    "task_092": {
+      "tier": "hard",
+      "chain_len": 21,
+      "attempted": 5,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.571,
+      "oss_solved": false
+    },
+    "task_098": {
+      "tier": "hard",
+      "chain_len": 3,
+      "attempted": 4,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 1.0,
+      "oss_solved": false
+    },
+    "task_096": {
+      "tier": "hard",
+      "chain_len": 12,
+      "attempted": 4,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.667,
+      "oss_solved": false
+    },
+    "task_100": {
+      "tier": "medium",
+      "chain_len": 4,
+      "attempted": 4,
+      "solved": 1,
+      "solve_frac": 0.25,
+      "best_progress": 1.0,
+      "oss_solved": false
+    },
+    "task_068": {
+      "tier": "hard",
+      "chain_len": 7,
+      "attempted": 3,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.571,
+      "oss_solved": false
+    },
+    "task_057": {
+      "tier": "hard",
+      "chain_len": 7,
+      "attempted": 4,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.571,
+      "oss_solved": false
+    },
+    "task_081": {
+      "tier": "hard",
+      "chain_len": 33,
+      "attempted": 4,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.545,
+      "oss_solved": false
+    },
+    "task_093": {
+      "tier": "medium",
+      "chain_len": 9,
+      "attempted": 5,
+      "solved": 2,
+      "solve_frac": 0.4,
+      "best_progress": 1.0,
+      "oss_solved": false
+    },
+    "task_085": {
+      "tier": "hard",
+      "chain_len": 10,
+      "attempted": 4,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.7,
+      "oss_solved": false
+    },
+    "task_095": {
+      "tier": "medium",
+      "chain_len": 9,
+      "attempted": 4,
+      "solved": 1,
+      "solve_frac": 0.25,
+      "best_progress": 1.0,
+      "oss_solved": false
+    },
+    "task_101": {
+      "tier": "hard",
+      "chain_len": 4,
+      "attempted": 3,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.75,
+      "oss_solved": false
+    },
+    "task_102": {
+      "tier": "super_hard",
+      "chain_len": 3,
+      "attempted": 1,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.0,
+      "oss_solved": false
+    },
+    "task_097": {
+      "tier": "hard",
+      "chain_len": 18,
+      "attempted": 2,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.556,
+      "oss_solved": false
+    },
+    "task_099": {
+      "tier": "medium",
+      "chain_len": 5,
+      "attempted": 4,
+      "solved": 1,
+      "solve_frac": 0.25,
+      "best_progress": 1.0,
+      "oss_solved": false
+    },
+    "task_065": {
+      "tier": "hard",
+      "chain_len": 6,
+      "attempted": 3,
+      "solved": 0,
+      "solve_frac": 0.0,
+      "best_progress": 0.667,
+      "oss_solved": false
+    }
+  }
+}

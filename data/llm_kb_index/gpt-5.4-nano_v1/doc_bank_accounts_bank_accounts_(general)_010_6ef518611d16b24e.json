@@ -1,0 +1,26 @@
+{
+  "id": "doc_bank_accounts_bank_accounts_(general)_010",
+  "title": "Internal: Transferring Funds Between Bank Accounts",
+  "summary": "Describes the internal tool transfer_funds_between_bank_accounts_7291 to move USD between a customer\u2019s checking or savings accounts (source_account_id to destination_account_id). Requires both accounts be ACTIVE/OPEN, source has sufficient funds, amount is positive USD, IDs are distinct, and same-customer/authorization; insufficient funds return an error.",
+  "faqs": [
+    "What tool do agents use to transfer money between my checking and savings accounts?",
+    "What are the requirements before the transfer_funds_between_bank_accounts_7291 call (account status, sufficient funds, same customer, authorization, valid positive USD amount, distinct IDs)?",
+    "What happens if I try to transfer more than the source account has available (insufficient funds error)?",
+    "When should an agent use this tool to fund a new savings account opening deposit?",
+    "When should the agent use this tool to consolidate balances before closing an account?",
+    "What post-transfer checks should an agent perform to confirm the transfer posted and no duplicate was initiated?"
+  ],
+  "keywords": [
+    "transfer_funds_between_bank_accounts_7291",
+    "source_account_id",
+    "destination_account_id",
+    "amount (USD)",
+    "ACTIVE or OPEN account status",
+    "sufficient funds / insufficient funds error",
+    "funding new savings account opening deposit",
+    "moving funds between accounts at customer request",
+    "consolidating balances before account closure",
+    "positive USD value",
+    "account IDs must be distinct"
+  ]
+}

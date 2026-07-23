@@ -1,0 +1,25 @@
+{
+  "id": "doc_credit_cards_virtual_card_management_001",
+  "title": "Virtual Card Management: Getting Started with Virtual Cards",
+  "summary": "This document explains how to get started with Virtual Cards in the dashboard: instant issuance is available with an expected issuance time of 5 seconds, and each account can have up to 60 active virtual cards. Virtual card management has a $25.00 annual fee, and supports recurring-use cards for repeated transactions with the same vendor. It also covers first-issuance troubleshooting (refresh and confirm instant issuance; archive/cancel cards if near 60).",
+  "faqs": [
+    "How do I create my first virtual card from the dashboard?",
+    "What is the expected time to receive a newly created virtual card (with instant issuance enabled)?",
+    "What is the maximum number of active virtual cards per account?",
+    "Is there an annual fee for virtual card management, and what is the amount?",
+    "How do recurring-use virtual cards work, and when should I select the recurring option?",
+    "If my virtual card doesn\u2019t appear after 5 seconds, what troubleshooting steps should I follow?"
+  ],
+  "keywords": [
+    "Virtual (Cards dashboard)",
+    "Create new card",
+    "Instant issuance",
+    "5 seconds",
+    "Maximum 60 active virtual cards",
+    "Annual fee $25.00",
+    "Recurring-use cards",
+    "Archive or cancel unused cards",
+    "Refresh the card list",
+    "Recurring option (same vendor)"
+  ]
+}

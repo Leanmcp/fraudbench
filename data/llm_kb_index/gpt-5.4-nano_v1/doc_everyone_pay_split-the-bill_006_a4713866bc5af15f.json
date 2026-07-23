@@ -1,0 +1,25 @@
+{
+  "id": "doc_everyone_pay_split-the-bill_006",
+  "title": "Why hasn't my group member paid yet?",
+  "summary": "This document explains timing-related reasons a group split member hasn\u2019t paid: the payment may still be within the allowed 16-day window, or they may not yet receive the most recent automatic reminder if the 4-day cadence hasn\u2019t elapsed. It also lists checks (member on split, correct contact details, reminder timeline at 4 intervals, creation timestamp within the 16 period) and next steps (manual reminder, close/recreate split if more time is requested, add notes to the split description for shared context).",
+  "faqs": [
+    "Why hasn\u2019t my group member paid yet\u2014could it be because it\u2019s still within the 16-day window?",
+    "If the reminders are automatic, could they not have received the latest one yet because the 4-day interval hasn\u2019t elapsed?",
+    "What can I check to confirm the member is set up correctly in the split (name in split, contact details)?",
+    "How do I verify the reminder timeline is operating on the 4 cadence?",
+    "How far into the 16-day period am I, and where can I check that using the split\u2019s creation timestamp?",
+    "What should I do next if they still don\u2019t pay\u2014send a manual reminder or close/recreate the split with expectations aligned to the 4 cycle?"
+  ],
+  "keywords": [
+    "16-day allowed payment window",
+    "4 interval cadence",
+    "automatic reminder",
+    "split member listed",
+    "contact details",
+    "reminder timeline",
+    "creation timestamp",
+    "manual reminder",
+    "close and recreate split",
+    "split description notes"
+  ]
+}

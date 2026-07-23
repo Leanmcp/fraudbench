@@ -1,0 +1,25 @@
+{
+  "id": "doc_bank_accounts_bank_accounts_(general)_006",
+  "title": "Internal: Closing Personal Savings Accounts",
+  "summary": "This document explains how to close Personal Savings Accounts, including pre-closure checks (OPEN status, no pending transactions, and sufficient balance if an early closure fee applies). It lists tier-based early closure fees ($20 Bronze/60 days, $35 Silver/Silver Plus/90 days, $75 Gold family/180 days, $150 Platinum/270 days) and required notice periods (1, 5, 10, 21 days), plus the need for manager approval for ELITE tier and the use of close_bank_account_7392.",
+  "faqs": [
+    "What must be verified before closing a Personal Savings Account?",
+    "What is the early closure fee and notice period for an ENTRY (Bronze) account?",
+    "What are the early closure fee and notice period for MID tier (Silver and Silver Plus)?",
+    "What are the early closure fee and notice period for PREMIUM tier (Gold, Gold Plus, Gold Years)?",
+    "What are the early closure fee, notice period, and manager-approval requirement for ELITE tier accounts?",
+    "What steps and system action are required to close the account (including close_bank_account_7392)?"
+  ],
+  "keywords": [
+    "Pre-Closure Requirements",
+    "Account status must be OPEN",
+    "No pending transactions",
+    "Early closure fee deduction from account balance",
+    "ENTRY TIER (Bronze Account) - $20 within 60 days - 1 days notice",
+    "MID TIER (Silver/Silver Plus) - $35 within 90 days - 5 days notice",
+    "PREMIUM TIER (Gold family) - $75 within 180 days - 10 days notice",
+    "ELITE TIER (Platinum/Platinum Plus/Diamond Elite) - $150 within 270 days - 21 days notice",
+    "Manager approval required (ELITE tier)",
+    "close_bank_account_7392"
+  ]
+}

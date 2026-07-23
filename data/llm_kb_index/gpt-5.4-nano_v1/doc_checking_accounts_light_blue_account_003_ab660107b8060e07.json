@@ -1,0 +1,21 @@
+{
+  "id": "doc_checking_accounts_light_blue_account_003",
+  "title": "Light Blue Account specifications and requirements",
+  "summary": "This document specifies Light Blue account debit card terms: APY is 0% and the debit card daily purchase limit is $2,500. It explains how to manage limits (plan large purchases, contact us for amounts above $2,500) and notes that split transactions and pending authorizations affect the $2,500 total.",
+  "faqs": [
+    "What is the Light Blue account APY?",
+    "What is the Light Blue debit card daily purchase limit?",
+    "What should I do if I need to make a debit card purchase over $2,500 in one day?",
+    "Can I split a purchase into multiple transactions to stay under $2,500?",
+    "Do pending debit card transactions count toward the $2,500 limit?"
+  ],
+  "keywords": [
+    "Light Blue account",
+    "APY 0%",
+    "debit card daily purchase limit $2,500",
+    "manage large purchases within $2,500",
+    "contact us in advance for purchases above $2,500",
+    "split transactions (only if merchant allows separate authorizations)",
+    "pending card transactions count toward limit until settle/drop off"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "doc_business_savings_accounts_silver_saver_account_007",
+  "title": "Silver Saver Account: Transferring funds to external banks",
+  "summary": "This document explains Silver Saver Account transfers to external banks: standard external transfers typically complete in 2 business days, while outgoing domestic wire transfers cost a 20 fee. It also covers when to choose each method and how to schedule and track transfers via the activity view and receipt confirmation.",
+  "faqs": [
+    "How long do standard external bank transfers take for a Silver Saver account?",
+    "What is the fee for outgoing domestic wire transfers?",
+    "When should I use a standard transfer versus a domestic wire?",
+    "How much lead time do I need to initiate a standard transfer?",
+    "How can I track a transfer and confirm it was received if timing is critical?"
+  ],
+  "keywords": [
+    "Silver Saver Account",
+    "standard external bank transfer",
+    "2 business days",
+    "outgoing domestic wire",
+    "domestic wire fee 20",
+    "activity view",
+    "transfer status tracking",
+    "confirm receipt with destination account",
+    "lead time scheduling"
+  ]
+}

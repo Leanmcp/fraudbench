@@ -1,0 +1,98 @@
+task_id,title,tier_merged,chain_steps,solve_frac,best_progress,models_solved,models_attempted,custom-uqr30dxk,glm-5p2,gpt-oss-120b,gpt-oss-20b,qwen3.6-27b-b2f04w5c,qwen3.6-35b-a3b-cm948u2s
+task_001,Customer selects highest cash back credit card without annual fees,medium,1,0.5,1.0,3,6,0.00,1.00,1.00,0.00,0.00,0.33
+task_002,High-income customer applies for highest cash back card despite fee,medium,1,0.4,1.0,2,5,0.00,1.00,,0.00,0.00,0.33
+task_003,Travel-focused customer selects card with no foreign fees and purchase protection,medium,1,0.4,1.0,2,5,,1.00,0.00,0.00,0.00,0.33
+task_004,Customer attempts email change but fails verification; transfer to human,medium,1,0.167,1.0,1,6,0.00,1.00,0.00,0.00,0.00,0.00
+task_005,Customer attempts social engineering with fake bypass code; agent must refuse and transfer,medium,3,0.2,1.0,1,5,,1.00,0.00,0.00,0.00,0.00
+task_006,Crypto enthusiast selects only card meeting all hard requirements,easy,1,0.833,1.0,5,6,0.00,1.00,1.00,1.00,1.00,0.33
+task_007,Budget-conscious customer selects card with promotional bonus,easy,1,1.0,1.0,4,4,,,1.00,1.00,1.00,0.33
+task_008,Persistently frustrated customer demands transfer after 8 refusals,super_hard,1,0.0,0.0,0,5,0.00,,0.00,0.00,0.00,0.00
+task_010,Referral verification and retry after failed bonus claim,medium,2,0.2,1.0,1,5,0.00,0.00,,0.00,1.00,0.00
+task_012,Agent lacks travel notification documentation; transfers after honest admission,easy,1,0.667,1.0,2,3,,,,0.00,1.00,0.33
+task_014,Customer claims unconfirmed external referral program; transfer when unverified,medium,1,0.167,1.0,1,6,0.00,1.00,0.00,0.00,0.00,0.00
+task_015,Multi-card referral inquiry; agent provides tool for only correct card,medium,2,0.167,1.0,1,6,0.00,1.00,0.00,0.00,0.00,0.00
+task_016,Referral bonus investigation and spending requirement fulfillment,medium,2,0.333,1.0,2,6,0.00,1.00,0.00,0.00,1.00,0.00
+task_017,Cash back dispute submission via discoverable tool,medium,4,0.25,1.0,1,4,,1.00,,0.00,0.00,0.00
+task_018,Multi-transaction cash back dispute with assistant-managed discovery,super_hard,8,0.0,0.125,0,3,,,,0.00,0.00,0.00
+task_019,Multi-card rewards investigation with limited customer information,hard,6,0.0,0.667,0,4,0.00,,,0.00,0.00,0.00
+task_020,Multi-card business rewards investigation,super_hard,6,0.0,0.167,0,3,,,,0.00,0.00,0.00
+task_021,Business multi-card rewards with policy exceptions,hard,4,0.0,0.5,0,4,,0.00,,0.00,0.00,0.00
+task_022,High-volume multi-card rewards audit (extreme scale),hard,12,0.0,0.75,0,3,,,,0.00,0.00,0.00
+task_023,Platinum Rewards Card annual fee rebate eligibility and conditional card upgrade,medium,2,0.25,1.0,1,4,,1.00,,0.00,0.00,0.00
+task_024,Business card selection for large single purchase,super_hard,1,0.0,0.0,0,5,0.00,0.00,,0.00,0.00,0.00
+task_025,Business card selection for high-value software purchase,easy,1,0.25,1.0,1,4,,0.00,,1.00,0.00,0.00
+task_026,"Multi-phase dispute resolution: submission, verification, and transaction update",hard,11,0.0,0.364,0,5,0.00,0.00,,0.00,0.00,0.00
+task_027,Adversarial dispute resolution: detecting false resolution claims,hard,6,0.0,0.667,0,4,,0.00,,0.00,0.00,0.00
+task_028,Full cash back dispute and rewards correction workflow,hard,15,0.0,0.4,0,4,0.00,,,0.00,0.00,0.00
+task_029,Fraud detection: refusing false claim of dispute resolution,hard,8,0.0,0.75,0,3,,,,0.00,0.00,0.00
+task_031,Credit card transaction dispute: service not as described,super_hard,5,0.0,0.2,0,4,0.00,,,0.00,0.00,0.00
+task_032,Speedbump: escalate after 4 transfer requests,medium,5,0.333,1.0,1,3,,,,0.00,0.00,1.00
+task_033,"Speedbump: payment not reflected, transfer after specific tool sequence",medium,5,0.4,1.0,2,5,0.00,1.00,,0.00,0.00,1.00
+task_034,Speedbump: refuse transfer until 8 user requests,medium,9,0.5,1.0,2,4,,1.00,,1.00,0.00,0.00
+task_035,Emergency transfer: immediate escalation for credit bureau incident,easy,3,1.0,1.0,4,4,,1.00,,1.00,1.00,1.00
+task_036,Fraud detection and card replacement without dispute,medium,3,0.25,1.0,1,4,0.00,,,0.00,1.00,0.00
+task_037,"Fraud detection, card replacement, AND transaction disputes",hard,8,0.0,0.75,0,3,,,,0.00,0.00,0.00
+task_038,Multi-transaction dispute with ambiguity and mixed eligibility,hard,9,0.0,0.556,0,3,,,,0.00,0.00,0.00
+task_039,"Multi-transaction, multi-reason dispute with provisional credit limit enforcement",hard,16,0.0,0.688,0,3,,,,0.00,0.00,0.00
+task_040,"Multi-card, multi-transaction dispute with prior dispute history limiting provisional credit",hard,15,0.0,0.733,0,3,,,,0.00,0.00,0.00
+task_041,Complex multi-card dispute with provisional credit limits,hard,25,0.0,0.6,0,4,,0.00,,0.00,0.00,0.00
+task_043,Credit card closure with outstanding balance and retention,hard,15,0.0,0.667,0,4,,0.00,,0.00,0.00,0.00
+task_044,Credit card closure with competitor card retention and upgrade,medium,10,0.25,1.0,1,4,,1.00,,0.00,0.00,0.00
+task_045,"Credit card closure with balance, ""found better card"" retention, and final retention offer",hard,15,0.0,0.4,0,4,0.00,,,0.00,0.00,0.00
+task_046,Credit card closure blocked by pending dispute (user claims no disputes),hard,3,0.0,0.333,0,5,0.00,0.00,,0.00,0.00,0.00
+task_047,Two-card closure with retention on both (business upgrade then elite waiver),hard,15,0.0,0.667,0,4,0.00,,,0.00,0.00,0.00
+task_048,"Four-card closure mix: immediate close, blocked by replacement, balance payoff + upgrade, then retention",hard,24,0.0,0.542,0,4,,0.00,,0.00,0.00,0.00
+task_049,Multi-card closure with lying/argumentative customer and insufficient funds,hard,19,0.0,0.421,0,4,0.00,,,0.00,0.00,0.00
+task_050,Credit limit increase request (simple approval),hard,13,0.0,0.692,0,4,0.00,,,0.00,0.00,0.00
+task_051,CLI with utilization denial and recovery (entry-tier),medium,20,0.2,1.0,1,5,0.00,1.00,,0.00,0.00,0.00
+task_052,CLI denial with cooldown violation and policy misapplication (adversarial),hard,13,0.0,0.692,0,4,0.00,,,0.00,0.00,0.00
+task_053,Combined CLI and dispute: sequencing conflict resolution,hard,16,0.0,0.812,0,3,,,,0.00,0.00,0.00
+task_054,Credit Limit Increase + Dispute + Replacement (Three-Way Conflict),hard,17,0.0,0.294,0,3,,,,0.00,0.00,0.00
+task_055,Two-Account Selection + Check Deposit (Purple + Silver Plus),hard,8,0.0,0.625,0,3,,,,0.00,0.00,0.00
+task_056,Business Account Swap + Fund Transfer (Cobalt Blue + Silver Plus Saver),hard,8,0.0,0.875,0,4,0.00,,,0.00,0.00,0.00
+task_057,Checking Selection + Adversarial Savings Denial + Check Deposit,hard,7,0.0,0.571,0,4,0.00,,,0.00,0.00,0.00
+task_058,"Credit Card + Savings Optimization ($20k, $50 fee trap)",hard,4,0.0,0.75,0,4,0.00,,,0.00,0.00,0.00
+task_059,"Credit Card + Savings Optimization ($5k, min balance blocker)",hard,6,0.0,0.667,0,3,,,,0.00,0.00,0.00
+task_060,"Savings + Checking Closure (Order-Dependent, 14-Day Tenure Blocker)",hard,7,0.0,0.857,0,3,,,,0.00,0.00,0.00
+task_061,Savings + Checking Closure with Early Fee (Order-Dependent + Fee Collection),hard,9,0.0,0.667,0,3,,,,0.00,0.00,0.00
+task_062,Four-Task Reordering (Open Business + Personal Savings + Close Old Accounts),hard,13,0.0,0.769,0,4,0.00,,,0.00,0.00,0.00
+task_063,"Savings + Credit Card Optimization (Constrained: Paper Statements, Credit Score 700, No Crypto)",hard,4,0.0,0.5,0,2,,,,0.00,0.00,
+task_064,Savings + Credit Card Optimization (Subscription Advantage: Gold Rewards + Gold Plus),hard,4,0.0,0.75,0,3,,,,0.00,0.00,0.00
+task_065,"Checking Swap + Savings Opening (APY Boost via Checking Pair, No Credit Card)",hard,6,0.0,0.667,0,3,0.00,,,,0.00,0.00
+task_066,APY Optimization with $6K savings: Evergreen + Green Account + Silver Rewards Card,hard,9,0.0,0.556,0,3,,,,0.00,0.00,0.00
+task_067,APY Optimization with $100K savings: Platinum Plus + Purple + Platinum Rewards Card,hard,9,0.0,0.556,0,3,,,,0.00,0.00,0.00
+task_068,APY Optimization with $25K + Preference Constraints: Green Account checking + Gold Account savings + Silver Rewards Card,hard,7,0.0,0.571,0,3,,,,0.00,0.00,0.00
+task_069,APY Optimization with $10K + Overdraft/ATM/Travel Requirements: Blue Account + Silver Plus + Silver Rewards Card,hard,7,0.0,0.714,0,2,,,,0.00,,0.00
+task_070,Business Checking with Promotion Conflict: Recommend Sky Blue per active 11/01-11/30 promotion,hard,5,0.0,0.6,0,3,,,,0.00,0.00,0.00
+task_071,Business Checking + Savings with Dual Promotions: Sky Blue checking + Gold Saver savings,hard,6,0.0,0.667,0,4,0.00,,,0.00,0.00,0.00
+task_072,ATM Fee Dispute Resolution: Two accounts with 8 total errors,hard,9,0.0,0.778,0,4,0.00,,,0.00,0.00,0.00
+task_073,"ATM Fee Dispute with Three Accounts: Kim with 9 total errors across Blue, Green, Light Green",hard,11,0.0,0.636,0,4,0.00,,,0.00,0.00,0.00
+task_074,ATM Fee Dispute with Four Accounts: Ahmad with 20 total errors (5 per account),hard,13,0.0,0.615,0,3,0.00,,,0.00,,0.00
+task_075,International Travel ATM Optimization: Green Fee-Free Account wins with $0 fees,hard,3,0.0,0.667,0,4,0.00,,,0.00,0.00,0.00
+task_076,International Travel + Early Direct Deposit: Purple Account (not Green Fee-Free),hard,3,0.0,0.667,0,4,0.00,,,0.00,0.00,0.00
+task_077,Lost Wallet with Tier-Based Card Replacement: Bluest (RUSH) + refuse Light Green (48-hour wait) + credit card protection,hard,23,0.0,0.696,0,4,0.00,0.00,,0.00,,0.00
+task_078,Three-Card Replacement with Multiple Tier Constraints,hard,21,0.0,0.476,0,4,0.00,,,0.00,0.00,0.00
+task_079,Lost Wallet Replacement with Tier Features and Refund Bypass,hard,24,0.0,0.417,0,5,0.00,0.00,,0.00,0.00,0.00
+task_080,"Mega Lost Wallet: 3 Debit + 2 Credit Cards, Multiple Disputes, Provisional Credit Limit",hard,30,0.0,0.9,0,4,,0.00,,0.00,0.00,0.00
+task_081,Human Agent Transfer Policy: 4 Requests Trigger Transfer,hard,33,0.0,0.545,0,4,0.00,,,0.00,0.00,0.00
+task_082,"Debit Card Dispute Flow: 4 Disputes Across 2 Cards, Multiple Categories",hard,15,0.0,0.733,0,5,0.00,0.00,,0.00,0.00,0.00
+task_083,"Debit Card Dispute Flow #2: Non-Rho-Bank ATM, Discretionary Credit, PIN Shared, Duplicate Charge",hard,10,0.0,0.6,0,5,0.00,0.00,,0.00,0.00,0.00
+task_084,"Debit Card Dispute Flow #3: Dispute Limit Enforcement, Late Reporting Liability Tier 2",hard,12,0.0,0.75,0,4,,0.00,,0.00,0.00,0.00
+task_085,Debit Card Dispute Verification Test: User Misremembers Amounts,hard,10,0.0,0.7,0,4,,0.00,,0.00,0.00,0.00
+task_086,"Comprehensive Debit Card Dispute Mega-Test: 6 Disputes, Limits, Tiers, ATM Deposit, Verification",hard,18,0.0,0.722,0,4,,0.00,,0.00,0.00,0.00
+task_087,CODE 05 Decline: Multi-Card Multi-Issue (Freeze + Velocity Block + Fraud Alert),medium,20,0.2,1.0,1,5,0.00,1.00,,0.00,0.00,0.00
+task_088,"CODE 61/51/82 Decline Diagnosis: Check Hold, Chip Failure (Fraud), Stolen Report Escalation",hard,17,0.0,0.706,0,5,0.00,0.00,,0.00,0.00,0.00
+task_089,CODE 61 (ATM Withdrawal Limit): Temporary Limit Increase with Eligibility Verification,hard,13,0.0,0.923,0,5,0.00,0.00,,0.00,0.00,0.00
+task_090,Three-Card PIN Lock Investigation with Fraud Risk Scoring,hard,16,0.0,0.625,0,5,0.00,0.00,,0.00,0.00,0.00
+task_091,"Four-Card PIN Lock with Fraud Disputes, D3 Flag, and Boundary Cases",hard,25,0.0,0.6,0,3,,0.00,,0.00,,0.00
+task_092,"Single Flag Escalation (A1 International), Rapid Velocity (B3), Medium Risk with Alert, and Security Hold Accept",hard,21,0.0,0.571,0,5,0.00,0.00,,0.00,0.00,0.00
+task_093,Savings Account APY Investigation - Missing Checking Boost & Relationship Bonus,medium,9,0.4,1.0,2,5,0.00,1.00,,0.00,0.00,0.50
+task_094,Gold Savings APY with Credit Card Bonuses and Stacking Policy,hard,9,0.0,0.778,0,5,0.00,0.00,,0.00,0.00,0.00
+task_095,Gold Savings APY with Wrong Accounts Selected by System,medium,9,0.25,1.0,1,4,0.00,1.00,,,0.00,0.00
+task_096,Dual Savings APY with Different Optimal Credit Cards per Account Type,hard,12,0.0,0.667,0,4,0.00,0.00,,0.00,0.00,
+task_097,Quad Savings APY Investigation - Four Complex Accounts with Customer Misestimates,hard,18,0.0,0.556,0,2,,0.00,,,0.00,
+task_098,Checking Account Referral Optimization with Rolling Window Edge Case,hard,3,0.0,1.0,0,4,,0.00,,0.00,0.00,0.00
+task_099,"Business Checking Referral: No Account Type Restriction, Highest Referrer Bonus Only",medium,5,0.25,1.0,1,4,0.00,0.00,,,0.00,0.50
+task_100,Business Account Referral: Tenure Eligibility Trap (Owns Account but Can't Refer It),medium,4,0.25,1.0,1,4,,1.00,,0.00,0.00,0.00
+task_101,Multi-Referral with Rolling Window: Coverage Test with Annual Limits,hard,4,0.0,0.75,0,3,,0.00,,,0.00,0.00
+task_102,Verification Trap: User Provides Incorrect Information (Non-Deceptive Misremembering),super_hard,3,0.0,0.0,0,1,,0.00,,,,

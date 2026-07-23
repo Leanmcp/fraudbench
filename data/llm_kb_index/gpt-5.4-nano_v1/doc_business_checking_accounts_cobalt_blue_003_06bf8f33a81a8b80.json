@@ -1,0 +1,26 @@
+{
+  "id": "doc_business_checking_accounts_cobalt_blue_003",
+  "title": "Managing Transactions and Staying Within Limits",
+  "summary": "Explains what counts toward the monthly transaction limit ($175 free transactions per month) and that deposits, withdrawals, and transfers are counted; after $175, each additional transaction costs $0.25 until the next monthly cycle. Covers using an activity tracker (with filters), consolidating transactions, managing up to 50 scheduled recurring payments, and best-practice batching/alerts.",
+  "faqs": [
+    "What activities count toward my $175 monthly transaction limit?",
+    "How much do I pay after I exceed the free $175 transactions\u2014what is the $0.25 charge applied to?",
+    "How can I track how many transactions I\u2019ve completed this month and how many remain?",
+    "What happens to transactions once I reach the limit, and when does the next cycle begin?",
+    "How many scheduled recurring payments can I maintain, and how do I manage duplicates or unused items?",
+    "What strategies can I use to stay within the limit (batching, consolidating, alerts)?"
+  ],
+  "keywords": [
+    "monthly transaction limit",
+    "$175 free transactions per month",
+    "$0.25 per additional transaction",
+    "deposits",
+    "withdrawals",
+    "transfers",
+    "activity tracker",
+    "filter by deposits/withdrawals/transfers",
+    "scheduled recurring payments (up to 50)",
+    "consolidating smaller transfers and deposits",
+    "alerts near $175 threshold"
+  ]
+}

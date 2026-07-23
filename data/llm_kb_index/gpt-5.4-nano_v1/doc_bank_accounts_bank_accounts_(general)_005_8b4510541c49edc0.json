@@ -1,0 +1,29 @@
+{
+  "id": "doc_bank_accounts_bank_accounts_(general)_005",
+  "title": "Internal: Closing Personal Checking Accounts",
+  "summary": "This document explains how to close Internal personal checking accounts, including pre-closure checks (account must be OPEN, no pending transactions, and fee balance rules) and tier-based early closure fees: $15/30 days (Entry), $25/60 days (Mid), $50/90 days (Premium), $100/$180 days (Elite) with notice periods of 0/3/7/14 days respectively. It states the closure fee is deducted directly from the account balance with no alternative payment method, and closure is performed using close_bank_account_7392 after verification.",
+  "faqs": [
+    "What pre-closure requirements must be verified before closing a personal checking account?",
+    "If an early closure fee applies, does the account need to have at least the fee amount in balance?",
+    "How much is the early closure fee for each tier (Entry, Mid, Premium, Elite) and what are the closure time windows?",
+    "What notice period is required before closing by account tier?",
+    "What is the exact procedure to close the account once the requirements are met?",
+    "Which internal action/tool is used to close the bank account? "
+  ],
+  "keywords": [
+    "early closure fee deduction",
+    "no alternative payment method",
+    "pre-closure requirements",
+    "account status must be OPEN",
+    "no pending transactions",
+    "ENTRY TIER (Light Blue/Light Green/Green Fee-Free)",
+    "MID TIER (Blue Account, Green Account (checking))",
+    "PREMIUM TIER (Evergreen Account)",
+    "ELITE TIER (Bluest Account)",
+    "$15 within 30 days / 0 days notice",
+    "$25 within 60 days / 3 days notice",
+    "$50 within 90 days / 7 days notice",
+    "$100 within $180 days / 14 days notice",
+    "close_bank_account_7392"
+  ]
+}

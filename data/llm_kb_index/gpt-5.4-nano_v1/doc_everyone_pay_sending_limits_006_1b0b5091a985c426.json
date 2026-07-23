@@ -1,0 +1,23 @@
+{
+  "id": "doc_everyone_pay_sending_limits_006",
+  "title": "Why can't I send more than $500 per day?",
+  "summary": "This document explains why sending more than $500/day may be blocked: either your account is under the default $750 daily cap, or the amount you tried exceeds your remaining daily allowance after earlier payments. It also covers fixes: verify for a higher cap up to $3,500 (approval required), send a smaller amount within remaining allowance, or wait for the daily period to renew. It notes daily and monthly caps both apply.",
+  "faqs": [
+    "Why am I unable to send more than $500 per day?",
+    "Is my account limited by a default daily cap, and what is the amount?",
+    "What does \u201cremaining daily allowance\u201d mean when I already sent payments today?",
+    "How can I increase my daily sending cap up to $3,500, and is approval required?",
+    "What should I do if I can\u2019t send the full amount today\u2014can I send a smaller amount or wait?",
+    "If the daily cap allows a payment, could my monthly cap still prevent it?"
+  ],
+  "keywords": [
+    "default daily cap of $750",
+    "remaining daily allowance",
+    "higher daily cap up to $3,500",
+    "subject to approval",
+    "verify your account",
+    "daily period to renew",
+    "daily and monthly caps work together",
+    "$500 per day limit symptom"
+  ]
+}

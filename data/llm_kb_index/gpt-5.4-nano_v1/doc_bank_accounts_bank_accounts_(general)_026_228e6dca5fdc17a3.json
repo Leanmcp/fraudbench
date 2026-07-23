@@ -1,0 +1,26 @@
+{
+  "id": "doc_bank_accounts_bank_accounts_(general)_026",
+  "title": "Internal: Freezing and Unfreezing a Debit Card",
+  "summary": "This document provides the procedure to temporarily FREEZE or UNFREEZE a debit card, including required verification, card status checks (ACTIVE to freeze; FROZEN to unfreeze), and the exact actions freeze_debit_card_3892 and unfreeze_debit_card_3893 using card_id. It also explains effects while frozen (all new/recurring declined, pending may still process) and notes ATM access behavior, separate 'ATM Block' setting, and the 90-day reminder.",
+  "faqs": [
+    "How is FREEZE different from CLOSE for a debit card, and can freezing be reversed?",
+    "What requirements must be met before I can freeze a debit card (status/ownership/verification)?",
+    "What happens to new transactions, recurring payments, and pending authorizations while the card is frozen?",
+    "How do I unfreeze a debit card, and what conditions are required (FROZEN status and linked checking account OPEN)?",
+    "Does freezing affect ATM access, and what is 'ATM Block' in the mobile app?",
+    "If the card isn\u2019t unfrozen within 90 days, what reminder will the customer receive?"
+  ],
+  "keywords": [
+    "FREEZE (temporary lock)",
+    "CLOSE (permanent deactivation)",
+    "freeze_debit_card_3892",
+    "unfreeze_debit_card_3893",
+    "ACTIVE status required",
+    "FROZEN status required",
+    "Recurring payments/subscriptions declined",
+    "Pending transactions may still process",
+    "ATM access unchanged with PIN",
+    "ATM Block (mobile app)",
+    "90 days reminder notification"
+  ]
+}

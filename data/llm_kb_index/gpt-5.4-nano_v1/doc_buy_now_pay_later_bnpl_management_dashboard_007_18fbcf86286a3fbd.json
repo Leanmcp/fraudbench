@@ -1,0 +1,23 @@
+{
+  "id": "doc_buy_now_pay_later_bnpl_management_dashboard_007",
+  "title": "BNPL Management Dashboard: Viewing Projected Early-Payment Rewards",
+  "summary": "This document explains how the BNPL Management Dashboard displays \u201cprojected early-payment rewards,\u201d including the projected rewards total, the projected total across all active plans, and when these values update based on plan details/payment timing. It also covers practical use for prioritizing early installments.",
+  "faqs": [
+    "Where do I view the projected early-payment rewards total on the BNPL Management Dashboard?",
+    "What does the projected total across all active plans mean, and what can change it?",
+    "When does the dashboard show the aggregated projection for eligible early payments?",
+    "If the consolidated projection isn\u2019t shown, what should I enable or check?",
+    "How can I use the projection to decide which BNPL installments to pay early?"
+  ],
+  "keywords": [
+    "BNPL Management Dashboard",
+    "Projected early-payment rewards",
+    "Projected rewards total",
+    "Projected total across all active plans",
+    "Eligible early payments",
+    "Active plans",
+    "Consolidated projection toggle",
+    "Plan details",
+    "Payment timing"
+  ]
+}

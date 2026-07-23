@@ -1,0 +1,25 @@
+{
+  "id": "doc_buy_now_pay_later_bnpl_silver_004",
+  "title": "BNPL Silver: Interest, Processing Fees, and Total Cost Explained",
+  "summary": "This document explains BNPL Silver\u2019s cost components\u2014APR-based interest (when applicable), an upfront processing fee as a % of the purchase amount, and a per-installment late payment fee. It provides formulas for checkout total cost, estimated finance charge, and how late fees are added.",
+  "faqs": [
+    "What are the cost components for BNPL Silver (interest, processing fee, late payment fee)?",
+    "How is the processing fee calculated from the purchase amount?",
+    "How is the estimated finance charge/interest calculated for a given term in months?",
+    "What is the total cost at checkout for BNPL Silver (with and without interest)?",
+    "When do late payment fees apply, and how are they calculated per installment?",
+    "Why might the precise finance charge differ from the estimator?"
+  ],
+  "keywords": [
+    "BNPL Silver",
+    "processing fee",
+    "upfront processing fee (% of purchase amount)",
+    "interest (when applicable)",
+    "APR",
+    "late payment fee (per installment)",
+    "finance charge formula (term_months/12)",
+    "daily accrual (rate \u00f7 365)",
+    "total cost at checkout",
+    "estimated finance charge vs posting dates"
+  ]
+}

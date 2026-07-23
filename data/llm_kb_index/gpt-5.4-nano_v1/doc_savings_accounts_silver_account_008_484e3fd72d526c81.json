@@ -1,0 +1,25 @@
+{
+  "id": "doc_savings_accounts_silver_account_008",
+  "title": "Silver Account: Transferring funds to external banks",
+  "summary": "This document explains how Silver Account external bank transfers are processed, including standard completion in ~2 business days after submission (timing varies by submission time and the receiving bank). It sets a $5,000/day cap on total outgoing external transfers and notes potential partial processing/declines for amounts above the limit, plus $0.00 monthly fee for paper statements (enabled in settings) and tips for accurate details and monitoring confirmations/notifications.",
+  "faqs": [
+    "How long do Silver Account transfers to external banks take to complete?",
+    "What is the daily limit for outgoing external transfers from my Silver Account ($5,000/day)?",
+    "What happens if I submit an external transfer request for more than the $5,000/day limit?",
+    "Is there a monthly fee for paper statements related to transfer verification or recordkeeping?",
+    "How can I reduce delays when transferring to an external bank?",
+    "How will I know my external transfer status (in-app confirmations and email notifications)?"
+  ],
+  "keywords": [
+    "Silver Account",
+    "external banks transfers",
+    "processing time: 2 business days",
+    "receiving-bank processing",
+    "$5,000 per day outgoing transfer cap",
+    "partially processed up to limit or declined",
+    "paper statements monthly fee: $0.00",
+    "enable paper statements in settings",
+    "in-app confirmations",
+    "email notifications"
+  ]
+}

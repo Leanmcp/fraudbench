@@ -1,0 +1,24 @@
+{
+  "id": "doc_business_checking_accounts_navy_blue_006",
+  "title": "Navy Blue Account: ACH Transfers and Processing Times",
+  "summary": "Explains Navy Blue Account ACH transfer processing: standard ACH typically completes in 2 business days; same-day ACH may be available with a $5.00 fee and must be submitted before the same-day cutoff shown in the transfer workflow. Also covers submission steps, how to monitor status in Activity view, and tips to avoid delays (recipient verification, earlier scheduling, sufficient available balance, and automated schedules for recurring payments).",
+  "faqs": [
+    "How long do standard ACH transfers take on my Navy Blue account?",
+    "Is same-day ACH available, what is the fee, and when do I need to submit it?",
+    "Where can I see the processing/settlement status of an ACH transfer?",
+    "What do I need to check before submitting an ACH transfer to avoid delays?",
+    "How can I schedule ACH transfers to improve timing (e.g., earlier in the day, recurring payments)?"
+  ],
+  "keywords": [
+    "Navy Blue Account",
+    "ACH Transfers",
+    "Standard ACH (2 business days)",
+    "Same-day ACH",
+    "$5.00 same-day fee",
+    "Same-day cutoff (transfer workflow)",
+    "Activity view",
+    "Recipient details verification",
+    "Available balance",
+    "Automated recurring payment schedules"
+  ]
+}

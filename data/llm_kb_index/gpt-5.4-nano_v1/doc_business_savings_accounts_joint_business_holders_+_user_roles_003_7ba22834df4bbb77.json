@@ -1,0 +1,27 @@
+{
+  "id": "doc_business_savings_accounts_joint_business_holders_+_user_roles_003",
+  "title": "User Roles: Setting Up and Managing User Permissions",
+  "summary": "Explains how to create and assign Admin, Finance, and Auditor roles in user management (Add user/Edit user), apply granular permissions per segregation-of-duties, save changes, and invite users to activate access. Includes limits (max 15 users), fee ($0.00 one-time setup), and ongoing management steps (modify roles, suspend/restore access, periodic reviews, access certifications, audit evidence, and aligning permissions for payments/reconciliations/reviews).",
+  "faqs": [
+    "How do I add or edit a user and assign the Admin, Finance, or Auditor role?",
+    "What granular permissions should be applied when assigning these roles?",
+    "What is the maximum number of users I can assign roles to?",
+    "Is there a fee for setting up advanced user roles and permissions?",
+    "How can I change a user\u2019s role after it\u2019s been assigned?",
+    "Can I suspend or restore a user\u2019s access, and what follow-up reviews should I do?"
+  ],
+  "keywords": [
+    "Admin role",
+    "Finance role",
+    "Auditor role",
+    "granular permissions",
+    "segregation-of-duties standards",
+    "user management (Add user/Edit user)",
+    "invite to activate access",
+    "maximum of 15 users",
+    "one-time setup fee $0.00",
+    "suspend or restore access",
+    "access certifications",
+    "access/approval evidence for audit readiness"
+  ]
+}

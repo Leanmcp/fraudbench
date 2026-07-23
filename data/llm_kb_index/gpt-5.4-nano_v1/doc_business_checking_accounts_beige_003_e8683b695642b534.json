@@ -1,0 +1,27 @@
+{
+  "id": "doc_business_checking_accounts_beige_003",
+  "title": "Beige: Balance Aggregation and Sub-Account Management",
+  "summary": "This document explains how to set up Beige balance aggregation by linking external accounts (up to 30) for centralized visibility/reporting, then assigning each to an entity/department. It also covers creating up to 50 sub-accounts for department/project/business unit/cost center tagging, including setup practices, permission restrictions, roll-up views, and reconciliation/periodic review procedures.",
+  "faqs": [
+    "How do I connect external accounts in Beige for balance aggregation and reporting?",
+    "What is the maximum number of external accounts I can link (and how should I prioritize them)?",
+    "How do I create sub-accounts, and what categories can I tag (department/project/business unit/cost center)?",
+    "What is the limit on the number of sub-accounts, and why use a consistent naming convention?",
+    "How do I restrict permissions so teams can only post/view within their assigned sub-accounts?",
+    "After setup, how do I reconcile aggregated balances with institution statements and handle periodic reviews (retire/reassign)?"
+  ],
+  "keywords": [
+    "Beige",
+    "balance aggregation",
+    "external accounts (up to 30)",
+    "entity/department assignment",
+    "sub-accounts (up to 50)",
+    "department/project/business unit/cost center",
+    "consistent naming convention",
+    "standard taxonomy",
+    "permission restrictions (post/view)",
+    "roll-up views",
+    "reconciliation with institution statements",
+    "periodic reviews (retire unused; reassign ownership)"
+  ]
+}

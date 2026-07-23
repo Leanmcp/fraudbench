@@ -1,0 +1,26 @@
+{
+  "id": "doc_business_savings_accounts_gold_saver_account_004",
+  "title": "Gold Saver Account: Integration with Business Checking",
+  "summary": "This document explains how the Gold Saver Account integrates with business checking to automatically sweep eligible surplus funds into savings. It specifies a $10.00 monthly maintenance fee, a $100 minimum sweep trigger, and a $0.00 automatic sweep transfer fee, including sweep/no-sweep rules based on available funds.",
+  "faqs": [
+    "What does integrating Gold Saver with my business checking do?",
+    "Is there a monthly maintenance fee for the integration, and how much is it?",
+    "What is the minimum amount in checking required to trigger an automatic sweep transfer?",
+    "Do I pay a fee for each automatic sweep transfer?",
+    "When will a sweep not occur (e.g., if available funds drop below the trigger amount)?",
+    "How can I prevent non-excess funds from being swept due to pending transactions?"
+  ],
+  "keywords": [
+    "Gold Saver Account",
+    "Integration with Business Checking",
+    "Automatic sweep transfer",
+    "Monthly maintenance fee $10.00",
+    "Minimum sweep trigger $100",
+    "Automatic sweep transfer fee $0.00",
+    "Eligible funds",
+    "Available to move meets/exceeds $100",
+    "Leave headroom for pending transactions",
+    "Review sweep activity",
+    "Monthly maintenance fee line item"
+  ]
+}

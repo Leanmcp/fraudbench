@@ -1,0 +1,27 @@
+{
+  "id": "doc_business_credit_cards_virtual_card_management_010",
+  "title": "Virtual Card Management: Integrating Virtual Cards with Expense Management Tools",
+  "summary": "Explains how to integrate Virtual Cards with accounting/expense platforms: up to 12 supported platforms, real-time transaction updates via alerts (event forwarding), and syncing card nicknames so vendor/project labels carry into your expense system. Covers setup steps, field mapping, and initial sync/backfill.",
+  "faqs": [
+    "Which accounting or expense platforms can I connect for Virtual Card integrations (and what\u2019s the limit)?",
+    "Does the integration send real-time transaction updates to my expense tool?",
+    "Can card nicknames be synced so vendor/project labels map into my expense system?",
+    "What are the exact setup steps to authorize, select synced data, map fields, and run an initial sync?",
+    "How do I ensure alerts/event forwarding route to the correct users or channels?",
+    "How can I improve nickname matching and verify my integrations remain within the 12-platform limit?"
+  ],
+  "keywords": [
+    "Virtual Card Management",
+    "Integrations",
+    "Up to 12 platforms supported",
+    "Real-time transaction updates via alerts",
+    "Event forwarding",
+    "Sync card nicknames",
+    "Card metadata",
+    "Field mapping",
+    "Cost centers",
+    "Projects",
+    "Tags",
+    "Initial sync backfill"
+  ]
+}

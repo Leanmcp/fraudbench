@@ -1,0 +1,22 @@
+{
+  "id": "doc_business_savings_accounts_joint_business_holders_+_user_roles_009",
+  "title": "User Roles: Audit Trail and Activity Monitoring by Role",
+  "summary": "Explains how user activity logs are retained for 5 years (sign-ins, permission changes, approvals, and key configuration updates) and how auditors get read-only visibility for 48 months. It covers role-change request notifications with a 48-hour effect delay, and how to filter/export role-based activity logs for audit workpapers and compliance evidence.",
+  "faqs": [
+    "How long are user activity logs retained, and what events are included?",
+    "How long do auditors have read-only access to historical data?",
+    "What happens after a role change is requested, and when does it take effect?",
+    "How can I review activity logs filtered by role (e.g., Admin config changes, Finance actions, Auditor access reviews)?",
+    "Can filtered role-based activity logs be exported for audit workpapers, and what evidence should be maintained?"
+  ],
+  "keywords": [
+    "User activity logs retention (5 years)",
+    "Auditor read-only visibility (48 months)",
+    "Activity logs include sign-ins",
+    "Role change notifications window",
+    "Role change takes effect after 48 hours",
+    "Filter activity logs by role",
+    "Export filtered logs for control testing",
+    "Compliance repository evidence (reviewer, date, scope)"
+  ]
+}

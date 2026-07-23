@@ -1,0 +1,26 @@
+{
+  "id": "doc_bank_accounts_bank_accounts_(general)_017",
+  "title": "Internal: Applying Credits and Rebates to Checking Accounts",
+  "summary": "This document covers how agents apply credits to **checking accounts only** using tool **apply_checking_account_credit_5829(account_id, amount, credit_type)**. Credits are allowed for **missing rebates** (credit_type `rebate_credit`) or **fee mischarges** (credit_type `fee_refund`), with exact, non-rounded amounts and required verification steps; the tool can be called **once per checking account per interaction**, then a **14-day cooldown** applies.",
+  "faqs": [
+    "What kinds of credits can I apply to a customer\u2019s account, and are savings accounts eligible?",
+    "When is a `rebate_credit` allowed, and how do I confirm the rebate is missing and the amount matches the rebate policy?",
+    "When is a `fee_refund` allowed, and how do I calculate the net correction from fee mischarges?",
+    "What steps must I follow before calling apply_checking_account_credit_5829?",
+    "What are the tool restrictions (one call per account per interaction and the 14-day cooldown)?",
+    "If both a missing rebate and fee mischarges exist for the same checking account, can I submit separate credits?"
+  ],
+  "keywords": [
+    "checking accounts only",
+    "apply_checking_account_credit_5829",
+    "credit_type `rebate_credit`",
+    "credit_type `fee_refund`",
+    "missing rebates eligibility",
+    "fee mischarges net correction",
+    "amount must be > 0",
+    "call tool once per checking account per interaction",
+    "14-day cooldown per account",
+    "combine multiple corrections into one credit",
+    "amount must match exact rebate/fee amount (no rounding)"
+  ]
+}

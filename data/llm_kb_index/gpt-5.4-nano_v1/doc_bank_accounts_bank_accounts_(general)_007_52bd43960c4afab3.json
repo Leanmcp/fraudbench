@@ -1,0 +1,27 @@
+{
+  "id": "doc_bank_accounts_bank_accounts_(general)_007",
+  "title": "Internal: Closing Business Checking Accounts",
+  "summary": "This document defines pre-closure checks and tier-specific closure terms for business checking accounts: balances/fees conditions, OPEN status, no pending transactions, and closing linked OPEN business savings first. It specifies early closure fees and notice periods for ENTRY ($50/60 days, 7 days), MID ($100/90 days, 14 days), PREMIUM ($200/180 days, 21 days + supervisor review), and ELITE (>$100,000 credit lines: $400/270 days, 30 days + manager approval), then instructs using close_bank_account_7392 after verification.",
+  "faqs": [
+    "What pre-closure requirements must be verified before closing a business checking account?",
+    "If the account closes early, what early closure fee and notice period apply for each tier (ENTRY, MID, PREMIUM, ELITE)?",
+    "For PREMIUM tier, do we need supervisor review before closing, and what\u2019s the required notice period?",
+    "For ELITE tier accounts (credit lines over $100,000), do we need manager approval and what notice period/fee applies?",
+    "Does the early closure fee require an external payment method, or is it deducted from the account balance?",
+    "What are the step-by-step closure procedures, including which system function to use?"
+  ],
+  "keywords": [
+    "early closure fee $50 (within 60 days)",
+    "ENTRY TIER (Navy Blue) notice period 7 days",
+    "early closure fee $100 (within 90 days)",
+    "MID TIER (True Blue, Sky Blue) notice period 14 days",
+    "early closure fee $200 (within $180 days)",
+    "PREMIUM TIER (Cobalt Blue) supervisor review + 21-day notice",
+    "ELITE tier credit lines over $100,000",
+    "early closure fee $400 (within 270 days)",
+    "ELITE tier manager approval + 30-day notice",
+    "close_bank_account_7392",
+    "pre-closure requirement: account status must be OPEN",
+    "pre-closure requirement: no pending transactions + close linked OPEN business savings first"
+  ]
+}

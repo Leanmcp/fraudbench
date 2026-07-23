@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Result Visualizer</title>
+<style>
+  :root {
+    --bg:#0f1117; --panel:#171a23; --panel2:#1d212c; --border:#2a2f3a;
+    --fg:#d7dbe4; --dim:#828a9c; --accent:#6ea8fe;
+    --user:#c98bff; --assistant:#5fb6ff; --tool:#e8b450; --system:#7fd6c2;
+    --green:#56d364; --red:#f4707a; --yellow:#e3b341;
+  }
+  * { box-sizing:border-box; }
+  body {
+    margin:0; font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    background:var(--bg); color:var(--fg); height:100vh; display:flex; flex-direction:column;
+  }
+  header {
+    padding:10px 16px; background:var(--panel); border-bottom:1px solid var(--border);
+    display:flex; align-items:baseline; gap:12px;
+  }
+  header h1 { font-size:15px; margin:0; letter-spacing:.3px; }
+  header .sub { color:var(--dim); font-size:12px; }
+  .layout { flex:1; display:flex; min-height:0; }
+  .col { overflow:auto; height:100%; }
+  #sidebar { width:300px; min-width:240px; border-right:1px solid var(--border); background:var(--panel); }
+  #middle  { width:380px; min-width:300px; border-right:1px solid var(--border); background:var(--panel2); }
+  #main    { flex:1; padding:0 4px; }
+  .sec-title { padding:10px 14px; font-size:11px; text-transform:uppercase; letter-spacing:1px;
+    color:var(--dim); position:sticky; top:0; background:inherit; border-bottom:1px solid var(--border); }
+  .row { padding:9px 14px; cursor:pointer; border-bottom:1px solid var(--border); }
+  .row:hover { background:#222735; }
+  .row.active { background:#27314a; box-shadow:inset 3px 0 0 var(--accent); }
+  .row .title { font-weight:600; }
+  .row .meta { color:var(--dim); font-size:12px; margin-top:2px; display:flex; gap:8px; flex-wrap:wrap; }
+  .pill { padding:1px 7px; border-radius:10px; font-size:11px; background:#2a2f3a; color:var(--dim); }
+  .diff { padding:1px 7px; border-radius:10px; font-size:10px; font-weight:700;
+    text-transform:uppercase; letter-spacing:.4px; }
+  .diff-easy     { background:#16331f; color:var(--green); }
+  .diff-medium   { background:#332b12; color:var(--yellow); }
+  .diff-hard     { background:#3a2412; color:#e8954e; }
+  .diff-veryhard { background:#3a1518; color:var(--red); }
+  .reward { font-variant-numeric:tabular-nums; font-weight:700; }
+  .r-pass { color:var(--green); } .r-fail { color:var(--red); } .r-mid { color:var(--yellow); }
+  .r-na { color:var(--dim); }
+  .empty { color:var(--dim); padding:30px 16px; text-align:center; }
+
+  /* config + sim detail */
+  .config { padding:14px 18px; border-bottom:1px solid var(--border); background:var(--panel2); }
+  .config table { border-collapse:collapse; }
+  .config td { padding:2px 14px 2px 0; vertical-align:top; }
+  .config td.k { color:var(--dim); white-space:nowrap; }
+  .sortbar { display:flex; align-items:center; gap:6px; padding:8px 14px;
+    border-bottom:1px solid var(--border); background:var(--panel2);
+    position:sticky; top:0; z-index:4; }
+  .sortbar .sortlabel { color:var(--dim); font-size:12px; margin-right:2px; }
+  .sortbar button { padding:3px 9px; font-size:12px; }
+  .filterbar { display:flex; align-items:center; gap:6px; flex-wrap:wrap; padding:6px 14px;
+    border-bottom:1px solid var(--border); background:var(--panel2);
+    position:sticky; top:35px; z-index:4; }
+  .filterbar .flabel { color:var(--dim); font-size:12px; margin-right:2px; }
+  .diffchip { cursor:pointer; user-select:none; border:1px solid var(--border);
+    border-radius:10px; padding:2px 9px; font-size:10px; font-weight:700;
+    text-transform:uppercase; letter-spacing:.4px; }
+  .diffchip.off { opacity:.32; filter:grayscale(.6); }
+  .diff-reset { background:#2a2f3a; color:var(--dim); }
+  .toolbar { padding:8px 16px; display:flex; gap:8px; align-items:center; flex-wrap:wrap;
+    position:sticky; top:0; background:var(--bg); border-bottom:1px solid var(--border); z-index:5; }
+  button { background:var(--panel2); color:var(--fg); border:1px solid var(--border);
+    border-radius:6px; padding:5px 11px; cursor:pointer; font-size:13px; }
+  button:hover { border-color:var(--accent); }
+  button.on { background:#27314a; border-color:var(--accent); }
+  input[type=text] { background:var(--panel2); color:var(--fg); border:1px solid var(--border);
+    border-radius:6px; padding:5px 9px; font-size:13px; }
+
+  /* messages */
+  .msgs { padding:10px 14px 60px; }
+  .msg { border:1px solid var(--border); border-radius:8px; margin:10px 0; overflow:hidden; }
+  .msg .bar { padding:6px 12px; font-size:12px; display:flex; gap:10px; align-items:center;
+    background:var(--panel); border-bottom:1px solid var(--border); }
+  .role { font-weight:700; text-transform:uppercase; letter-spacing:.5px; }
+  .role.assistant { color:var(--assistant); } .role.user { color:var(--user); }
+  .role.tool { color:var(--tool); } .role.system { color:var(--system); }
+  .msg .body { padding:10px 14px; white-space:pre-wrap; word-break:break-word; }
+  .reasoning { color:#9aa3b8; border-left:3px solid #5a4a86; background:#1a1726;
+    border-radius:0 6px 6px 0; padding:8px 12px; margin-bottom:10px;
+    white-space:pre-wrap; word-break:break-word; font-size:13px; line-height:1.55; }
+  .reasoning-label { color:var(--user); font-weight:700; font-size:11px;
+    text-transform:uppercase; letter-spacing:.6px; margin-bottom:5px; }
+  .tcall { color:var(--green); font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+    font-size:12.5px; background:#10231a; border:1px solid #1d3b28; border-radius:6px;
+    padding:6px 9px; margin-top:6px; white-space:pre-wrap; word-break:break-word; }
+  /* collapsible tool-result block — collapsed by default to cut noise */
+  details.toolresult { border:1px solid #3a3320; border-radius:6px; background:#1a1710;
+    margin-top:4px; overflow:hidden; }
+  details.toolresult > summary { cursor:pointer; list-style:none; user-select:none;
+    padding:6px 10px; font-size:12px; color:var(--tool); display:flex; gap:8px;
+    align-items:center; white-space:nowrap; overflow:hidden; }
+  details.toolresult > summary::-webkit-details-marker { display:none; }
+  details.toolresult > summary::before { content:'▸'; color:var(--dim); font-size:11px; flex:none; }
+  details.toolresult[open] > summary::before { content:'▾'; }
+  details.toolresult > summary .tr-label { font-weight:700; text-transform:uppercase;
+    letter-spacing:.5px; flex:none; }
+  details.toolresult > summary .tr-preview { color:var(--dim); font-weight:400;
+    text-transform:none; letter-spacing:0; overflow:hidden; text-overflow:ellipsis;
+    font-family:ui-monospace,Menlo,monospace; font-size:11.5px; }
+  details.toolresult > summary .tr-len { margin-left:auto; flex:none; color:var(--dim);
+    font-size:11px; }
+  details.toolresult > .tr-content { padding:8px 12px; border-top:1px solid #3a3320;
+    white-space:pre-wrap; word-break:break-word; }
+  /* reasoning variant of the collapsible — purple "thinking" palette */
+  details.reasoning-collapse { border-color:#39305a; background:#19162400; margin-bottom:10px; }
+  details.reasoning-collapse > summary { color:var(--user); }
+  details.reasoning-collapse > .tr-content { border-top-color:#39305a; color:#9aa3b8;
+    background:#1a1726; font-size:13px; line-height:1.55; }
+  .muted { color:var(--dim); }
+  pre.json { background:var(--panel); border:1px solid var(--border); border-radius:8px;
+    padding:12px; overflow:auto; font-size:12.5px; max-height:60vh; }
+  /* readable, wrapping block for prose prompts (policy, guidelines, scenario) */
+  .proseblock { background:var(--panel); border:1px solid var(--border); border-radius:8px;
+    padding:14px 16px; margin:6px 0 4px; font-size:13.5px; line-height:1.65;
+    white-space:pre-wrap; word-break:break-word; overflow-wrap:anywhere;
+    max-width:78ch; max-height:62vh; overflow:auto; }
+  .prompt-head { display:flex; align-items:baseline; gap:10px; margin:18px 0 2px; }
+  .prompt-head h4 { margin:0; font-size:13px; }
+  /* reward action-check list (mirrors the stdout panel) */
+  .rw-summary { margin:6px 0 12px; font-size:13px; }
+  .rw-summary .seg { margin-right:14px; }
+  .checklist { margin:6px 0 16px; }
+  .check { display:flex; gap:8px; align-items:baseline; padding:5px 9px; margin:2px 0;
+    border-radius:6px; font-family:ui-monospace,Menlo,monospace; font-size:12.5px;
+    border-left:3px solid transparent; }
+  .check.ok  { background:#10231a; border-left-color:var(--green); }
+  .check.bad { background:#2a1518; border-left-color:var(--red); }
+  .check .ci { color:var(--dim); min-width:26px; }
+  .check .cr { color:var(--dim); }
+  .check .cn { color:var(--fg); font-weight:600; }
+  .check .ct { color:var(--tool); }
+  .check .cv { margin-left:auto; color:var(--dim); }
+  .check-args { font-family:ui-monospace,Menlo,monospace; font-size:11.5px; color:var(--dim);
+    padding:2px 9px 7px 32px; white-space:pre-wrap; word-break:break-word; }
+  /* parsed task-explanation markdown */
+  .expl { max-width:82ch; line-height:1.62; font-size:14px; }
+  .expl h3 { font-size:16px; margin:18px 0 6px; color:var(--fg); }
+  .expl h4 { font-size:12px; text-transform:uppercase; letter-spacing:.6px;
+    color:var(--accent); margin:18px 0 4px; }
+  .expl p { margin:7px 0; }
+  .expl ul { margin:6px 0; padding-left:20px; }
+  .expl li { margin:4px 0; }
+  .expl strong { color:#fff; }
+  .expl code { background:var(--panel); border:1px solid var(--border); border-radius:4px;
+    padding:0 4px; font-size:12.5px; font-family:ui-monospace,Menlo,monospace; }
+  .expl blockquote { border-left:3px solid #5a4a86; background:#1a1726; margin:10px 0;
+    padding:8px 12px; color:#9aa3b8; border-radius:0 6px 6px 0; }
+  .badge { font-size:12px; color:var(--dim); }
+</style>
+</head>
+<body>
+<header>
+  <h1>Result Visualizer</h1>
+  <span class="sub" id="subtitle">tau2-bench results browser</span>
+  <a href="/compare" style="margin-left:auto; color:var(--accent); text-decoration:none; font-size:13px;">Compare runs ›</a>
+</header>
+<div class="layout">
+  <div class="col" id="sidebar"><div class="sec-title">Runs</div><div id="results"></div></div>
+  <div class="col" id="middle"><div class="sec-title">Simulations</div>
+    <div id="sims"><div class="empty">Pick a run on the left.</div></div></div>
+  <div class="col" id="main"><div class="empty" style="margin-top:60px">Pick a simulation to view the conversation.</div></div>
+</div>
+
+<script>
+const $ = (s, r=document) => r.querySelector(s);
+const el = (tag, cls, html) => { const e=document.createElement(tag); if(cls)e.className=cls; if(html!=null)e.innerHTML=html; return e; };
+const esc = s => (s==null?'':String(s)).replace(/[&<>]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+// Render any value as readable text: objects/arrays become pretty JSON instead of "[object Object]".
+const asText = v => v==null ? '' : (typeof v==='object' ? JSON.stringify(v,null,2) : String(v));
+
+// Minimal, safe markdown → HTML for the parsed task explanations (headings,
+// bullets, blockquotes, **bold**, `code`). Escapes first, so input is inert.
+function mdLite(md){
+  const inline = s => esc(s)
+    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+    .replace(/`([^`]+)`/g, '<code>$1</code>');
+  let html='', inUl=false;
+  const closeUl = () => { if(inUl){ html+='</ul>'; inUl=false; } };
+  (md||'').split('\n').forEach(raw => {
+    const line = raw.replace(/\s+$/,'');
+    if(/^#{2}\s+/.test(line)){ closeUl(); html+=`<h3>${inline(line.replace(/^#{2,}\s+/,''))}</h3>`; return; }
+    if(/^#{3,}\s+/.test(line)){ closeUl(); html+=`<h4>${inline(line.replace(/^#{3,}\s+/,''))}</h4>`; return; }
+    if(/^>\s?/.test(line)){ closeUl(); html+=`<blockquote>${inline(line.replace(/^>\s?/,''))}</blockquote>`; return; }
+    const m = line.match(/^\s*[-*]\s+(.*)$/);
+    if(m){ if(!inUl){ html+='<ul>'; inUl=true; } html+=`<li>${inline(m[1])}</li>`; return; }
+    if(line.trim()===''){ closeUl(); return; }
+    closeUl(); html+=`<p>${inline(line)}</p>`;
+  });
+  closeUl();
+  return html;
+}
+const j = async u => (await fetch(u)).json();
+
+let STATE = { r:null, s:null, showReasoning:true, expandTools:false, query:'', simSort:'file', diffEnabled:{} };
+
+function rewardClass(r){ if(r==null) return 'r-na'; if(r>=0.999) return 'r-pass'; if(r<=0.001) return 'r-fail'; return 'r-mid'; }
+function rewardTxt(r){ return r==null ? '—' : Number(r).toFixed(2); }
+function diffTag(b){
+  if(!b) return '';
+  const cls = {Easy:'diff-easy', Medium:'diff-medium', Hard:'diff-hard',
+    super_hard:'diff-veryhard', 'Very Hard':'diff-veryhard'}[b] || '';
+  return ` <span class="diff ${cls}">${esc(b)}</span>`;
+}
+
+async function loadResults(){
+  const data = await j('/api/results');
+  const box = $('#results'); box.innerHTML='';
+  data.forEach(d => {
+    const row = el('div','row');
+    row.dataset.r = d.i;
+    row.innerHTML = `<div class="title">${esc(d.model)}</div>
+      <div class="meta"><span class="pill">${esc(d.domain||'—')}</span>
+      <span>${esc(d.run)}</span></div>
+      <div class="meta"><span>${esc(d.size)}</span>
+      <span class="nsims"></span>
+      <span>avg <span class="avg"></span></span></div>`;
+    row.onclick = () => selectResult(d.i, row);
+    box.appendChild(row);
+    setSidebarStats(d.i, d.n_sims, d.avg_reward);
+  });
+}
+
+// Update a sidebar row's sims-count + avg-reward (used on load and after opening a run).
+function setSidebarStats(ri, nSims, avg){
+  const row = document.querySelector(`#results .row[data-r="${ri}"]`);
+  if(!row) return;
+  row.querySelector('.nsims').innerHTML =
+    nSims!=null ? nSims+' sims' : '<span class="muted">open to scan</span>';
+  const a = row.querySelector('.avg');
+  a.textContent = rewardTxt(avg);
+  a.className = 'avg reward '+rewardClass(avg);
+}
+
+async function selectResult(ri, row){
+  STATE.r = ri; STATE.s = null;
+  document.querySelectorAll('#results .row').forEach(x=>x.classList.remove('active'));
+  if(row) row.classList.add('active');
+  $('#main').innerHTML = '<div class="empty" style="margin-top:60px">Pick a simulation.</div>';
+  $('#sims').innerHTML = '<div class="empty">loading…</div>';
+  const d = await j('/api/result?r='+ri);
+  setSidebarStats(ri, d.summary.n_sims, d.summary.avg_reward);  // sidebar now matches config
+  const c = d.config;
+  const cfg = el('div','config');
+  cfg.innerHTML = `<table>
+    <tr><td class="k">domain</td><td>${esc(c.domain)}</td></tr>
+    <tr><td class="k">agent llm</td><td>${esc(c.agent_llm)}</td></tr>
+    <tr><td class="k">user llm</td><td>${esc(c.user_llm)}</td></tr>
+    <tr><td class="k">trials / steps</td><td>${esc(c.num_trials)} / ${esc(c.max_steps)}</td></tr>
+    <tr><td class="k">avg reward</td><td><span class="reward ${rewardClass(d.summary.avg_reward)}">${rewardTxt(d.summary.avg_reward)}</span>  over ${d.summary.n_sims} sims</td></tr>
+    </table>`;
+  // sort toggle — file order (as in the JSON) vs. by task id (numeric)
+  const sortbar = el('div','sortbar');
+  const taskNum = s => { const m=String(s.task_id||'').match(/(\d+)/); return m?+m[1]:Infinity; };
+  const diffKey = s => s.difficulty || 'untagged';
+  // show a trial badge only when this run actually has more than one trial
+  const multiTrial = d.sims.some(s => (s.trial||0) > 0);
+  const list = el('div');
+  function renderSims(){
+    list.innerHTML='';
+    let rows = d.sims.slice();
+    rows = rows.filter(s => STATE.diffEnabled[diffKey(s)] !== false);
+    // group a task's trials together when sorting by task id
+    if(STATE.simSort==='task') rows.sort((a,b)=> taskNum(a)-taskNum(b) || (a.trial||0)-(b.trial||0) || a.s-b.s);
+    rows.forEach(s => {
+      const r = el('div','row'); r.dataset.s = s.s;
+      if(STATE.s===s.s) r.classList.add('active');
+      const trial = multiTrial && s.trial!=null ? `<span class="pill">trial ${s.trial}</span>` : '';
+      r.innerHTML = `<div class="title">#${s.s} <span class="reward ${rewardClass(s.reward)}">${rewardTxt(s.reward)}</span></div>
+        <div class="meta"><span>${esc(s.task_id)}</span>${diffTag(s.difficulty)}${trial}</div>
+        <div class="meta"><span class="pill">${s.n_msgs} msgs</span><span>${esc(s.termination||'')}</span></div>`;
+      r.onclick = () => selectSim(ri, s.s, r);
+      list.appendChild(r);
+    });
+    if(!rows.length) list.appendChild(el('div','empty','no sims match the difficulty filter'));
+  }
+  const btnFile = el('button', STATE.simSort==='file'?'on':'', 'file order');
+  const btnTask = el('button', STATE.simSort==='task'?'on':'', 'task id');
+  btnFile.onclick = () => { STATE.simSort='file'; btnFile.classList.add('on'); btnTask.classList.remove('on'); renderSims(); };
+  btnTask.onclick = () => { STATE.simSort='task'; btnTask.classList.add('on'); btnFile.classList.remove('on'); renderSims(); };
+  sortbar.append(el('span','sortlabel','sort:'), btnFile, btnTask);
+
+  // difficulty filter — multi-select chips for whichever buckets appear in this run
+  const order = ['Easy','Medium','Hard','super_hard','Very Hard','untagged'];
+  const present = order.filter(b => d.sims.some(s => diffKey(s)===b));
+  const filterbar = el('div','filterbar');
+  if(present.length > 1){
+    filterbar.append(el('span','flabel','difficulty:'));
+    const clsOf = { Easy:'diff-easy', Medium:'diff-medium', Hard:'diff-hard',
+      super_hard:'diff-veryhard', 'Very Hard':'diff-veryhard', untagged:'' };
+    const chips = {};
+    const refresh = () => present.forEach(b =>
+      chips[b].classList.toggle('off', STATE.diffEnabled[b]===false));
+    present.forEach(b => {
+      const chip = el('span', `diffchip ${clsOf[b]}`, b);
+      chip.onclick = () => { STATE.diffEnabled[b] = !(STATE.diffEnabled[b]!==false); refresh(); renderSims(); };
+      chips[b] = chip; filterbar.append(chip);
+    });
+    const reset = el('span','diffchip diff-reset','all');
+    reset.onclick = () => { present.forEach(b => STATE.diffEnabled[b]=true); refresh(); renderSims(); };
+    filterbar.append(reset);
+    refresh();
+  }
+
+  renderSims();
+  const sims = $('#sims'); sims.innerHTML='';
+  sims.appendChild(cfg); sims.appendChild(sortbar);
+  if(present.length > 1) sims.appendChild(filterbar);
+  sims.appendChild(list);
+  $('#subtitle').textContent = `${c.agent_llm||''}  ·  ${c.domain||''}`;
+}
+
+function roleColorBar(m){
+  const u = m.usage||{};
+  const bits = [`<span class="role ${m.role}">${esc(m.role)}</span>`];
+  if(m.turn_idx!=null) bits.push(`<span class="badge">turn ${m.turn_idx}</span>`);
+  if(u.prompt_tokens!=null) bits.push(`<span class="badge">tok ${u.prompt_tokens}/${u.completion_tokens}</span>`);
+  if(m.cost) bits.push(`<span class="badge">$${m.cost}</span>`);
+  return bits.join('');
+}
+
+// Reasoning/thinking, collapsed by default — model "thinking" can run thousands of
+// repetitive chars. Same collapsible pattern as tool results.
+function reasoningBlock(role, text){
+  const d = el('details','toolresult reasoning-collapse');
+  if(STATE.expandTools) d.open = true;
+  const preview = text.replace(/\s+/g,' ').trim().slice(0, 140);
+  const summary = el('summary', null,
+    `<span class="tr-label">💭 ${esc(role||'')} thinking</span>
+     <span class="tr-preview">${esc(preview)}</span>
+     <span class="tr-len">${text.length.toLocaleString()} chars</span>`);
+  d.appendChild(summary);
+  d.appendChild(el('div','tr-content', esc(text)));
+  return d;
+}
+
+// A tool result, collapsed by default. Summary shows a one-line preview + size so
+// you can scan the conversation without scrolling through giant payloads.
+function toolResultBlock(text){
+  const d = el('details','toolresult');
+  if(STATE.expandTools) d.open = true;
+  const preview = text.replace(/\s+/g,' ').trim().slice(0, 140);
+  const summary = el('summary', null,
+    `<span class="tr-label">result</span>
+     <span class="tr-preview">${esc(preview)}</span>
+     <span class="tr-len">${text.length.toLocaleString()} chars</span>`);
+  d.appendChild(summary);
+  d.appendChild(el('div','tr-content', esc(text)));
+  return d;
+}
+
+function renderMessage(m){
+  const box = el('div','msg');
+  box.appendChild(el('div','bar', roleColorBar(m)));
+  const body = el('div','body');
+  if(m.reasoning && STATE.showReasoning)
+    body.appendChild(reasoningBlock(m.role, asText(m.reasoning)));
+  if(m.content){
+    if(m.role==='tool') body.appendChild(toolResultBlock(asText(m.content)));
+    else body.appendChild(el('div', null, esc(asText(m.content))));
+  }
+  else if(!(m.tool_calls&&m.tool_calls.length)) body.appendChild(el('div','muted','(no content)'));
+  (m.tool_calls||[]).forEach(tc => {
+    const args = typeof tc.args==='string' ? tc.args : JSON.stringify(tc.args);
+    body.appendChild(el('div','tcall', `→ ${esc(tc.name)}(${esc(args)})`));
+  });
+  box.appendChild(body);
+  return box;
+}
+
+async function selectSim(ri, si, row){
+  STATE.s = si;
+  document.querySelectorAll('#sims .row').forEach(x=>x.classList.remove('active'));
+  if(row) row.classList.add('active');
+  const d = await j(`/api/sim?r=${ri}&s=${si}`);
+  const main = $('#main'); main.innerHTML='';
+
+  const tb = el('div','toolbar');
+  tb.innerHTML = `<b>sim #${si}</b>
+    <span class="pill">task ${esc(d.task_id)}</span>${diffTag(d.difficulty)}
+    ${d.trial!=null ? `<span class="pill">trial ${esc(d.trial)}</span>` : ''}
+    <span class="reward ${rewardClass(d.reward)}">reward ${rewardTxt(d.reward)}</span>
+    <span class="badge">${esc(d.termination||'')}</span>`;
+  const btnReason = el('button', STATE.showReasoning?'on':'', 'reasoning');
+  btnReason.onclick = () => { STATE.showReasoning=!STATE.showReasoning; btnReason.classList.toggle('on'); draw(); };
+  const btnTools = el('button', STATE.expandTools?'on':'', 'expand all');
+  btnTools.onclick = () => { STATE.expandTools=!STATE.expandTools; btnTools.classList.toggle('on'); draw(); };
+  const btnTask = el('button', null, 'task');
+  const btnReward = el('button', null, 'reward json');
+  const btnAgentPrompt = el('button', null, 'agent prompt');
+  const btnUserPrompt = el('button', null, 'user prompt');
+  const btnDocs = el('button', null, 'kb docs');
+  const btnExpl = el('button', null, 'task explanation');
+  tb.append(btnReason, btnTools, btnTask, btnReward, btnAgentPrompt, btnUserPrompt, btnDocs, btnExpl);
+  main.appendChild(tb);
+
+  const panel = el('div'); main.appendChild(panel);
+  let mode = 'msgs';
+  // mode tabs: clicking one switches to it (or back to the messages list if it
+  // was already active). The active tab keeps the blue highlight.
+  const modeButtons = { task:btnTask, reward:btnReward,
+                        agent_prompt:btnAgentPrompt, user_prompt:btnUserPrompt,
+                        docs:btnDocs, explanation:btnExpl };
+  const setMode = m => { mode = (mode===m ? 'msgs' : m); draw(); };
+  btnTask.onclick = () => setMode('task');
+  btnReward.onclick = () => setMode('reward');
+  btnAgentPrompt.onclick = () => setMode('agent_prompt');
+  btnUserPrompt.onclick = () => setMode('user_prompt');
+  btnDocs.onclick = () => setMode('docs');
+  btnExpl.onclick = () => setMode('explanation');
+
+  function draw(){
+    panel.innerHTML='';
+    // keep the blue border on whichever tab is active (or none in message mode)
+    Object.entries(modeButtons).forEach(([m,btn]) => btn.classList.toggle('on', mode===m));
+    if(mode==='agent_prompt'){
+      const pr = d.prompts||{};
+      const p = el('div'); p.style.padding='14px 18px';
+      p.innerHTML = `<h3 style="margin-top:0">Agent system prompt</h3>
+        <div class="muted" style="margin-bottom:8px">llm: ${esc(pr.agent_llm||'—')}</div>
+        <div class="proseblock">${esc(asText(pr.agent_system_prompt)||'(needs server restart — run-level prompts not in this response)')}</div>`;
+      panel.appendChild(p); return;
+    }
+    if(mode==='user_prompt'){
+      const pr = d.prompts||{};
+      const us = (d.task&&d.task.user_scenario)||{};
+      const p = el('div'); p.style.padding='14px 18px';
+      p.innerHTML = `<h3 style="margin-top:0">User-simulator system prompt</h3>
+        <div class="muted" style="margin-bottom:8px">llm: ${esc(pr.user_llm||'—')}</div>
+        <div class="prompt-head"><h4>Global simulation guidelines</h4><span class="muted">static — same every task</span></div>
+        <div class="proseblock">${esc(asText(pr.user_system_prompt)||'(needs server restart — run-level prompts not in this response)')}</div>
+        <div class="prompt-head"><h4>This task's scenario</h4><span class="muted">user_scenario.instructions</span></div>
+        <div class="proseblock">${esc(asText(us.instructions)||'(none)')}</div>
+        ${us.persona!=null ? `<div class="prompt-head"><h4>persona</h4></div><div class="proseblock">${esc(asText(us.persona))}</div>` : ''}`;
+      panel.appendChild(p); return;
+    }
+    if(mode==='task'){
+      const t = d.task||{};
+      const desc = t.description==null ? '(no description)' : asText(t.description);
+      const p = el('div'); p.style.padding='14px 18px';
+      p.innerHTML = `<h3>${esc(t.id||d.task_id)}</h3>
+        <pre class="json">${esc(desc)}</pre>
+        <h4>evaluation_criteria</h4>
+        <pre class="json">${esc(JSON.stringify(t.evaluation_criteria,null,2))}</pre>`;
+      panel.appendChild(p); return;
+    }
+    if(mode==='reward'){
+      const ri = d.reward_info||{};
+      const checks = ri.action_checks||[];
+      const p = el('div'); p.style.padding='14px 18px';
+      let html = `<h3 style="margin-top:0">Reward
+        <span class="reward ${rewardClass(d.reward)}">${rewardTxt(d.reward)}</span></h3>`;
+      // summary line (computed, like the stdout panel)
+      const seg = [];
+      if(ri.db_check)
+        seg.push(`<span class="seg">DB check: ${ri.db_check.db_match?'✅':'❌'} ${esc(ri.db_check.db_reward)}</span>`);
+      if(checks.length){
+        const passed = checks.filter(c=>c.action_match).length;
+        const pct = (100*passed/checks.length).toFixed(1);
+        seg.push(`<span class="seg"><b>Action checks: ${passed}/${checks.length} (${pct}%)</b></span>`);
+        const byType = {};
+        checks.forEach(c => { const t=c.tool_type||'?';
+          (byType[t]=byType[t]||{p:0,n:0}).n++; if(c.action_match) byType[t].p++; });
+        Object.entries(byType).forEach(([t,v]) =>
+          seg.push(`<span class="seg muted">${esc(t)}: ${v.p}/${v.n}</span>`));
+      }
+      if(seg.length) html += `<div class="rw-summary">${seg.join('')}</div>`;
+      // per-action checklist
+      if(checks.length){
+        html += `<div class="checklist">`;
+        checks.forEach((c,i) => {
+          const a = c.action||{};
+          const ok = c.action_match;
+          const args = a.arguments!=null ? JSON.stringify(a.arguments) : '';
+          html += `<div class="check ${ok?'ok':'bad'}">
+            <span class="ck">${ok?'✅':'❌'}</span>
+            <span class="ci">#${i}</span>
+            <span class="cr">${esc(a.requestor||'')}</span>
+            <span class="cn">${esc(a.name||'')}</span>
+            <span class="ct">[${esc(c.tool_type||'')}]</span>
+            <span class="cv">${rewardTxt(c.action_reward)}</span></div>`;
+          if(args) html += `<div class="check-args">${esc(args)}</div>`;
+        });
+        html += `</div>`;
+      }
+      html += `<h4>Full reward_info JSON</h4>
+        <pre class="json">${esc(JSON.stringify(ri,null,2))}</pre>`;
+      p.innerHTML = html;
+      panel.appendChild(p); return;
+    }
+    if(mode==='docs'){
+      const docs = d.documents||[];
+      const p = el('div'); p.style.padding='14px 18px';
+      const ec = (d.task&&d.task.evaluation_criteria)||{};
+      let html = `<h3 style="margin-top:0">KB documents the answer depends on
+        <span class="muted">(${docs.length})</span></h3>
+        <div class="muted" style="margin-bottom:10px">These are the
+        <code>required_documents</code> — the source of the "why": the gold action below is
+        the option whose specs here satisfy the customer's scenario.</div>`;
+      if(ec.actions && ec.actions.length){
+        html += `<div class="prompt-head"><h4>Gold action(s)</h4>
+          <span class="muted">reward_basis: ${esc((ec.reward_basis||[]).join(', ')||'—')}</span></div>
+          <pre class="json">${esc(JSON.stringify(ec.actions,null,2))}</pre>`;
+      }
+      if(!docs.length){
+        html += `<div class="proseblock">(no required_documents for this task, or the
+          domain documents folder wasn't found — needs server restart to load them)</div>`;
+      }
+      docs.forEach(doc => {
+        html += `<div class="prompt-head"><h4>${esc(doc.title||doc.id||'document')}</h4>
+          <span class="muted">${esc(doc.id||'')}</span></div>
+          <div class="proseblock">${esc(asText(doc.content)||'(no content)')}</div>`;
+      });
+      p.innerHTML = html;
+      panel.appendChild(p); return;
+    }
+    if(mode==='explanation'){
+      const p = el('div'); p.style.padding='14px 18px';
+      const ex = d.task_explanation;
+      p.innerHTML = ex
+        ? `<div class="expl">${mdLite(ex)}</div>`
+        : `<div class="proseblock">(no parsed explanation for this task — needs a server
+            restart, or this domain has no TASKS_EXPLANATION.md)</div>`;
+      panel.appendChild(p); return;
+    }
+    const wrap = el('div','msgs');
+    let shown=0;
+    d.messages.forEach(m => {
+      if(STATE.query){
+        const hay = ((m.content||'')+' '+(m.reasoning||'')+' '+
+          (m.tool_calls||[]).map(t=>t.name+' '+JSON.stringify(t.args)).join(' ')).toLowerCase();
+        if(!hay.includes(STATE.query)) return;
+      }
+      wrap.appendChild(renderMessage(m)); shown++;
+    });
+    if(!shown) wrap.appendChild(el('div','empty','no messages match the filter'));
+    panel.appendChild(wrap);
+  }
+  draw();
+}
+
+loadResults();
+</script>
+</body>
+</html>

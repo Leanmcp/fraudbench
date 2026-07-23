@@ -1,0 +1,24 @@
+{
+  "id": "doc_business_checking_accounts_world_blue_004",
+  "title": "Sending International Payments: SWIFT and SEPA Options",
+  "summary": "Explains when to send international payments via SWIFT (for global counterparties/cross-border transfers) vs SEPA (for euro-denominated recipients within the SEPA zone). Covers outgoing fees ($15 SWIFT with 3 free per month; $5 SEPA) and steps to select, verify, submit, and retain a confirmation reference.",
+  "faqs": [
+    "When should I use SWIFT instead of SEPA for an international payment?",
+    "When is SEPA available for euro-denominated recipients?",
+    "How much are outgoing SWIFT wire fees, and what are the 3 free outgoing SWIFT wires per month?",
+    "How much are outgoing SEPA wire fees?",
+    "What should I verify about recipient details and destination support before submitting?",
+    "What is the recommended process after submitting (e.g., confirmation reference for reconciliation)?"
+  ],
+  "keywords": [
+    "SWIFT",
+    "SEPA",
+    "Outgoing SWIFT wires $15.00 each",
+    "3 free outgoing SWIFT wires per month",
+    "Outgoing SEPA wires $5.00 each",
+    "euro-denominated recipients",
+    "SEPA zone",
+    "network-specific fee",
+    "confirmation reference for reconciliation"
+  ]
+}

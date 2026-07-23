@@ -1,0 +1,25 @@
+{
+  "id": "doc_credit_cards_virtual_card_management_003",
+  "title": "Virtual Card Management: Revoking and Canceling Virtual Cards",
+  "summary": "Explains how to manage virtual cards in Cards > Virtual by either revoking (immediately disables the card and blocks new authorizations) or canceling (permanently closes the card). Revocation and cancellation both take effect within 3 seconds, with post-action checks to ensure new authorizations decline and saved payment profiles are updated.",
+  "faqs": [
+    "What\u2019s the difference between revoking and canceling a virtual card?",
+    "How do I revoke a specific virtual card (including where to click and how long it takes)?",
+    "After I revoke a virtual card, how can I verify it worked (timing and what should happen)?",
+    "How do I cancel a virtual card, and how long does cancellation take?",
+    "Do I need to remove the canceled card from any saved payment profiles?",
+    "What post-action checks should be performed after revoke/cancel to confirm status changes?"
+  ],
+  "keywords": [
+    "Cards > Virtual",
+    "Revoke",
+    "Cancel card",
+    "Instant revocation (Yes)",
+    "Takes effect within 3 seconds",
+    "Block new authorizations",
+    "New payment attempts decline",
+    "Verify small authorization",
+    "Remove from saved payment profiles",
+    "Update internal records"
+  ]
+}

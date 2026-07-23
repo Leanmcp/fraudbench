@@ -1,0 +1,25 @@
+{
+  "id": "doc_savings_accounts_platinum_account_009",
+  "title": "Platinum Account: Same-day external transfers",
+  "summary": "This document explains Platinum Account same-day external transfers: external transfer processing time is 0 business days, with a maximum total transfer-out of $100,000 per day, and domestic wire transfer fees waived. It outlines steps to add/verify the destination, initiate and submit a transfer, and monitor completion in the activity feed.",
+  "faqs": [
+    "What is the processing time for Platinum Account same-day external transfers?",
+    "What is the maximum amount I can transfer out per day?",
+    "Are domestic wire fees waived for same-day external transfers?",
+    "How do I send a same-day external transfer (steps to add/verify and submit)?",
+    "Where can I monitor the transfer status and confirm completion?",
+    "What are the tips to increase the chance my transfer completes the same day?"
+  ],
+  "keywords": [
+    "Platinum Account",
+    "Same-day external transfers",
+    "External transfer processing time: 0 business days",
+    "Maximum transfer-out per day: $100,000",
+    "Domestic wire transfer fees waived",
+    "Add and verify external destination account",
+    "Initiate transfer (fastest available method)",
+    "Activity feed transfer status/confirmation",
+    "Avoid initiating after typical processing windows",
+    "Domestic wire tip for time-critical payments"
+  ]
+}

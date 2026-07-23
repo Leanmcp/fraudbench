@@ -1,0 +1,27 @@
+{
+  "id": "doc_business_savings_accounts_platinum_reserve_account_007",
+  "title": "Platinum Reserve Account: Same-day transfers and wire capabilities",
+  "summary": "This document explains Platinum Reserve Account capabilities for same-day ACH, wire transfers, and external bank transfers: same-day ACH is available for time-sensitive disbursements; outgoing domestic wire transfers cost $0; external bank transfers process in 0 business days. It also provides operational guidance (confirm recipient details/beneficiary instructions, maintain recipient libraries, use payment notes, and keep dual approval/risk controls).",
+  "faqs": [
+    "Is same-day ACH available on the Platinum Reserve Account, and when should I use it?",
+    "What is the outgoing domestic wire transfer fee for this account?",
+    "How fast do external bank transfers process (in business days)?",
+    "Are wire transfers appropriate for high-value, time-critical payments where finality is needed?",
+    "What precautions does the document recommend to avoid returns or payment errors (recipient/beneficiary verification, approvals)?",
+    "What operational steps should I take to improve posting certainty and reconciliation (recipient libraries, payment notes, scheduling)?"
+  ],
+  "keywords": [
+    "Platinum Reserve Account",
+    "Same-day ACH",
+    "Time-sensitive disbursements",
+    "Outgoing domestic wire transfer fee: $0",
+    "Wire transfers",
+    "External bank transfers",
+    "Processing time: 0 business days",
+    "Dual approval",
+    "Recipient libraries",
+    "Payment notes",
+    "Beneficiary instructions",
+    "Cutoff windows"
+  ]
+}

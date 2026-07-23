@@ -1,0 +1,25 @@
+{
+  "id": "doc_business_savings_accounts_silver_saver_account_006",
+  "title": "Silver Saver Account: Mobile banking and deposit limits",
+  "summary": "This document explains Silver Saver Account mobile banking limits: mobile check deposits are capped at $5,000 per day, and outbound transfers from mobile/online are capped at $10,000 per day (multiple transfers aggregate). It also provides tips if a transfer/deposit would exceed the cap, including splitting deposits across multiple days and scheduling on consecutive business days or earlier in the day, and contacting support if caps are regularly exceeded.",
+  "faqs": [
+    "What is the daily mobile check deposit limit for my Silver Saver Account?",
+    "What happens if a single mobile check deposit would exceed the $5,000 daily cap?",
+    "What is the daily outbound transfer limit from mobile and online for my Silver Saver Account?",
+    "Do multiple transfers on the same day count toward the outbound transfer cap?",
+    "If I hit a deposit or transfer limit, what can I do to complete the movement?",
+    "If my business needs regularly exceed these caps, who should I contact?"
+  ],
+  "keywords": [
+    "Silver Saver Account",
+    "mobile check deposits",
+    "Daily mobile deposit cap: $5,000",
+    "single item exceeds cap",
+    "outbound transfer cap",
+    "Daily outbound transfer cap: $10,000",
+    "multiple transfers aggregated",
+    "consecutive business days",
+    "submit earlier in the day",
+    "contact support to discuss options"
+  ]
+}

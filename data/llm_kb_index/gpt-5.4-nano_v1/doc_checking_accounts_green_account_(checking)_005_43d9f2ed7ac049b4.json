@@ -1,0 +1,27 @@
+{
+  "id": "doc_checking_accounts_green_account_(checking)_005",
+  "title": "Managing your spending limit in a Green Account (checking)",
+  "summary": "Explains how usable/available balance works in a Green Account (checking), including a small buffer of up to 5 for minor adjustments and that spending beyond it may cause declines. Covers tracking pending card authorizations, scheduling bill payments, maintaining funds until checks clear, requesting a stop payment for 28, and verifying balance before large purchases.",
+  "faqs": [
+    "What is my usable/available balance and how does it relate to authorization declines in a Green Account (checking)?",
+    "Is there a buffer amount before transactions are declined, and what happens if I spend beyond it?",
+    "How do pending card authorizations affect my available balance?",
+    "What should I do to avoid bill payment authorization declines\u2014can I schedule payments?",
+    "How do issued checks impact my balance until the check clears, and how do I stop a check if needed?",
+    "Before a large purchase, how should I verify my available balance covers the total amount (including potential adjustments)?"
+  ],
+  "keywords": [
+    "Green Account (checking)",
+    "available balance",
+    "usable balance",
+    "authorization declines",
+    "buffer up to 5",
+    "pending card authorizations",
+    "schedule bill payments",
+    "checks issued",
+    "stop payment for 28",
+    "check clears",
+    "large purchases",
+    "potential adjustments approaching 5"
+  ]
+}

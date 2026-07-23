@@ -1,0 +1,28 @@
+{
+  "id": "doc_business_savings_accounts_platinum_reserve_account_005",
+  "title": "Platinum Reserve Account: Advanced Cash Flow Analytics and Reporting",
+  "summary": "Covers Platinum Reserve Account features for analytics workspace (configurable inflow/outflow categories/tags and attribution filters), custom liquidity report exports (up to 30 per month, template saving, metadata/category mappings), and API dashboard data access (request via admin settings, min-scope credentials, separate non-prod/prod, rotate and revoke tokens). Also includes data governance guidance: align exports/API with internal retention/privacy policies and validate totals vs the dashboard before stakeholder distribution.",
+  "faqs": [
+    "How do I build consolidated inflow/outflow views in the analytics workspace using categories and tags?",
+    "How can I isolate the drivers of variance across periods using attribution filters?",
+    "What are the limits and requirements for exporting custom liquidity reports each month (and can I save templates)?",
+    "What does API access for dashboard data involve, and how do I request it from administrative settings?",
+    "Should I use separate API credentials for non-production vs production, and how often should credentials be rotated?",
+    "What data governance checks are required before distributing exported data to stakeholders?"
+  ],
+  "keywords": [
+    "Analytics workspace",
+    "consolidated inflows and outflows",
+    "configurable categories and tags",
+    "attribution filters",
+    "custom liquidity reports (up to 30/month)",
+    "export report templates",
+    "metadata and category mappings",
+    "API access to dashboard data",
+    "administrative settings API access request",
+    "separate non-production and production credentials",
+    "rotate credentials",
+    "revoke unused tokens",
+    "retention and privacy policies"
+  ]
+}

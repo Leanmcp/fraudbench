@@ -1,0 +1,25 @@
+{
+  "id": "doc_buy_now_pay_later_bnpl_bronze_001",
+  "title": "BNPL Bronze: How to Activate and Use Your Installment Plan",
+  "summary": "Explains how to activate and use BNPL Bronze installment plans: verify the account setting \u201c[value not available]\u201d is true in Installment Plans, activate it, refresh checkout, select BNPL Bronze at checkout, review and authorize the payment schedule, and keep a valid payment method on file for scheduled charges. Also includes troubleshooting steps (test checkout, toggle \u201c[value not available]\u201d off/on if BNPL Bronze doesn\u2019t appear).",
+  "faqs": [
+    "What do I need to check in my account settings before using BNPL Bronze at checkout?",
+    "How do I activate BNPL Bronze under Installment Plans?",
+    "If BNPL Bronze doesn\u2019t show during checkout, what should I do first?",
+    "How do I use BNPL Bronze during checkout (what steps do I follow)?",
+    "Why is it important to keep a valid payment method on file for scheduled charges?",
+    "What troubleshooting steps should I try if BNPL Bronze still doesn\u2019t appear after activation? "
+  ],
+  "keywords": [
+    "BNPL Bronze",
+    "Installment Plans account settings",
+    "[value not available]",
+    "Activate BNPL Bronze",
+    "Select BNPL Bronze during checkout",
+    "Payment schedule authorization",
+    "Valid payment method on file",
+    "Refresh checkout session",
+    "Toggle [value not available] off and back on",
+    "Small test checkout"
+  ]
+}

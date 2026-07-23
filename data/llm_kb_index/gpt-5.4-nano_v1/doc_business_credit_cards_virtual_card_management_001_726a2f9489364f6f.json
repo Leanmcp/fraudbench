@@ -1,0 +1,27 @@
+{
+  "id": "doc_business_credit_cards_virtual_card_management_001",
+  "title": "Virtual Card Management: Creating Instant Virtual Cards for Your Team",
+  "summary": "This document explains how to create instant virtual cards for teams: you can maintain up to $275 active virtual cards at once and create up to 30 team groups. It lists the steps on the Virtual Cards page to issue a card, which is ready in ~5 seconds, and notes immediate availability in the team\u2019s card list.",
+  "faqs": [
+    "What are the limits for active virtual cards and team groups?",
+    "How do I create an instant virtual card for a specific team/department?",
+    "What fields do I need to set (team, nickname, parameters, owner) before issuing?",
+    "How long does provisioning take after I select Issue?",
+    "When will the card appear in the team\u2019s card list and how should it be shared?",
+    "How should we handle card allocation across teams to stay within the $275 limit?"
+  ],
+  "keywords": [
+    "Instant virtual cards",
+    "Virtual Cards page",
+    "Create Virtual Card",
+    "Up to $275 active virtual cards",
+    "Up to 30 team groups",
+    "5-second provisioning",
+    "Team/Department association",
+    "card nickname",
+    "card owner",
+    "card parameters (purpose, spending scope)",
+    "Issue button",
+    "team card list"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "doc_buy_now_pay_later_bnpl_platinum_001",
+  "title": "BNPL Platinum: How to Activate 6-Month Financing on Your Account",
+  "summary": "This document explains how to activate BNPL Platinum 6\u2011month financing in your account (Settings > Financing > BNPL Platinum > Activate 6\u2011Month Financing, review terms, confirm). Activation is complete only when the BNPL Platinum status flag shows \u201c[value not available] = true,\u201d with troubleshooting steps if it doesn\u2019t update.",
+  "faqs": [
+    "How do I activate BNPL Platinum 6\u2011month financing on my account?",
+    "What does \u201cactivation complete\u201d mean\u2014what status indicator should I see?",
+    "Where do I check the BNPL Platinum activation status (Financing > BNPL Platinum)?",
+    "What should I do if the 6\u2011month financing option doesn\u2019t appear at checkout?",
+    "What troubleshooting steps work if the status flag doesn\u2019t change to \u201c[value not available] = true\u201d?",
+    "Does accepting the terms affect whether the BNPL Platinum status updates?"
+  ],
+  "keywords": [
+    "BNPL Platinum",
+    "6\u2011month financing",
+    "Settings",
+    "Financing > BNPL Platinum",
+    "Activate 6\u2011Month Financing",
+    "Review the terms",
+    "Confirm activation",
+    "Status flag: \u201c[value not available] = true\u201d",
+    "Test checkout",
+    "Sign out and sign back in",
+    "Clear app/browser cache"
+  ]
+}

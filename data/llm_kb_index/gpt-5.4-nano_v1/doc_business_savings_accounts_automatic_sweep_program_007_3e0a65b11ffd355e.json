@@ -1,0 +1,24 @@
+{
+  "id": "doc_business_savings_accounts_automatic_sweep_program_007",
+  "title": "Automatic Sweep: Optimizing Cash Flow with Smart Sweeps",
+  "summary": "Explains how to optimize Automatic Sweep cash flow by choosing a receiving savings account that is Bronze-only, setting sweep notification alerts for sweeps \u2265 $1,000, and adjusting sweep thresholds. Also recommends revisiting sweep settings seasonally for changing receivables and payables.",
+  "faqs": [
+    "What receiving savings account criteria should I follow to ensure sweeps complete as configured?",
+    "How do I set up notifications for Automatic Sweep to flag large transfers?",
+    "At what dollar amount should sweep alerts trigger?",
+    "How can I adjust sweep thresholds to balance liquidity needs vs. reducing idle cash?",
+    "How often should I revisit Automatic Sweep settings during seasonal changes in cash activity?"
+  ],
+  "keywords": [
+    "Automatic Sweep",
+    "receiving savings account",
+    "Bronze only",
+    "sweep notifications",
+    "alerts when sweep equals/exceeds $1,000",
+    "sweep thresholds",
+    "liquidity needs",
+    "idle cash reduction",
+    "seasonal changes",
+    "receivables and payables"
+  ]
+}

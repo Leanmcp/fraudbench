@@ -1,0 +1,22 @@
+{
+  "id": "doc_checking_accounts_purple_account_005",
+  "title": "Multi-currency wallet features",
+  "summary": "This document describes Multi-currency wallet support for the account (available: Yes), allowing balances in up to 30 foreign currencies. Currency conversions use the interbank rate plus a 0.5% markup, including for EveryonePay transfers up to $5,000 per day.",
+  "faqs": [
+    "Is multi-currency wallet support available on this account?",
+    "How many foreign currencies can I hold in the multi-currency wallet?",
+    "How are currency exchanges priced (interbank rate + markup) for this wallet?",
+    "What fee/markup applies if my EveryonePay payment needs a conversion from a non-USD balance?",
+    "What is the EveryonePay sending limit per day for this account?"
+  ],
+  "keywords": [
+    "Multi-currency wallet support (Yes)",
+    "Up to 30 foreign currencies",
+    "Interbank rate",
+    "0.5% markup",
+    "Currency exchanges",
+    "EveryonePay",
+    "Up to $5,000 per day",
+    "Non-USD balance conversion"
+  ]
+}

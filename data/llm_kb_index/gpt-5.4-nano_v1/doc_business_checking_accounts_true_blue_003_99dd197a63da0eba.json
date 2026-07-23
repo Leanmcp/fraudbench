@@ -1,0 +1,27 @@
+{
+  "id": "doc_business_checking_accounts_true_blue_003",
+  "title": "True Blue Account: Cash Management Dashboard",
+  "summary": "This document explains the True Blue Account Cash Management Dashboard (included at no additional cost) for creating and managing bulk payment templates. It covers saving up to $100 bulk payment templates, creating payroll/vendor/recurring templates, assigning approval roles, reusing templates, and troubleshooting missing features by confirming access and refreshing the session.",
+  "faqs": [
+    "Is the Cash Management Dashboard included in the True Blue Account, or is there an extra cost?",
+    "How many bulk payment templates can I save (and what is the $100 allowance)?",
+    "How do I use the dashboard for high-volume activity like payroll runs and vendor batches?",
+    "Can I assign approval roles before releasing payments using a template?",
+    "What best practices should I follow for managing templates (naming, review/inactive/archiving, validating recipients)?",
+    "If I can\u2019t see dashboard features, what should I do to troubleshoot access? (refresh session and confirm access is enabled)"
+  ],
+  "keywords": [
+    "True Blue Account",
+    "Cash Management Dashboard",
+    "included at no additional cost",
+    "bulk payment templates",
+    "$100 allowance",
+    "payroll runs",
+    "vendor batches",
+    "recurring payouts",
+    "approval roles",
+    "template management best practices",
+    "archive inactive templates",
+    "validate recipient details"
+  ]
+}

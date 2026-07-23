@@ -1,0 +1,27 @@
+{
+  "id": "doc_checking_accounts_light_green_account_002",
+  "title": "Light Green Account specifications and requirements",
+  "summary": "This document specifies Light Green Account eligibility (primary holder, ages 13\u201324), ongoing age verification, overdraft fees ($0), and rates (0.05% APY on the account balance). It lists fees/limits ($0 monthly maintenance, $12.50 returned deposit fee, $10 incoming domestic wire fee, $250/day debit card purchase limit) plus linked savings APY boosts (Platinum +0.65%, Diamond Elite +0.2%) and referral requirements ($100 deposit within 90 days; referrer first Rho-Bank checking opened at least 14 days ago).",
+  "faqs": [
+    "Who can open and maintain a Light Green Account (age and primary holder requirements)?",
+    "How does the bank verify eligibility over time for the Light Green Account?",
+    "Does the Light Green Account charge overdraft fees?",
+    "What fees and daily limits apply to the Light Green Account (returned deposit, incoming wire, debit card purchases, monthly maintenance)?",
+    "What interest rate does the Light Green Account earn, and are there APY boosts if I link savings accounts?",
+    "What are the requirements to participate in the Light Green Account referral program? (deposit timing/amount and referrer tenure)"
+  ],
+  "keywords": [
+    "Light Green Account",
+    "Primary account holder",
+    "Age range 13\u201324",
+    "0.05% APY",
+    "Monthly maintenance fee $0.00",
+    "Returned deposit fee $12.50",
+    "Incoming domestic wire transfer fee $10.00",
+    "Debit card daily purchase limit $250/day",
+    "Platinum Savings Account APY boost +0.65%",
+    "Diamond Elite Savings Account APY boost +0.2%",
+    "Referral deposit: $100 within 90 days",
+    "Referrer tenure: first Rho-Bank checking opened at least 14 days ago"
+  ]
+}

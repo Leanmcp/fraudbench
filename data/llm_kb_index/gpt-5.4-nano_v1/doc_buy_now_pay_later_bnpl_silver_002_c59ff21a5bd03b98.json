@@ -1,0 +1,24 @@
+{
+  "id": "doc_buy_now_pay_later_bnpl_silver_002",
+  "title": "BNPL Silver: Eligible Purchase Amounts and Transaction Limits",
+  "summary": "BNPL Silver eligibility depends on the final authorized amount (inclusive of taxes, fees, and checkout discounts) being within a specified minimum and maximum range, and outlines limits for minimum eligible purchase and maximum eligible purchase per transaction. It also explains partial captures (authorization limits apply even if capture is lower) and split tenders (only the BNPL Silver portion must meet the thresholds).",
+  "faqs": [
+    "What amount range makes a purchase eligible for BNPL Silver?",
+    "How are taxes, fees, and checkout discounts treated in the BNPL Silver eligibility check?",
+    "If my authorization is above the BNPL Silver max but the final capture is lower, will it still be eligible?",
+    "How do split tenders affect BNPL Silver eligibility (does the whole cart or only the BNPL Silver portion have to qualify)?",
+    "What should I do if my cart total is below the BNPL Silver minimum?",
+    "What should I do if my cart total is above the BNPL Silver maximum?"
+  ],
+  "keywords": [
+    "BNPL Silver",
+    "Eligible purchase amounts",
+    "Minimum eligible purchase",
+    "Maximum eligible purchase per transaction",
+    "Final authorized amount",
+    "Taxes, fees, and discounts",
+    "Partial captures",
+    "Split tenders",
+    "Inclusive thresholds"
+  ]
+}

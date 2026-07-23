@@ -1,0 +1,27 @@
+{
+  "id": "doc_bank_accounts_bank_accounts_(general)_003",
+  "title": "Internal: Opening Business Checking Accounts",
+  "summary": "This document explains eligibility and steps to open a business checking account: the customer must be verified, have at least one personal checking account with status OPEN, have no CLOSED accounts, not exceed 6 business checking accounts, and have an existing personal checking balance of at least $500. It then outlines the opening procedure: verify identity, confirm eligibility, confirm the desired account_class (e.g., Navy Blue, Cobalt Blue, True Blue), and open the account using open_bank_account_4821.",
+  "faqs": [
+    "What are the eligibility requirements to open a business checking account?",
+    "Does the customer need an existing personal checking account, and what status/balance is required?",
+    "How many business checking accounts can a customer have at most?",
+    "Are customers allowed to have CLOSED accounts when opening a business checking account?",
+    "What are the steps of the business checking account opening procedure?",
+    "Which business checking account_class options are available (e.g., Navy Blue, Cobalt Blue, True Blue)?"
+  ],
+  "keywords": [
+    "business checking account",
+    "customer verified",
+    "personal checking account status OPEN",
+    "no accounts with status CLOSED",
+    "maximum 6 business checking accounts",
+    "minimum $500 personal checking balance",
+    "account_class selection",
+    "Navy Blue",
+    "Cobalt Blue",
+    "True Blue",
+    "open_bank_account_4821",
+    "verify customer identity"
+  ]
+}

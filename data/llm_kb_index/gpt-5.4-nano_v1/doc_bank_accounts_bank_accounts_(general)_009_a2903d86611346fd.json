@@ -1,0 +1,26 @@
+{
+  "id": "doc_bank_accounts_bank_accounts_(general)_009",
+  "title": "Internal: Retrieving Customer Account Information",
+  "summary": "This document explains how to use the tool get_all_user_accounts_by_user_id_3847 to retrieve a customer\u2019s bank accounts (checkings and savings). It covers when to use it (eligibility checks, pre-closure requirements, customer service lookups) and the required user_id plus returned fields: account_id, account_type, account_class, status, balance, and date_opened.",
+  "faqs": [
+    "Which tool should I use to retrieve all a customer\u2019s bank accounts by user_id?",
+    "When is get_all_user_accounts_by_user_id_3847 needed (eligibility, pre-closure, customer service)?",
+    "What parameter(s) does the tool require to run?",
+    "What account details does the tool return (e.g., account_id, status, balance, date_opened)?",
+    "Which account types can this tool retrieve? (checkings, savings)",
+    "How can this information be used for account closing pre-closure requirements?"
+  ],
+  "keywords": [
+    "get_all_user_accounts_by_user_id_3847",
+    "retrieve bank accounts",
+    "user_id parameter",
+    "account_id",
+    "account_type",
+    "account_class",
+    "status",
+    "balance",
+    "date_opened",
+    "checkings",
+    "savings"
+  ]
+}

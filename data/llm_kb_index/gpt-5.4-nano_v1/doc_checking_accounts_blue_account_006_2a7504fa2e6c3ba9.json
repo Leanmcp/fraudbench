@@ -1,0 +1,25 @@
+{
+  "id": "doc_checking_accounts_blue_account_006",
+  "title": "Blue Account: How overdraft transfer fees work",
+  "summary": "Explains Blue Account overdraft protection transfer fees: if overdraft protection is enabled, the bank transfers from a linked account to cover a shortfall and charges $12.50 per transfer initiated. The $12.50 fee can apply even if the transfer covers only part of the shortfall.",
+  "faqs": [
+    "When does overdraft protection trigger a transfer fee in Blue Account?",
+    "How much is the overdraft protection transfer fee per event?",
+    "Is the $12.50 fee charged if the transfer covers only part of my shortfall?",
+    "How is the fee assessed\u2014per transfer initiated by the service or per shortfall?",
+    "What can I do to minimize how many overdraft protection transfers I\u2019m charged for?",
+    "Should I monitor pending activity and available balance to avoid protection transfers?"
+  ],
+  "keywords": [
+    "Blue Account",
+    "overdraft protection",
+    "linked account transfer",
+    "shortfall coverage",
+    "$12.50 fee",
+    "fee per transfer initiated",
+    "covers all or part",
+    "pending activity monitoring",
+    "available balance buffer",
+    "proactive fund transfers"
+  ]
+}

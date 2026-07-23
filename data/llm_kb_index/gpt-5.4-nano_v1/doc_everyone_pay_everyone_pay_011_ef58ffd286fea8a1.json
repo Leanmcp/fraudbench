@@ -1,0 +1,26 @@
+{
+  "id": "doc_everyone_pay_everyone_pay_011",
+  "title": "Why can't I send money to this contact?",
+  "summary": "Explains common reasons you can\u2019t send money to a specific contact: the contact isn\u2019t verified (your account needs verification before the first transaction), you\u2019ve blocked/unblocked them, invalid/inactive contact info, the recipient can\u2019t receive payments, or a temporary security review restriction. Lists steps to resolve: verify in the contact card, confirm username/email/mobile, check and unblock from your block list, retry later for temporary restrictions, and contact support with failed transaction details.",
+  "faqs": [
+    "Why does it say I can\u2019t send money to this contact?",
+    "Do I need to verify my account before sending to this contact the first time?",
+    "What should I check if the contact\u2019s username/email/mobile may be invalid or inactive?",
+    "Could the problem be that I blocked this user (or they blocked me)?",
+    "What does a temporary restriction message mean, and what should I do?",
+    "If I still can\u2019t send money, how do I contact support using the failed transaction details?"
+  ],
+  "keywords": [
+    "contact not verified",
+    "account requires verification before first transaction",
+    "blocked this user / blocked by them",
+    "invalid or no longer active contact information",
+    "recipient\u2019s account cannot receive payments",
+    "security review temporarily restricting the transfer",
+    "open the contact card",
+    "confirm username/email/mobile via a trusted channel",
+    "block list and unblock",
+    "retry again later",
+    "failed transaction details"
+  ]
+}

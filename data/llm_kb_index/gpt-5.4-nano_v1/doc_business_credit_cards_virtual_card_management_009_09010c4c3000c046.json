@@ -1,0 +1,25 @@
+{
+  "id": "doc_business_credit_cards_virtual_card_management_009",
+  "title": "Virtual Card Management: Best Practices for Subscription and Vendor Payments",
+  "summary": "Covers best practices for Virtual Card Management for subscription and vendor payments: create one virtual card per vendor, use custom nicknames (Yes), align monthly refresh cadence to the vendor billing cycle, enable merchant category restrictions (Yes), and periodically audit cards to confirm active services and nicknames. Also explains vendor switching: retain historical records, then refresh or retire the old card per your chosen monthly strategy.",
+  "faqs": [
+    "Should I create one virtual card per subscription or reuse a single card?",
+    "Can I set custom nicknames for virtual cards per vendor and service tier?",
+    "How should I set the virtual card refresh cadence relative to vendor billing?",
+    "What happens if a vendor changes its billing frequency?",
+    "How do merchant category restrictions help, and are they available?",
+    "When switching vendors, should I keep old virtual card history and retire or refresh cards?"
+  ],
+  "keywords": [
+    "Virtual card per subscription",
+    "Dedicated card per vendor",
+    "Custom nicknames (Yes)",
+    "Card refresh cadence (monthly)",
+    "Align refresh with billing cycle",
+    "Merchant category restrictions (Yes)",
+    "Allowed category reviews",
+    "Periodically audit subscription cards",
+    "Historical records on vendor switch",
+    "Refresh or retire old card monthly strategy"
+  ]
+}

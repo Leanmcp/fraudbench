@@ -1,0 +1,24 @@
+{
+  "id": "doc_everyone_pay_qr_transfers_002",
+  "title": "How QR transfers work",
+  "summary": "Explains the QR transfer flow: a QR code generated for 17 units of validity, scanned via the payer\u2019s in-app scanner, validated in-app, optionally requiring \u201cYes\u201d approval before funds move, then submitted to complete the transfer. Covers the QR lifecycle (Created/Scanned/Confirmed/Completed) and reasons transfers won\u2019t proceed (QR older than 17, dismissing during Yes review, connectivity issues).",
+  "faqs": [
+    "How long is a generated QR code valid for a transfer?",
+    "What steps happen after the payer scans the QR in the app?",
+    "When does the \u201cYes\u201d prompt appear, and when do funds actually move?",
+    "What does the QR code lifecycle look like from Created to Completed?",
+    "Why might a QR transfer not proceed (expired QR, dismissing during review, connectivity issues)?",
+    "What practical steps can I take to avoid issues (e.g., scan promptly within the validity window)?"
+  ],
+  "keywords": [
+    "QR transfer flow",
+    "QR code validity window (17)",
+    "in-app QR scanner",
+    "request details validation",
+    "Yes applies / approval prompt",
+    "review stage",
+    "connectivity issues",
+    "regenerate expired QR",
+    "Created / Scanned / Confirmed / Completed lifecycle"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "doc_savings_accounts_platinum_account_007",
+  "title": "Platinum Account: How is interest calculated and when is it paid?",
+  "summary": "This document explains Platinum Account interest: earnings use a 6.5% APY, compounded daily by converting the APY to a daily rate applied to your end-of-day balance and adding accrued interest at each compounding interval. Interest is credited monthly as a separate entry showing the total accrued amount for the period.",
+  "faqs": [
+    "What APY is used to calculate Platinum Account interest?",
+    "Is interest compounded daily or monthly?",
+    "How is the 6.5% APY converted to interest each day?",
+    "When exactly is interest credited to my account?",
+    "How do withdrawals during the statement period affect my interest?",
+    "Why should I keep funds in the account to maximize interest accrual?"
+  ],
+  "keywords": [
+    "Platinum Account",
+    "APY 6.5%",
+    "daily compounding",
+    "end-of-day balance",
+    "daily rate conversion",
+    "accrued interest added back",
+    "monthly interest credit",
+    "separate interest credit entry",
+    "statement period",
+    "mid-period withdrawals"
+  ]
+}

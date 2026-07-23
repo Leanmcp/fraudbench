@@ -1,0 +1,27 @@
+{
+  "id": "doc_bank_accounts_bank_accounts_(general)_029",
+  "title": "Internal: Debit Card Replacement Options by Account Tier",
+  "summary": "Explains debit card replacement limits, shipping fees, rush/expedited options, and card design fees by checking account tier (ENTRY, MID, PREMIUM, ELITE). Includes the 48-hour post-closure wait (ENTRY only), tier replacement caps per rolling 12 months, excess replacement fees ($25/$15), and how to count replacement history using issue_reason and date_issued.",
+  "faqs": [
+    "What are my debit card replacement limits per rolling 12-month period for my account tier?",
+    "How long do I have to wait after my card closure before I can order a replacement (by tier)?",
+    "What shipping options and delivery fees apply for ENTRY, MID, PREMIUM, and ELITE replacements?",
+    "If I already reached my replacement limit, can I pay an excess replacement fee instead of waiting? What are the amounts by tier?",
+    "How much are the card design fees (CLASSIC, PREMIUM/metallic silver, CUSTOM/uploaded image) for my tier?",
+    "How do you determine whether my prior replacement cards count toward the limit? Which issue_reason values are excluded? "
+  ],
+  "keywords": [
+    "ENTRY tier",
+    "MID tier",
+    "PREMIUM tier",
+    "ELITE tier",
+    "rolling 12-month replacement limit",
+    "48-hour waiting period after card closure (ENTRY only)",
+    "excess replacement fee $25 (ENTRY)",
+    "excess replacement fee $15 (MID)",
+    "free expedited shipping (PREMIUM)",
+    "delivery_fee $15 expedited (MID)",
+    "rush shipping delivery_fee $35 (PREMIUM)",
+    "design_fee $25 custom uploaded image (ENTRY/MID); discounted/complementary tiers"
+  ]
+}

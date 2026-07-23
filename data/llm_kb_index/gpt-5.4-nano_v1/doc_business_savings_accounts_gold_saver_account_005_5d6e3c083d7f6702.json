@@ -1,0 +1,24 @@
+{
+  "id": "doc_business_savings_accounts_gold_saver_account_005",
+  "title": "Gold Saver Account: Mobile banking and deposit limits",
+  "summary": "This document for the Gold Saver Account outlines daily limits for mobile check deposits ($10,000/day) and daily outbound transfer cap from savings ($25,000/day). It also provides best practices if limits are exceeded and tips for submitting early and retaining deposit confirmations.",
+  "faqs": [
+    "What is the daily mobile check deposit limit for a Gold Saver Account?",
+    "What is the daily outbound transfer limit from savings?",
+    "If my mobile deposit exceeds the $10,000 limit, what should I do?",
+    "What should I do if an outbound transfer would exceed the $25,000 daily cap?",
+    "When should I submit mobile deposits and outbound transfers to avoid validation delays?",
+    "Should I keep deposit confirmations, and why?"
+  ],
+  "keywords": [
+    "Gold Saver Account",
+    "mobile check deposit",
+    "daily limit $10,000",
+    "outbound transfer cap from savings",
+    "daily limit $25,000",
+    "validation requests",
+    "submit deposits earlier in the day",
+    "retain deposit confirmations",
+    "reconciliation in accounting platform"
+  ]
+}

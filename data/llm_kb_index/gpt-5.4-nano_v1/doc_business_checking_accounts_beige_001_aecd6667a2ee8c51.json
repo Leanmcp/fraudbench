@@ -1,0 +1,27 @@
+{
+  "id": "doc_business_checking_accounts_beige_001",
+  "title": "Implementing Beige: Enterprise Treasury Onboarding",
+  "summary": "This document covers Enterprise Treasury onboarding (\u201cImplementing Beige\u201d), including pre-onboarding responsibilities (executive sponsorship, authorized signers, documentation/policy/approval matrix), funding & balance setup (minimum $250,000; $200 monthly maintenance fee waived at $500,000 average), and go-live overdraft settings ($0.00). It also details dedicated support (2 account managers) and an operational readiness checklist (signer roles/entitlements, approval rules, statement delivery/reporting/reconciliation identifiers, and funding schedules).",
+  "faqs": [
+    "What are the minimum balance and monthly maintenance fee requirements for the enterprise-level treasury account?",
+    "When is the $200.00 monthly maintenance fee waived, and how should we handle early balance variability to stay eligible?",
+    "What overdraft fee applies during go-live, and what should we do if we stagger incoming funds across multiple institutions?",
+    "Who is responsible for onboarding, and what preconditions (executive sponsorship, authorized signers) must be confirmed before starting?",
+    "How many dedicated account managers will we be assigned, and what do they coordinate during onboarding?",
+    "What items should be verified in the operational readiness checklist before the first close (entitlements, approvals, statement/reporting settings, reconciliation identifiers, funding schedules)?"
+  ],
+  "keywords": [
+    "Implementing Beige",
+    "Enterprise Treasury onboarding",
+    "Executive sponsorship",
+    "Authorized signers",
+    "Monthly maintenance fee $200.00",
+    "Minimum balance requirement $250,000",
+    "Fee waiver threshold $500,000 average balance",
+    "Dedicated account managers (2)",
+    "Overdraft fee $0.00",
+    "Operational readiness checklist",
+    "Statement delivery preferences",
+    "Reporting formats & reconciliation identifiers"
+  ]
+}

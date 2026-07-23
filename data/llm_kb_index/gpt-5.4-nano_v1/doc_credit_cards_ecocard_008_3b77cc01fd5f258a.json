@@ -1,0 +1,27 @@
+{
+  "id": "doc_credit_cards_ecocard_008",
+  "title": "EcoCard: Making Payments and Managing Your Account",
+  "summary": "This document explains EcoCard payment management: minimum monthly payment is 1.0% of outstanding balance (plus past due amounts/fees), pay by the due date to avoid a $32.50 late fee, and monitor 19.99% standard APR, $50.00 annual fee, and 1.0% foreign transaction fee. It also covers credit limits ($5,000\u2013$50,000 typical), how to set up funding, enroll in autopay, schedule one-time payments, confirm posting, and manage virtual cards (create/lock/delete).",
+  "faqs": [
+    "What is the minimum monthly payment for my EcoCard and what is included in it?",
+    "When do I need to pay to avoid the late fee, and how much is the late payment fee?",
+    "What APR and fees should I monitor (annual fee and foreign transaction fee)?",
+    "How do I set up payments (funding account, autopay options, and one-time payments)?",
+    "How can I avoid paying interest\u2014should I pay more than the minimum?",
+    "How do the EcoCard virtual card management features work (create/lock/delete)?"
+  ],
+  "keywords": [
+    "EcoCard",
+    "Minimum monthly payment = 1.0% of outstanding balance",
+    "Late payment fee $32.50",
+    "Standard APR 19.99%",
+    "Annual fee $50.00",
+    "Foreign transaction fee 1.0%",
+    "Credit line $5,000\u2013$50,000 typical",
+    "Autopay (statement balance/minimum due/fixed amount)",
+    "Payment reminders before due date",
+    "Virtual card management (create/lock/delete)",
+    "Confirm payment posting",
+    "Payment posting updates balance and available credit"
+  ]
+}

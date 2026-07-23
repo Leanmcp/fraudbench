@@ -1,0 +1,25 @@
+{
+  "id": "doc_everyone_pay_everyone_pay_012",
+  "title": "Why was my Everyone Pay transaction declined?",
+  "summary": "Explains why an Everyone Pay transaction was declined due to limit thresholds ($1,500 daily / $12,500 monthly per individual), insufficient available balance, invalid/unverified recipient details, a temporary security review for unusual activity, or network/system interruptions. Provides resolution steps (adjust amount, verify recipient, change funding account, wait and retry, contact support).",
+  "faqs": [
+    "Was my Everyone Pay transaction declined because I hit the daily or monthly limit?",
+    "What other reasons can cause an Everyone Pay transaction to be declined besides limits?",
+    "How can I change the transaction amount to fit within my remaining daily/monthly capacity?",
+    "What should I check on the recipient details/contact card before retrying?",
+    "If I\u2019m getting a decline, should I try selecting a different funding account or waiting and retrying?",
+    "If declines continue after troubleshooting, how do I contact support from the transaction screen?"
+  ],
+  "keywords": [
+    "Everyone Pay",
+    "daily limit $1,500",
+    "monthly limit $12,500",
+    "limits reached",
+    "insufficient available balance",
+    "invalid or unverified recipient details",
+    "temporary security review",
+    "network or system interruptions",
+    "adjust the amount",
+    "contact support from the transaction screen"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "doc_checking_accounts_blue_account_011",
+  "title": "Transferring funds to another bank",
+  "summary": "Explains how to transfer funds to another bank: initiate an external transfer from the transfers menu and select the destination account; external transfers generally complete in 2 business days. Also covers EveryonePay to recipients at other banks with a $2,000 daily limit and tips to verify account details and stay within limits.",
+  "faqs": [
+    "How do I initiate an external transfer to another bank?",
+    "How long do external transfers generally take?",
+    "Can I send money to someone at another bank using EveryonePay?",
+    "What is the daily limit for EveryonePay transfers to other banks?",
+    "What should I verify before confirming an external transfer?",
+    "What timing should I consider for time-sensitive payments?"
+  ],
+  "keywords": [
+    "External transfers",
+    "transfers menu",
+    "destination account",
+    "2 business days",
+    "EveryonePay",
+    "recipients at other banks",
+    "$2,000 daily limit",
+    "Verify recipient account details",
+    "time-sensitive payments"
+  ]
+}

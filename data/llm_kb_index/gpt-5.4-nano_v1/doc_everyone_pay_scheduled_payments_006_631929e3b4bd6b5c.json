@@ -1,0 +1,25 @@
+{
+  "id": "doc_everyone_pay_scheduled_payments_006",
+  "title": "Why didn't my scheduled payment go through?",
+  "summary": "This document explains why a scheduled payment may not go through: insufficient available funds at processing time, invalid/out-of-date recipient details, scheduled amount outside policy limits, or a schedule date conflicting with processing availability. It also covers next steps (retry up to 3 times if enabled), how to resolve (update recipient info, adjust amount to meet limits, move date to processing availability), and what to do if all 3 attempts fail (review schedule settings and create a new occurrence).",
+  "faqs": [
+    "What are the possible reasons my scheduled payment didn\u2019t process?",
+    "If the first scheduled attempt fails, will the system retry automatically?",
+    "How many times will it retry, and what should I do between attempts?",
+    "How do I resolve an invalid or outdated recipient issue for a scheduled payment?",
+    "What should I do if the scheduled amount doesn\u2019t meet the policy limits?",
+    "What happens if all 3 retry attempts fail?"
+  ],
+  "keywords": [
+    "scheduled payment",
+    "insufficient available funds",
+    "recipient details invalid",
+    "recipient details out of date",
+    "policy limits",
+    "processing availability",
+    "retry up to 3 times",
+    "create a new occurrence",
+    "schedule settings",
+    "move next occurrence date"
+  ]
+}

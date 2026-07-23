@@ -1,0 +1,28 @@
+{
+  "id": "doc_business_checking_accounts_world_blue_005",
+  "title": "World Blue: Traveling Abroad with Your Business Account",
+  "summary": "This document explains how to use a World Blue business account abroad: withdraw local currency at foreign ATMs with a 0% foreign ATM fee (minimum $0.00) and up to $100/month in ATM surcharge rebates, send/receive cross-border payments in $140 regions via SEPA (where eligible) or SWIFT, and deposit checks via mobile check deposit up to $20,000/day. It also covers abroad procedures (dynamic currency conversion guidance, receipt retention) and team controls (a \u201cTravel\u201d role, per-user spend limits, approval requirements, and beneficiary-add restrictions).",
+  "faqs": [
+    "How much is the foreign ATM fee for World Blue withdrawals abroad, and is there a rebate on ATM operator surcharges?",
+    "Which countries/regions can I send and receive cross-border payments to while traveling, and do I use SEPA or SWIFT?",
+    "What steps should I follow to send an international payment while on the road (beneficiary, network, funding currency, submission/status)?",
+    "How do I receive cross-border payments from overseas payers while abroad (what receiving details to share, SEPA vs SWIFT)?",
+    "What are the limits and best practices for mobile check deposit while traveling internationally?",
+    "How can I manage team permissions and approvals for international wires/ATM/carding while employees are abroad?",
+    "keywords: ["
+  ],
+  "keywords": [
+    "World Blue",
+    "foreign ATM fee 0% (min $0.00)",
+    "ATM operator surcharges rebate up to $100/month",
+    "dynamic currency conversion",
+    "SEPA",
+    "SWIFT",
+    "cross-border payments in $140 countries/regions",
+    "multi-currency balances",
+    "mobile check deposit up to $20,000 per day",
+    "Travel role (tiered permissions)",
+    "approval requirements for high-value SWIFT",
+    "per-user spend limits"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "doc_business_checking_accounts_hunter_green_005",
+  "title": "Spending Alerts and Budget Controls on Hunter Green",
+  "summary": "This document covers spending alerts and budget controls for Hunter Green: real-time alerts are enabled by default with a $100 threshold (alert when a single transaction is \u2265 $100). It also explains a $2,000 spending limit buffer that may approve transactions even if available balance is temporarily insufficient, and how to customize alert types and notification delivery.",
+  "faqs": [
+    "What are the default settings for Hunter Green spending alerts and their $100 threshold\u2014when will I receive an alert?",
+    "How does the $2,000 spending limit buffer work if my available balance is temporarily insufficient?",
+    "Can I adjust the alert threshold above or below $100 to match my typical transaction sizes?",
+    "How can I enable alerts for card-present, online, and/or international transactions?",
+    "How do I choose push vs. email delivery preferences for spending alerts?",
+    "What should I do to review buffered transactions so my balance matches expected activity?"
+  ],
+  "keywords": [
+    "Hunter Green",
+    "real-time spending alerts",
+    "default enabled: Yes",
+    "alert threshold $100",
+    "alert on single transaction \u2265 $100",
+    "spending limit buffer $2,000",
+    "card-present transactions alerts",
+    "online transactions alerts",
+    "international transactions alerts",
+    "push notifications",
+    "email notifications"
+  ]
+}

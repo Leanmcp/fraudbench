@@ -1,0 +1,25 @@
+{
+  "id": "doc_business_savings_accounts_bronze_saver_account_007",
+  "title": "Bronze Saver Account: Adding authorized users to your account",
+  "summary": "This document explains how to add authorized users to a Bronze Saver Account, including the limit of up to 2 authorized users. It requires a linked Rho-Bank business checking account in good standing and covers steps to send an invitation, plus how to update or revoke permissions.",
+  "faqs": [
+    "How many authorized users can I add to a Bronze Saver Account?",
+    "Do I need a linked Rho-Bank business checking account to add users?",
+    "Where in the app do I go to add authorized users?",
+    "What happens after I enter a user\u2019s details and confirm?",
+    "Can I update or revoke an authorized user\u2019s permissions later?",
+    "Should I review authorized user activity, and where can I do it? "
+  ],
+  "keywords": [
+    "Bronze Saver Account",
+    "Authorized users",
+    "Up to 2 authorized users",
+    "Rho-Bank business checking account",
+    "Account settings",
+    "Authorized users option",
+    "Assign access permissions",
+    "Invitation to set up access",
+    "Update or revoke permissions",
+    "Review user activity"
+  ]
+}

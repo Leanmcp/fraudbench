@@ -1,0 +1,26 @@
+{
+  "id": "doc_credit_cards_credit_card_account_logistics_007",
+  "title": "Internal: Processing CLI Approvals and Denials",
+  "summary": "This document provides the required step-by-step workflow for processing credit limit increase (CLI) requests, including: verifying requested increase amount vs card-tier maximum (Step 0), submitting via submit_credit_limit_increase_request_7392 (Step 1), checking eligibility via account age, cooldown (get_credit_limit_increase_history_4829), disputes, replacement card pending, good standing, and credit utilization (Step 2), then approving via approve_credit_limit_increase_5847 or denying via deny_credit_limit_increase_5848 with specific denial_reason codes. It also instructs how to communicate approvals/denials to the customer and mandates the exact order of steps.",
+  "faqs": [
+    "What are the required steps and the exact order to process a CLI approval/denial request?",
+    "Before submitting a CLI request, how do I verify the requested increase amount is within the customer\u2019s card-tier limit?",
+    "After submitting the request, which eligibility checks must be completed before deciding approval or denial?",
+    "How do I check for a cooldown-period submission using get_credit_limit_increase_history_4829, and what happens if a request exists?",
+    "When should I approve a CLI, and what details are required for approve_credit_limit_increase_5847 (including new_credit_limit)?",
+    "When denying a CLI, which denial_reason values are allowed for deny_credit_limit_increase_5848 and what should I tell the customer?"
+  ],
+  "keywords": [
+    "CLI requests",
+    "Step 0: Confirm Requested Amount is Within Limits",
+    "submit_credit_limit_increase_request_7392",
+    "get_credit_limit_increase_history_4829",
+    "approve_credit_limit_increase_5847",
+    "deny_credit_limit_increase_5848",
+    "denial_reason codes: cooldown_period_active, pending_disputes, pending_replacement_card, past_due_balance, high_utilization",
+    "credit_card_account_id",
+    "user_id",
+    "requested_increase_amount",
+    "new_credit_limit"
+  ]
+}

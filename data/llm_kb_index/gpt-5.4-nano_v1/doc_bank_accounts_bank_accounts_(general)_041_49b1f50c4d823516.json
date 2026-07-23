@@ -1,0 +1,26 @@
+{
+  "id": "doc_bank_accounts_bank_accounts_(general)_041",
+  "title": "Internal: PIN Lock Investigation Protocol - Fraud Risk Scoring",
+  "summary": "This document defines the Internal \u201cPIN Lock Investigation Protocol - Fraud Risk Scoring\u201d for debit cards with pin_locked=TRUE. It covers automatic escalations (pin_lock_reason='security_hold', other cards locked, card replaced in last 90 days for 'stolen'), a multi-flag scoring model (location/time/amount/history/account), score thresholds (0-4 LOW through 15+ CRITICAL), required customer questions, and post-unlock steps tied to prior lock frequency over 90 days.",
+  "faqs": [
+    "What should I do immediately if pin_lock_reason is 'security_hold' or another card on the account is also pin_locked=TRUE?",
+    "How do I calculate the fraud risk score for a locked PIN, including location, time-of-day, velocity, and amount flags?",
+    "What customer verification questions are required for MEDIUM (score 5-7), HIGH (8-10), and VERY HIGH (11-14) risk levels?",
+    "When does the protocol say we cannot unlock the card, and what actions should we take (dispute, close card, replacement, security transfer)?",
+    "After unlocking, what additional steps are required based on how many PIN locks occurred in the last 90 days (0, 1, 2, or 3+)?"
+  ],
+  "keywords": [
+    "pin_locked = TRUE",
+    "pin_lock_reason = 'security_hold'",
+    "card replaced in last 90 days (issue_reason='stolen')",
+    "Fraud risk score thresholds (0-4 LOW, 5-7 MEDIUM, 8-10 HIGH, 11-14 VERY HIGH, 15+ CRITICAL)",
+    "Category A Location Flags (A1 Location Mismatch, A2 Location Scatter, A3 Travel Pattern Conflict)",
+    "Category B Time Flags (B2 Time Since Last Legitimate PIN Use; B3 Attempt Velocity)",
+    "Category C Amount Flags (C1 Amount Pattern; C4 Amount vs Daily Limit)",
+    "Category D Card History Flags (D1 Lock Frequency; D2 Card Age)",
+    "Category E Account Flags (E1 Account Age; E2 Overdraft History; E3 Low Balance Alert)",
+    "Single-flag escalation: any flag=3 points",
+    "Enhanced verification: last 4 SSN + security question",
+    "Post-unlock notification/PIN reset offers tied to 1/2/3+ locks in 90 days"
+  ]
+}

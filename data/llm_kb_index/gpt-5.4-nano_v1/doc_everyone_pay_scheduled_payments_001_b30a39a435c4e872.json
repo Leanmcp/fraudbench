@@ -1,0 +1,23 @@
+{
+  "id": "doc_everyone_pay_scheduled_payments_001",
+  "title": "Scheduled Payments: Complete Guide",
+  "summary": "This document explains how to schedule Scheduled Payments, including limits of 30 maximum active schedules, at least 4 days between occurrences, up to $3,000 per payment, and 3 days advance notification before each charge. It covers rules for adjusting cadence, managing/ canceling schedules when at 30, and verifying reminders and post-payment confirmation.",
+  "faqs": [
+    "What are the maximum limits for Scheduled Payments (active schedules, days between occurrences, and per-payment amount)?",
+    "How many days in advance will I get notified before a scheduled payment is charged?",
+    "What scheduling rules must I follow to avoid errors (e.g., spacing between occurrences and amount limits)?",
+    "What should I do if I already have 30 active schedules and want to add another?",
+    "How do I review and manage active schedules to confirm dates and amounts?",
+    "After a scheduled payment processes, what should I verify in my activity?"
+  ],
+  "keywords": [
+    "Scheduled Payments",
+    "Maximum active schedules: 30",
+    "Minimum days between occurrences: 4",
+    "Maximum per-payment amount: $3,000",
+    "Advance notification before charge: 3 days",
+    "Reminder 3 days prior to occurrence",
+    "Adjust cadence to respect 4-day requirement",
+    "Cancel an existing schedule before creating a new one"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "doc_bank_accounts_bank_accounts_(general)_001",
+  "title": "Internal: Opening Personal Checking Accounts",
+  "summary": "This document explains how to open a personal checking account, including eligibility requirements (verified customer, age 18+, no more than 4 personal checking accounts, and no checking accounts closed for cause in the past 6 months) and the step-by-step opening procedure (verify identity, check eligibility, confirm the desired account_class using full official names ending with \u201cAccount,\u201d then open via open_bank_account_4821).",
+  "faqs": [
+    "What are the eligibility requirements to open a personal checking account?",
+    "What age and account-count limits apply for opening personal checking?",
+    "How do I handle cases where a customer had a checking account closed for cause within the last 6 months?",
+    "What steps should support agents follow to open a personal checking account?",
+    "What are the allowed account_class naming rules for personal checking options?",
+    "Which system function should be used to open the personal checking account?"
+  ],
+  "keywords": [
+    "personal checking account",
+    "Eligibility requirements",
+    "verified customer",
+    "at least 18 years old",
+    "max 4 personal checking accounts",
+    "closed for cause (past 6 months)",
+    "account_class selection",
+    "full official name ending with 'Account'",
+    "open_bank_account_4821",
+    "verify customer identity"
+  ]
+}

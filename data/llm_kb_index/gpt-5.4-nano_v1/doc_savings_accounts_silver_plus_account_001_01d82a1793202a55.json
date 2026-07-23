@@ -1,0 +1,23 @@
+{
+  "id": "doc_savings_accounts_silver_plus_account_001",
+  "title": "Silver Plus Account specifications and requirements",
+  "summary": "This document specifies Silver Plus account requirements: $1,000 minimum opening deposit, $2,500 ongoing minimum balance, daily interest compounding, and a Tier 2 balance threshold of $15,000 for higher interest. It also allows 15 free withdrawals per month before possible excess withdrawal fees per the fee schedule.",
+  "faqs": [
+    "What is the minimum deposit required to open a Silver Plus account?",
+    "What ongoing minimum balance must I maintain for Silver Plus?",
+    "How is interest calculated on the Silver Plus account (daily vs. other)?",
+    "At what balance level does Tier 2 interest apply on Silver Plus?",
+    "How many free withdrawals per month does my Silver Plus account include?",
+    "What happens if I make more than 15 withdrawals in a month? (Does an excess withdrawal fee apply?)"
+  ],
+  "keywords": [
+    "Silver Plus account",
+    "Minimum opening deposit $1,000",
+    "Ongoing minimum balance $2,500",
+    "Daily interest compounding",
+    "Tier 2 balance threshold $15,000",
+    "Tier 1 vs Tier 2 interest rate",
+    "Free withdrawals per month 15",
+    "Excess withdrawal fee (fee schedule)"
+  ]
+}

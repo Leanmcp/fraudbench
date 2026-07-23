@@ -1,0 +1,26 @@
+{
+  "id": "doc_savings_accounts_silver_plus_account_008",
+  "title": "Silver Plus Account: Transferring funds to external banks",
+  "summary": "This document explains how Silver Plus Account external bank transfers work, including a typical 2-business-day processing timeline, a $10,000/day outbound limit to linked external accounts (multiple transfers combined), and guidance on paper statements ($0.00 monthly fee) for transfer verification without affecting processing.",
+  "faqs": [
+    "How long do external transfers from a Silver Plus Account take to complete?",
+    "What is the daily limit for transferring out to linked external accounts?",
+    "If I submit multiple transfers on the same day, do they share the same $10,000 cap?",
+    "Are there any fees for paper statements related to transfer verification/recordkeeping?",
+    "Can I enable paper statements in settings without impacting external transfer processing?",
+    "What should I do before initiating a transfer to ensure funds arrive when needed? "
+  ],
+  "keywords": [
+    "Silver Plus Account",
+    "external transfers",
+    "2 business days",
+    "bank holidays",
+    "$10,000 per day",
+    "linked external accounts",
+    "combined same-day total",
+    "paper statements",
+    "$0.00 monthly fee",
+    "settings (enable paper statements)",
+    "transfer verification/recordkeeping"
+  ]
+}

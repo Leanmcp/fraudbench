@@ -1,0 +1,1 @@
+TAU2_WITH_TINKER/logs/*.log filter=lfs diff=lfs merge=lfs -text

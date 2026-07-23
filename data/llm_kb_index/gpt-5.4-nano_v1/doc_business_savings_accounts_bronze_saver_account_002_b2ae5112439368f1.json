@@ -1,0 +1,22 @@
+{
+  "id": "doc_business_savings_accounts_bronze_saver_account_002",
+  "title": "Bronze Saver Account specifications and requirements",
+  "summary": "This document lists Bronze Saver Account specifications and requirements: minimum opening deposit is $0, interest compounds daily, and a linked Rho-Bank business checking account is required (for setups that specify Yes). It also advises ensuring the checking account stays active, confirming daily compounding in account details, and verifying initial funding meets/exceeds $0.",
+  "faqs": [
+    "What is the minimum opening deposit for a Bronze Saver Account?",
+    "How often does interest compound on the Bronze Saver Account?",
+    "Is a linked Rho-Bank business checking account required for the Bronze Saver Account?",
+    "If business checking is required, what should I do to keep eligibility?",
+    "Where do I confirm my Bronze Saver compounding preference (daily)?",
+    "Does the initial funding have to be at least $0?"
+  ],
+  "keywords": [
+    "Bronze Saver Account",
+    "Minimum opening deposit $0",
+    "Interest compounding frequency daily",
+    "Linked Rho-Bank business checking required",
+    "Keep linked checking account active",
+    "Confirm compounding preference set to daily",
+    "Verify initial funding meets or exceeds $0"
+  ]
+}

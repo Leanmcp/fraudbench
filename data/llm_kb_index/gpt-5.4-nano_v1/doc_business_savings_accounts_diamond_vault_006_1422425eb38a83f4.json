@@ -1,0 +1,25 @@
+{
+  "id": "doc_business_savings_accounts_diamond_vault_006",
+  "title": "Diamond Vault Account: Same-day transfers",
+  "summary": "This document explains that Diamond Vault Accounts support same-day ACH transfers (set the same-day option during submission when available). It states interest is compounded daily and, when same-day ACH posts, the settled amount is reflected in the balance used for interest accrual. It also provides submission guidance to confirm routing/account details, use clear payment descriptions, and monitor status for posting confirmation.",
+  "faqs": [
+    "How do I enable same-day ACH transfers for a Diamond Vault Account?",
+    "When should I select the same-day option during ACH submission?",
+    "How does same-day ACH posting affect my balance used for interest accrual?",
+    "How is interest on the Diamond Vault Account calculated (compounding schedule)?",
+    "What should I verify before submitting an ACH transfer to avoid exceptions?",
+    "How can I confirm whether a same-day ACH transfer has posted?"
+  ],
+  "keywords": [
+    "Diamond Vault Account",
+    "Same-day ACH transfers",
+    "Same-day option during submission",
+    "Interest compounded daily",
+    "Settled amount reflected in interest balance",
+    "ACH posting and interest accrual",
+    "Confirm beneficiary routing and account details",
+    "Clear payment descriptions",
+    "Monitor transaction status for confirmation",
+    "Exceptions (routing/account errors)"
+  ]
+}

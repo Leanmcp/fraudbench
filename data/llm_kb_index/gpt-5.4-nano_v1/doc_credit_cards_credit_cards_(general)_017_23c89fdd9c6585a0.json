@@ -1,0 +1,27 @@
+{
+  "id": "doc_credit_cards_credit_cards_(general)_017",
+  "title": "(Internal) Applying a Credit Card Statement Credit",
+  "summary": "Covers how support agents apply a credit card statement credit using tools unlock_discoverable_agent_tool and apply_statement_credit_8472. Requires user_id, credit_card_account_id, a positive dollar amount (e.g., 25.00), and a reason limited to a fixed set; then confirms it posts as a negative transaction and reduces the statement balance.",
+  "faqs": [
+    "How do I apply a statement credit to a customer\u2019s credit card account?",
+    "What tool name and steps do I use (unlock then call apply_statement_credit_8472)?",
+    "What arguments are required (user_id, credit_card_account_id, amount, reason)?",
+    "What are the allowed reason values for the statement credit?",
+    "How do I verify the statement credit applied correctly?",
+    "Where do I find the credit_card_account_id for a user? (Refers to get_credit_card_accounts_by_user)"
+  ],
+  "keywords": [
+    "apply_statement_credit_8472",
+    "unlock_discoverable_agent_tool",
+    "call_discoverable_agent_tool",
+    "user_id",
+    "credit_card_account_id",
+    "amount (positive number; e.g., 25.00)",
+    "reason values",
+    "goodwill_adjustment",
+    "annual_fee_reversal",
+    "late_fee_reversal",
+    "interest_charge_reversal",
+    "negative transaction / reduces statement balance"
+  ]
+}

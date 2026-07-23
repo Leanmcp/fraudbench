@@ -1,0 +1,26 @@
+{
+  "id": "doc_bank_accounts_bank_accounts_(general)_040",
+  "title": "Internal: Requesting Temporary Debit Card Limit Increase",
+  "summary": "This document explains the procedure and eligibility rules for requesting a temporary debit card limit increase (daily ATM withdrawal or purchase) using tool request_temporary_debit_card_limit_increase_8374. It requires an OPEN checking account at least 60 days old, no overdraft fees in the last 30 days, and an ACTIVE debit card; the new limit can\u2019t exceed 150% of the current limit, lasts 24 hours, and can only be requested once per card per 24-hour period.",
+  "faqs": [
+    "What are the eligibility requirements before granting a temporary debit card limit increase?",
+    "How much can the temporary ATM withdrawal or purchase limit be increased (maximum percentage)?",
+    "How long does a temporary debit card limit increase last before it reverts?",
+    "How often can a temporary limit increase be requested for the same card?",
+    "What parameters are required to submit the request (card_id, limit_type, new_limit)?"
+  ],
+  "keywords": [
+    "request_temporary_debit_card_limit_increase_8374",
+    "limit_type: 'atm' or 'purchase'",
+    "card_id",
+    "new_limit",
+    "Account must be OPEN (good standing)",
+    "Account age at least 60 days old",
+    "No overdraft fees in last 30 days",
+    "debit card must be ACTIVE",
+    "Max new limit 150% of current (50% boost)",
+    "Temporary duration 24 hours",
+    "Only one temporary increase per 24-hour period per card",
+    "Third-party ATMs may have their own limits"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "doc_buy_now_pay_later_bnpl_gold_006",
+  "title": "BNPL Gold: Repayment Terms, Monthly Installments, and Plan Limits",
+  "summary": "This document explains BNPL Gold standard repayment terms (monthly payments across a standard term of [value not available] months) and how installment schedules are generated at plan creation and shown in plan details across [value not available] months. It also covers the per-customer limit of up to [value not available] active BNPL Gold plans and what happens when you reach that limit (closing existing plans to create a new one).",
+  "faqs": [
+    "What is the BNPL Gold standard repayment term and when are payments due?",
+    "How is my BNPL Gold installment schedule created, and where can I view dates and amounts?",
+    "How many active BNPL Gold plans can I have at the same time?",
+    "If I reach the active plan limit, what happens when I try to create a new BNPL Gold plan?",
+    "What should I do to stay on track with multiple BNPL Gold plans?",
+    "How do on-time payments affect my plan status and ability to access new plans within my limit?"
+  ],
+  "keywords": [
+    "BNPL Gold",
+    "standard repayment term",
+    "monthly installment payments",
+    "plan creation (schedule generation)",
+    "plan details (dates and amounts)",
+    "active BNPL Gold plans limit",
+    "closing existing plans",
+    "staying on track",
+    "upcoming installment dates",
+    "good standing",
+    "cash flow monitoring"
+  ]
+}

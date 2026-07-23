@@ -1,0 +1,27 @@
+{
+  "id": "doc_bank_accounts_bank_accounts_(general)_035",
+  "title": "Internal: Checking Debit Card Dispute Status",
+  "summary": "This document explains how to check a customer\u2019s checking debit card dispute history and the status of open disputes using the get_debit_dispute_status_7483(user_id) tool. It lists returned fields (dispute_id, transaction_id, disputed_amount, filing_date, status, provisional credit details, expected_resolution_date, resolution/outcome) and the full set of dispute statuses plus regulatory timeline checks: provisional credit within 10 days (20 for new accounts) and investigation within 45 days (90 for international/POS), with escalation guidance.",
+  "faqs": [
+    "How do I retrieve a customer\u2019s debit card dispute history and see the status of open disputes?",
+    "What fields does get_debit_dispute_status_7483(user_id) return for each dispute (IDs, amounts, dates, provisional credit, and resolution)?",
+    "What do the dispute statuses mean (OPEN, PENDING_DOCUMENTATION, UNDER_REVIEW, PROVISIONAL_CREDIT_ISSUED, and all resolved/closed outcomes)?",
+    "Within what regulatory timelines should provisional credit be issued, and what are the exceptions (new accounts)?",
+    "Within what regulatory timelines should the investigation complete, including international/POS cases?",
+    "If a dispute exceeds the expected timeline, what escalation step does the document recommend?"
+  ],
+  "keywords": [
+    "get_debit_dispute_status_7483",
+    "debit card dispute status",
+    "provisional_credit_issued",
+    "expected_resolution_date",
+    "PROVISIONAL_CREDIT_ISSUED",
+    "RESOLVED_CUSTOMER_FAVOR",
+    "RESOLVED_BANK_FAVOR",
+    "RESOLVED_PARTIAL",
+    "PROVISIONAL_REVERSED",
+    "CLOSED_NO_RESPONSE",
+    "provisional credit within 10 days (20 new accounts)",
+    "investigation within 45 days (90 international/POS)"
+  ]
+}

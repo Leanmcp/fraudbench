@@ -1,0 +1,25 @@
+{
+  "id": "doc_savings_accounts_bronze_account_009",
+  "title": "Transferring funds to external banks: Bronze Accounts",
+  "summary": "Explains transferring funds from Bronze Accounts to external banks: standard external transfers complete in 3 business days. It sets a $2,500 per day outgoing transfer limit and advises scheduling on non-business days to start processing the next business day, with status tracking (scheduled/in process/completed) and splitting transfers that exceed the limit.",
+  "faqs": [
+    "How long do external transfers from Bronze Accounts take to complete?",
+    "What is the daily transfer limit to external banks for Bronze Accounts?",
+    "When do transfers set up on weekends or non-business days start processing?",
+    "How can I track whether my external transfer is scheduled, in process, or completed?",
+    "What should I do if I need to transfer more than $2,500 in a day?",
+    "If my transfer is time-sensitive, when should I schedule it?"
+  ],
+  "keywords": [
+    "Bronze Accounts",
+    "external banks",
+    "standard external transfers",
+    "3 business days",
+    "daily transfer limit",
+    "$2,500 per day",
+    "scheduled",
+    "in process",
+    "completed",
+    "non-business days processing"
+  ]
+}

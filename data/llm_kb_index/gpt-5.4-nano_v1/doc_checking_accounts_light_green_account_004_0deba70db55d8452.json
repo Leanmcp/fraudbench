@@ -1,0 +1,25 @@
+{
+  "id": "doc_checking_accounts_light_green_account_004",
+  "title": "Parent or guardian requirements",
+  "summary": "This document explains how to set oversight transaction alerts and manage issued checks. It instructs enabling transaction alerts for amounts at or above 62, and states that a stop payment for a check incurs a 15 fee.",
+  "faqs": [
+    "How do I enable transaction alerts for higher-value activity?",
+    "What transaction amount threshold triggers the parent/guardian alerts (62)?",
+    "Can I cancel an issued check before it\u2019s paid?",
+    "What is the fee for requesting a stop payment (15)?",
+    "When should I use stop payments judiciously?",
+    "What are the recommended best practices for reviewing alert notifications?"
+  ],
+  "keywords": [
+    "transaction alerts",
+    "amounts at or above 62",
+    "oversight settings",
+    "stop payment request",
+    "issued checks",
+    "15 fee",
+    "higher-value activity",
+    "alert notifications",
+    "lost checks",
+    "errors"
+  ]
+}

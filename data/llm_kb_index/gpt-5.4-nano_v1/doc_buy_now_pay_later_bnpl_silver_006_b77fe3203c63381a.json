@@ -1,0 +1,24 @@
+{
+  "id": "doc_buy_now_pay_later_bnpl_silver_006",
+  "title": "BNPL Silver: Dynamic Repayment Reminders, Timing, and Channels",
+  "summary": "BNPL Silver provides repayment reminders starting [value not available] days before the first installment due date, with up to [value not available] reminders per installment cycle. Reminders are delivered via [value not available] and may dynamically adjust timing/frequency based on [value not available] and payment behavior. Notification channels can be selected in Settings > Notifications.",
+  "faqs": [
+    "How many days before the first installment due date do repayment reminders start for BNPL Silver?",
+    "How many repayment reminders can I receive for each installment cycle?",
+    "What delivery channels does BNPL Silver use to send repayment reminders?",
+    "Can the reminder timing and frequency change based on my behavior or prior payments?",
+    "Where can I update my notification preferences for BNPL Silver reminders?"
+  ],
+  "keywords": [
+    "BNPL Silver",
+    "repayment reminders",
+    "first installment due date",
+    "days before reminder start ([value not available])",
+    "reminders per installment cycle (up to [value not available])",
+    "delivery channels ([value not available])",
+    "dynamic adjustment (timing/frequency may change)",
+    "Settings > Notifications",
+    "on-time payments",
+    "nearly missed prior installment"
+  ]
+}

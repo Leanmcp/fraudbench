@@ -1,0 +1,22 @@
+{
+  "id": "doc_everyone_pay_everyone_pay_006",
+  "title": "Payment processing times",
+  "summary": "This document explains payment processing times for Standard transfers (settle within 12 hours after submission; show as pending until settlement completes) and Instant transfers (deliver immediately, with a $0.75 instant transfer fee). It also advises which option to choose based on delivery urgency.",
+  "faqs": [
+    "How long do Standard transfers take to settle after I submit them?",
+    "Do Standard transfers appear as pending before they settle?",
+    "How fast do Instant transfers deliver to the recipient?",
+    "What is the fee for an Instant transfer?",
+    "When should I choose Standard vs Instant transfer speed?"
+  ],
+  "keywords": [
+    "Standard transfers",
+    "Settle within 12 hours",
+    "pending until settlement completes",
+    "Instant transfers",
+    "deliver immediately",
+    "instant transfer fee",
+    "$0.75",
+    "Choose your speed"
+  ]
+}

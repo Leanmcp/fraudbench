@@ -1,0 +1,26 @@
+{
+  "id": "doc_everyone_pay_qr_transfers_004",
+  "title": "Troubleshooting: QR not scanning",
+  "summary": "Troubleshooting steps for when a QR code will not scan: check QR validity (generated longer ago than 17), adjust brightness/glare, wipe camera lens and steady/adjust distance, verify print/screen quality, ensure camera permissions, close other camera-using apps, and regenerate if open >17 or shared as a delayed screenshot.",
+  "faqs": [
+    "How can I tell if the QR code is no longer valid?",
+    "What screen and camera settings should I adjust to improve scanning?",
+    "Why does glare or reflection prevent QR scanning and how do I fix it?",
+    "What should I do if the QR code is printed but smudged/folded/low-resolution?",
+    "What if the QR was shown as a screenshot or delayed\u2014should I regenerate it?",
+    "How do I resolve camera-permission or app conflicts that stop scanning?"
+  ],
+  "keywords": [
+    "QR code validity",
+    "17 (minutes)",
+    "Increase screen brightness",
+    "Wipe camera lens",
+    "Hold device steady / adjust distance",
+    "Camera permissions enabled",
+    "Close other apps using camera",
+    "Smudged / folded / low-resolution",
+    "Disable color inversion or display filters",
+    "Reflections from glossy screens",
+    "Regenerate a fresh code"
+  ]
+}

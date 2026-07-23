@@ -1,0 +1,24 @@
+{
+  "id": "doc_business_savings_accounts_automatic_sweep_program_003",
+  "title": "Automatic Sweep: Defining Excess Fund Thresholds",
+  "summary": "This document explains how \u201cAutomatic Sweep\u201d uses two thresholds: a target minimum checking balance of $500 and a minimum sweep amount of 50. It states that no sweep occurs when calculated excess is below 50; otherwise, it sweeps only the amount above $500.",
+  "faqs": [
+    "What are the two excess fund thresholds I can set for Automatic Sweep?",
+    "What happens if the calculated excess is below the minimum sweep amount (50)?",
+    "If the excess is at least 50, how is the sweep amount determined relative to the $500 target?",
+    "How do the $500 target minimum and the 50 minimum sweep amount work together?",
+    "What tips does the document give for choosing the $500 target minimum and the minimum sweep amount?"
+  ],
+  "keywords": [
+    "Automatic Sweep",
+    "target minimum checking balance $500",
+    "minimum sweep amount 50",
+    "calculated excess",
+    "no sweep when excess < 50",
+    "transfer portion above $500",
+    "idle cash",
+    "outgoing activity",
+    "reducing returns from savings",
+    "avoid noise from small fluctuations"
+  ]
+}

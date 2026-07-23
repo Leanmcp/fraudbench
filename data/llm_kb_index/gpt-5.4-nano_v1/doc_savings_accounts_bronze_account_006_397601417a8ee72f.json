@@ -1,0 +1,25 @@
+{
+  "id": "doc_savings_accounts_bronze_account_006",
+  "title": "Bronze Account: Why did my interest rate change?",
+  "summary": "This document explains why a Bronze Account\u2019s interest rate/APY can change due to APY updates (interest earns at the current APY), daily compounding effects, and Rho-Bank credit card APY bonuses (Platinum Rewards Card +0.55% APY; Diamond Elite Card +0.15%). It also instructs customers to confirm the currently applicable APY in account details (example: 2.0%) and compare today\u2019s APY/credited interest and average daily balance with prior statements, noting the statement period for support review.",
+  "faqs": [
+    "What causes my Bronze Account interest rate or APY to change?",
+    "How does daily compounding make my credited interest vary even if APY stays the same?",
+    "Do Rho-Bank credit cards change my Bronze Account APY, and by how much?",
+    "How can I confirm the APY that is currently applying to my account?",
+    "If my credited interest doesn\u2019t match expectations, what should I compare or note before contacting support?",
+    "How can I tell whether a change was an APY update versus a change in my average daily balance?"
+  ],
+  "keywords": [
+    "Bronze Account",
+    "APY changes",
+    "Current APY",
+    "Daily compounding",
+    "Average daily balance",
+    "Account details (view APY)",
+    "2.0% APY example",
+    "Platinum Rewards Card bonus (+0.55% APY)",
+    "Diamond Elite Card bonus (+0.15% APY)",
+    "Statement period"
+  ]
+}

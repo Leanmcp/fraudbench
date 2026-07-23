@@ -1,0 +1,26 @@
+{
+  "id": "doc_savings_accounts_bronze_account_007",
+  "title": "Bronze Account: Getting interest payments",
+  "summary": "Explains how the Bronze Account earns interest: interest compounds daily and is credited monthly as a single net interest transaction line item. It also covers how the period APY (e.g., 2.0%) appears on disclosures and lists credit-card bonus APYs (+0.1% Bronze Rewards, +0.25% Gold Rewards, +0.2% Green Rewards, +0.3% Crypto-Cash Back; others +0%).",
+  "faqs": [
+    "How does interest compound on the Bronze Account (daily vs. monthly)?",
+    "When is interest credited, and will I see one entry per month or multiple entries?",
+    "What will the interest credit look like on my statement (net interest line item, APY shown)?",
+    "Do Rho-Bank credit card APY bonuses apply to my Bronze Account\u2014what are the bonus rates by card?",
+    "If my balance changed during the month or I opened mid-period, how will that affect the credited interest?"
+  ],
+  "keywords": [
+    "Bronze Account",
+    "interest compounds daily",
+    "credited monthly",
+    "net interest credited transaction line item",
+    "APY in effect (e.g., 2.0%)",
+    "Bronze Rewards Card +0.1% bonus APY",
+    "Silver Rewards Card +0% bonus APY",
+    "Gold Rewards Card +0.25% bonus APY",
+    "EcoCard +0% bonus APY",
+    "Green Rewards Card +0.2% bonus APY",
+    "Crypto-Cash Back Card +0.3% bonus APY",
+    "transaction history interest credit posted monthly"
+  ]
+}

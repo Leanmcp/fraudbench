@@ -1,0 +1,25 @@
+{
+  "id": "doc_buy_now_pay_later_bnpl_management_dashboard_003",
+  "title": "BNPL Management Dashboard: Using Date Range Filters to See Upcoming Payments",
+  "summary": "Explains how to use the BNPL Management Dashboard date range filter to display upcoming BNPL installments based on due dates within the selected window. Covers how the view refreshes, what happens if the earliest upcoming installment is excluded, and tips when the list is empty.",
+  "faqs": [
+    "How do I select and confirm the date range for upcoming BNPL installments?",
+    "What changes in the dashboard when I adjust the date range filter?",
+    "Why might an installment not appear if my date range excludes a specific due date?",
+    "What should I do if the list of upcoming payments is empty?",
+    "How should I choose a shorter vs. longer date range for planning cash needs?",
+    "What date should my filter include to capture near-term installment items?"
+  ],
+  "keywords": [
+    "BNPL Management Dashboard",
+    "date range filters",
+    "upcoming installments",
+    "due dates",
+    "dashboard refreshes",
+    "earliest upcoming installment",
+    "active plans",
+    "empty list",
+    "weekly cash needs",
+    "monthly obligations"
+  ]
+}

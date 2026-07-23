@@ -1,0 +1,26 @@
+{
+  "id": "doc_bank_accounts_bank_accounts_(general)_025",
+  "title": "Internal: Closing/Cancelling a Debit Card",
+  "summary": "This document provides the procedure to close/cancel/deactivate a customer\u2019s debit card (including lost, stolen, suspected fraud, damaged/replacement, no longer needed, or closing the linked checking account). It lists eligibility checks (verification, owner match via user_id, ACTIVE/PENDING status, no pending transactions, no pending refunds with 3\u20135 business days guidance, and 14-day minimum card age via date_issued), required tool calls (get_bank_account_transactions_9173 for fraud review; unfreeze_debit_card_3893 if FROZEN; close_debit_card_4721), and post-closure impacts (permanent deactivation, recurring payments update, replacement ordering, refunds credited to linked checking).",
+  "faqs": [
+    "What reasons are available for closing or canceling a debit card (lost, stolen, fraud_suspected, damaged, no_longer_needed, account_closing)?",
+    "What eligibility requirements must be met before I can close my debit card (including ACTIVE/PENDING status, pending transactions, pending refunds, and 14-day minimum card age)?",
+    "If my debit card is FROZEN, what should be done before it can be closed?",
+    "If I report the card as lost/stolen or fraud_suspected, is the 14-day minimum card age waived and do pending transactions still process?",
+    "If I suspect fraud, should I review transactions or file disputes, and what tool is used to pull the transaction list?",
+    "After the card is closed, can it be reactivated, what happens to recurring payments, and where do refunds to the closed card go?"
+  ],
+  "keywords": [
+    "close_debit_card_4721",
+    "unfreeze_debit_card_3893",
+    "get_bank_account_transactions_9173",
+    "debit card statuses: ACTIVE, PENDING, FROZEN",
+    "reasons: lost, stolen, fraud_suspected, damaged, no_longer_needed, account_closing",
+    "pending refunds (typically 3\u20135 business days)",
+    "minimum card age: 14 days (date_issued)",
+    "no pending transactions (pending/processing)",
+    "recurring payments must be updated",
+    "refunds credited to linked checking account",
+    "permanently deactivated; cannot be reactivated"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "doc_bank_accounts_bank_accounts_(general)_032",
+  "title": "Internal: Debit Card Provisional Credit Guidelines",
+  "summary": "This document explains Rho-Bank\u2019s Regulation E rules for debit card disputes: provisional credit is required for qualifying disputes (unauthorized_transaction, various fraud/ATM/duplicate charge types) when reported within 60 days, written statement provided, and checking account OPEN with no holds. Timing: standard accounts within 10 business days (new accounts <30 days: 20); after provisional credit, investigation takes 45 business days (up to 90 for international/outside-US POS, new accounts). Provisional credit is for the full disputed amount, reversed if claim invalid, with written notice at least 3 business days prior; late reporting reduces by liability ($50 or $500).",
+  "faqs": [
+    "When is provisional credit required for a debit card dispute under Regulation E, and what conditions must all be met?",
+    "How many business days does Rho-Bank have to issue provisional credit for standard vs new accounts?",
+    "What dispute categories qualify for required provisional credit, and which categories mean it is not required?",
+    "What is the provisional credit amount (full disputed amount vs any offsets like $50/$500 liability)?",
+    "How long does the investigation take after provisional credit is issued, including the 90-day extensions?",
+    "If the investigation finds the claim invalid, what happens (reversal timing, written notice, and customer documentation rights)?"
+  ],
+  "keywords": [
+    "Regulation E",
+    "Debit card disputes",
+    "Provisional credit required",
+    "10 business days",
+    "New accounts (<30 days): 20 business days",
+    "60 days from statement date",
+    "Dispute categories: unauthorized_transaction/card_present_fraud/card_not_present_fraud/atm_cash_discrepancy/duplicate_charge",
+    "Not required categories: goods_services_not_received/recurring_charge_after_cancellation/atm_deposit_not_credited/incorrect_amount",
+    "FULL disputed amount",
+    "Liability offset ($50 or $500)",
+    "45 business days (investigation) / 90-day extensions",
+    "Written notice at least 3 business days before reversal",
+    "Customer can request documentation"
+  ]
+}

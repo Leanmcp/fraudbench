@@ -1,0 +1,27 @@
+{
+  "id": "doc_credit_cards_credit_card_replacements_005",
+  "title": "Checking Pending Replacement Card Orders (Internal)",
+  "summary": "This internal procedure covers how to check whether a credit card account has pending replacement card orders using the get_pending_replacement_orders_5765 tool with a credit_card_account_id. It explains decision rules for account closure (block until replacement is delivered or cancelled), how to interpret order statuses, and troubleshooting for invalid IDs, access errors, or ambiguous responses.",
+  "faqs": [
+    "How do I check if a credit_card_account_id has any pending replacement card orders?",
+    "What tool do I call (and with what parameter) to retrieve pending replacement orders?",
+    "If orders are returned, when is it OK to proceed with account closure?",
+    "How should I interpret mixed order statuses (pending/shipped vs delivered/cancelled)?",
+    "What should I do if I get an invalid credit_card_account_id or an access denied error?",
+    "What do I do if the tool response is empty or ambiguous? (Retry/escalate guidance)"
+  ],
+  "keywords": [
+    "get_pending_replacement_orders_5765",
+    "credit_card_account_id",
+    "pending replacement card orders",
+    "order_id",
+    "status (pending/shipped/delivered/cancelled)",
+    "created_at",
+    "latest_event_at",
+    "account closure blocked",
+    "cancelled replacement order",
+    "case notes",
+    "support engineering queue",
+    "authenticate internal environment"
+  ]
+}

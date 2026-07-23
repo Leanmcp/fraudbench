@@ -1,0 +1,24 @@
+{
+  "id": "doc_business_checking_accounts_hunter_green_009",
+  "title": "Troubleshooting: Hunter Green Fees and Charges",
+  "summary": "This document troubleshoots unexpected Hunter Green fees: a $25.00 monthly maintenance fee (waived if period-end balance meets $5,000), $15.00 outgoing domestic wire fees, $2.00 per transaction for domestic out-of-network U.S. ATM use, and foreign ATM fees of 2.5% (minimum $4.00) plus possible ATM-operator surcharges. It explains how to confirm calculations and what evidence to submit for fee reviews, and notes that certain fees may include carbon-offset allocations without increasing published amounts.",
+  "faqs": [
+    "Why was I charged the Hunter Green $25.00 monthly maintenance fee?",
+    "How can I tell if my balance met the $5,000 waiver threshold for the statement period?",
+    "What triggers the $15.00 outgoing domestic wire fee, and how do I check if it\u2019s duplicative?",
+    "How are domestic out-of-network ATM fees calculated (including the $2.00 per transaction)?",
+    "What is the foreign ATM fee formula (2.5% with a $4.00 minimum) and how do I verify the settled amount?",
+    "What should I submit to request a review of an incorrect fee (statement period, balance, wire/ATM details, receipts)?"
+  ],
+  "keywords": [
+    "Hunter Green",
+    "Monthly maintenance fee ($25.00)",
+    "Waiver threshold ($5,000 per statement period)",
+    "Outgoing domestic wire fee ($15.00)",
+    "Domestic out-of-network ATM fee ($2.00 per transaction)",
+    "Foreign ATM withdrawal fee (2.5% minimum $4.00)",
+    "ATM operator surcharge",
+    "Carbon-offset allocation within fees",
+    "Requesting a fee review (statement period, balance, wire date/reference, ATM receipt)"
+  ]
+}

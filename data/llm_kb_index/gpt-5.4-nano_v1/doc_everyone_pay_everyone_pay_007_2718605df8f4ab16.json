@@ -1,0 +1,25 @@
+{
+  "id": "doc_everyone_pay_everyone_pay_007",
+  "title": "Canceling a payment",
+  "summary": "This document explains how to cancel a pending payment: you may cancel within 17 minutes of submission if it hasn\u2019t been claimed or posted. It provides step-by-step instructions (Activity \u2192 select pending payment \u2192 Cancel \u2192 confirm) and what to do if cancellation isn\u2019t possible (request a return or initiate a dispute).",
+  "faqs": [
+    "How long do I have to cancel a payment after it\u2019s submitted?",
+    "What conditions prevent a payment from being canceled?",
+    "What are the steps to cancel a pending payment in Activity?",
+    "Where will I see confirmation that the cancellation completed?",
+    "If I can\u2019t cancel, what options do I have (return or dispute)?",
+    "What should I check to reduce the need for cancellations?"
+  ],
+  "keywords": [
+    "cancel within 17 minutes",
+    "pending payment",
+    "Activity (open Activity)",
+    "Choose Cancel",
+    "confirmation screen",
+    "claimed or posted",
+    "request a return",
+    "initiate a dispute",
+    "time-sensitive reversals",
+    "cancellation confirmation in activity"
+  ]
+}

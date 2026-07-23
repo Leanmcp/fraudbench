@@ -1,0 +1,27 @@
+{
+  "id": "doc_business_checking_accounts_cobalt_blue_007",
+  "title": "Using Bill Pay and Invoice Tools",
+  "summary": "Explains how to set up and use Online Bill Pay (included at no additional cost) and Basic invoice management tools (also included at no extra cost). Covers adding payees, scheduling single/recurring payments, maintaining up to 50 scheduled recurring payments, invoice creation/sending, tracking status sent-to-paid, exporting invoice data, approval workflows, and due-date reminders.",
+  "faqs": [
+    "Is online bill pay included, and is there any additional cost?",
+    "How do I add payees and schedule single or recurring bill payments?",
+    "What is the limit on scheduled recurring payments, and can I pause or cancel them?",
+    "How do I create, send, and track invoices from my account?",
+    "Can I export invoice data and see invoices from sent to paid?",
+    "What approval workflows and reminders are available to help prevent late payments?"
+  ],
+  "keywords": [
+    "Online bill pay",
+    "Basic invoice management tools",
+    "No additional cost",
+    "Add payees with remit details",
+    "Single or recurring payments",
+    "Up to 50 scheduled recurring payments",
+    "Payments dashboard delivery status confirmations",
+    "Approval workflows for higher-risk payments",
+    "Reminders for upcoming due dates",
+    "Invoice status sent to paid",
+    "Export invoice data",
+    "Pause or cancel scheduled payments"
+  ]
+}

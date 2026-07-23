@@ -1,0 +1,25 @@
+{
+  "id": "doc_everyone_pay_scheduled_payments_005",
+  "title": "Troubleshooting: payment didn't go through",
+  "summary": "This document troubleshoots failed payments by outlining immediate checks (available funds, current recipient details, scheduled amount within limits, and scheduled date compatible with the funding method). It explains auto-retry behavior (up to 3 attempts if Yes is enabled) and what to do after the final attempt, plus common causes and how to contact in-app support with the schedule name and processing date.",
+  "faqs": [
+    "What should I verify right away when a scheduled payment didn\u2019t go through?",
+    "If auto-retry is enabled, how many times will the system retry the payment?",
+    "What should I do if all 3 auto-retry attempts fail?",
+    "How do I fix common causes like insufficient funds, recipient issues, amount limits, or timing conflicts?",
+    "If I can\u2019t find the cause, what information should I collect and send to in-app support?"
+  ],
+  "keywords": [
+    "insufficient funds",
+    "recipient details",
+    "scheduled amount limits",
+    "scheduled date timing conflicts",
+    "auto-retry (Yes enabled)",
+    "up to 3 attempts",
+    "pending retry",
+    "occurrence will not process after final attempt",
+    "adjust schedule or amount",
+    "in-app support with schedule name and processing date",
+    "error messages"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "doc_checking_accounts_evergreen_account_008",
+  "title": "Out-of-network ATM fees for Evergreen Account",
+  "summary": "This document explains Evergreen Account out-of-network ATM fees from Rho: a separate fee per withdrawal when using an ATM not in Rho\u2019s network. The fee is 1% of the cash dispensed amount, capped at $2.50 per withdrawal, and shown as a separate line item on transaction history (excluding any ATM operator surcharge).",
+  "faqs": [
+    "When do I get charged an out-of-network ATM fee for my Evergreen Account?",
+    "How is the out-of-network ATM fee calculated (1% of what) and what is the $2.50 cap?",
+    "Is the $2.50 cap applied to the ATM operator\u2019s surcharge too?",
+    "How does the fee appear on my transaction history and is it deducted in addition to cash?",
+    "If I make multiple withdrawals in one day, do I pay the fee more than once?",
+    "What are the recommended ways to avoid or reduce out-of-network ATM fees? "
+  ],
+  "keywords": [
+    "Evergreen Account",
+    "Out-of-network ATM fee",
+    "Rho\u2019s network",
+    "Per withdrawal transaction",
+    "1% of cash dispensed amount",
+    "Maximum per withdrawal $2.50",
+    "Separate line item on transaction history",
+    "Fee deducted in addition to cash withdrawn",
+    "ATM operator surcharge (not capped)",
+    "Multiple withdrawals in same day"
+  ]
+}

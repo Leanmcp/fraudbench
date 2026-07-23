@@ -1,0 +1,24 @@
+{
+  "id": "doc_everyone_pay_qr_transfers_001",
+  "title": "QR Transfers: Complete Guide",
+  "summary": "This document explains how to complete QR transfers end to end, including timing, confirmation, and limits: $1,250 per QR payment, $3,000 daily cap, and 17-minute QR validity. It also covers what happens when \u201cYes\u201d confirmation applies and how to handle expired codes (regenerate, don\u2019t use screenshots).",
+  "faqs": [
+    "What are the per-transfer and daily limits for QR payments?",
+    "How long is a generated QR code valid, and what should I do if it expires?",
+    "How do I send a payment via QR in the app, including the scanning and approval steps?",
+    "How do I receive a QR payment, and what should I verify before confirming?",
+    "What does the \u201cYes\u201d confirmation setting require after scanning?",
+    "What should I do if my transfer is near the $1,250 cap or I reach the $3,000 daily cap?"
+  ],
+  "keywords": [
+    "QR payment tool",
+    "$1,250 per transfer cap",
+    "$3,000 daily cap",
+    "17-minute QR validity",
+    "Yes confirmation step",
+    "in-app QR scanner",
+    "regenerate expired QR",
+    "avoid screenshots of expired codes",
+    "review screen (payee name, amount, reference details)"
+  ]
+}

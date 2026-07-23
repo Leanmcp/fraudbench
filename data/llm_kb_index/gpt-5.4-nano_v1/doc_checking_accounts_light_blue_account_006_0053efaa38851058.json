@@ -1,0 +1,24 @@
+{
+  "id": "doc_checking_accounts_light_blue_account_006",
+  "title": "Foreign ATM withdrawal fees for Light Blue Account",
+  "summary": "For the Light Blue Account, Rho-Bank provides 2 free foreign ATM cash withdrawals per month (per-withdrawal; unused allowances don\u2019t roll over). After those 2 are used, each additional foreign ATM withdrawal is charged a $4.00 fee for the rest of that month, regardless of the withdrawal amount.",
+  "faqs": [
+    "How many foreign ATM withdrawals are free each month on the Light Blue Account?",
+    "Do unused free foreign ATM withdrawals roll over to the next month?",
+    "What fee is charged for foreign ATM withdrawals after the 2 free allowance is used?",
+    "Does the $4.00 foreign ATM fee depend on how much cash I withdraw?",
+    "If I make 5 foreign ATM withdrawals in one month, how many are charged and what is the total fee?",
+    "Are foreign ATM owner/operator fees included in the Rho-Bank $4.00 foreign ATM fee?"
+  ],
+  "keywords": [
+    "Light Blue Account",
+    "foreign ATM cash withdrawals",
+    "2 free foreign ATM withdrawals per month",
+    "unused free withdrawals do not roll over",
+    "$4.00 fee",
+    "per-withdrawal allowance",
+    "fee applies for remainder of month",
+    "third-party ATM owner/operator fees",
+    "example: 5 withdrawals total fee = 3\u00d7$4.00"
+  ]
+}

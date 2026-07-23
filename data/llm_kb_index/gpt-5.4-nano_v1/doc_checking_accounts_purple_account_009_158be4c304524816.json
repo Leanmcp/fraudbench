@@ -1,0 +1,26 @@
+{
+  "id": "doc_checking_accounts_purple_account_009",
+  "title": "Currency conversion rates and timing",
+  "summary": "Explains Rho-Bank foreign currency conversions: rate = interbank rate + 0.5% markup. Card transactions use the network rate at authorization or settlement (final posting may change), while wallet exchanges confirm the rate at execution; applied rate and markup are shown in transaction details after completion.",
+  "faqs": [
+    "How is my currency conversion rate calculated?",
+    "For card transactions, when is the exchange rate determined\u2014authorization or settlement?",
+    "For wallet exchanges, when is the conversion rate confirmed?",
+    "Where can I view the applied exchange rate and 0.5% markup after a conversion?",
+    "What do debit card decline codes 19, 91/96 mean for system or network issues?",
+    "If a decline code 92 happens, what should I do next?"
+  ],
+  "keywords": [
+    "Interbank rate",
+    "0.5% markup",
+    "Card transactions",
+    "Authorization",
+    "Settlement",
+    "Wallet exchanges",
+    "Transaction details",
+    "Decline Code 19 (Re-enter Transaction)",
+    "Decline Code 91 / Code 96 (System Malfunction)",
+    "Decline Code 92 (Financial Institution Not Found)",
+    "Wait 10-15 minutes"
+  ]
+}

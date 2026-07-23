@@ -1,0 +1,27 @@
+{
+  "id": "doc_business_savings_accounts_platinum_reserve_account_003",
+  "title": "Platinum Reserve Account: Using the Liquidity Reporting Dashboard",
+  "summary": "Explains how to sign in, access, and use the Liquidity Reporting Dashboard for the Platinum Reserve Account, including global filters (account/entity/classification), refresh timing (~32 minutes), and historical viewing up to 24 months. Covers creating/saving filter sets, pinning metrics, reconciling to statement snapshots by date range, and troubleshooting stale or missing data via last refresh and view scoping.",
+  "faqs": [
+    "How do I access the Liquidity Reporting Dashboard for the Platinum Reserve Account?",
+    "How often does the dashboard refresh, and how can I tell when the latest refresh completed?",
+    "Can I view historical liquidity trends, and for how many months back?",
+    "How do I create and reuse saved/custom filter sets and pin key metrics to my view?",
+    "What is the reconciliation workflow to compare dashboard balances to statement snapshots and drill into variances?",
+    "If the data looks stale or history is missing, what steps should I take (last refresh time, reapply filters, check entity/account scoping)?"
+  ],
+  "keywords": [
+    "Platinum Reserve Account",
+    "Liquidity Reporting Dashboard",
+    "Global filters (account, entity, classification)",
+    "Dashboard refreshes ~every 32 minutes",
+    "Status indicator for latest refresh",
+    "Historical coverage up to 24 months",
+    "Saved custom filter sets",
+    "Pin key metrics",
+    "Reconcile vs statement snapshots",
+    "Transaction-level detail",
+    "Troubleshoot stale data",
+    "Entity/account scoping in saved view"
+  ]
+}

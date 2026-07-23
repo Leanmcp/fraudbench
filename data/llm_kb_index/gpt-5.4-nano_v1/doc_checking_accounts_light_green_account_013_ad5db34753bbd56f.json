@@ -1,0 +1,26 @@
+{
+  "id": "doc_checking_accounts_light_green_account_013",
+  "title": "Understanding foreign ATM fees for teens",
+  "summary": "Explains foreign ATM withdrawal fees for Light Green accounts: $2.00 per withdrawal for up to and including $100, $3.50 for more than $100 up to and including $300, and $5.00 for above $300. Fee is charged per successful withdrawal based on the amount dispensed and is separate from any ATM operator fee.",
+  "faqs": [
+    "What is the foreign ATM fee on a Light Green account for withdrawing $60, $150, or $350?",
+    "How is the foreign ATM fee determined\u2014by transaction amount or total withdrawals in a day?",
+    "If I withdraw exactly $100 or exactly $300, which fee tier applies?",
+    "Do multiple foreign ATM withdrawals on the same day each get charged a separate fee?",
+    "Is the foreign ATM fee charged by Rho-Bank separate from any fee an ATM operator charges?",
+    "How can I reduce foreign ATM fees\u2014should I withdraw fewer, larger amounts or multiple smaller ones?"
+  ],
+  "keywords": [
+    "Light Green accounts",
+    "foreign ATM withdrawal fees",
+    "$2.00 up to $100",
+    "$3.50 >$100 to $300",
+    "$5.00 above $300",
+    "Rho-Bank fee",
+    "per withdrawal (single transaction)",
+    "threshold amounts exactly at $100/$300",
+    "separate from ATM operator fee",
+    "successful foreign ATM cash withdrawal",
+    "multiple withdrawals same day"
+  ]
+}

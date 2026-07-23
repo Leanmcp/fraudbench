@@ -1,0 +1,25 @@
+{
+  "id": "doc_checking_accounts_purple_account_012",
+  "title": "Out-of-network ATM fees for Purple Account",
+  "summary": "This document explains the $2.50 per-cash-withdrawal out-of-network ATM fee for a Purple Account (Rho\u2011Bank). It applies separately to each withdrawal at ATMs not in Rho\u2011Bank\u2019s ATM network, appears as its own line item, and is in addition to any ATM operator surcharge.",
+  "faqs": [
+    "How much is the Purple Account out-of-network ATM fee?",
+    "When does the $2.50 fee apply (what counts as out-of-network)?",
+    "Is the fee charged per day or per individual withdrawal?",
+    "Does the fee include the ATM owner/operator surcharge?",
+    "How will this fee show up on my account (separate line item / posting date)?",
+    "Can I avoid the ATM operator surcharge at the terminal prompt? "
+  ],
+  "keywords": [
+    "Purple Account",
+    "$2.50 per withdrawal",
+    "Out-of-network ATM",
+    "Rho\u2011Bank ATM network",
+    "Assessed per withdrawal",
+    "Separate line item",
+    "Posting date vs transaction date",
+    "ATM operator surcharge",
+    "Cancel at surcharge prompt",
+    "Use in-network ATMs"
+  ]
+}

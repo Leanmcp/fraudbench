@@ -1,0 +1,23 @@
+{
+  "id": "doc_buy_now_pay_later_bnpl_bronze_006",
+  "title": "BNPL Bronze: Eligible Purchases and Allowed Shopping Channels",
+  "summary": "This document specifies that BNPL Bronze is usable only on certain allowed sales channels and will not appear at checkout if a merchant does not operate on one of those channels. It also lists a minimum per-transaction purchase threshold of $[value not available] (USD) and provides checkout steps to verify the allowed channel and that the cart total meets the minimum.",
+  "faqs": [
+    "Which shopping channels are allowed for BNPL Bronze?",
+    "What is the minimum per-transaction amount required to use BNPL Bronze?",
+    "How can I confirm BNPL Bronze eligibility during checkout?",
+    "If BNPL Bronze doesn\u2019t show up, what should I do?",
+    "Does BNPL Bronze work if a merchant\u2019s checkout uses a non-allowed channel?",
+    "What should I check about my cart total at checkout for BNPL Bronze?"
+  ],
+  "keywords": [
+    "BNPL Bronze",
+    "Allowed sales channels",
+    "Minimum purchase threshold",
+    "Per-transaction amount",
+    "Cart total",
+    "Checkout eligibility confirmation",
+    "Excluded items",
+    "Allowed channel requirement"
+  ]
+}

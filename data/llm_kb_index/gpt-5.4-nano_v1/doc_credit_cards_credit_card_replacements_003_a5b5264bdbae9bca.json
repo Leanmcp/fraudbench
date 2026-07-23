@@ -1,0 +1,27 @@
+{
+  "id": "doc_credit_cards_credit_card_replacements_003",
+  "title": "What Happens When You Order a Replacement Card",
+  "summary": "Explains what happens after ordering a replacement card: the current card is cancelled (cannot be used for new purchases) and a new card is issued with a different card number and CVV. Your account number stays the same so recurring payments continue; you must update saved merchant card details and, if fraud-related, review recent transactions in the Rho-Bank app/website and report unauthorized charges. You receive emails when the replacement order is placed and when it ships, and should follow any activation instructions.",
+  "faqs": [
+    "After I order a replacement card, can I still use my old card?",
+    "Will my account number change or stay the same for recurring payments?",
+    "What information changes on the replacement card (card number and CVV)?",
+    "Do I need to update my saved payment details with merchants, and what should I do?",
+    "If the replacement is for suspected fraud, what steps should I take?",
+    "What notifications will I receive for the replacement card order and shipment?"
+  ],
+  "keywords": [
+    "replacement card order",
+    "current card cancelled",
+    "cannot be used for new purchases",
+    "new card number",
+    "new CVV",
+    "account number unchanged",
+    "recurring payments",
+    "update saved card details",
+    "Rho-Bank app or website",
+    "report unauthorized charges",
+    "email when order is placed",
+    "email when card ships"
+  ]
+}

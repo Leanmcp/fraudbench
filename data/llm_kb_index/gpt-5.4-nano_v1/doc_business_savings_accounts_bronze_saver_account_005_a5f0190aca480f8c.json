@@ -1,0 +1,24 @@
+{
+  "id": "doc_business_savings_accounts_bronze_saver_account_005",
+  "title": "Bronze Saver Account: Mobile banking and deposit limits",
+  "summary": "Explains Bronze Saver Account mobile banking limits: mobile check deposits up to $2,500 per day (above this may be blocked) and outgoing transfers limited to $5,000 per day (may prompt to reduce or split across days). Includes tips to submit early and retain check images/confirmations until deposits appear.",
+  "faqs": [
+    "What is the daily limit for mobile check deposits on a Bronze Saver Account?",
+    "What happens if I try to mobile-deposit more than $2,500 in a day?",
+    "What is the daily limit for outgoing transfers from the Bronze Saver app?",
+    "What does the app do if my outgoing transfer would exceed $5,000 for the day?",
+    "When should I submit mobile deposits/transfers to avoid delays?",
+    "How long should I keep mobile deposit confirmations and check images?"
+  ],
+  "keywords": [
+    "Bronze Saver Account",
+    "mobile check deposit",
+    "daily mobile deposit limit $2,500",
+    "incoming mobile deposit submission blocked",
+    "outgoing transfers limit $5,000 per day",
+    "prompt to reduce amount or split transfers",
+    "submit early in the day",
+    "retain check images and confirmations",
+    "deposit reflected in account activity"
+  ]
+}

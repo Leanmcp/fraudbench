@@ -1,0 +1,25 @@
+{
+  "id": "doc_buy_now_pay_later_bnpl_gold_005",
+  "title": "BNPL Gold: Transaction Size Limits and Purchase Eligibility",
+  "summary": "This document explains BNPL Gold purchase amount requirements: transactions must be at least [value not available] and no more than [value not available]. Eligibility is based on the authorized amount at checkout; if the final settled amount is below/above the stated thresholds, the transaction may not be eligible.",
+  "faqs": [
+    "What are the minimum and maximum transaction amounts required to use BNPL Gold?",
+    "Does BNPL Gold eligibility use the cart total or the authorized amount at checkout?",
+    "If my final settled amount ends up higher or lower than the limits, will my BNPL Gold financing still be eligible?",
+    "What should I check in my cart before selecting BNPL Gold (e.g., taxes and fees)?",
+    "If I\u2019m slightly below the minimum amount, what can I do to qualify?",
+    "For larger purchases, what limits should I ensure I stay within when using BNPL Gold? "
+  ],
+  "keywords": [
+    "BNPL Gold",
+    "transaction size requirements",
+    "minimum amount threshold",
+    "maximum amount threshold",
+    "authorized amount at purchase",
+    "final settled amount",
+    "cart total",
+    "taxes and fees",
+    "available credit",
+    "adding eligible items"
+  ]
+}

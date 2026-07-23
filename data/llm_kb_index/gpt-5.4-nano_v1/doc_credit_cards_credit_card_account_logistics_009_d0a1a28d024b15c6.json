@@ -1,0 +1,27 @@
+{
+  "id": "doc_credit_cards_credit_card_account_logistics_009",
+  "title": "Paying Off Credit Card Balance from Checking Account (Internal)",
+  "summary": "This internal procedure explains how to pay off a customer\u2019s credit card balance using funds from their Rho-Bank checking account via the pay_credit_card_from_checking_9182 tool, including prerequisites, identity/balance checks, and required tool arguments. It states amount must be positive and cannot exceed either the checking balance or credit card outstanding balance, and confirms with new balances.",
+  "faqs": [
+    "What are the prerequisites to pay a credit card balance from a Rho-Bank checking account?",
+    "How do I choose and verify the checking_account_id and credit_card_account_id before initiating the payment?",
+    "What amount rules apply for pay_credit_card_from_checking_9182 (positive, and limits vs balances)?",
+    "Which steps should I follow to process the transfer end-to-end (including authorization)?",
+    "What tool do I use (pay_credit_card_from_checking_9182) and what arguments are required?",
+    "Will the confirmation show updated balances for both the checking and credit card accounts?"
+  ],
+  "keywords": [
+    "Rho-Bank checking account",
+    "credit card account",
+    "pay_credit_card_from_checking_9182",
+    "unlock_discoverable_agent_tool",
+    "call_discoverable_agent_tool",
+    "user_id",
+    "checking_account_id",
+    "credit_card_account_id",
+    "amount (float, positive)",
+    "cannot exceed checking balance",
+    "cannot exceed credit card outstanding balance",
+    "new balances confirmation"
+  ]
+}

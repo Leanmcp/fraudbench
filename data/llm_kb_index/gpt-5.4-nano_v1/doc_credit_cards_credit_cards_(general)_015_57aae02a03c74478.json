@@ -1,0 +1,31 @@
+{
+  "id": "doc_credit_cards_credit_cards_(general)_015",
+  "title": "Provisional Credit Eligibility Guidelines (Internal)",
+  "summary": "This internal guide sets eligibility rules for provisional credit during credit card transaction disputes. Customers qualify only if: account is open \u226560 days, dispute reason is unauthorized_fraudulent_charge/duplicate_charge/goods_services_not_received (only if purchase >30 days), amount is $25.00\u2013tier max ($2500 Bronze, $5000 Silver, $10000 Gold, $15000 Platinum, $25000 Diamond Elite), they have \u22642 disputes in past 12 months (checked via get_current_dispute_count), and for non-fraud reasons they contacted the merchant first.",
+  "faqs": [
+    "Under what conditions is a customer eligible for provisional credit on a card transaction dispute?",
+    "How do I check the \u201cno more than 2 disputes in the past 12 months\u201d rule before filing a dispute?",
+    "What dispute reason codes qualify for provisional credit, and how does goods_services_not_received depend on purchase date?",
+    "What are the maximum provisional credit limits by card tier (Bronze/Silver/Gold/Platinum/Diamond Elite)?",
+    "What transaction amount range qualifies (minimum and tier maximum), and when is the amount too low or too high?",
+    "What mandatory steps must I follow, in order, before setting eligible_for_provisional_credit? "
+  ],
+  "keywords": [
+    "provisional credit",
+    "credit card transaction dispute",
+    "eligible_for_provisional_credit",
+    "get_current_dispute_count",
+    "unauthorized_fraudulent_charge",
+    "duplicate_charge",
+    "goods_services_not_received (purchase >30 days)",
+    "$25.00 minimum",
+    "Maximum provisional credit limits",
+    "Bronze Rewards Card ($2500.00)",
+    "Silver Rewards Card ($5000.00)",
+    "Gold Rewards Card ($10000.00)",
+    "Platinum Rewards Card ($15000.00)",
+    "Diamond Elite Card ($25000.00)",
+    "\u22642 disputes in past 12 months",
+    "contacted merchant first (non-fraud)"
+  ]
+}

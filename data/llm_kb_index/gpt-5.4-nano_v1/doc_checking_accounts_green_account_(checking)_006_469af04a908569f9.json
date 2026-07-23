@@ -1,0 +1,24 @@
+{
+  "id": "doc_checking_accounts_green_account_(checking)_006",
+  "title": "Green Account (checking): What happens if a payment exceeds your balance?",
+  "summary": "Explains what happens with Green Account (checking) when a payment exceeds available funds: at authorization the payment is compared to available balance; if the shortfall is > $5 the transaction is declined and won\u2019t create a negative balance. After a decline, you can retry once you add funds, and you\u2019ll receive a declined-transaction notification per your alert settings (Yes). Tips include checking available balance for the full amount and keeping headroom beyond the amount due to small adjustments interacting with the $5 threshold.",
+  "faqs": [
+    "What happens when a payment request is higher than my available balance in my Green Account (checking)?",
+    "Is there a tolerance amount for shortfalls when a payment is authorized?",
+    "If my payment is declined, can I retry it after adding money?",
+    "Will I get notified when a transaction is declined, and how is that controlled?",
+    "How can I avoid payment declines with this account?"
+  ],
+  "keywords": [
+    "Green Account (checking)",
+    "payment exceeds available funds",
+    "authorization comparison",
+    "shortfall threshold (at or below 5)",
+    "declined transaction",
+    "no negative balance",
+    "retry after adding funds",
+    "declined transaction notification",
+    "alert setting: Yes",
+    "headroom beyond amount"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "doc_business_savings_accounts_platinum_reserve_account_002",
+  "title": "Platinum Reserve Account: Daily Interest Compounding Explained",
+  "summary": "Explains how the Platinum Reserve Account\u2019s daily interest compounding works: a daily periodic rate derived from 5.0% is applied to end-of-day ledger balances, with earned interest added to principal each day. Covers effects of earlier deposits and intra-day withdrawals, interaction with the $50.00 monthly maintenance fee, plus verification via end-of-day balance comparisons and period-end statements.",
+  "faqs": [
+    "How is the daily periodic rate derived from the 5.0% interest rate applied?",
+    "What ledger balance is used to calculate daily interest (e.g., end-of-day vs intraday)?",
+    "How do earlier deposits and fewer idle intervals affect effective earnings with daily compounding?",
+    "How do large intra-day withdrawals impact that day\u2019s interest accrual?",
+    "How does the $50.00 monthly maintenance fee affect subsequent daily interest accruals?",
+    "How can I verify and reconcile daily interest credited using end-of-day balances and period-end statements?"
+  ],
+  "keywords": [
+    "Platinum Reserve Account",
+    "daily interest compounding",
+    "daily periodic rate",
+    "end-of-day ledger balance",
+    "5.0%",
+    "$50.00 monthly maintenance fee",
+    "intra-day withdrawals",
+    "principal grows daily",
+    "period-end statements",
+    "accrual verification"
+  ]
+}

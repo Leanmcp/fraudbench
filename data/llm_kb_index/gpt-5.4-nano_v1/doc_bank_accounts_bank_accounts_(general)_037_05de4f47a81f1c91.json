@@ -1,0 +1,26 @@
+{
+  "id": "doc_bank_accounts_bank_accounts_(general)_037",
+  "title": "Understanding Regulation E: Your Debit Card Consumer Protections",
+  "summary": "Explains CFPB Regulation E debit card consumer protections for electronic fund transfers at Rho-Bank: limited liability for unauthorized use ($50 within 2 business days, $500 within 60 days, full after 60), error disputes, investigations (10 business days), results timing (3 business days), corrections (1 business day), and provisional credit (within 10 business days). Also covers documentation rights and how to dispute; includes debit card decline codes (41 lost, 43 stolen) and internal \u201cdo not disclose\u201d codes (04/07/34/59) with required scripts.",
+  "faqs": [
+    "What transactions does Regulation E cover for my Rho-Bank debit card (PIN/signature, ATM, direct deposits, bill pay, P2P, recurring payments)?",
+    "If someone uses my debit card without permission, what is my maximum liability if I report it within 2 business days / within 60 days / after 60 days?",
+    "How long does Rho-Bank have to investigate an error after I report it, and when will I get the results and the correction?",
+    "Will I receive provisional credit while my dispute is being investigated, and within what timeframe?",
+    "What documentation can I request during the Regulation E error-resolution process (confirmation, copies of documents, advance notice)?",
+    "If my debit card is declined, what should I do for decline code 41 (lost) vs code 43 (stolen), and what responses are required for internal codes 04/07/34/59?"
+  ],
+  "keywords": [
+    "Regulation E (CFPB)",
+    "Electronic fund transfers (EFTs)",
+    "Debit card purchases (PIN and signature)",
+    "Unauthorized transaction liability: $50 / $500 / full amount",
+    "Error investigation timing: 10 business days",
+    "Results due: within 3 business days",
+    "Confirmed error correction: within 1 business day",
+    "Provisional (temporary) credit within 10 business days",
+    "Documentation rights (written confirmation, copies, advance notice)",
+    "Decline codes: CODE 41 lost, CODE 43 stolen",
+    "Do not disclose codes: CODE 04, CODE 07, CODE 34, CODE 59"
+  ]
+}

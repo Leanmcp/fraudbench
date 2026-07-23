@@ -1,0 +1,26 @@
+{
+  "id": "doc_everyone_pay_user_blocking_002",
+  "title": "Blocking and unblocking users",
+  "summary": "Explains how to block and unblock users: block from a user profile (confirm choice) and unblock from the block list (confirm to restore interactions). Notes a $275 maximum blocking limit, and a 12-hour wait before re-blocking a user you just unblocked.",
+  "faqs": [
+    "How do I block a user from their profile?",
+    "What should I do if blocking a user fails?",
+    "How do I unblock someone from my block list?",
+    "After unblocking a user, can I block them again right away?",
+    "Is there a limit to how many users I can block, and what is it?",
+    "What should I do if I\u2019m at capacity and need to block someone new?"
+  ],
+  "keywords": [
+    "Blocking a user",
+    "Unblocking a user",
+    "User profile block option",
+    "Block list",
+    "Maximum of $275",
+    "Blocking fails",
+    "Confirm unblocking",
+    "Restore normal interactions",
+    "12 hours re-block window",
+    "Periodically review block list",
+    "At capacity"
+  ]
+}

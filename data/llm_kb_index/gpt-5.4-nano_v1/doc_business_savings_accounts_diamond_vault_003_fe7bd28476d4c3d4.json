@@ -1,0 +1,24 @@
+{
+  "id": "doc_business_savings_accounts_diamond_vault_003",
+  "title": "Diamond Vault Account: Wire transfers and fees",
+  "summary": "This document covers Diamond Vault Account wire transfers: all wire transfer fees are waived when wire instructions are submitted following standard security protocols. It states external bank transfers process in 0 business days, subject to verification/security checks, and provides submission guidance for beneficiary/reference details and monitoring transfer status updates.",
+  "faqs": [
+    "Are wire transfer fees waived for Diamond Vault Account? If so, under what condition?",
+    "How long do external bank transfers take to process?",
+    "What can cause delays in external bank transfers processing?",
+    "What beneficiary information should I provide for a wire transfer?",
+    "Do I need to include reference details for reconciliation?",
+    "After submitting a transfer, how can I confirm it has posted?"
+  ],
+  "keywords": [
+    "Diamond Vault Account",
+    "wire transfer fees waived",
+    "standard security protocols",
+    "external bank transfers",
+    "processing in 0 business days",
+    "verification and security checks",
+    "complete and accurate beneficiary information",
+    "reference details for reconciliation",
+    "transfer activity status updates"
+  ]
+}

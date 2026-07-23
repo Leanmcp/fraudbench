@@ -1,0 +1,27 @@
+{
+  "id": "doc_personal_subscriptions_rho_bank_plus_002",
+  "title": "Rho Bank Plus: Margin Lending Guide and Interest Rates",
+  "summary": "Rho Bank Plus Margin Lending Guide specifies a 7.0% APR margin interest rate and a maximum available margin lending limit of $62,500 (subject to eligibility and collateral). It outlines how to request a margin advance, how interest accrues (including daily/monthly estimate formulas), repayment flexibility, and risk-management best practices.",
+  "faqs": [
+    "What is the APR for Rho Bank Plus margin lending?",
+    "What is the maximum margin lending limit and what determines eligibility?",
+    "How do I request a margin advance, and when does interest start accruing?",
+    "How is margin interest calculated, and what are the daily/monthly estimate formulas?",
+    "If I borrow $10,000 for 30 days, what approximate interest cost should I expect?",
+    "Can I repay any portion of my margin balance at any time, and does interest keep accruing until it\u2019s repaid?"
+  ],
+  "keywords": [
+    "Rho Bank Plus",
+    "margin lending",
+    "APR 7.0%",
+    "maximum limit $62,500",
+    "margin advance request",
+    "interest accrues on disbursed amount",
+    "daily estimate (days/365)",
+    "monthly estimate (/12)",
+    "repay any portion anytime",
+    "monthly statement",
+    "buffer vs available limit",
+    "balance and market monitoring"
+  ]
+}

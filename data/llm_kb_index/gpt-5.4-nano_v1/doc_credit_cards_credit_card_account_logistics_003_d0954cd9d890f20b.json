@@ -1,0 +1,27 @@
+{
+  "id": "doc_credit_cards_credit_card_account_logistics_003",
+  "title": "Internal: Credit Card Retention Protocol",
+  "summary": "This document defines the \u201cCredit Card Retention Protocol\u201d (Rho-Bank) for customers requesting account closure. It requires eligibility checks (no pending disputes, no pending replacement cards, 60+ days open, zero outstanding balance), runs get_closure_reason_history_8293 for prior reasons in the past year, logs closure reasons via log_credit_card_closure_reason_4521, offers tier-based retention (500/2,000/5,000 points or $5/$20/$50), then outlines closure steps and rewards timing (45 days) and annual fee refund window (refund if closed within 37 days).",
+  "faqs": [
+    "What eligibility requirements must be met before I can attempt credit card retention or close the account?",
+    "How does the protocol handle previous closure reason attempts in the past year?",
+    "What closure reasons are allowed, and how are they logged (tool log_credit_card_closure_reason_4521)?",
+    "If my reason is annual fee, what options are offered (waive annual fee for one year vs permanent downgrade)?",
+    "If I still want to close after concerns, what retention offer do I get by card tier (entry/mid/premium)?",
+    "After submitting a closure request, how long do I have to redeem unredeemed rewards, and when is an annual fee refund available? "
+  ],
+  "keywords": [
+    "get_closure_reason_history_8293",
+    "log_credit_card_closure_reason_4521",
+    "annual_fee_waived",
+    "credit_card_account_id",
+    "closure_reason options: annual_fee/not_using_card/found_better_card/unhappy_with_rewards/simplifying_finances/negative_experience/other",
+    "60 days minimum account age",
+    "45 days to redeem unredeemed rewards",
+    "37 days annual fee full refund window",
+    "Entry-tier retention: 500 bonus points or $5 statement credit",
+    "Mid-tier retention: 2,000 bonus points or $20 statement credit",
+    "Premium+ retention: 5,000 bonus points or $50 statement credit",
+    "pending replacement cards not received/activated"
+  ]
+}

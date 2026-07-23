@@ -1,0 +1,27 @@
+{
+  "id": "doc_business_savings_accounts_joint_business_holders_+_user_roles_008",
+  "title": "User Roles: Best Practices for Access Management",
+  "summary": "Covers access management best practices for role assignment (Admin, Finance operational staff, Auditor), approval controls (Finance approval limited to approvals without additional authorization up to $50,000; dual approvals triggered at $25,000 for sensitive payments/high-impact changes), periodic access certifications, and monitoring/documentation for audit readiness.",
+  "faqs": [
+    "Who should be granted Admin rights, and when should operational staff be placed in Finance?",
+    "What access should Auditors have to perform independent review without altering data or settings?",
+    "What are the Finance approval limits for transactions requiring approval without additional authorization (e.g., $50,000)?",
+    "At what threshold are dual approvals required for sensitive payments and high-impact changes (e.g., $25,000)?",
+    "How should recurring access certifications be performed and exceptions documented with management sign-off?",
+    "What monitoring and records are required for audit readiness (e.g., payment pattern changes, role/approval/policy change documentation)?"
+  ],
+  "keywords": [
+    "Least privilege",
+    "Admin rights",
+    "Finance operational staff",
+    "Auditor access",
+    "Approval authority $50,000",
+    "Dual authorization $25,000",
+    "Dual approvals for sensitive payments",
+    "Access certifications",
+    "Management sign-off for exceptions",
+    "Payment pattern monitoring",
+    "Audit readiness records",
+    "Approval routing overlap review"
+  ]
+}

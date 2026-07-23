@@ -1,0 +1,26 @@
+{
+  "id": "doc_checking_accounts_purple_account_003",
+  "title": "No foreign transaction fees explained",
+  "summary": "Explains that card purchases and withdrawals in a non-USD currency incur a 0% foreign transaction fee (foreign currency transactions only). Covers foreign-currency card purchases, online foreign-currency charges, and international ATM withdrawals, and clarifies exclusions like ATM operator surcharges/network fees and that stop payments cost $25.",
+  "faqs": [
+    "Do you charge a foreign transaction fee for purchases in a non-USD currency?",
+    "Are international ATM withdrawals subject to a foreign transaction fee?",
+    "Does the foreign transaction fee apply to online transactions charged in a foreign currency?",
+    "What fees are NOT included in the foreign transaction fee policy (e.g., ATM operator surcharges or network fees)?",
+    "Are check-related services included under foreign transaction fees (e.g., stop payment)? If not, what is the stop payment fee?",
+    "If a merchant offers to charge in USD instead of local currency, is that part of the foreign transaction fee?"
+  ],
+  "keywords": [
+    "foreign transaction fee",
+    "0% foreign currency transactions",
+    "non-USD purchases and withdrawals",
+    "card purchases processed in a foreign currency",
+    "online transactions charged in a foreign currency",
+    "international ATM withdrawals",
+    "local ATM operator surcharges",
+    "network fees",
+    "check-related services",
+    "stop payment fee: $25",
+    "merchant charges in USD (instead of local currency)"
+  ]
+}

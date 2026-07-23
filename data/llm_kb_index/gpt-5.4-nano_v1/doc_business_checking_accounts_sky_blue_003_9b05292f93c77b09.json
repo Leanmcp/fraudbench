@@ -1,0 +1,27 @@
+{
+  "id": "doc_business_checking_accounts_sky_blue_003",
+  "title": "Claiming AWS Credits and Stripe Discounts",
+  "summary": "This document explains how to claim an AWS Credits benefit worth $2,750 and a Stripe Processing Discount of 12.0%. It covers the step-by-step redemption/activation flow in a perks portal, including associating accounts, partner verification, and confirming status/discount in the appropriate dashboards.",
+  "faqs": [
+    "How do I claim the AWS Credits (value $2,750) in the perks portal?",
+    "After I submit an AWS credit redemption, where can I confirm the credit application status?",
+    "How do I activate the Stripe Processing Discount of 12.0% from the perks portal?",
+    "What partner verification and Stripe account connection steps are required for the Stripe discount?",
+    "Where do I verify that the Stripe discount has been applied (after activation)?",
+    "What tips does the document give to ensure a smooth redemption across partner portals?"
+  ],
+  "keywords": [
+    "AWS Credits ($2,750)",
+    "Perks portal",
+    "Redeem/AWS redemption flow",
+    "Associate AWS account",
+    "Confirm credit application status",
+    "Stripe Processing Discount (12.0%)",
+    "Stripe perk link",
+    "Partner verification steps",
+    "Connect Stripe account",
+    "Verify applied discount in Stripe dashboard",
+    "Business identity details",
+    "Confirmation emails/reference IDs"
+  ]
+}

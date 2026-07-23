@@ -1,0 +1,23 @@
+{
+  "id": "doc_buy_now_pay_later_bnpl_diamond_003",
+  "title": "BNPL Diamond: Understanding Your Maximum BNPL Limit and Concurrent Plans",
+  "summary": "Explains BNPL Diamond limits: your total outstanding principal across all BNPL Diamond repayment plans must stay at or below $2,505,000.00, and you can have at most 25 active plans concurrently. New plans are declined if either cap would be exceeded; approvals require both criteria to remain within limits.",
+  "faqs": [
+    "What is my BNPL Diamond maximum total outstanding balance limit?",
+    "How many BNPL Diamond repayment plans can I have active at one time?",
+    "If I\u2019m under the $2,505,000 cap, will a new plan still be declined?",
+    "What criteria are used to approve or decline a BNPL Diamond plan request?",
+    "How can I free up capacity to add another BNPL Diamond plan?",
+    "How should I plan new BNPL Diamond purchases while managing both caps?"
+  ],
+  "keywords": [
+    "BNPL Diamond",
+    "overall BNPL cap",
+    "$2,505,000.00 maximum outstanding principal",
+    "capacity for new plans",
+    "concurrent plan cap",
+    "25 active repayment plans",
+    "plan request approval criteria",
+    "active plans exceeding 25"
+  ]
+}

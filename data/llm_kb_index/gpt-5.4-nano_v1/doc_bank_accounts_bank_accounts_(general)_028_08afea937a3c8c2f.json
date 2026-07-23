@@ -1,0 +1,27 @@
+{
+  "id": "doc_bank_accounts_bank_accounts_(general)_028",
+  "title": "Internal: Retrieving Debit Card Information",
+  "summary": "This document explains how to retrieve debit card information for a customer checking account using tool get_debit_cards_by_account_id_7823(account_id). It lists returned debit card fields (e.g., status, issue_reason, expiration_date, daily_purchase_limit, daily_atm_limit) and notes privacy and that only checking-account debit cards are returned as an empty list if none exist.",
+  "faqs": [
+    "How do I use get_debit_cards_by_account_id_7823 to retrieve debit cards for a specific checking account ID?",
+    "What fields does the tool return for each debit card (card_id, status, issue_reason, expiration_date, limits, etc.)?",
+    "Can this tool return full debit card numbers, or only partial information (last 4)?",
+    "What statuses can be returned for a card (ACTIVE, PENDING, FROZEN, CLOSED)?",
+    "If a checking account has multiple cards in history, how many results can be returned?",
+    "What happens if the account has no debit cards\u2014does it return an error or an empty list?"
+  ],
+  "keywords": [
+    "get_debit_cards_by_account_id_7823",
+    "account_id (checking account ID)",
+    "card_id",
+    "card_number_last_4",
+    "status (ACTIVE, PENDING, FROZEN, CLOSED)",
+    "issue_reason (new_account, first_card, lost, stolen, fraud, expired, damaged, upgrade, bank_reissue)",
+    "expiration_date (MM/YY)",
+    "date_issued",
+    "card_design (CLASSIC, PREMIUM, CUSTOM)",
+    "daily_purchase_limit",
+    "daily_atm_limit",
+    "empty list when no cards exist"
+  ]
+}

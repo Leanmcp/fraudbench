@@ -1,0 +1,25 @@
+{
+  "id": "doc_business_checking_accounts_cobalt_blue_009",
+  "title": "Troubleshooting: Unexpected Charges on Cobalt Blue",
+  "summary": "This document helps troubleshoot unexpected Cobalt Blue account charges by identifying the transaction description and matching it to specific fee types: $20 Monthly Maintenance Fee (waiver balance $2,500), $0.25 Excess Transaction Fee per excess item, $20 Domestic Wire Transfer Fee, $2.00 Out-of-Network ATM Fee, and International ATM Withdrawal Fee of 2.5% (minimum $4.00). It also notes Cobalt Blue does not assess overdraft fees, and provides a checklist and required information to request a fee review/dispute.",
+  "faqs": [
+    "How can I identify which Cobalt Blue fee is causing an unexpected charge on my statement?",
+    "What balance ($2,500) and statement-period conditions determine the $20 Monthly Maintenance Fee waiver?",
+    "How is the Excess Transaction Fee calculated ($0.25 per excess transaction), and how do I confirm the count?",
+    "If I see a $20 Wire Transfer Fee \u2013 Domestic, how do I verify whether a domestic wire was actually sent?",
+    "What ATM fees apply for out-of-network (domestic) vs international withdrawals, and what are the $2.00 / 2.5% (min $4.00) amounts?",
+    "If a charge looks like an overdraft fee, does Cobalt Blue assess overdraft fees and what should I do next?"
+  ],
+  "keywords": [
+    "Cobalt Blue",
+    "Monthly Maintenance Fee ($20.00)",
+    "Fee Summary",
+    "Balance waiver requirement ($2,500)",
+    "Excess Transaction Fee ($0.25 per excess transaction)",
+    "Wire Transfer Fee \u2013 Domestic ($20.00)",
+    "ATM Fee \u2013 Out of Network ($2.00 per ATM transaction)",
+    "International ATM Withdrawal Fee (2.5% minimum $4.00)",
+    "Fedwire / wire description identifiers",
+    "Fee review/dispute checklist"
+  ]
+}

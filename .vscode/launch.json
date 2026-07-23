@@ -1,0 +1,385 @@
+{
+  // VS Code debug configs for stepping through a tau2 eval and watching the
+  // LiteLLM call that fails. run_evals.sh just shells out to `tau2 run`; these
+  // launch the same console script under debugpy so you can set breakpoints.
+  //
+  // Key breakpoints to set:
+  //   src/tau2/utils/llm_utils.py:409  -> the litellm.completion(...) call
+  //   src/tau2/utils/llm_utils.py:417  -> the `except` that logs/re-raises (this
+  //                                        is the `:generate:417` from your error)
+  //
+  // Tips:
+  //   - justMyCode is false so you can STEP INTO litellm and see the raw request
+  //     it builds and the Fireworks HTTP response it gets back (inspect `e.response`).
+  //   - max-concurrency is 1 so breakpoints don't fire across many threads at once.
+  //   - envFile loads .env, so litellm picks up FIREWORKS_API_KEY automatically
+  //     for the DIRECT route — no secret needs to live in this file.
+  "version": "0.2.0",
+  "configurations": [
+    {
+      // EXP2: the reasoning-gated segmented-advantage GRPO experiment,
+      // end-to-end (eval-before -> custom-loss train -> eval-after), under
+      // debugpy so you can step it line by line (F10 over, F11 into).
+      //
+      // Args below are DEBUG-SIZED (1 iteration, 1 task, 1 eval trial) so a
+      // breakpoint is never more than one episode away; delete the args block
+      // to fall back to EXPERIMENTS/exp_config.py defaults.
+      //
+      // Suggested breakpoints (click in the gutter):
+      //   TAU2_WITH_TINKER/run_training_2.py
+      //       main()                       - phase sequencing + summary
+      //   TAU2_WITH_TINKER/EXPERIMENTS/train_experiment.py
+      //       find_reasoning_boundary()    - the token-level segment split
+      //       analyze_episode()            - TurnRecord <-> transcript alignment
+      //       ReasoningJudge.score()       - the 2nd-LLM judge call + JSON parse
+      //       build_segmented_datum()      - per-segment advantages -> Datum
+      //       train() at forward_backward  - the actual training step
+      //   TAU2_WITH_TINKER/EXPERIMENTS/eval_experiment.py
+      //       run_eval()                   - the 4-trial eval loop
+      //   TAU2_WITH_TINKER/tinker_backend.py
+      //       TinkerLM.generate_assistant() - every sampled turn (agent AND user)
+      //
+      // Needs TINKER_API_KEY (loaded from .env via envFile). justMyCode=false
+      // lets you step INTO tinker/tau2 (e.g. evaluate_simulation).
+      "name": "EXP2: full experiment (eval -> train -> eval, debuggable)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/TAU2_WITH_TINKER/run_training_2.py",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env",
+      "args": [
+        "--iterations", "1",
+        "--group-size", "2",
+        "--tasks-per-iter", "1",
+        "--eval-trials", "1",
+        "--eval-limit", "1"
+      ]
+    },
+    {
+      // EXP2 but SKIPPING both evals: jumps straight into the training loop,
+      // for debugging the custom loss (judge, segment split, advantages)
+      // without waiting for the before-eval episodes.
+      "name": "EXP2: train only, skip evals (debuggable)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/TAU2_WITH_TINKER/run_training_2.py",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env",
+      "args": [
+        "--skip-eval-before",
+        "--skip-eval-after",
+        "--iterations", "1",
+        "--group-size", "2",
+        "--tasks-per-iter", "1"
+      ]
+    },
+    {
+      "name": "tau2 run — custom deployment (DIRECT, debuggable)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/.venv/bin/tau2",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "envFile": "${workspaceFolder}/.env",
+      "cwd": "${workspaceFolder}",
+      "args": [
+        "run",
+        "--domain", "retail",
+        "--agent-llm", "fireworks_ai/accounts/dheerajmpaicmu-4f4056/deployments/k9rxxb48",
+        "--agent-llm-args", "{\"temperature\": 0.0}",
+        "--user-llm",  "fireworks_ai/accounts/dheerajmpaicmu-4f4056/deployments/k9rxxb48",
+        "--user-llm-args",  "{\"temperature\": 0.0}",
+        "--num-tasks", "5",
+        "--num-trials", "1",
+        "--max-steps", "300",
+        "--max-concurrency", "1",
+        "--save-to", "leaderboard/debug/custom-k9rxxb48__retail"
+      ]
+    },
+    {
+      "name": "tau2 run — custom deployment (GATEWAY, debuggable)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/.venv/bin/tau2",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "envFile": "${workspaceFolder}/.env",
+      "cwd": "${workspaceFolder}",
+      "args": [
+        "run",
+        "--domain", "retail",
+        "--agent-llm", "fireworks_ai/accounts/dheerajmpaicmu-4f4056/deployments/k9rxxb48",
+        "--agent-llm-args", "{\"temperature\": 0.0, \"api_base\": \"https://aigateway.leanmcp.com/v1/fireworks\", \"api_key\": \"${env:LEANMCP_API_KEY}\"}",
+        "--user-llm",  "fireworks_ai/accounts/dheerajmpaicmu-4f4056/deployments/k9rxxb48",
+        "--user-llm-args",  "{\"temperature\": 0.0, \"api_base\": \"https://aigateway.leanmcp.com/v1/fireworks\", \"api_key\": \"${env:LEANMCP_API_KEY}\"}",
+        "--num-tasks", "5",
+        "--num-trials", "1",
+        "--max-steps", "300",
+        "--max-concurrency", "1",
+        "--save-to", "leaderboard/debug/custom-k9rxxb48__retail_gw"
+      ]
+    },
+    {
+      // Step through the FIREWORKS_TRAINING banking RFT eval end-to-end. Runs the
+      // exact pytest command `ep local-test` runs under the hood, but under debugpy.
+      //
+      // Recommended breakpoints (click in the gutter; no code edits needed):
+      //   FIREWORKS_TRAINING/test_banking.py
+      //       banking_to_evaluation_row()   - dataset row -> EvaluationRow
+      //       test_banking()                - the reward hook EP calls
+      //   workspace/score_from_reward_info.py
+      //       score_evaluation_row()        - top of scoring
+      //       _extract_reward_info()        - STAGE A: builds tau2 reward_info
+      //       score_from_reward_info()      - STAGE B: the cap*partial math
+      //   reward_functions/recompute_partial_credit.py
+      //       param_partial()               - the core per-action credit
+      //       cap_for_tier()                - the difficulty ceiling
+      //   FIREWORKS_TRAINING/banking_mcp/server.py   (runs in a SUBPROCESS)
+      //       step_environment()            - each tool call; hit via "subProcess": true
+      //   tau2 (justMyCode=false lets you step in):
+      //       src/tau2/evaluator/evaluator.py: evaluate_simulation()
+      //
+      // env block keeps it FAST + deterministic for debugging: 1 Easy task, no
+      // simulated user, gateway off (direct Fireworks via .env key). Flip these to
+      // debug other paths (e.g. ENABLE_USER_SIM=1 to step the customer simulator).
+      "name": "EP: debug banking reward (test_banking, pytest)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "subProcess": true,
+      "python": "${workspaceFolder}/.venv/bin/python",
+      "envFile": "${workspaceFolder}/.env",
+      "cwd": "${workspaceFolder}",
+      "env": {
+        // .venv first on PATH so the spawned MCP server uses the right interpreter
+        "PATH": "${workspaceFolder}/.venv/bin:${env:PATH}",
+        "POLICY_MODEL": "fireworks_ai/accounts/fireworks/models/gpt-oss-20b",
+        "USE_LEANMCP_GATEWAY": "0",
+        "ENABLE_USER_SIM": "1",
+        "ENABLE_COMPLIANCE_GATE": "0",
+        "TEMPERATURE": "0",
+        "SEED": "0",
+        "MAX_EASY": "1",
+        "MAX_MEDIUM": "1"
+      },
+      "args": [
+        "--ep-success-threshold", "0.001",
+        "FIREWORKS_TRAINING/test_banking.py::test_banking",
+        "-vs"
+      ]
+    },
+    {
+      // Tinker SDK Quick Start Tutorial
+      // Learn the Tinker fine-tuning SDK by stepping through practical examples
+      // of Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL) workflows.
+      //
+      // Before running:
+      //   1. Get API key from https://console.tinker.ai
+      //   2. Run: export TINKER_API_KEY="your-api-key-here"
+      //   3. Run: uv pip install tinker
+      //
+      // How to use:
+      //   • Press F5 to launch the tutorial
+      //   • The script prints formatted sections explaining each concept
+      //   • Set breakpoints (click in gutter) to pause at specific sections
+      //   • Step through the code (F10 = step over, F11 = step into)
+      //   • Hover over variables to inspect values in the debug panel
+      //
+      // Suggested breakpoints (click in the gutter):
+      //   START_TINKER/tinker_quickstart_tutorial.py
+      //       setup_clients()          - How to initialize TrainingClient, SamplingClient
+      //       prepare_sft_data()       - How to create Datum objects
+      //       sft_training_loop()      - The main SFT loop (forward_backward + optim_step)
+      //       sft_evaluation()         - How to sample from trained model
+      //       rl_workflow()            - Full RL loop with rewards
+      "name": "Tinker: Quick Start Tutorial (async, debuggable)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/START_TINKER/tinker_quickstart_tutorial.py",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      // "Full model" training (max-capacity LoRA: high rank + all layers).
+      // Tinker is LoRA-only, so this is the practical full-fine-tune run:
+      // rank 128 with MLP + attention + unembedding all trainable, a full-length
+      // epoch x mini-batch loop, resumable + downloadable checkpoints, then a
+      // download you can merge into a standalone model via download_full_model.py.
+      //
+      // Every loop prints a live counter (epoch [3/10] batch [2/5]) so you always
+      // know which iteration is running while you step.
+      //
+      // Suggested breakpoints (click in the gutter):
+      //   START_TINKER/full_finetune_tutorial.py
+      //       new_full_training_client()   - the rank/all-layers config (the "full" knobs)
+      //       sft_training_loop()          - epoch + mini-batch loop with counters
+      //       save_resumable_checkpoint()  - save_state() (optimizer-carrying, resumable)
+      //       download_weights()           - save_weights_for_sampler + signed-URL download
+      //       save_and_resume()            - create_training_client_from_state_with_optimizer
+      //
+      // Change the demo by editing "args": "sft" (default), "sft-step", or "resume".
+      "name": "Tinker: Full Model Training (debuggable)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/START_TINKER/full_finetune_tutorial.py",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env",
+      "args": ["sft"]
+    },
+    {
+      // REASONING_ENGINEERING context manager: one hard-15 task under debugpy.
+      // Same protocol as evals/eval_nemotron-ultra-550b_oracle_hard15_...
+      // _ctxmgr.sh (oracle retrieval, Nemotron Ultra, gpt-5.4-nano user sim)
+      // but a single task x 1 trial, picked from the dropdown (default
+      // task_038 = offset 1 in banking_hardset_15.jsonl).
+      //
+      // Needs TINKER_API_KEY + OPENAI_API_KEY (loaded from .env via envFile).
+      //
+      // Suggested breakpoints (click in the gutter):
+      //   REASONING_ENGINEERING/context_manager/agent.py
+      //       _generate_next_message()   - the managed sampling loop (all 3 triggers)
+      //       _execute_ctxmgr_call()     - compact/expand/contract tool handling
+      //   REASONING_ENGINEERING/context_manager/core.py
+      //       compact()                  - summarize + rewrite state.messages
+      //       _choose_cut()              - the boundary walk
+      //       expand() / contract()      - the re-add / re-collapse paths
+      //   TAU2_WITH_TINKER/tinker_backend.py
+      //       TinkerLM._sample_once()    - the context-window guard (line ~374)
+      //
+      // Tip: drop TAU2_CONTEXT_WINDOW to "16384" below to force compactions
+      // within the first few turns (client-side guard only — safe).
+      "name": "CTXMGR: one hard-15 task (debuggable)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/TAU2_WITH_TINKER/eval_tau2_tinker.py",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env",
+      "env": {
+        "TAU2_BASE_MODEL": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+        "TAU2_CONTEXT_WINDOW": "65536",
+        "TAU2_RETRIEVAL_VARIANT": "oracle_hardset",
+        "TAU2_CTXMGR_ENABLED": "1",
+        "TAU2_CTXMGR_TRIGGER_RATIO": "0.85",
+        "TAU2_CTXMGR_TARGET_RATIO": "0.55",
+        "TAU2_CTXMGR_KEEP_LAST_MSGS": "10",
+        "TAU2_CTXMGR_MAX_SUMMARY_TOKENS": "1024"
+      },
+      "args": [
+        "--domain", "banking_knowledge",
+        "--curriculum", "data/curriculum/banking_hardset_15.jsonl",
+        "--limit", "1",
+        "--offset", "${input:hardsetTaskOffset}",
+        "--trials", "1",
+        "--max-steps", "300",
+        "--api-user", "gpt-5.4-nano",
+        "--no-save"
+      ]
+    },
+    {
+      // FAILURE_ANALYSIS step 1: split a run's results.json into per-task JSONs
+      // under FAILURE_ANALYSIS/parsed/<run_label>/. Pure parsing, no LLM calls.
+      "name": "FAILURE_ANALYSIS: split all results (sync)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/FAILURE_ANALYSIS/split_results.py",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "cwd": "${workspaceFolder}",
+      "args": ["--all"]
+    },
+    {
+      // FAILURE_ANALYSIS step 2: LLM error analysis over the LeanMCP gateway.
+      // --workers 1 = fully synchronous (one task-trial at a time), so
+      // breakpoints don't fire across threads and gateway load stays minimal.
+      // Needs LEANMCP_API_KEY (loaded from .env via envFile).
+      //
+      // Suggested breakpoints:
+      //   FAILURE_ANALYSIS/analyze_failures.py
+      //       build_prompt()    - see exactly what the analyst LLM is shown
+      //       analyze_one()     - the litellm.completion call + JSON parsing
+      //       write_summary()   - the category/prompt-fix rollup
+      //
+      // Pick which parsed run to analyze from the dropdown when launching.
+      // Already-analyzed trials are skipped (delete the .analysis.json to redo).
+      "name": "FAILURE_ANALYSIS: analyze failures (1 worker, sync)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/FAILURE_ANALYSIS/analyze_failures.py",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env",
+      "args": [
+        "FAILURE_ANALYSIS/parsed/${input:parsedRun}",
+        "--workers", "1"
+      ]
+    },
+    {
+      // Same as above but analyzes EVERY parsed run in one go. Each run gets
+      // its own fresh output folder:
+      //   analysis/run_<ts>__<eval_model>__<ds>__<analyst>__analysis_<time>/
+      "name": "FAILURE_ANALYSIS: analyze ALL runs (1 worker, sync)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/FAILURE_ANALYSIS/analyze_failures.py",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env",
+      "args": ["--all", "--workers", "1"]
+    }
+  ],
+  "inputs": [
+    {
+      // Offset into data/curriculum/banking_hardset_15.jsonl (order fixed by
+      // the file): 0=task_037, 1=task_038, ... 14=task_086.
+      "id": "hardsetTaskOffset",
+      "type": "pickString",
+      "description": "Which hard-15 task to run (curriculum offset)",
+      "default": "1",
+      "options": [
+        { "label": "task_037", "value": "0" },
+        { "label": "task_038", "value": "1" },
+        { "label": "task_039", "value": "2" },
+        { "label": "task_040", "value": "3" },
+        { "label": "task_041", "value": "4" },
+        { "label": "task_053", "value": "5" },
+        { "label": "task_054", "value": "6" },
+        { "label": "task_072", "value": "7" },
+        { "label": "task_073", "value": "8" },
+        { "label": "task_074", "value": "9" },
+        { "label": "task_082", "value": "10" },
+        { "label": "task_083", "value": "11" },
+        { "label": "task_084", "value": "12" },
+        { "label": "task_085", "value": "13" },
+        { "label": "task_086", "value": "14" }
+      ]
+    },
+    {
+      "id": "parsedRun",
+      "type": "pickString",
+      "description": "Which parsed run to analyze (FAILURE_ANALYSIS/parsed/<run_label>)",
+      "default": "run_20260630_154459__gpt-oss-20b__banking_knowledge",
+      "options": [
+        "run_20260630_154459__gpt-oss-20b__banking_knowledge",
+        "run_20260620_223336__gpt-oss-120b__banking_knowledge",
+        "run_20260630_152501__gpt-oss-20b__banking_knowledge",
+        "run_20260620_203240__gpt-oss-20b__banking_knowledge",
+        "run_20260620_210123__glm-5p2__banking_knowledge",
+        "run_20260622_190548__qwen3.6-27b-b2f04w5c__banking_knowledge"
+      ]
+    }
+  ]
+}

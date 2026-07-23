@@ -1,0 +1,27 @@
+{
+  "id": "doc_credit_cards_crypto-cash_back_004",
+  "title": "Crypto-Cash Back: Linking Your Crypto Wallet to Your Account",
+  "summary": "This document explains how to link a crypto wallet to your account for \u201cCrypto-Cash Back\u201d redemptions, including direct wallet integration (Settings > Crypto Wallets > Add Wallet, authenticate/approve, set as default for redemptions, complete verification/signing if prompted) and manual address setup (Rewards > Redeem to Crypto > Manual Address, paste public address and memo/tag, verify network/address format, save/label).",
+  "faqs": [
+    "How do I connect my crypto wallet using direct wallet integration?",
+    "Where in the app do I add and set a default wallet for crypto redemptions?",
+    "What should I do if my wallet provider isn\u2019t available for direct integration?",
+    "When using manual address entry, do I need to include a memo/tag, and how do I save it?",
+    "What verification steps should I perform (network, address format) before redeeming larger amounts?",
+    "Should I test with a small redemption after setup?"
+  ],
+  "keywords": [
+    "Settings > Crypto Wallets",
+    "Add Wallet",
+    "Authenticate with wallet provider",
+    "Approve permissions",
+    "Default destination for crypto redemptions",
+    "verification step/signing a message",
+    "Rewards > Redeem to Crypto",
+    "Manual Address",
+    "public wallet address",
+    "memo/tag",
+    "verify address format and network",
+    "test small redemption"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "doc_buy_now_pay_later_bnpl_platinum_003",
+  "title": "BNPL Platinum: How Your Variable APR Is Calculated (Indexes and Margins Explained)",
+  "summary": "This document explains how BNPL Platinum\u2019s variable APR is calculated using a reference index plus a fixed margin, then bounded to a specified program APR range. It also covers how index movements change the APR (typically starting new billing cycles) and outlines an example workflow. ",
+  "faqs": [
+    "What components (reference index and margin) determine my BNPL Platinum variable APR?",
+    "How is my variable APR calculated using the index and fixed margin?",
+    "What happens if the calculated APR is below the program APR floor or above the ceiling?",
+    "How does an increase or decrease in the reference index affect my APR?",
+    "When do APR adjustments typically take effect (new billing cycle), and where can I confirm the date?",
+    "Does the fixed margin change over time, and what limits ensure my APR stays within a range?"
+  ],
+  "keywords": [
+    "BNPL Platinum",
+    "variable APR",
+    "reference index",
+    "fixed margin",
+    "program APR range",
+    "APR floor and ceiling",
+    "current index value",
+    "new billing cycles",
+    "effective date on statement",
+    "interest calculations"
+  ]
+}

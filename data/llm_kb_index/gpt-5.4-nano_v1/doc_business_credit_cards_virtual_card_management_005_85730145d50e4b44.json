@@ -1,0 +1,26 @@
+{
+  "id": "doc_business_credit_cards_virtual_card_management_005",
+  "title": "Virtual Card Management: Team-Based Spending Controls and Limits",
+  "summary": "This document explains how to set up Virtual Card Management team groups (up to 30), configure team-based per-card policies in **Teams & Limits**, and apply a default per-card cap up to **$150,000** that new cards inherit. It also covers how to override limits for exceptions without changing the team baseline and how to periodically review and adjust caps (while not exceeding $150,000), with guidance to limit overrides for reporting across all groups.",
+  "faqs": [
+    "How do I create and manage team groups for virtual card policies, and what is the maximum number of groups?",
+    "Where in the system do I set team-based controls, and how are default per-card policies applied to newly issued cards?",
+    "What is the standard per-card cap I can set for a team, and what is the maximum allowed amount?",
+    "How do I override the default per-card limit for an individual card while keeping the team\u2019s baseline policy intact?",
+    "How often should I review and adjust each team\u2019s spend profile, and are there any limits on how high the cap can be?",
+    "What governance practices does the document recommend for team naming and limiting exception overrides?"
+  ],
+  "keywords": [
+    "Virtual Card Management",
+    "Teams & Limits",
+    "team group",
+    "up to 30 groups",
+    "default per-card policies",
+    "standard per-card cap",
+    "$150,000 maximum",
+    "exception overrides",
+    "inherit defaults",
+    "spend profile review",
+    "consistent team naming"
+  ]
+}

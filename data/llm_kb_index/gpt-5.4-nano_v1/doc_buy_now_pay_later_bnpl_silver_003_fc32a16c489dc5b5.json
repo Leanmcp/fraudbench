@@ -1,0 +1,23 @@
+{
+  "id": "doc_buy_now_pay_later_bnpl_silver_003",
+  "title": "BNPL Silver: Choosing Your Installment Term and Payment Frequency",
+  "summary": "Explains how to select a BNPL Silver installment term (up to a maximum months cap not shown) and how payment frequency schedules installments on a repeated cadence for the chosen term. Also covers how the first and subsequent installments are dated after purchase approval.",
+  "faqs": [
+    "What is the maximum installment term I can choose for BNPL Silver?",
+    "How does payment frequency work for BNPL Silver installments during the selected term?",
+    "When will my first BNPL Silver installment be scheduled after my purchase is approved?",
+    "How do I choose a shorter vs. longer BNPL Silver installment term?",
+    "How are subsequent BNPL Silver installments scheduled until the plan completes?"
+  ],
+  "keywords": [
+    "BNPL Silver",
+    "installment term selection",
+    "maximum months cap (value not available)",
+    "shorter term repayment horizon",
+    "longer terms cap",
+    "payment frequency/cadence (value not available)",
+    "next available date scheduling",
+    "first installment after approval",
+    "subsequent installments follow same schedule"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "doc_checking_accounts_checking_accounts_(general)_002",
+  "title": "FAQ: Troubleshooting",
+  "summary": "This document provides troubleshooting guidance for mobile app/web issues: update to the latest app or a supported browser, confirm an active account and correct sign-in profile, verify stable connectivity, and run the `refresh_cache()` tool to clear cached site data. It includes scenario steps for balance not updating, missing/pending transactions, stuck transfers, and sign-in problems, plus escalation conditions.",
+  "faqs": [
+    "What quick checks should I try if the mobile app or website isn\u2019t working?",
+    "How do I clear cached site data\u2014should I use `refresh_cache()` and what should I be told to run?",
+    "My balance isn\u2019t updating after a deposit\u2014what steps should I follow?",
+    "A transaction is missing or still pending\u2014what does the document recommend checking?",
+    "Why might transfers appear stuck, and what should I verify?",
+    "When should I escalate the issue after running `refresh_cache()`?"
+  ],
+  "keywords": [
+    "latest version of the mobile app",
+    "supported web browser",
+    "refresh_cache() tool",
+    "stable connectivity",
+    "balance not updating after a deposit",
+    "sign out and back in",
+    "pending activity",
+    "transaction missing or pending",
+    "transfers appear stuck",
+    "destination account details",
+    "VPN and sign-in problems",
+    "escalate if issue persists across devices and networks"
+  ]
+}

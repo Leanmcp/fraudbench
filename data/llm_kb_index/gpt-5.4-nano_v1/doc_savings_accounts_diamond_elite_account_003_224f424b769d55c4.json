@@ -1,0 +1,20 @@
+{
+  "id": "doc_savings_accounts_diamond_elite_account_003",
+  "title": "Diamond Elite Account specifications and requirements",
+  "summary": "This document specifies Diamond Elite Account opening and maintenance requirements: a $100,000 minimum initial deposit and a $250,000 minimum ongoing balance. It also states interest is compounded daily and that wire transfer fees are waived. It includes a monthly withdrawal limit of -1.",
+  "faqs": [
+    "What is the minimum initial deposit required to open a Diamond Elite Account?",
+    "What minimum balance must I maintain to keep the account open?",
+    "How is interest calculated (e.g., compounded daily or otherwise)?",
+    "Are wire transfer fees waived on this account?",
+    "What is the monthly withdrawal limit for the Diamond Elite Account?"
+  ],
+  "keywords": [
+    "Diamond Elite Account",
+    "Minimum initial deposit $100,000",
+    "Minimum ongoing balance $250,000",
+    "Interest compounded daily",
+    "Wire transfer fees waived",
+    "Monthly withdrawal limit -1"
+  ]
+}
